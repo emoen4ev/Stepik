@@ -1,0 +1,11 @@
+type: code
+files:
+- name: task.py
+  visible: true
+  text: |-
+    s = 'In {0}, someone paid {1} {2} for two pizzas.'
+
+    print()
+  learner_created: false
+status: Solved
+record: -1

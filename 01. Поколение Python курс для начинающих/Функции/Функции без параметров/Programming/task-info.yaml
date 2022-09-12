@@ -1,0 +1,14 @@
+type: code
+files:
+- name: task.py
+  visible: true
+  text: |-
+    # объявление функции
+    def draw_box():
+        pass
+
+    # основная программа
+    draw_box()  # вызов функции
+  learner_created: false
+status: Solved
+record: -1

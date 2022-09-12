@@ -1,0 +1,74 @@
+<h2 style="text-align: center;">Форматирование строк</h2>
+
+<p>Хранить строки в переменных удобно, но часто бывает необходимо <strong>собирать строки</strong> из других объектов (строк, чисел и т.д.) и выполнять с ними нужные манипуляции. Для этой цели можно воспользоваться механизмом <strong>форматирования строк</strong>.</p>
+
+<p>Рассмотрим следующий код:</p>
+
+<pre><code class="language-python">age = 27
+txt = 'My name is Timur, I am ' + age
+print(txt)</code></pre>
+
+<p>Такой код приводит к ошибке во время выполнения программы, поскольку мы пытаемся сложить число и строку. Для решения такой проблемы мы можем использовать функцию <code>str</code>, которая преобразует числовое значение в строку:</p>
+
+<pre><code class="language-python">age = 27
+txt = 'My name is Timur, I am ' + str(age)
+print(txt)</code></pre>
+
+<p>Такой код работает, однако в Python предпочтительным способом форматирования считается использование метода <code>format</code>. Предыдущую программу можно переписать в виде:</p>
+
+<pre><code class="language-python">age = 27
+txt = 'My name is Timur, I am {}'.format(age)
+print(txt)</code></pre>
+
+<p>Мы передаем необходимые параметры методу <code>format</code>, а Python форматирует указанную строку и помещает их в строку на место заполнителей <code>{}</code>. Мы можем создавать сколько угодно заполнителей в строке:</p>
+
+<pre><code class="language-python">age = 27
+name = 'Timur'
+profession = 'math teacher'
+txt = 'My name is {}, I am {}, I work as a {}'.format(name, age, profession)
+print(txt)</code></pre>
+
+<p>Для наглядности и гибкости форматирования мы можем использовать порядковый номер в заполнителе: <code>{0}, {1}, {2},...</code>. Такой номер определяет позицию параметра, переданного методу <code>format</code> (нумерация начинается с нуля):</p>
+
+<pre><code class="language-python">age = 27
+name = 'Timur'
+profession = 'math teacher'
+txt = 'My name is {0}, I am {1}, I work as a {2}'.format(name, age, profession)
+print(txt)</code></pre>
+
+<p>Параметр <code>name</code> встает в <code>{0}</code> заполнитель, параметр <code>age</code> встает в <code>{1}</code> заполнитель и т.д. Мы можем использовать одно и тоже число в нескольких заполнителях</p>
+
+<pre><code class="language-python">name = 'Timur'
+txt = 'My name is {0}-{0}-{0}'.format(name)
+print(txt)</code></pre>
+
+<p>Результатом выполнения такого кода будет:</p>
+
+<pre><code class="language-no-highlight">My name is Timur-Timur-Timur </code></pre>
+
+<h2 style="text-align: center;">f-строки</h2>
+
+<p>Метод <code>format</code> хорошо справляется с задачей форматирования строк, однако если параметров много, то код может показаться немного избыточным:</p>
+
+<pre><code class="language-python">first_name = 'Timur'
+last_name = 'Guev'
+age = 27
+profession = 'math teacher'
+affiliation = 'BeeGeek'
+print('Hello, {0} {1}. You are {2}. You are a {3}. You were a member of {4}'
+               .format(first_name, last_name, age, profession, affiliation))</code></pre>
+
+<p>В Python 3.6 появилась новая разновидность строк — так называемые f-строки. Если поставить перед строкой префикс f, в заполнители можно будет включить код, например имя переменной. Предыдущий код можно записать в виде:</p>
+
+<pre><code class="language-python">first_name = 'Timur'
+last_name = 'Guev'
+age = 27
+profession = 'math teacher'
+affiliation = 'BeeGeek'
+print(f'Hello, {first_name} {last_name}. You are {age}. You are a {profession}. You were a member of {affiliation}')</code></pre>
+
+<p>На место заполнителя <code>{first_name}</code> встает значение переменной <code>first_name</code>, на место  заполнителя <code>{last_name}</code> встает значение переменной <code>last_name</code> и т.д.</p>
+
+<h2 style="text-align: center;">Примечания</h2>
+
+<p><strong>Примечание 1.</strong> <a href="https://docs.python.org/3/library/string.html#custom-string-formatting" rel="noopener noreferrer nofollow">Подробная документация</a> с форматированием строк.</p>

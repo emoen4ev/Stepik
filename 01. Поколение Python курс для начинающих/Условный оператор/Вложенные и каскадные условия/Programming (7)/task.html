@@ -1,0 +1,236 @@
+<h2 style="text-align: center;">Цвета колеса рулетки 🌶️</h2>
+
+<p>На колесе рулетки карманы пронумерованы от 0 до 36. Ниже приведены цвета карманов: </p>
+
+<ul>
+	<li>карман 0 зеленый;</li>
+	<li>для карманов с 1 по 10 карманы с нечетным номером имеют красный цвет, карманы с четным номером – черный;</li>
+	<li>для карманов с 11 по 18 карманы с нечетным номером имеют черный цвет, карманы с четным номером – красный;</li>
+	<li>для карманов с 19 по 28 карманы с нечетным номером имеют красный цвет, карманы с четным номером – черный;</li>
+	<li>для карманов с 29 по 36 карманы с нечетным номером имеют черный цвет, карманы с четным номером – красный.</li>
+</ul>
+
+<p>Напишите программу, которая считывает номер кармана и показывает, является ли этот карман зеленым, красным или черным. Программа должна вывести сообщение об ошибке, если пользователь вводит число, которое лежит вне диапазона от 0 до 36.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подаётся одно целое число.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести цвет кармана либо сообщение «ошибка ввода», если введённое число лежит вне диапазона от 0 до 36.</p>
+
+<p style="text-align: center;"><img alt='Картинки по запросу "рулетка игра""' height="355" src="https://st2.depositphotos.com/1072356/7725/v/950/depositphotos_77254344-stock-illustration-roulette-wheel.jpg" width="350"></p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">0</td>
+			<td style="text-align: center;">зеленый</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">красный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">37</td>
+			<td style="text-align: center;">ошибка ввода</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">черный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">красный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">черный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">красный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">черный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">красный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">черный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">11</td>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">красный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">12</td>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">черный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">13</td>
+			<td style="text-align: center;">11</td>
+			<td style="text-align: center;">черный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">14</td>
+			<td style="text-align: center;">12</td>
+			<td style="text-align: center;">красный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">15</td>
+			<td style="text-align: center;">13</td>
+			<td style="text-align: center;">черный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">16</td>
+			<td style="text-align: center;">14</td>
+			<td style="text-align: center;">красный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">17</td>
+			<td style="text-align: center;">15</td>
+			<td style="text-align: center;">черный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">18</td>
+			<td style="text-align: center;">16</td>
+			<td style="text-align: center;">красный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">19</td>
+			<td style="text-align: center;">17</td>
+			<td style="text-align: center;">черный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">20</td>
+			<td style="text-align: center;">18</td>
+			<td style="text-align: center;">красный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">21</td>
+			<td style="text-align: center;">19</td>
+			<td style="text-align: center;">красный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">22</td>
+			<td style="text-align: center;">20</td>
+			<td style="text-align: center;">черный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">23</td>
+			<td style="text-align: center;">21</td>
+			<td style="text-align: center;">красный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">24</td>
+			<td style="text-align: center;">22</td>
+			<td style="text-align: center;">черный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">25</td>
+			<td style="text-align: center;">23</td>
+			<td style="text-align: center;">красный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">26</td>
+			<td style="text-align: center;">24</td>
+			<td style="text-align: center;">черный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">27</td>
+			<td style="text-align: center;">25</td>
+			<td style="text-align: center;">красный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">28</td>
+			<td style="text-align: center;">26</td>
+			<td style="text-align: center;">черный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">29</td>
+			<td style="text-align: center;">27</td>
+			<td style="text-align: center;">красный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">30</td>
+			<td style="text-align: center;">28</td>
+			<td style="text-align: center;">черный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">31</td>
+			<td style="text-align: center;">29</td>
+			<td style="text-align: center;">черный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">32</td>
+			<td style="text-align: center;">30</td>
+			<td style="text-align: center;">красный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">33</td>
+			<td style="text-align: center;">31</td>
+			<td style="text-align: center;">черный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">34</td>
+			<td style="text-align: center;">32</td>
+			<td style="text-align: center;">красный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">35</td>
+			<td style="text-align: center;">33</td>
+			<td style="text-align: center;">черный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">36</td>
+			<td style="text-align: center;">34</td>
+			<td style="text-align: center;">красный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">37</td>
+			<td style="text-align: center;">35</td>
+			<td style="text-align: center;">черный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">38</td>
+			<td style="text-align: center;">36</td>
+			<td style="text-align: center;">красный</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">39</td>
+			<td style="text-align: center;">-1</td>
+			<td style="text-align: center;">ошибка ввода</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">40</td>
+			<td style="text-align: center;">56</td>
+			<td style="text-align: center;">ошибка ввода</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">0</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">зеленый</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">красный</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">37</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">ошибка ввода</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

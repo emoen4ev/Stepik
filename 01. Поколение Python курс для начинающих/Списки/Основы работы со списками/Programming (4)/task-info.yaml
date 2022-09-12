@@ -1,0 +1,9 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: "evens = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]\naverage = \n\nprint(average)"
+  learner_created: false
+status: Solved
+record: -1

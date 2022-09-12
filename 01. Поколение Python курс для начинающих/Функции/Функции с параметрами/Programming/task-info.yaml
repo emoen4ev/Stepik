@@ -1,0 +1,18 @@
+type: code
+files:
+- name: task.py
+  visible: true
+  text: |-
+    # объявление функции
+    def draw_triangle(fill, base):
+        pass
+
+    # считываем данные
+    fill = input()
+    base = int(input())
+
+    # вызываем функцию
+    draw_triangle(fill, base)
+  learner_created: false
+status: Solved
+record: -1

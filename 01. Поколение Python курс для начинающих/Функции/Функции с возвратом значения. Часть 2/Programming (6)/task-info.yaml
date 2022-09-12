@@ -1,0 +1,18 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: |-
+    # объявление функции
+    def is_valid_password(password):
+        pass
+
+    # считываем данные
+    psw = input()
+
+    # вызываем функцию
+    print(is_valid_password(psw))
+  learner_created: false
+status: Solved
+record: -1

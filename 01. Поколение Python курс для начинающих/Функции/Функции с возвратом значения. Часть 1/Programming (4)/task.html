@@ -1,0 +1,76 @@
+<h2 style="text-align: center;">Найти всех</h2>
+
+<p>Напомним, что строковый метод <code>find('a')</code> возвращает местоположение первого вхождения символа <code>a</code> в строке. Проблема заключается в том, что данный метод не находит местоположение всех символов <code>а</code>.</p>
+
+<p>Напишите функцию с именем <code>find_all(target, symbol)</code>, которая принимает два аргумента: строку <code>target</code> и символ <code>symbol</code> и возвращает список, содержащий все местоположения этого символа в строке.</p>
+
+<p><strong>Примечание 1.</strong> Если указанный символ не встречается в строке, то следует вернуть пустой список.</p>
+
+<p><strong>Примечание 2.</strong> Следующий программный код:</p>
+
+<pre><code class="language-python">print(find_all('abcdabcaaa', 'a'))
+print(find_all('abcadbcaaa', 'e'))
+print(find_all('abcadbcaaa', 'd'))</code></pre>
+
+<p>должен выводить:</p>
+
+<pre><code class="language-no-highlight">[0, 4, 7, 8, 9]
+[]
+[4]</code></pre>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">abcdabcaaa<br>
+			a</td>
+			<td style="text-align: center;">[0, 4, 7, 8, 9]</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">abcadbcaaa<br>
+			e</td>
+			<td style="text-align: center;">[]</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">abcadbcaaa<br>
+			d</td>
+			<td style="text-align: center;">[4]</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">tttt<br>
+			t</td>
+			<td style="text-align: center;">[0, 1, 2, 3]</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">ppooooopp<br>
+			p</td>
+			<td style="text-align: center;">[0, 1, 7, 8]</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">ppooooopp<br>
+			o</td>
+			<td style="text-align: center;">[2, 3, 4, 5, 6]</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">ppooppoopp<br>
+			o</td>
+			<td style="text-align: center;">[2, 3, 6, 7]</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

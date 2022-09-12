@@ -1,0 +1,216 @@
+<h1>Тема урока: методы списков</h1>
+
+<ol>
+	<li>Метод <code>insert()</code></li>
+	<li>Метод <code>index()</code></li>
+	<li>Метод <code>remove()</code></li>
+	<li>Метод <code>pop()</code></li>
+	<li>Метод <code>reverse()</code></li>
+	<li>Метод <code>count()</code></li>
+	<li>Метод <code>clear()</code></li>
+	<li>Метод <code>copy()</code></li>
+	<li>Метод <code>sort()</code></li>
+</ol>
+
+<p><strong>Аннотация.</strong> Другие методы списков.</p>
+
+<p>Мы уже познакомились с двумя списочными методами <code>append()</code> и <code>extend()</code>. Первый добавляет в конец списка один новый элемент, а второй расширяет список другим списком. К спискам в Python применимы и другие удобные методы, с которыми мы познакомимся в этом уроке.</p>
+
+<h2 style="text-align: center;">Метод insert()</h2>
+
+<p>Метод <code>insert()</code> позволяет вставлять значение в список в заданной позиции. В него передается два аргумента:</p>
+
+<ol>
+	<li><code>index</code>: индекс, задающий место вставки значения;</li>
+	<li><code>value</code>: значение, которое требуется вставить.</li>
+</ol>
+
+<p>Когда значение вставляется в список, список расширяется в размере, чтобы разместить новое значение. Значение, которое ранее находилось в заданной индексной позиции, и все элементы после него сдвигаются на одну позицию к концу списка.</p>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">names = ['Gvido', 'Roman' , 'Timur']
+print(names)
+names.insert(0, 'Anders')
+print(names)
+names.insert(3, 'Josef')
+print(names)</code></pre>
+
+<p>выведет:</p>
+
+<pre><code class="language-no-highlight">['Gvido', 'Roman' , 'Timur']
+['Anders', 'Gvido', 'Roman' , 'Timur']
+['Anders', 'Gvido', 'Roman' , 'Josef', 'Timur']</code></pre>
+
+<p>Если указан недопустимый индекс, то во время выполнения программы не происходит ошибки. Если задан индекс за пределами конца списка, то значение будет добавлено в конец списка. Если применен отрицательный индекс, который указывает на недопустимую позицию, то значение будет вставлено в начало списка.</p>
+
+<h2 style="text-align: center;">Метод index()</h2>
+
+<p>Метод <code>index()</code> возвращает индекс первого элемента, значение которого равняется переданному в метод значению. Таким образом, в метод передается один параметр:</p>
+
+<ol>
+	<li><code>value</code>: значение, индекс которого требуется найти.</li>
+</ol>
+
+<p>Если элемент в списке не найден, то во время выполнения происходит ошибка.</p>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">names = ['Gvido', 'Roman' , 'Timur']
+position = names.index('Timur')
+print(position)</code></pre>
+
+<p>выведет:</p>
+
+<pre><code class="language-no-highlight">2</code></pre>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">names = ['Gvido', 'Roman' , 'Timur']
+position = names.index('Anders')
+print(position)</code></pre>
+
+<p>приводит к ошибке:</p>
+
+<pre><code class="language-no-highlight">ValueError: 'Anders' is not in list</code></pre>
+
+<p>Чтобы избежать таких ошибок, можно использовать метод <code>index()</code> вместе с оператором принадлежности <code>in</code>:</p>
+
+<pre><code class="language-python">names = ['Gvido', 'Roman' , 'Timur']
+if 'Anders' in names:
+    position = names.index('Anders')
+    print(position)
+else:
+    print('Такого значения нет в списке')</code></pre>
+
+<h2 style="text-align: center;">Метод remove()</h2>
+
+<p>Метод <code>remove()</code> удаляет первый элемент, значение которого равняется переданному в метод значению. В метод передается один параметр:</p>
+
+<ol>
+	<li><code>value</code>: значение, которое требуется удалить.</li>
+</ol>
+
+<p>Метод уменьшает размер списка на один элемент. Все элементы после удаленного элемента смещаются на одну позицию к началу списка. Если элемент в списке не найден, то во время выполнения происходит ошибка.</p>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">food = ['Рис', 'Курица', 'Рыба', 'Брокколи', 'Рис']
+print(food)
+food.remove('Рис')
+print(food)</code></pre>
+
+<p>выведет:</p>
+
+<pre><code class="language-python">['Рис', 'Курица', 'Рыба', 'Брокколи', 'Рис']
+['Курица', 'Рыба', 'Брокколи', 'Рис']</code></pre>
+
+<p><img alt="" height="75" src="https://ucarecdn.com/9efde934-7d44-417e-a5e1-59d6a61474ec/" style="float: left;" width="68"><span style="color: #a03881;"><strong>Важно:</strong></span> метод <code>remove()</code> удаляет только первый элемент с указанным значением. Все последующие его вхождения остаются в списке. Чтобы удалить все вхождения нужно использовать цикл <code>while</code> в связке с оператором принадлежности <code>in</code> и методом <code>remove</code>.</p>
+
+<h2 style="text-align: center;">Метод pop()</h2>
+
+<p>Метод <code>pop()</code> удаляет элемент по указанному индексу и возвращает его. В метод <code>pop()</code> передается один <strong>необязательный</strong> аргумент:</p>
+
+<ol>
+	<li><code>index</code>: индекс элемента, который требуется удалить.</li>
+</ol>
+
+<p>Если индекс не указан, то метод удаляет и возвращает последний элемент списка. Если список пуст или указан индекс за пределами диапазона, то во время выполнения происходит ошибка.</p>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">names = ['Gvido', 'Roman' , 'Timur']
+item = names.pop(1)
+print(item)
+print(names)</code></pre>
+
+<p>выведет:</p>
+
+<pre><code class="language-no-highlight">Roman
+['Gvido', 'Timur']</code></pre>
+
+<h2 style="text-align: center;">Метод count()</h2>
+
+<p>Метод <code>count()</code> возвращает количество элементов в списке, значения которых равны переданному в метод значению. </p>
+
+<p>Таким образом, в метод передается один параметр:</p>
+
+<ol>
+	<li><code>value</code>: значение, количество элементов, равных которому,  нужно посчитать.</li>
+</ol>
+
+<p>Если значение в списке не найдено, то метод возвращает 0.</p>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">names = ['Timur', 'Gvido', 'Roman', 'Timur', 'Anders', 'Timur']
+cnt1 = names.count('Timur')
+cnt2 = names.count('Gvido')
+cnt3 = names.count('Josef')
+
+print(cnt1)
+print(cnt2)
+print(cnt3)</code></pre>
+
+<p>выведет:</p>
+
+<pre><code class="language-no-highlight">3
+1
+0</code></pre>
+
+<h2 style="text-align: center;">Метод reverse()</h2>
+
+<p>Метод <code>reverse()</code><strong> </strong>инвертирует порядок следования значений в списке, то есть меняет его на противоположный.</p>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">names = ['Gvido', 'Roman' , 'Timur']
+names.reverse()
+print(names)</code></pre>
+
+<p>выведет:</p>
+
+<pre><code class="language-python">['Timur', 'Roman', 'Gvido']</code></pre>
+
+<p><img alt="" height="75" src="https://ucarecdn.com/9efde934-7d44-417e-a5e1-59d6a61474ec/" style="float: left;" width="68">Существует большая разница между вызовом метода <code>names.reverse()</code> и использованием среза <code>names[::-1]</code>. Метод <code>reverse()</code> меняет порядок элементов на обратный <strong>в текущем списке</strong>, а срез создает копию списка, в котором элементы следуют в обратном порядке.</p>
+
+<h2 style="text-align: center;">Метод clear()</h2>
+
+<p>Метод <code>clear()</code> удаляет все элементы из списка.</p>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">names = ['Gvido', 'Roman' , 'Timur']
+names.clear()
+print(names)</code></pre>
+
+<p>выведет:</p>
+
+<pre><code class="language-python">[]</code></pre>
+
+<h2 style="text-align: center;">Метод copy()</h2>
+
+<p>Метод <code>copy()</code> создает поверхностную копию списка.</p>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">names = ['Gvido', 'Roman' , 'Timur']
+names_copy = names.copy()              # создаем поверхностную копию списка names
+
+print(names)
+print(names_copy)</code></pre>
+
+<p>выведет:</p>
+
+<pre><code class="language-python">['Gvido', 'Roman', 'Timur']
+['Gvido', 'Roman', 'Timur']</code></pre>
+
+<p>Аналогичного результата можно достичь с помощью срезов или функции <code>list()</code>:</p>
+
+<pre><code class="language-python">names = ['Gvido', 'Roman' , 'Timur']
+names_copy1 = list(names)             # создаем поверхностную копию с помощью функции list()
+names_copy2 = names[:]                # создаем поверхностную копию с помощью среза от начала до конца</code></pre>
+
+<h2 style="text-align: center;">Примечания</h2>
+
+<p><strong>Примечание.</strong> Существует большая разница в работе строковых и списочных методов. Строковые методы не изменяют содержимого объекта к которому они применяются, а возвращают новое значение. Списочные методы, напротив, меняют содержимое объекта к которому применяются.</p>

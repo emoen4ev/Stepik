@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: '<code>Ceмья Джасмин: [''Джим'', ''Джилл'', ''Джон'', ''Джасмин'']</code>'
+- text: <code>Ceмья Джасмин:</code>
+- text: <code>['Джим', 'Джилл', 'Джон', 'Джасмин']</code>
+- text: <code>Не могу найти Джасмин.</code>
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz
+local_check: false

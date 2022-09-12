@@ -1,0 +1,51 @@
+<h2 style="text-align: center;">Корректный email</h2>
+
+<p>Будем считать email адрес корректным, если в нем есть символ собачки (@) и точки. Напишите программу проверяющую корректность email адреса.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подаётся одна строка – email адрес.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести строку «YES», если email адрес является корректным и «NO» в ином случае.</p>
+
+<p><strong>Примечание.</strong> Наличие символов @ и . недостаточно для корректности email адреса, однако их отсутствие гарантировано влечёт за собой неверный email.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">aaaa@bbb.com</td>
+			<td style="text-align: center;">YES</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">aaaa@bbbcom</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">qwerty.com</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">qwerty</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">tim@tim.ru</td>
+			<td style="text-align: center;">YES</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">aaaa@bbb.com</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">YES</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">aaaa@bbbcom</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">NO</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">qwerty.com</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">NO</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

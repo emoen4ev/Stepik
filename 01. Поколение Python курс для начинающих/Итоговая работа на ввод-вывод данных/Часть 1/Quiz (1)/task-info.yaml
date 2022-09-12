@@ -1,0 +1,20 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: <code>print()</code>
+- text: <code>print("3.1415")</code>
+- text: <code>print('Просто текст...")</code>
+- text: <code>print("I'm a math teacher and a programmer!")</code>
+- text: <code>print('Поэма "Мёртвые души" одна из самых интересных')</code>
+- text: <code>print('I'm 16 and I'm from Northern Ireland.')</code>
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz
+local_check: false

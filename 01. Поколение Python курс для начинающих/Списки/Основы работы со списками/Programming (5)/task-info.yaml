@@ -1,0 +1,13 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: |-
+    rainbow = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet']
+
+
+    print()
+  learner_created: false
+status: Solved
+record: -1

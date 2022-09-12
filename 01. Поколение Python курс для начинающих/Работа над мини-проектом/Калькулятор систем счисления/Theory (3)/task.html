@@ -1,0 +1,84 @@
+<h2 style="text-align: center;">Двоичная, восьмеричная и шестнадцатеричная системы счисления</h2>
+
+<p>В информатике и программировании часто используются двоичная, восьмеричная и шестнадцатеричная системы счисления. В Python встроены три функции <code>bin(), oct(), hex()</code>, которые возвращают строковые представления целого десятичного числа в соответствующей системе счисления $(2, \, 8, \, 16)$.</p>
+
+<h3 style="text-align: center;"><strong>Функция bin()</strong></h3>
+
+<p>Функция <code>bin()</code> возвращает строку с двоичным представлением указанного целого числа.</p>
+
+<p>Следующий программный код: </p>
+
+<pre><code class="language-python">print(bin(10))
+print(bin(128))
+print(bin(150))
+print(bin(18765))</code></pre>
+
+<p>выводит:</p>
+
+<pre><code class="language-no-highlight">0b1010
+0b10000000
+0b10010110
+0b100100101001101</code></pre>
+
+<p><img alt="" height="46" src="https://ucarecdn.com/e414ba32-b5c1-4497-aff2-49d576f803c3/" style="float: left;" width="42"><strong>Важно:</strong> обратите внимание на приставку <code>0b</code>, которая сигнализирует о том, что число представлено в двоичной системе счисления.</p>
+
+<h3 style="text-align: center;">Функция oct()</h3>
+
+<p>Функция <code>oct()</code> возвращает строку с восьмеричным представлением указанного целого числа.</p>
+
+<p>Следующий программный код: </p>
+
+<pre><code class="language-python">print(oct(10))
+print(oct(128))
+print(oct(150))
+print(oct(18765))</code></pre>
+
+<p>выводит:</p>
+
+<pre><code class="language-no-highlight">0o12
+0o200
+0o226
+0o44515</code></pre>
+
+<p><img alt="" height="46" src="https://ucarecdn.com/e414ba32-b5c1-4497-aff2-49d576f803c3/" style="float: left;" width="42"><strong>Важно:</strong> обратите внимание на приставку <code>0o</code>, которая сигнализирует о том, что число представлено в восьмеричной системе счисления.</p>
+
+<h3 style="text-align: center;"> Функция hex()</h3>
+
+<p>Функция <code>hex()</code> возвращает строку с шестнадцатеричным представлением указанного целого числа.</p>
+
+<p>Следующий программный код: </p>
+
+<pre><code class="language-python">print(hex(10))
+print(hex(128))
+print(hex(150))
+print(hex(18765))</code></pre>
+
+<p>выводит:</p>
+
+<pre><code class="language-no-highlight">0xa
+0x80
+0x96
+0x494d</code></pre>
+
+<p><img alt="" height="46" src="https://ucarecdn.com/e414ba32-b5c1-4497-aff2-49d576f803c3/" style="float: left;" width="42"><strong>Важно:</strong> обратите внимание на приставку <code>0x</code>, которая сигнализирует о том, что число представлено в шестнадцатеричной системе счисления.</p>
+
+<h2 style="text-align: center;">Примечания</h2>
+
+<p><strong>Примечание 1.</strong> Если нам требуется избавиться от приставок <code>0b, 0o, 0x</code>, то мы можем воспользоваться строковым срезом:</p>
+
+<pre><code class="language-python">num = 127
+
+bin_num = bin(num)  # 0b1111111
+oct_num = oct(num)  # 0o177
+hex_num = hex(num)  # 0x7f
+
+print(bin_num[2:])  # 1111111
+print(oct_num[2:])  # 177
+print(hex_num[2:])  # 7f</code></pre>
+
+<p><strong>Примечание 2.</strong> Обратите внимание, что функция <code>hex()</code> возвращает шестнадцатеричное число с маленькими символами <code>a, b, c, d, e, f</code>. Для преобразования к верхнему регистру можно использовать строковый метод <code>upper()</code>:</p>
+
+<pre><code class="language-python">num = 127432
+
+hex_num = hex(num)          # 0x1f1c8
+print(hex_num[2:].upper())  # 1F1C8</code></pre>

@@ -1,0 +1,19 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: |-
+    # объявление функции
+    def compute_binom(n, k):
+        pass
+
+    # считываем данные
+    n = int(input())
+    k = int(input())
+
+    # вызываем функцию
+    print(compute_binom(n, k))
+  learner_created: false
+status: Solved
+record: -1

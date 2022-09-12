@@ -1,0 +1,17 @@
+type: code
+files:
+- name: task.py
+  visible: true
+  text: |-
+    # объявление функции
+    def convert_to_miles(km):
+        pass
+
+    # считываем данные
+    num = int(input())
+
+    # вызываем функцию
+    print(convert_to_miles(num))
+  learner_created: false
+status: Solved
+record: -1

@@ -1,0 +1,19 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: |-
+    # объявление функции
+    def find_all(target, symbol):
+        pass
+
+    # считываем данные
+    s = input()
+    char = input()
+
+    # вызываем функцию
+    print(find_all(s, char))
+  learner_created: false
+status: Solved
+record: -1

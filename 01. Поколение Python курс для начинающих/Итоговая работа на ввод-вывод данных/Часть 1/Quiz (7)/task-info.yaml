@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Имя переменной не может совпадать с ключевым (зарезервированным) словом
+- text: Имя переменной не может оканчиваться цифрой
+- text: Имя переменной может начинаться с символа подчёркивания (_)
+- text: Имя переменной не может начинаться с цифры
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz
+local_check: false

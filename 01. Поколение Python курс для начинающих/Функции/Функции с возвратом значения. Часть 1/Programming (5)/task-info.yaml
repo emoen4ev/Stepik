@@ -1,0 +1,19 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: |-
+    # объявление функции
+    def merge(list1, list2):
+        pass
+
+    # считываем данные
+    numbers1 = [int(c) for c in input().split()]
+    numbers2 = [int(c) for c in input().split()]
+
+    # вызываем функцию
+    print(merge(numbers1, numbers2))
+  learner_created: false
+status: Solved
+record: -1

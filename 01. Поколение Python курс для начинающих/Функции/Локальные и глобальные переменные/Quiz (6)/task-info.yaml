@@ -1,0 +1,20 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: <code>x</code>
+- text: <code>y</code>
+- text: <code>num</code>
+- text: <code>flag</code>
+- text: <code>i</code>
+- text: <code>number</code>
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz
+local_check: false

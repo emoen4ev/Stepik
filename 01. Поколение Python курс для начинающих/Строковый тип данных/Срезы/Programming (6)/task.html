@@ -1,0 +1,83 @@
+<h2 style="text-align: center;">Делаем срезы 2</h2>
+
+<p>На вход программе подается одна строка. Напишите программу, которая выводит:</p>
+
+<ol>
+	<li>третий символ этой строки;</li>
+	<li>предпоследний символ этой строки;</li>
+	<li>первые пять символов этой строки;</li>
+	<li>всю строку, кроме последних двух символов;</li>
+	<li>все символы с четными индексами;</li>
+	<li>все символы с нечетными индексами;</li>
+	<li>все символы в обратном порядке;</li>
+	<li>все символы строки через один в обратном порядке, начиная с последнего.</li>
+</ol>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подается одна строка, длина которой больше 5 символов.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести данные в соответствии с условием. Каждое значение выводится на отдельной строке.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">abcdefghijklmnopqrstuvwxyz</td>
+			<td style="text-align: center;">c<br>
+			y<br>
+			abcde<br>
+			abcdefghijklmnopqrstuvwx<br>
+			acegikmoqsuwy<br>
+			bdfhjlnprtvxz<br>
+			zyxwvutsrqponmlkjihgfedcba<br>
+			zxvtrpnljhfdb</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">The weak can never forgive. Forgiveness is the attribute of the strong</td>
+			<td style="text-align: center;">e<br>
+			n<br>
+			The w<br>
+			The weak can never forgive. Forgiveness is the attribute of the stro<br>
+			Tewa a ee ogv.Frieesi h trbt ftesrn<br>
+			h ekcnnvrfrie ogvns steatiueo h tog<br>
+			gnorts eht fo etubirtta eht si ssenevigroF .evigrof reven nac kaew ehT<br>
+			got h oeuitaets snvgo eirfrvnncke h</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">There is no such thing as an accident. What we call by that name is the effect of some cause which we do not see</td>
+			<td style="text-align: center;">e<br>
+			e<br>
+			There<br>
+			There is no such thing as an accident. What we call by that name is the effect of some cause which we do not s<br>
+			Teei osc hn sa ciet htw alb htnm steefc fsm as hc ed o e<br>
+			hr sn uhtiga nacdn.Wa ecl yta aei h feto oecuewihw ontse<br>
+			ees ton od ew hcihw esuac emos fo tceffe eht si eman taht yb llac ew tahW .tnedicca na sa gniht hcus on si erehT<br>
+			estno whiweuceo otef h iea aty lce aW.ndcan agithu ns rh</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">Success is the ability to go from failure to failure without losing your enthusiasm</td>
+			<td style="text-align: center;">c<br>
+			s<br>
+			Succe<br>
+			Success is the ability to go from failure to failure without losing your enthusia<br>
+			Scesi h blt og rmfiuet alr ihu oigyu nhsam<br>
+			ucs steaiiyt ofo alr ofiuewtotlsn oretuis<br>
+			msaisuhtne ruoy gnisol tuohtiw eruliaf ot eruliaf morf og ot ytiliba eht si sseccuS<br>
+			mashn uygio uhi rla teuifmr go tlb h isecS</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">abcdefghijklmnopqrstuvwxyz</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">c<br>y<br>abcde<br>abcdefghijklmnopqrstuvwx<br>acegikmoqsuwy<br>bdfhjlnprtvxz<br>zyxwvutsrqponmlkjihgfedcba<br>zxvtrpnljhfdb</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

@@ -1,0 +1,88 @@
+<h2 style="text-align: center;">Очень странные дела</h2>
+
+<p>Джим Хоппер с помощью радиоприемника пытается получить сообщение Оди. На приемник ему поступает $n$ различных последовательностей кода Морзе. Декодировав их, он получает последовательности из цифр и строчного латинского алфавита, при этом во всех сообщениях Оди содержится число 11, причем минимум 3 раза. Помогите определить Джиму количество сообщений от Оди.</p>
+
+<p><strong>Формат входных данных</strong><br>
+В первой строке подаётся число $n$ – количество сообщений, в последующих $n$ строках вводятся строки, содержащие латинские строчные буквы и цифры.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести количество строк в которых содержится число 11 минимум 3 раза.</p>
+
+<p><strong>Примечание: </strong>Числа 11 необязательно должны быть разделены другими символами, нужно подсчитать вхождение последовательности символов "11", т.е. например в строке "111" содержится одна такая последовательность, в то время как в "1111" их уже две.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">3<br>
+			11helpme11jim11<br>
+			avengers141414atta11ck<br>
+			k1lg0re11111l</td>
+			<td style="text-align: center;">1</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">5<br>
+			eowi11fjoigei23do11i23gf2983fj19f1120f92f23<br>
+			i2oj2fjoerfjpwfmkewfewkekef<br>
+			wewewewewew111wweewewweewe11w<br>
+			111111<br>
+			krewjrgeoergjogergiurg</td>
+			<td style="text-align: center;">2</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">1<br>
+			11</td>
+			<td style="text-align: center;">0</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">1<br>
+			w1ej1o1if4joifoe21000f1joef1</td>
+			<td style="text-align: center;">0</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">3<br>
+			erforfjerjogrierg<br>
+			111111111111111111111111111111111111111111111111111111111111111111<br>
+			vk</td>
+			<td style="text-align: center;">1</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">9<br>
+			helpmejimhelpmejimhelpmejimhelpmejimhelpmejim<br>
+			helpmejimhelpmejimhelpmejimhelpmejimhelpmejim<br>
+			helpmejimhelpmejimhelpmejimhelpmejimhelpmejim<br>
+			111111helpmejimhelpmejimhelpmejimhelpmejimhelpmejim<br>
+			helpmejimhelpmejimhelpmejimhelpmejimhelpmejim<br>
+			helpmejimhelpmejimhelpmejimhelpmejimhelpmejim<br>
+			hel11pmejimhelpmejimhelpmejimh11elpmejimhelpmejim11<br>
+			helpmejimhelpmejimhelpmejimhelpmejimhelpmejim<br>
+			helpmejimhelpmejimhelpmejimhelpmejimhelpmejim</td>
+			<td style="text-align: center;">2</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">5<br>
+			2043198105813098451075310571307951031710925<br>
+			910897013849372057101759107573198735<br>
+			2935835298108358901359801359805809315<br>
+			2309983580158913058319057139057139057<br>
+			4342323974298732498734023471420747423911</td>
+			<td style="text-align: center;">0</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">3<br>11helpme11jim11<br>avengers141414atta11ck<br>k1lg0re11111l</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

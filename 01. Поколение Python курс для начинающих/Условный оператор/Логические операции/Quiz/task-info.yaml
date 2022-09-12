@@ -1,0 +1,17 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: число 81 выиграло
+- text: число num2 выиграло
+- text: число num1 выиграло
+- text: число 34 выиграло
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+local_check: false

@@ -1,0 +1,22 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: 15 раз Python awesome! на одной строке через пробел
+- text: 16 раз Python awesome! на каждой строке
+- text: 10 раз Python awesome! на одной строке через пробел
+- text: 15 раз Python awesome! на каждой строке
+- text: 10 раз Python awesome! на каждой строке
+- text: 25 раз Python awesome! на каждой строке
+- text: 16 раз Python awesome! на одной строке через пробел
+- text: 25 раз Python awesome! на одной строке через пробел
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz
+local_check: false

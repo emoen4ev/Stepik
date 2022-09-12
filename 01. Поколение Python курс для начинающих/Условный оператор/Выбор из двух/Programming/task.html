@@ -1,0 +1,62 @@
+<h2 style="text-align: center;">Пароль</h2>
+
+<p>При регистрации на сайтах требуется вводить пароль дважды. Это сделано для безопасности, поскольку такой подход уменьшает возможность неверного ввода пароля.</p>
+
+<p>Напишите программу, которая сравнивает пароль и его подтверждение. Если они совпадают, то программа выводит: «Пароль принят», иначе: «Пароль не принят».</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подаются две строки.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести одну строку в соответствии с условием задачи.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">qwerty<br>
+			qwerty</td>
+			<td style="text-align: center;">Пароль принят</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">qwerty<br>
+			Qwerty</td>
+			<td style="text-align: center;">Пароль не принят</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">PythonROCKS<br>
+			PythonROCKS</td>
+			<td style="text-align: center;">Пароль принят</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">123456789<br>
+			12345678</td>
+			<td style="text-align: center;">Пароль не принят</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">Python2<br>
+			Python3</td>
+			<td style="text-align: center;">Пароль не принят</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">qwerty<br>
+			qwerty⎵</td>
+			<td style="text-align: center;">Пароль не принят</td>
+		</tr>
+	</tbody>
+</table>
+Символом ⎵ мы обозначаем пробел.</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">qwerty<br>qwerty</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">Пароль принят</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">qwerty<br>Qwerty</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">Пароль не принят</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">PythonROCKS<br>PythonROCKS</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">Пароль принят</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

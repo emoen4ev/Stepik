@@ -1,0 +1,15 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: |-
+    s = 1
+    for i in range(1, 7):
+        n = input()
+        if i % 2 == 0:
+            s = s + n
+    print(s)
+  learner_created: false
+status: Solved
+record: -1

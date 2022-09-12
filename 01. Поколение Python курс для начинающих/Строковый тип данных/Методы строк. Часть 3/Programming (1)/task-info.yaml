@@ -1,0 +1,14 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: |-
+    year = 2010
+    amount = '10K'
+    currency = 'Bitcoin'
+
+    print('In {}, someone paid {} {} for two pizzas.')
+  learner_created: false
+status: Solved
+record: -1

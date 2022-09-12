@@ -1,0 +1,280 @@
+<h1>Тема урока: основы работы со списками</h1>
+
+<ol>
+	<li>Встроенные функции <code>len()</code><span style="color: #222222;">,</span><code>sum()</code>,<code>min()</code>,<code>max()</code></li>
+	<li>Оператор принадлежности <code>in</code></li>
+	<li>Индексация и срезы</li>
+	<li>Конкатенация и умножение на число</li>
+	<li>Отличие списков от строк</li>
+</ol>
+
+<p><strong>Аннотация.</strong> Начинаем работать со списками.</p>
+
+<h2 style="text-align: center;">Основы работы со списками</h2>
+
+<p>Работа со списками очень сильно напоминает работу со строками, поскольку и списки, и строки содержат отдельные элементы: элементы списка могут иметь произвольный тип, а элементами строк всегда являются символы. Многое из того, что мы делали со строками, доступно и при работе со списками.</p>
+
+<h3 style="text-align: center;">Функция len()</h3>
+
+<p><strong>Длиной списка</strong> называется количество его элементов. Для того, чтобы посчитать длину списка мы используем встроенную функцию <code>len()</code> (от слова length – длина).</p>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">numbers = [2, 4, 6, 8, 10]
+languages = ['Python', 'C#', 'C++', 'Java']
+
+print(len(numbers))      # выводим длину списка numbers
+print(len(languages))    # выводим длину списка languages
+
+print(len(['apple', 'banana', 'cherry']))   # выводим длину списка, состоящего из 3 элементов</code></pre>
+
+<p>выведет:</p>
+
+<pre><code>5
+4
+3</code></pre>
+
+<h3 style="text-align: center;">Оператор принадлежности in</h3>
+
+<p>Оператор <code>in</code> позволяет проверить, содержит ли список некоторый элемент.</p>
+
+<p>Рассмотрим следующий код:</p>
+
+<pre><code class="language-python">numbers = [2, 4, 6, 8, 10]
+
+if 2 in numbers:
+    print('Список numbers содержит число 2')
+else:
+    print('Список numbers не содержит число 2')</code></pre>
+
+<p>Такой код проверяет, содержит ли список <code>numbers</code> число 2 и выводит соответствующий текст:</p>
+
+<pre><code class="language-no-highlight">Список numbers содержит число 2</code></pre>
+
+<p>Мы можем использовать оператор <code>in</code> вместе с логическим оператором <code>not</code>. Например</p>
+
+<pre><code class="language-python">numbers = [2, 4, 6, 8, 10]
+
+if 0 not in numbers:
+    print('Список numbers не содержит нулей')</code></pre>
+
+<h3 style="text-align: center;">Индексация</h3>
+
+<p>При работе со строками мы использовали <strong>индексацию</strong>, то есть обращение к конкретному символу строки по его индексу. Аналогично, можно индексировать и списки.</p>
+
+<p>Для индексации списков в Python используются квадратные скобки <code>[]</code>, в которых указывается индекс (номер) нужного элемента в списке:</p>
+
+<p>Пусть <code>numbers = [2, 4, 6, 8, 10]</code>.</p>
+
+<p>Таблица ниже, показывает как работает индексация:</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>Выражение</th>
+			<th>Результат</th>
+			<th>Пояснение</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>numbers[0]</code></td>
+			<td>2</td>
+			<td>первый элемент списка</td>
+		</tr>
+		<tr>
+			<td><code>numbers[1]</code></td>
+			<td>4</td>
+			<td>второй элемент списка</td>
+		</tr>
+		<tr>
+			<td><code>numbers[2]</code></td>
+			<td>6</td>
+			<td>третий элемент списка</td>
+		</tr>
+		<tr>
+			<td><code>numbers[3]</code></td>
+			<td>8</td>
+			<td>четвертый элемент списка</td>
+		</tr>
+		<tr>
+			<td><code>numbers[4]</code></td>
+			<td>10</td>
+			<td>пятый элемент списка</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><img alt="" height="49" src="https://ucarecdn.com/9efde934-7d44-417e-a5e1-59d6a61474ec/" width="44">    Обратите внимание первый элемент списка <code>numbers[0]</code>, а не <code>numbers[1]</code>. </p>
+
+<p>Так же, как и в строках, для нумерации с конца разрешены отрицательные индексы.</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>Выражение</th>
+			<th>Результат</th>
+			<th>Пояснение</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>numbers[-1]</code></td>
+			<td>10</td>
+			<td>пятый элемент списка</td>
+		</tr>
+		<tr>
+			<td><code>numbers[-2]</code></td>
+			<td>8</td>
+			<td>четвертый элемент списка</td>
+		</tr>
+		<tr>
+			<td><code>numbers[-3]</code></td>
+			<td>6</td>
+			<td>третий элемент списка</td>
+		</tr>
+		<tr>
+			<td><code>numbers[-4]</code></td>
+			<td>4</td>
+			<td>второй элемент списка</td>
+		</tr>
+		<tr>
+			<td><code>numbers[-5]</code></td>
+			<td>2</td>
+			<td>первый элемент списка</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>Как и в строках, попытка обратиться к элементу списка по несуществующему индексу:</p>
+
+<pre><code class="language-python">print(numbers[17])</code></pre>
+
+<p>вызовет ошибку:</p>
+
+<pre><code class="language-no-highlight">IndexError: index out of range</code></pre>
+
+<h3 style="text-align: center;">Срезы</h3>
+
+<p>Рассмотрим список <code>numbers = [2, 4, 6, 8, 10]</code>.</p>
+
+<p>С помощью среза мы можем получить несколько элементов списка, создав диапазон индексов разделенных двоеточием <code>numbers[x:y]</code>.</p>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">print(numbers[1:3])
+print(numbers[2:5])</code></pre>
+
+<p>выводит:</p>
+
+<pre><code class="language-no-highlight">[4, 6]
+[6, 8, 10]</code></pre>
+
+<p>При построении среза <code>numbers[x:y]</code> первое число – это то место, где начинается срез (<strong>включительно</strong>), а второе – это место, где заканчивается срез (<strong>невключительно</strong>). Разрезая списки, мы создаем новые списки, по сути, подсписки исходного.</p>
+
+<p>При использовании срезов со списками мы также можем опускать второй параметр в срезе <code>numbers[x:]</code> (но поставить двоеточие), тогда срез берется до конца списка. Аналогично если опустить первый параметр <code>numbers[:y]</code>, то можно взять срез от начала списка.</p>
+
+<p> <img alt="" height="48" src="https://ucarecdn.com/0d4e7e9c-3583-47de-82f1-2d752a0c5f8e/" width="43">    Срез <code>numbers[:]</code> возвращает копию исходного списка.</p>
+
+<p>Как и в строках, мы можем использовать отрицательные индексы в срезах списков.</p>
+
+<h3 style="text-align: center;">Использование срезов для изменения элементов в заданном диапазоне</h3>
+
+<p>Для изменения целого диапазона элементов списка можно использовать срезы. Например, если мы хотим перевести на русский язык названия фруктов <code>'banana', 'cherry', 'kiwi'</code>, то это можно сделать с помощью среза.</p>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">fruits = ['apple', 'apricot', 'banana', 'cherry', 'kiwi', 'lemon', 'mango']
+fruits[2:5] = ['банан', 'вишня', 'киви']
+
+print(fruits)</code></pre>
+
+<p>выводит:</p>
+
+<pre><code class="language-no-highlight">['apple', 'apricot', 'банан', 'вишня', 'киви', 'lemon', 'mango']</code></pre>
+
+<h3 style="text-align: center;">Операция конкатенации + и умножения на число *</h3>
+
+<p>Мы можем применять операторы <code>+</code> и <code>*</code> для списков подобно тому как мы это делали со строками.</p>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">print([1, 2, 3, 4] + [5, 6, 7, 8])
+print([7, 8] * 3)
+print([0] * 10)</code></pre>
+
+<p>выводит:</p>
+
+<pre><code class="language-no-highlight">[1, 2, 3, 4, 5, 6, 7, 8]
+[7, 8, 7, 8, 7, 8]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</code></pre>
+
+<p><img alt="" height="48" src="https://ucarecdn.com/0d4e7e9c-3583-47de-82f1-2d752a0c5f8e/" style="float: left;" width="43">Для генерации списков, состоящих строго из повторяющихся элементов, умножение на число — самый короткий и правильный метод.</p>
+
+<p>Мы также можем использовать расширенные операторы <code>+=</code> и <code>*=</code> при работе со списками.</p>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">a = [1, 2, 3, 4]
+b = [7, 8]
+a += b   # добавляем к списку a список b
+b *= 5   # повторяем список b 5 раз 
+
+print(a)
+print(b)</code></pre>
+
+<p>выводит:</p>
+
+<pre><code class="language-no-highlight">[1, 2, 3, 4, 7, 8]
+[7, 8, 7, 8, 7, 8, 7, 8, 7, 8]</code></pre>
+
+<h3 style="text-align: center;">Встроенные функции sum(), min(), max()</h3>
+
+<p>Встроенная функция <code>sum()</code> принимает в качестве параметра список чисел и вычисляет сумму его элементов.</p>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print('Сумма всех элементов списка =', sum(numbers))</code></pre>
+
+<p>выводит:</p>
+
+<pre><code class="language-no-highlight">Сумма всех элементов списка = 55</code></pre>
+
+<p>Встроенные функции <code>min()</code> и <code>max()</code> принимают в качестве параметра список и находят минимальный и максимальный элементы соответственно.</p>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">numbers = [3, 4, 10, 3333, 12, -7, -5, 4]
+print('Минимальный элемент =', min(numbers))
+print('Максимальный элемент =', max(numbers))</code></pre>
+
+<p>выводит:</p>
+
+<pre><code class="language-no-highlight">Минимальный элемент = -7
+Максимальный элемент = 3333</code></pre>
+
+<h2 style="text-align: center;">Отличие списков от строк</h2>
+
+<p>Несмотря на всю схожесть списков и строк, есть одно очень важное отличие: строки — <strong>неизменяемые </strong>объекты, а списки – <strong>изменяемые</strong>.</p>
+
+<p> Следующий программный код:</p>
+
+<pre><code class="language-python">s = 'abcdefg'
+s[1] = 'x'    # пытаемся изменить 2 символ (по индексу 1) строки </code></pre>
+
+<p>приводит к ошибке:</p>
+
+<pre><code class="language-no-highlight">object does not support item assignment</code></pre>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">numbers = [1, 2, 3, 4, 5, 6, 7]
+numbers[1] = 101     # изменяем 2 элемент (по индексу 1) списка
+print(numbers)</code></pre>
+
+<p>выводит:</p>
+
+<pre><code class="language-no-highlight">[1, 101, 3, 4, 5, 6, 7]</code></pre>
+
+<p><img alt="" height="47" src="https://ucarecdn.com/0d4e7e9c-3583-47de-82f1-2d752a0c5f8e/" style="float: left;" width="43"><span style="color: #a03881;"><strong>Запомни:</strong></span> изменять отдельные символы строк нельзя, однако можно изменять отдельные элементы списков. Для этого используем индексатор и оператор присваивания.</p>

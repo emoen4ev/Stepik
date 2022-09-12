@@ -1,0 +1,76 @@
+<h2 style="text-align: center;">Корни уравнения 🌶️🌶️</h2>
+
+<p>Напишите функцию <code>solve(a, b, c)</code>, которая принимает в качестве аргументов три целых числа <code>a, b, c</code> – коэффициенты квадратного уравнения $ax^2+bx+c = 0$ и возвращает его корни в порядке возрастания.</p>
+
+<p><strong>Примечание 1.</strong> С подобной <a href="https://stepik.org/lesson/265110/step/7?unit=246058" rel="noopener noreferrer nofollow">задачей </a>мы уже сталкивались.</p>
+
+<p><strong>Примечание 2.</strong> Гарантируется, что квадратное уравнение имеет корни.</p>
+
+<p><strong>Примечание 3.</strong> Следующий программный код:</p>
+
+<pre><code class="language-python">print(solve(1, -4, -5))
+print(solve(-2, 7, -5))
+print(solve(1, 2, 1))</code></pre>
+
+<p>должен выводить:</p>
+
+<pre><code class="language-python">-1.0 5.0
+1.0 2.5
+-1.0 -1.0</code></pre>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">1<br>
+			-4<br>
+			-5</td>
+			<td style="text-align: center;">-1.0 5.0</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">-2<br>
+			7<br>
+			-5</td>
+			<td style="text-align: center;">1.0 2.5</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">1<br>
+			2<br>
+			1</td>
+			<td style="text-align: center;">-1.0 -1.0</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">22<br>
+			34<br>
+			-8</td>
+			<td style="text-align: center;">-1.7529026660385376 0.20744812058399198</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">-22<br>
+			34<br>
+			-8</td>
+			<td style="text-align: center;">0.28953882669387954 1.255915718760666</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">5<br>
+			20<br>
+			20</td>
+			<td style="text-align: center;">-2.0 -2.0</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

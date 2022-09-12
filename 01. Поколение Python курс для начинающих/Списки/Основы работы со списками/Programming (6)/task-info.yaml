@@ -1,0 +1,10 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: languages = ['Chinese', 'Spanish', 'English', 'Hindi', 'Arabic', 'Bengali',
+    'Portuguese', 'Russian', 'Japanese', 'Lahnda']
+  learner_created: false
+status: Solved
+record: -1

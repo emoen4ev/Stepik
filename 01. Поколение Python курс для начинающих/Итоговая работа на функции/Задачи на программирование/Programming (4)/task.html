@@ -1,0 +1,176 @@
+<h2 style="text-align: center;">Искомый месяц</h2>
+
+<p>Напишите функцию <code>get_month(language, number)</code>, которая принимает на вход два аргумента <code>language</code> – язык <code>ru</code> или <code>en</code> и <code>number</code> – номер месяца (от 1 до 12) и возвращает название месяца на русском или английском языке.</p>
+
+<p><strong>Примечание.</strong> Следующий программный код:</p>
+
+<pre><code class="language-python">print(get_month('ru', 1))
+print(get_month('ru', 12))
+print(get_month('en', 1))
+print(get_month('en', 10))</code></pre>
+
+<p>должен выводить:</p>
+
+<pre><code class="language-no-highlight">январь
+декабрь
+january
+october</code></pre>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">ru<br>
+			1</td>
+			<td style="text-align: center;">январь</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">ru<br>
+			2</td>
+			<td style="text-align: center;">февраль</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">ru<br>
+			3</td>
+			<td style="text-align: center;">март</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">ru<br>
+			4</td>
+			<td style="text-align: center;">апрель</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">ru<br>
+			5</td>
+			<td style="text-align: center;">май</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">ru<br>
+			6</td>
+			<td style="text-align: center;">июнь</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">ru<br>
+			7</td>
+			<td style="text-align: center;">июль</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">ru<br>
+			8</td>
+			<td style="text-align: center;">август</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">ru<br>
+			9</td>
+			<td style="text-align: center;">сентябрь</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">ru<br>
+			10</td>
+			<td style="text-align: center;">октябрь</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">11</td>
+			<td style="text-align: center;">ru<br>
+			11</td>
+			<td style="text-align: center;">ноябрь</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">12</td>
+			<td style="text-align: center;">ru<br>
+			12</td>
+			<td style="text-align: center;">декабрь</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">13</td>
+			<td style="text-align: center;">en<br>
+			1</td>
+			<td style="text-align: center;">january</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">14</td>
+			<td style="text-align: center;">en<br>
+			2</td>
+			<td style="text-align: center;">february</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">15</td>
+			<td style="text-align: center;">en<br>
+			3</td>
+			<td style="text-align: center;">march</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">16</td>
+			<td style="text-align: center;">en<br>
+			4</td>
+			<td style="text-align: center;">april</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">17</td>
+			<td style="text-align: center;">en<br>
+			5</td>
+			<td style="text-align: center;">may</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">18</td>
+			<td style="text-align: center;">en<br>
+			6</td>
+			<td style="text-align: center;">june</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">19</td>
+			<td style="text-align: center;">en<br>
+			7</td>
+			<td style="text-align: center;">july</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">20</td>
+			<td style="text-align: center;">en<br>
+			8</td>
+			<td style="text-align: center;">august</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">21</td>
+			<td style="text-align: center;">en<br>
+			9</td>
+			<td style="text-align: center;">september</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">22</td>
+			<td style="text-align: center;">en<br>
+			10</td>
+			<td style="text-align: center;">october</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">23</td>
+			<td style="text-align: center;">en<br>
+			11</td>
+			<td style="text-align: center;">november</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">24</td>
+			<td style="text-align: center;">en<br>
+			12</td>
+			<td style="text-align: center;">december</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

@@ -1,0 +1,71 @@
+<h3 style="text-align: center;">Функция shuffle()</h3>
+
+<p>Функция <code>shuffle()</code> принимает список в качестве обязательного аргумента и перемешивает его случайным образом.</p>
+
+<p>Следующий код перемешивает список <code>numbers</code> случайным образом, а затем выводит его содержимое:</p>
+
+<pre><code class="language-python">import random
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+random.shuffle(numbers)
+print(numbers)</code></pre>
+
+<p>Результатом работы такого кода может быть:</p>
+
+<pre><code class="language-no-highlight">[4, 7, 8, 1, 2, 3, 6, 5]</code></pre>
+
+<h3 style="text-align: center;">Функция choice()</h3>
+
+<p>Функция <code>choice()</code> принимает список (строку) в качестве обязательного аргумента и возвращает <strong>один</strong> случайный элемент из переданного списка (строки).</p>
+
+<p>Следующий код выводит по одному случайному элементу из строки <code>'BEEGEEK'</code> и списков <code>[1, 2, 3, 4], ['a', 'b', 'c', 'd']</code>:</p>
+
+<pre><code class="language-python">import random
+
+print(random.choice('BEEGEEK'))
+print(random.choice([1, 2, 3, 4]))
+print(random.choice(['a', 'b', 'c', 'd']))</code></pre>
+
+<p>Результатом работы такого кода может быть:</p>
+
+<pre><code class="language-no-highlight">E
+3
+c</code></pre>
+
+<h3 style="text-align: center;">Функция sample()</h3>
+
+<p>Функция <code>sample()</code> принимает два обязательных аргумента: список (строку) и количество случайных элементов, а возвращает список случайных элементов в указанном количестве.</p>
+
+<p>Результатом работы кода:</p>
+
+<pre><code class="language-python">import random
+ 
+numbers = [2, 5, 8, 9, 12]
+
+print(random.sample(numbers, 1))
+print(random.sample(numbers, 2))
+print(random.sample(numbers, 3))
+print(random.sample(numbers, 5))</code></pre>
+
+<p>может быть:</p>
+
+<pre><code class="language-no-highlight">[9]
+[12, 5]
+[9, 2, 8]
+[12, 8, 9, 5, 2]</code></pre>
+
+<p>Количество случайных элементов не должно превышать длину начального списка (строки). Следующий код:</p>
+
+<pre><code class="language-python">import random
+ 
+numbers = [2, 5, 8, 9, 12]
+
+print(random.sample(numbers, 6))</code></pre>
+
+<p>приведет к ошибке:</p>
+
+<pre><code>ValueError: Sample larger than population or is negative</code></pre>
+
+<h2 style="text-align: center;">Примечания</h2>
+
+<p><strong>Примечание.</strong> Подробнее о модуле <code>random</code> можно почитать <a href="https://docs.python.org/3/library/random.html#" rel="noopener noreferrer nofollow">тут</a>.</p>

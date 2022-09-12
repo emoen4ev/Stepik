@@ -1,0 +1,11 @@
+type: theory
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  This is a table task. You can use this editor as a playground
+
+  learner_created: false
+status: Solved
+record: -1
+post_submission_on_open: false

@@ -1,0 +1,35 @@
+<h2 style="text-align: center;">Асимптотическое приближение</h2>
+
+<p>На вход программе подается натуральное число $n$. Напишите программу, которая вычисляет значение выражения<span class="math-tex">\[\left(1+\dfrac12 + \dfrac13 + \ldots + \dfrac{1}{n} \right) - \ln (n).\]</span></p>
+
+<p><strong>Примечание.</strong> Для вычисления натурального логарифма воспользуйтесь функцией <code>log(n)</code>, которая находится в модуле <code>math</code>.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">0.6263831609742079</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">1.0</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">100</td>
+			<td style="text-align: center;">0.5822073316515288</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">10</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">0.6263831609742079</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1.0</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">100</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">0.5822073316515288</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

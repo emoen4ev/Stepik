@@ -1,0 +1,102 @@
+<h2 style="text-align: center;">Good password 🌶️</h2>
+
+<p>Напишите функцию <code>is_password_good(password)</code>, которая принимает в качестве аргумента строковое значение пароля <code>password</code> и возвращает значение <code>True</code> если пароль является надежным и <code>False</code> в противном случае.</p>
+
+<p>Пароль является надежным если:</p>
+
+<ul>
+	<li>его длина не менее $8$ символов; </li>
+	<li>он содержит как минимум одну заглавную букву (верхний регистр); </li>
+	<li>он содержит как минимум одну строчную букву (нижний регистр);</li>
+	<li>он содержит хотя бы одну цифру.</li>
+</ul>
+
+<p><strong> Примечание.</strong> Следующий программный код:</p>
+
+<pre><code class="language-python">print(is_password_good('aabbCC11OP'))
+print(is_password_good('abC1pu'))</code></pre>
+
+<p>должен выводить:</p>
+
+<pre><code class="language-no-highlight">True
+False</code></pre>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">aaAA12qqp</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">aa13AN</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">aaaaaaaaaaaaa</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">AAAAAAAAAAA</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">734638763978653</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">AAPPqq9S</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">AABBccssss</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">AA23423423</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">dsas233232232</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">99yyPPgg</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">11</td>
+			<td style="text-align: center;">99yyPPg</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">12</td>
+			<td style="text-align: center;">()+_№;%:</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">13</td>
+			<td style="text-align: center;">aaaaaaA@</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

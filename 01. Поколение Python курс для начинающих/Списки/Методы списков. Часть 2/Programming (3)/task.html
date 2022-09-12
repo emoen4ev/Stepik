@@ -1,0 +1,88 @@
+<h2 style="text-align: center;">Взлом Братства Стали 🌶️</h2>
+
+<p>Немалоизвестный в пустошах Мохаве Курьер забрел в Хидден-Вэли – секретный бункер Братства Стали, и любезно соглашается помочь им в решении их проблем. Одной из такой проблем являлся странный компьютерный вирус, который проявлялся в виде появления комментариев к программам на терминалах Братства Стали. Известно, что программисты Братства никогда не оставляют комментарии к коду, и пишут программы на Python, поэтому удаление всех этих комментариев никак не навредит им. Помогите писцу Ибсену удалить все комментарии из программы.<br>
+<br>
+<strong>Формат входных данных</strong><br>
+На первой строке вводится символ решётки и сразу же натуральное число $n$ — количество строк в программе, не считая первой. Далее следует $n$ строк кода.<br>
+<br>
+<strong>Формат выходных данных</strong><br>
+Нужно вывести те же строки, но удалить комментарии и символы пустого пространства в конце строк. Пустую строку вместо первой строки ввода выводить не надо.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">#12<br>
+			print("Введите своё имя")<br>
+			name = input()<br>
+			print("Введите пароль, если имеется")    # ахахахах вам не поймать меня<br>
+			password = input()<br>
+			if password == "hoover":<br>
+			    print("Здравствуйте, рыцарь", name)         #долой Макнамару<br>
+			elif password == "noncr":<br>
+			    print("Здравствуйте, паладин", name)<br>
+			elif password == "gelios":<br>
+			    print("Здравствуйте, старейшина", name)          #Элайджа вперёд<br>
+			else:<br>
+			    print("Здравствуйте, послушник", name)</td>
+			<td style="text-align: center;">print("Введите своё имя")<br>
+			name = input()<br>
+			print("Введите пароль, если имеется")<br>
+			password = input()<br>
+			if password == "hoover":<br>
+			    print("Здравствуйте, рыцарь", name)<br>
+			elif password == "noncr":<br>
+			    print("Здравствуйте, паладин", name)<br>
+			elif password == "gelios":<br>
+			    print("Здравствуйте, старейшина", name)<br>
+			else:<br>
+			    print("Здравствуйте, послушник", name)</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">#6<br>
+			kdeaefk                           #tndjwd<br>
+			awk()()!!!                    #ttttt<br>
+			fowk<br>
+			ttttttttt<br>
+			pewrjwermwk #jelwee<br>
+			kekekekekekekekekekeke</td>
+			<td style="text-align: center;">kdeaefk<br>
+			awk()()!!!<br>
+			fowk<br>
+			ttttttttt<br>
+			pewrjwermwk<br>
+			kekekekekekekekekekeke</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">#1<br>
+			privet(@*)(!$&amp;(%(@)%                           #  wewjf wfmweo qikfwif</td>
+			<td style="text-align: center;">privet(@*)(!$&amp;(%(@)%</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">#5<br>
+			sampleefnwofewjiefw<br>
+			wjiefweofiwefinofewnniofweniobiewfibuewf<br>
+			wiognweifninoewf wefionw oifn oewniffeoiwn wniewfonifewnio<br>
+			fewkfnweo oiwefnwfiwni oinwefinniwfineiwno<br>
+			kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</td>
+			<td style="text-align: center;">sampleefnwofewjiefw<br>
+			wjiefweofiwefinofewnniofweniobiewfibuewf<br>
+			wiognweifninoewf wefionw oifn oewniffeoiwn wniewfonifewnio<br>
+			fewkfnweo oiwefnwfiwni oinwefinniwfineiwno<br>
+			kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">#12<br>print(&quot;Введите своё имя&quot;)<br>name = input()<br>print(&quot;Введите пароль, если имеется&quot;)    # ахахахах вам не поймать меня<br>password = input()<br>if password == &quot;hoover&quot;:<br>    print(&quot;Здравствуйте, рыцарь&quot;, name)         #долой Макнамару<br>elif password == &quot;noncr&quot;:<br>    print(&quot;Здравствуйте, паладин&quot;, name)<br>elif password == &quot;gelios&quot;:<br>    print(&quot;Здравствуйте, старейшина&quot;, name)          #Элайджа вперёд<br>else:<br>    print(&quot;Здравствуйте, послушник&quot;, name)</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">print(&quot;Введите своё имя&quot;)<br>name = input()<br>print(&quot;Введите пароль, если имеется&quot;)<br>password = input()<br>if password == &quot;hoover&quot;:<br>    print(&quot;Здравствуйте, рыцарь&quot;, name)<br>elif password == &quot;noncr&quot;:<br>    print(&quot;Здравствуйте, паладин&quot;, name)<br>elif password == &quot;gelios&quot;:<br>    print(&quot;Здравствуйте, старейшина&quot;, name)<br>else:<br>    print(&quot;Здравствуйте, послушник&quot;, name)</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

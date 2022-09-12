@@ -1,0 +1,13 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: |-
+    n = int(input())
+    while n > 0:
+        n %= 10
+    print(n)
+  learner_created: false
+status: Solved
+record: -1

@@ -1,0 +1,168 @@
+<h2 style="text-align: center;">Пересечение отрезков 🌶️🌶️</h2>
+
+<p>На числовой прямой даны два отрезка: $[a_1; \,  b_1]$ и $[a_2; \, b_2]$. Напишите программу, которая находит их пересечение.</p>
+
+<p>Пересечением двух отрезков может быть:</p>
+
+<ul>
+	<li>отрезок;</li>
+	<li>точка;</li>
+	<li>пустое множество.</li>
+</ul>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подаются 4 целых числа $a_1, \, b_1, \, a_2, \, b_2$, каждое на отдельной строке. Гарантируется, что $a_1 &lt; b_1$​ и $a_2 &lt; b_2$​.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести на экран границы отрезка, являющегося пересечением, либо общую точку, либо текст «пустое множество».</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">1<br>
+			3<br>
+			2<br>
+			4</td>
+			<td style="text-align: center;">2 3</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">1<br>
+			2<br>
+			3<br>
+			4</td>
+			<td style="text-align: center;">пустое множество</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">5<br>
+			6<br>
+			6<br>
+			8</td>
+			<td style="text-align: center;">6</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">-150<br>
+			-120<br>
+			-100<br>
+			-50</td>
+			<td style="text-align: center;">пустое множество</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">-150<br>
+			-100<br>
+			-100<br>
+			-50</td>
+			<td style="text-align: center;">-100</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">-150<br>
+			-101<br>
+			-100<br>
+			-50</td>
+			<td style="text-align: center;">пустое множество</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">-150<br>
+			-90<br>
+			-100<br>
+			-50</td>
+			<td style="text-align: center;">-100 -90</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">-150<br>
+			-51<br>
+			-100<br>
+			-50</td>
+			<td style="text-align: center;">-100 -51</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">-150<br>
+			-50<br>
+			-100<br>
+			-50</td>
+			<td style="text-align: center;">-100 -50</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">-150<br>
+			-49<br>
+			-100<br>
+			-50</td>
+			<td style="text-align: center;">-100 -50</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">11</td>
+			<td style="text-align: center;">-150<br>
+			100<br>
+			-100<br>
+			-50</td>
+			<td style="text-align: center;">-100 -50</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">12</td>
+			<td style="text-align: center;">-100<br>
+			-90<br>
+			-100<br>
+			-50</td>
+			<td style="text-align: center;">-100 -90</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">13</td>
+			<td style="text-align: center;">-80<br>
+			-60<br>
+			-100<br>
+			-50</td>
+			<td style="text-align: center;">-80 -60</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">14</td>
+			<td style="text-align: center;">-80<br>
+			-50<br>
+			-100<br>
+			-50</td>
+			<td style="text-align: center;">-80 -50</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">15</td>
+			<td style="text-align: center;">-80<br>
+			30<br>
+			-100<br>
+			-50</td>
+			<td style="text-align: center;">-80 -50</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">16</td>
+			<td style="text-align: center;">-50<br>
+			40<br>
+			-100<br>
+			-50</td>
+			<td style="text-align: center;">-50</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">17</td>
+			<td style="text-align: center;">10<br>
+			20<br>
+			-100<br>
+			-50</td>
+			<td style="text-align: center;">пустое множество</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1<br>3<br>2<br>4</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">2 3</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1<br>2<br>3<br>4</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">пустое множество</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">5<br>6<br>6<br>8</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">6</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

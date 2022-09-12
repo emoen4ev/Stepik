@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: уменьшают дублирование кода
+- text: увеличивают скорость разработки
+- text: улучшают возможности по тестированию кода
+- text: упрощают программный код
+- text: способствуют совместной работе в команде
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz
+local_check: false

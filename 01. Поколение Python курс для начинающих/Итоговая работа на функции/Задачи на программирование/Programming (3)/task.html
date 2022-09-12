@@ -1,0 +1,235 @@
+<h2 style="text-align: center;"> Число словами 🌶️</h2>
+
+<p>Напишите функцию <code>number_to_words(num)</code>, которая принимает в качестве аргумента натуральное число <code>num</code> и возвращает его словесное описание на русском языке.</p>
+
+<p><strong>Примечание 1.</strong> Считайте, что число $1 \le num \le 99$.</p>
+
+<p><strong>Примечание 2.</strong> Следующий программный код:</p>
+
+<pre><code class="language-python">print(number_to_words(7))
+print(number_to_words(85))</code></pre>
+
+<p>должен выводить:</p>
+
+<pre><code class="language-no-highlight">семь
+восемьдесят пять</code></pre>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">один</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">два</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">три</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">четыре</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">пять</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">шесть</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">семь</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">восемь</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">девять</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">десять</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">11</td>
+			<td style="text-align: center;">11</td>
+			<td style="text-align: center;">одиннадцать</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">12</td>
+			<td style="text-align: center;">12</td>
+			<td style="text-align: center;">двенадцать</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">13</td>
+			<td style="text-align: center;">13</td>
+			<td style="text-align: center;">тринадцать</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">14</td>
+			<td style="text-align: center;">14</td>
+			<td style="text-align: center;">четырнадцать</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">15</td>
+			<td style="text-align: center;">15</td>
+			<td style="text-align: center;">пятнадцать</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">16</td>
+			<td style="text-align: center;">16</td>
+			<td style="text-align: center;">шестнадцать</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">17</td>
+			<td style="text-align: center;">17</td>
+			<td style="text-align: center;">семнадцать</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">18</td>
+			<td style="text-align: center;">18</td>
+			<td style="text-align: center;">восемнадцать</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">19</td>
+			<td style="text-align: center;">19</td>
+			<td style="text-align: center;">девятнадцать</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">20</td>
+			<td style="text-align: center;">20</td>
+			<td style="text-align: center;">двадцать</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">21</td>
+			<td style="text-align: center;">25</td>
+			<td style="text-align: center;">двадцать пять</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">22</td>
+			<td style="text-align: center;">29</td>
+			<td style="text-align: center;">двадцать девять</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">23</td>
+			<td style="text-align: center;">30</td>
+			<td style="text-align: center;">тридцать</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">24</td>
+			<td style="text-align: center;">34</td>
+			<td style="text-align: center;">тридцать четыре</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">25</td>
+			<td style="text-align: center;">40</td>
+			<td style="text-align: center;">сорок</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">26</td>
+			<td style="text-align: center;">47</td>
+			<td style="text-align: center;">сорок семь</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">27</td>
+			<td style="text-align: center;">50</td>
+			<td style="text-align: center;">пятьдесят</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">28</td>
+			<td style="text-align: center;">53</td>
+			<td style="text-align: center;">пятьдесят три</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">29</td>
+			<td style="text-align: center;">58</td>
+			<td style="text-align: center;">пятьдесят восемь</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">30</td>
+			<td style="text-align: center;">60</td>
+			<td style="text-align: center;">шестьдесят</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">31</td>
+			<td style="text-align: center;">61</td>
+			<td style="text-align: center;">шестьдесят один</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">32</td>
+			<td style="text-align: center;">69</td>
+			<td style="text-align: center;">шестьдесят девять</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">33</td>
+			<td style="text-align: center;">70</td>
+			<td style="text-align: center;">семьдесят</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">34</td>
+			<td style="text-align: center;">75</td>
+			<td style="text-align: center;">семьдесят пять</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">35</td>
+			<td style="text-align: center;">78</td>
+			<td style="text-align: center;">семьдесят восемь</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">36</td>
+			<td style="text-align: center;">80</td>
+			<td style="text-align: center;">восемьдесят</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">37</td>
+			<td style="text-align: center;">87</td>
+			<td style="text-align: center;">восемьдесят семь</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">38</td>
+			<td style="text-align: center;">90</td>
+			<td style="text-align: center;">девяносто</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">39</td>
+			<td style="text-align: center;">93</td>
+			<td style="text-align: center;">девяносто три</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">40</td>
+			<td style="text-align: center;">98</td>
+			<td style="text-align: center;">девяносто восемь</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">41</td>
+			<td style="text-align: center;">99</td>
+			<td style="text-align: center;">девяносто девять</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

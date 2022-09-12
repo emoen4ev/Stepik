@@ -1,0 +1,21 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: <code>print("Remember not to get too close to stars", end=="")</code>
+- text: <code>print("Honey, what's your hurry", end='?')</code>
+- text: <code>print("Told you not to worry", "But maybe that's a lie", sep=' :) ')</code>
+- text: <code>print("Remember not to get too close to stars", "They're never gonna
+    give you love like ours", sepp=" ")</code>
+- text: <code>print("The world's a little blurry", "Or maybe it's my eyes", end='!!!',
+    sep=' :) ')</code>
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz
+local_check: false

@@ -1,0 +1,15 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: |-
+    # объявление функции
+    def draw_triangle():
+        pass
+
+    # основная программа
+    draw_triangle()  # вызов функции
+  learner_created: false
+status: Solved
+record: -1

@@ -1,0 +1,18 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: |-
+    # объявление функции
+    def print_digit_sum(num):
+        pass
+
+    # считываем данные
+    n = int(input())
+
+    # вызываем функцию
+    print_digit_sum(n)
+  learner_created: false
+status: Solved
+record: -1

@@ -1,0 +1,190 @@
+<h1> </h1>
+
+<h1>Тема урока: функции с параметрами</h1>
+
+<ol>
+	<li>Функции с параметрами</li>
+	<li>Область видимости параметрической переменной</li>
+	<li>Параметры по умолчанию</li>
+	<li>Решение задач</li>
+</ol>
+
+<p><strong>Аннотация.</strong> Создание пользовательских функций с параметрами. </p>
+
+<h2 style="text-align: center;">Функции с параметрами</h2>
+
+<p>В предыдущем уроке мы определили функцию <code>draw_box()</code>, которая выводит звездный прямоугольник с размерами $5 \times 7$:</p>
+
+<pre><code class="language-python">def draw_box():
+    for i in range(5):
+        print('*' * 7)</code></pre>
+
+<p>Было бы намного удобнее, если бы функция <code>draw_box()</code> выводила прямоугольник с произвольными размерами. И действительно, функции могут принимать входные параметры, что делает их более гибкими.</p>
+
+<p>Функции с параметрами объявляются так же как функции без параметров, только с указанием в скобках:</p>
+
+<pre><code class="language-python">def название_функции(параметры):
+    блок кода</code></pre>
+
+<p style="text-align: center;"><img alt="" height="135" src="https://ucarecdn.com/eb433369-43e4-46c0-a77d-cc2836431885/" width="463"></p>
+
+<p>Давайте перепишем предыдущую версию функции <code>draw_box()</code> так, чтобы она принимала параметры, задающие высоту и ширину прямоугольника:</p>
+
+<pre><code class="language-python">def draw_box(height, width):    # функция принимает два параметра
+    for i in range(height):
+        print('*' * width)</code></pre>
+
+<p>Теперь наша функция <code>draw_box()</code> принимает два целочисленных параметра <code>height</code> – высота прямоугольника и <code>width</code> – ширина прямоугольника, и для ее вызова нам нужно обязательно их указать.</p>
+
+<p>Чтобы вывести звездный прямоугольник размерами 5 на 7 мы пишем код:</p>
+
+<pre><code class="language-python">draw_box(5, 7)</code></pre>
+
+<p>Результатом такого вызова функции <code>draw_box(5, 7)</code> будет:</p>
+
+<pre><code class="language-no-highlight">*******
+*******
+*******
+*******
+*******</code></pre>
+
+<p>Чтобы вывести прямоугольник размерами 10 на 15, мы пишем код:</p>
+
+<pre><code class="language-python">draw_box(10, 15)</code></pre>
+
+<p>Результатом такого вызова функции <code>draw_box(10, 15)</code> будет:</p>
+
+<pre><code class="language-no-highlight">***************
+***************
+***************
+***************
+***************
+***************
+***************
+***************
+***************
+***************</code></pre>
+
+<p>Теперь с помощью нашей новой версии функции <code>draw_box()</code> можем в одной программе выводить прямоугольники разных размеров. Следующий программный код:</p>
+
+<pre><code class="language-python">draw_box(3, 3)
+print()
+draw_box(5, 5)
+print()
+draw_box(4, 10)</code></pre>
+
+<p>выведет:</p>
+
+<pre><code class="language-no-highlight">***
+***
+***
+
+*****
+*****
+*****
+*****
+*****
+
+**********
+**********
+**********
+**********</code></pre>
+
+<p>На место параметров мы можем подставлять не только целочисленные константы, но и значения переменных. Следующий программный код:</p>
+
+<pre><code class="language-python">n = 3
+m = 9
+draw_box(n, m)</code></pre>
+
+<p>выведет:</p>
+
+<pre><code class="language-no-highlight">*********
+*********
+*********</code></pre>
+
+<h2 style="text-align: center;">Еще примеры</h2>
+
+<p>Напишем функцию <code>print_hello(n)</code>, которая принимает одно натуральное число $n$ и печатает слово <code>Hello</code> ровно $n$ раз.</p>
+
+<pre><code class="language-python">def print_hello(n):
+    print('Hello' * n)</code></pre>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">print_hello(3)
+print_hello(5)
+times = 2
+print_hello(times)</code></pre>
+
+<p>выведет:</p>
+
+<pre><code class="language-no-highlight">HelloHelloHello
+HelloHelloHelloHelloHello
+HelloHello</code></pre>
+
+<p>Функцию <code>print_hello()</code> можно сделать более гибкой, если передавать в нее еще один параметр – текст для вывода:</p>
+
+<pre><code class="language-python">def print_text(txt, n):
+    print(txt * n)</code></pre>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-no-highlight">print_text('Hello', 5)
+print_text('A', 10)</code></pre>
+
+<p>выведет:</p>
+
+<pre><code class="language-no-highlight">HelloHelloHelloHelloHello
+AAAAAAAAAA</code></pre>
+
+<h2 style="text-align: center;">Параметры VS аргументы</h2>
+
+<p><strong>Аргумент</strong> – это любая порция данных, которая передается в функцию, когда функция вызывается. <strong>Параметр</strong> – это переменная, которая получает аргумент, переданный в функцию.</p>
+
+<p>Для функции <code>draw_box(height, width)</code>:</p>
+
+<pre><code class="language-python">​def draw_box(height, width):
+    for i in range(height):
+        print('*' * width)</code></pre>
+
+<p>параметрами являются переменные <code>height</code> и <code>width</code>.</p>
+
+<p>В момент вызова функции <code>draw_box(height, width)</code>:</p>
+
+<pre><code class="language-python">height = 10
+draw_box(height, 9)</code></pre>
+
+<p>аргументами являются <code>height</code> и <code>9</code>.</p>
+
+<p><img alt="" height="46" src="https://ucarecdn.com/d81e5ef8-1ca6-46c0-83aa-5805225cb094/" width="42">    Параметры функций часто называют <strong>параметрическими переменными</strong>.</p>
+
+<h2 style="text-align: center;">Внесение изменений в параметры</h2>
+
+<p>Когда аргумент передается в функцию, параметрическая переменная функции будет ссылаться на значение этого аргумента. Однако любые изменения, которые вносятся в параметрическую переменную, не будут влиять на аргумент.</p>
+
+<p>Cледующий программный код:</p>
+
+<pre><code class="language-python">def draw_box(height, width):
+    height = 2
+    width = 10
+    for i in range(height):
+        print('*' * width)
+
+n = 5
+m = 7
+draw_box(n, m)
+print(n, m)</code></pre>
+
+<p>выведет:</p>
+
+<pre><code class="language-no-highlight">**********
+**********
+5 7</code></pre>
+
+<p>В теле функции вносятся изменения в значения параметрических переменных <code>height</code> и <code>width</code>, однако это никак не повлияло на значение переменных <code>n</code> и <code>m</code> из основной программы, которые передавались в качестве аргументов в функцию <code>draw_box()</code>.</p>
+
+<h2 style="text-align: center;">Примечание</h2>
+
+<p><strong>Примечание 1.</strong> Функции в Python могут принимать сколько угодно параметров.</p>
+
+<p><strong>Примечание 2.</strong> Иногда вместо параметров и аргументов говорят о <strong>формальных параметрах</strong> и <strong>фактических параметрах</strong>. Формальные параметры – переменные, которые мы пишем при описании функции. Фактические параметры – то, что реально подставляется при вызове функции.</p>

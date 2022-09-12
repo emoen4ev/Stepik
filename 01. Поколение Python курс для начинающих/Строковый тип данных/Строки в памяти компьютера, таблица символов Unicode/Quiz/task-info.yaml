@@ -1,0 +1,17 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: Произойдет ошибка TypeError
+- text: 102
+- text: 102 111 111
+- text: 324
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+local_check: false

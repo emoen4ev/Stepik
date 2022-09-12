@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: режим
+- text: область видимости
+- text: область объявлений
+- text: область действия
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz
+local_check: false

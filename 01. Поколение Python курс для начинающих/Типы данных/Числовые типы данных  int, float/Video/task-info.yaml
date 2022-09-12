@@ -1,0 +1,18 @@
+type: video
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+thumbnail: https://ucarecdn.com/eff1bf16-0c04-463b-956b-6e43494b2249/
+sources:
+- src: https://ucarecdn.com/ec39edd5-1ce7-4700-a3c1-4a67ee7407a1/99877_240_7ff1e206863649a21898cd16ee2e138b.mp4
+  res: 240
+  type: video/mp4
+  label: 240p
+currentTime: 0
+status: Solved
+record: -1
+post_submission_on_open: true

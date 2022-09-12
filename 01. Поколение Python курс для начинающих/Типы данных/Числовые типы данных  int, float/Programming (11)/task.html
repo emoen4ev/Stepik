@@ -1,0 +1,70 @@
+<h2 style="text-align: center;">Манхэттенское расстояние</h2>
+
+<p>Прогуливаясь по Манхэттену, вы не можете попасть из точки А в точку Б по кратчайшему пути. Если только вы не умеете проходить сквозь стены, вам обязательно придется идти вдоль его параллельно-перпендикулярных улиц.</p>
+
+<p>На плоскости <a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D1%81%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B8%D1%85_%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%D0%BE%D0%B2" rel="noopener noreferrer nofollow">манхэттенское расстояние</a> между двумя точками $(p_{1}; \, p_{2})$ и $(q_{1}; \, q_{2})$ определяется так $|p_{1}-q_{1}|+|p_{2}-q_{2}|$.</p>
+
+<p>Напишите программу определяющую манхэттенское расстояние между двумя точками, координаты которых заданы.</p>
+
+<p style="text-align: center;"><img alt="" height="263" src="https://ucarecdn.com/d3720269-108b-48fb-9ca5-f24af59fb358/" width="403"></p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подается четыре целых числа, каждое на отдельной строке – $p_{1}, \, p_{2}, \, q_{1}, \, q_{2}$.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести одно число – манхэттенское расстояние.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">10<br>
+			15<br>
+			21<br>
+			13</td>
+			<td style="text-align: center;">13</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">10<br>
+			3<br>
+			10<br>
+			7</td>
+			<td style="text-align: center;">4</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">3<br>
+			9<br>
+			27<br>
+			9</td>
+			<td style="text-align: center;">24</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">0<br>
+			3<br>
+			7<br>
+			19</td>
+			<td style="text-align: center;">23</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">100<br>
+			500<br>
+			1000<br>
+			3750</td>
+			<td style="text-align: center;">4150</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">10<br>15<br>21<br>13</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">13</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

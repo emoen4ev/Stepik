@@ -1,0 +1,84 @@
+<h2 style="text-align: center;">Палиндром 🌶️</h2>
+
+<p>Напишите функцию <code>is_palindrome(text)</code>, которая принимает в качестве аргумента строку <code>text</code> и возвращает значение <code>True</code> если указанный текст является палиндромом и <code>False</code> в противном случае.</p>
+
+<p><strong>Примечание 1.</strong> Палиндром – это строка, которая читается одинаково в обоих направлениях</p>
+
+<p><strong>Примечание 2.</strong> При проверке считайте большие и маленькие буквы одинаковыми, а также игнорируйте пробелы, а также символы <code>, . ! ? -</code>.</p>
+
+<p><strong>Примечание 3.</strong> Следующий программный код:</p>
+
+<pre><code class="language-python">print(is_palindrome('А роза упала на лапу Азора.'))
+print(is_palindrome('Gabler Ruby - burrel bag!'))
+print(is_palindrome('BEEGEEK'))</code></pre>
+
+<p>должен выводить:</p>
+
+<pre><code class="language-no-highlight">True
+True
+False</code></pre>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">Standart - smallest, sell Amstrad nats.</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">Zoo belt to be Russia, is sure bottle booz.</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">Evil fit some kill like me, kill like most, if live.</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">Do me?.. Kill I victim? Must summit civil like mod.</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">Карман, жена, но Какашкин - вор! О, Ковалева... Вела во коровник. Ша! Как она нежна! рак...</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">Зело полз Антипарх то вино пить - тип он и вот храпит - на зло полез</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">Марс близ Овна. На базар генерал в ларе негра за банан возил б. Срам!</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">Тер жен, а нес токмо радение о бодром мордобое, и недаром кот сена не жрет.</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">Тер жен, а нес токмо недаром кот сена не жрет.</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">sjdflksjflksdjflsdjk sdlfhsdjfE#R#$$#R !!!!! sdjfnsdjkfnsd kjcvadsk</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">Standart - smallest, sell Amstrad nats.</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">True</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

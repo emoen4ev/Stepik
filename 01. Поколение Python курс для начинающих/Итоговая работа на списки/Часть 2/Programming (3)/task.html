@@ -1,0 +1,113 @@
+<h2 style="text-align: center;">Валидный номер 🌶️🌶️</h2>
+
+<p>На вход программе подается строка текста. Напишите программу, которая определяет является ли введенная строка корректным телефонным номером. Строка текста является корректным телефонным номером если она имеет формат:</p>
+
+<ul>
+	<li><code>abc-def-hijk</code> или</li>
+	<li><code>7-abc-def-hijk</code></li>
+</ul>
+
+<p>где <code>a, b, c, d, e, f, h, i, j, k</code> – цифры от 0 до 9.</p>
+
+<p><strong>Формат входных данных </strong><br>
+На вход программе подается строка текста.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести «YES» если строка является корректным телефонным номером и «NO» в противном случае.</p>
+
+<p><strong>Примечание.</strong> Телефонный номер должен содержать только цифры и символ <code>-</code>, а количество цифр в каждой группе должны быть правильным.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">7-301-447-5820</td>
+			<td style="text-align: center;">YES</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">301-447-5820</td>
+			<td style="text-align: center;">YES</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">301-4477-5820</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">3X1-447-5820</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">3014475820</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">8-301-447-5820</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">77-301-447-5820</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">311-4A7-5820</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">311-487-582B</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">3A1-4M7-582B</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">11</td>
+			<td style="text-align: center;">7-3A1-447-5820</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">12</td>
+			<td style="text-align: center;">7-301-4BB-5820</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">13</td>
+			<td style="text-align: center;">7-301-447-5AS0</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">14</td>
+			<td style="text-align: center;">7-abc-abc-abc</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">15</td>
+			<td style="text-align: center;">abc-abc-abc</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">16</td>
+			<td style="text-align: center;">7-123-456-c-7890</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">7-301-447-5820</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">YES</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">301-447-5820</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">YES</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">301-4477-5820</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">NO</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">3X1-447-5820</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">NO</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">3014475820</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">NO</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

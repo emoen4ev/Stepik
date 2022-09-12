@@ -1,0 +1,21 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: пустая последовательность
+- text: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
+- text: 0, 2, 4, 6, 8, 10
+- text: 2, 4, 6, 8, 10
+- text: 10, 8, 6, 4, 2
+- text: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0
+- text: 10, 8, 6, 4, 2, 0
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz
+local_check: false

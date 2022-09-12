@@ -1,0 +1,396 @@
+<h2 style="text-align: center;">Следуй правилам</h2>
+
+<p>На вход программе подается натуральное число $n$. Напишите программу, которая выводит числа от $1$ до $n$ включительно за исключением:</p>
+
+<ul>
+	<li>чисел от $5$ до $9$ включительно;</li>
+	<li>чисел от $17$ до $37$ включительно;</li>
+	<li>чисел от $78$ до $87$ включительно.</li>
+</ul>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подается одно натуральное число $n$.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести числа в соответствии с условием задачи, каждое на отдельной строке.</p>
+
+<p><strong>Примечание.</strong> Используйте оператор <code>continue</code> .</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">1<br>
+			2<br>
+			3<br>
+			4<br>
+			10</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">20</td>
+			<td style="text-align: center;">1<br>
+			2<br>
+			3<br>
+			4<br>
+			10<br>
+			11<br>
+			12<br>
+			13<br>
+			14<br>
+			15<br>
+			16</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">1</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">1<br>
+			2<br>
+			3<br>
+			4</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">100</td>
+			<td style="text-align: center;">1<br>
+			2<br>
+			3<br>
+			4<br>
+			10<br>
+			11<br>
+			12<br>
+			13<br>
+			14<br>
+			15<br>
+			16<br>
+			38<br>
+			39<br>
+			40<br>
+			41<br>
+			42<br>
+			43<br>
+			44<br>
+			45<br>
+			46<br>
+			47<br>
+			48<br>
+			49<br>
+			50<br>
+			51<br>
+			52<br>
+			53<br>
+			54<br>
+			55<br>
+			56<br>
+			57<br>
+			58<br>
+			59<br>
+			60<br>
+			61<br>
+			62<br>
+			63<br>
+			64<br>
+			65<br>
+			66<br>
+			67<br>
+			68<br>
+			69<br>
+			70<br>
+			71<br>
+			72<br>
+			73<br>
+			74<br>
+			75<br>
+			76<br>
+			77<br>
+			88<br>
+			89<br>
+			90<br>
+			91<br>
+			92<br>
+			93<br>
+			94<br>
+			95<br>
+			96<br>
+			97<br>
+			98<br>
+			99<br>
+			100</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">1<br>
+			2<br>
+			3<br>
+			4</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">17</td>
+			<td style="text-align: center;">1<br>
+			2<br>
+			3<br>
+			4<br>
+			10<br>
+			11<br>
+			12<br>
+			13<br>
+			14<br>
+			15<br>
+			16</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">37</td>
+			<td style="text-align: center;">1<br>
+			2<br>
+			3<br>
+			4<br>
+			10<br>
+			11<br>
+			12<br>
+			13<br>
+			14<br>
+			15<br>
+			16</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">78</td>
+			<td style="text-align: center;">1<br>
+			2<br>
+			3<br>
+			4<br>
+			10<br>
+			11<br>
+			12<br>
+			13<br>
+			14<br>
+			15<br>
+			16<br>
+			38<br>
+			39<br>
+			40<br>
+			41<br>
+			42<br>
+			43<br>
+			44<br>
+			45<br>
+			46<br>
+			47<br>
+			48<br>
+			49<br>
+			50<br>
+			51<br>
+			52<br>
+			53<br>
+			54<br>
+			55<br>
+			56<br>
+			57<br>
+			58<br>
+			59<br>
+			60<br>
+			61<br>
+			62<br>
+			63<br>
+			64<br>
+			65<br>
+			66<br>
+			67<br>
+			68<br>
+			69<br>
+			70<br>
+			71<br>
+			72<br>
+			73<br>
+			74<br>
+			75<br>
+			76<br>
+			77</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">80</td>
+			<td style="text-align: center;">1<br>
+			2<br>
+			3<br>
+			4<br>
+			10<br>
+			11<br>
+			12<br>
+			13<br>
+			14<br>
+			15<br>
+			16<br>
+			38<br>
+			39<br>
+			40<br>
+			41<br>
+			42<br>
+			43<br>
+			44<br>
+			45<br>
+			46<br>
+			47<br>
+			48<br>
+			49<br>
+			50<br>
+			51<br>
+			52<br>
+			53<br>
+			54<br>
+			55<br>
+			56<br>
+			57<br>
+			58<br>
+			59<br>
+			60<br>
+			61<br>
+			62<br>
+			63<br>
+			64<br>
+			65<br>
+			66<br>
+			67<br>
+			68<br>
+			69<br>
+			70<br>
+			71<br>
+			72<br>
+			73<br>
+			74<br>
+			75<br>
+			76<br>
+			77</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">11</td>
+			<td style="text-align: center;">87</td>
+			<td style="text-align: center;">1<br>
+			2<br>
+			3<br>
+			4<br>
+			10<br>
+			11<br>
+			12<br>
+			13<br>
+			14<br>
+			15<br>
+			16<br>
+			38<br>
+			39<br>
+			40<br>
+			41<br>
+			42<br>
+			43<br>
+			44<br>
+			45<br>
+			46<br>
+			47<br>
+			48<br>
+			49<br>
+			50<br>
+			51<br>
+			52<br>
+			53<br>
+			54<br>
+			55<br>
+			56<br>
+			57<br>
+			58<br>
+			59<br>
+			60<br>
+			61<br>
+			62<br>
+			63<br>
+			64<br>
+			65<br>
+			66<br>
+			67<br>
+			68<br>
+			69<br>
+			70<br>
+			71<br>
+			72<br>
+			73<br>
+			74<br>
+			75<br>
+			76<br>
+			77</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">12</td>
+			<td style="text-align: center;">88</td>
+			<td style="text-align: center;">1<br>
+			2<br>
+			3<br>
+			4<br>
+			10<br>
+			11<br>
+			12<br>
+			13<br>
+			14<br>
+			15<br>
+			16<br>
+			38<br>
+			39<br>
+			40<br>
+			41<br>
+			42<br>
+			43<br>
+			44<br>
+			45<br>
+			46<br>
+			47<br>
+			48<br>
+			49<br>
+			50<br>
+			51<br>
+			52<br>
+			53<br>
+			54<br>
+			55<br>
+			56<br>
+			57<br>
+			58<br>
+			59<br>
+			60<br>
+			61<br>
+			62<br>
+			63<br>
+			64<br>
+			65<br>
+			66<br>
+			67<br>
+			68<br>
+			69<br>
+			70<br>
+			71<br>
+			72<br>
+			73<br>
+			74<br>
+			75<br>
+			76<br>
+			77<br>
+			88</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">10</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1<br>2<br>3<br>4<br>10</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">20</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1<br>2<br>3<br>4<br>10<br>11<br>12<br>13<br>14<br>15<br>16</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

@@ -1,0 +1,60 @@
+<h2 style="text-align: center;">Магические даты</h2>
+
+<p>Магическая дата – это дата, когда день, умноженный на месяц, равен числу образованному последними двумя цифрами года.</p>
+
+<p>Напишите функцию, <code>is_magic(date)</code> которая принимает в качестве аргумента строковое представление корректой даты и возвращает значение <code>True</code> если дата является магической и <code>False</code> в противном случае.</p>
+
+<p><strong>Примечание.</strong> Следующий программный код:</p>
+
+<pre><code class="language-python">print(is_magic('10.06.1960'))
+print(is_magic('11.06.1960'))</code></pre>
+
+<p>должен выводить:</p>
+
+<pre><code class="language-no-highlight">True
+False</code></pre>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">10.06.1960</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">15.03.1945</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">03.11.2033</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">03.11.2032</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">15.12.1234</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">10.09.1990</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

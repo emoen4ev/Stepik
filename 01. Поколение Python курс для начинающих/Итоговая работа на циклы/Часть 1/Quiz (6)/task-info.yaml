@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: выводит сумму чисел от 2 до n
+- text: выводит факториал числа n
+- text: выводит сумму чисел от 1 до n
+- text: выводит 2 в степени n
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz
+local_check: false

@@ -1,0 +1,64 @@
+<h2 style="text-align: center;">Биномиальный коэффициент 🌶️</h2>
+
+<p>Напишите функцию <code>compute_binom(n, k)</code>, которая принимает в качестве аргументов два натуральных числа <code>n</code> и <code>k</code> и возвращает значение <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%BD%D0%BE%D0%BC%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%8D%D1%84%D1%84%D0%B8%D1%86%D0%B8%D0%B5%D0%BD%D1%82" rel="noopener noreferrer nofollow">биномиального коэффициента</a>, равного $\dfrac{n!}{k! (n-k)!}$.</p>
+
+<p><strong>Примечание 1.</strong> Факториалом натурального числа $n$, называется произведение всех натуральных чисел от <span class="math-tex">\( 1 \)</span> до <span class="math-tex">\(n\)</span>, то есть <span class="math-tex">\[n!=1\cdot2\cdot3\cdot…\cdot n\]</span></p>
+
+<p><strong>Примечание 2.</strong> Реализуйте вспомогательную функцию <code>factorial(n)</code>, вычисляющую факториал числа или воспользуйтесь уже готовой функцией из модуля <code>math</code>.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">1<br>
+			1</td>
+			<td style="text-align: center;">1</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">2<br>
+			1</td>
+			<td style="text-align: center;">2</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">10<br>
+			1</td>
+			<td style="text-align: center;">10</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">10<br>
+			2</td>
+			<td style="text-align: center;">45</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">15<br>
+			2</td>
+			<td style="text-align: center;">105</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">100<br>
+			3</td>
+			<td style="text-align: center;">161700</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">64<br>
+			7</td>
+			<td style="text-align: center;">621216192</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

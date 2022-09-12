@@ -1,0 +1,74 @@
+<h2 style="text-align: center;">Is Valid Triangle?</h2>
+
+<p>Напишите функцию <code>is_valid_triangle(side1, side2, side3)</code>, которая принимает в качестве аргументов три натуральных числа, и возвращает значение <code>True</code> если существует невырожденный треугольник со сторонами <code>side1, side2, side3</code> и <code>False</code> в противном случае.</p>
+
+<p><strong>Примечание 1.</strong> С данной <a href="https://stepik.org/lesson/265083/step/12?unit=246031" rel="noopener noreferrer nofollow">задачей</a> мы уже сталкивались при изучении условного оператора.</p>
+
+<p><strong>Примечание 2.</strong> Следующий программный код:</p>
+
+<pre><code class="language-python">print(is_valid_triangle(2, 2, 2))
+print(is_valid_triangle(2, 3, 10))
+print(is_valid_triangle(3, 4, 5))</code></pre>
+
+<p>должен выводить:</p>
+
+<pre><code class="language-no-highlight">True
+False
+True</code></pre>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">2<br>
+			2<br>
+			2</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">2<br>
+			3<br>
+			10</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">3<br>
+			4<br>
+			5</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">10<br>
+			11<br>
+			12</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">12<br>
+			10<br>
+			2</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">100<br>
+			1<br>
+			2</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

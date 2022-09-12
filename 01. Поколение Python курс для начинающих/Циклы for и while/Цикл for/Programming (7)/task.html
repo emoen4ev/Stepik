@@ -1,0 +1,121 @@
+<h2 style="text-align: center;">Популяция</h2>
+
+<p>На вход программе подается три натуральных числа <span class="math-tex">\(m, \, p, \, n\)</span>:</p>
+
+<ul>
+	<li><span class="math-tex">\(m:\)</span> стартовое количество организмов;</li>
+	<li><span class="math-tex">\(p:\)</span> среднесуточное увеличение в %;</li>
+	<li><span class="math-tex">\(n:\)</span> количество дней для размножения.</li>
+</ul>
+
+<p>Напишите программу, которая предсказывает размер популяции организмов. Программа должна выводить размер популяции в каждый день, начиная с <span class="math-tex">\(1\)</span> и заканчивая <span class="math-tex">\(n\)</span>-м днем.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подается три натуральных числа.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести текст в соответствии с условием задачи.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">10<br>
+			50<br>
+			6</td>
+			<td style="text-align: center;">1 10.0<br>
+			2 15.0<br>
+			3 22.5<br>
+			4 33.75<br>
+			5 50.625<br>
+			6 75.9375</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">100<br>
+			25<br>
+			1</td>
+			<td style="text-align: center;">1 100</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">120<br>
+			25<br>
+			4</td>
+			<td style="text-align: center;">1 120.0<br>
+			2 150.0<br>
+			3 187.5<br>
+			4 234.375</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">7<br>
+			10<br>
+			20</td>
+			<td style="text-align: center;">1 7.0<br>
+			2 7.700000000000001<br>
+			3 8.470000000000002<br>
+			4 9.317000000000004<br>
+			5 10.248700000000005<br>
+			6 11.273570000000007<br>
+			7 12.400927000000008<br>
+			8 13.64101970000001<br>
+			9 15.005121670000012<br>
+			10 16.505633837000016<br>
+			11 18.15619722070002<br>
+			12 19.971816942770023<br>
+			13 21.968998637047026<br>
+			14 24.16589850075173<br>
+			15 26.582488350826907<br>
+			16 29.240737185909598<br>
+			17 32.16481090450056<br>
+			18 35.38129199495062<br>
+			19 38.91942119444569<br>
+			20 42.81136331389026</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">100<br>
+			75<br>
+			15</td>
+			<td style="text-align: center;">1 100.0<br>
+			2 175.0<br>
+			3 306.25<br>
+			4 535.9375<br>
+			5 937.890625<br>
+			6 1641.30859375<br>
+			7 2872.2900390625<br>
+			8 5026.507568359375<br>
+			9 8796.388244628906<br>
+			10 15393.679428100586<br>
+			11 26938.938999176025<br>
+			12 47143.143248558044<br>
+			13 82500.50068497658<br>
+			14 144375.876198709<br>
+			15 252657.78334774077</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">10<br>
+			50<br>
+			7</td>
+			<td style="text-align: center;">1 10.0<br>
+			2 15.0<br>
+			3 22.5<br>
+			4 33.75<br>
+			5 50.625<br>
+			6 75.9375<br>
+			7 113.90625</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">10<br>50<br>6</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1 10.0<br>2 15.0<br>3 22.5<br>4 33.75<br>5 50.625<br>6 75.9375</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">100<br>25<br>1</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1 100</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">120<br>25<br>4</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1 120.0<br>2 150.0<br>3 187.5<br>4 234.375</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

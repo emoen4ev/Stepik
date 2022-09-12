@@ -1,0 +1,17 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: <code>1</code>
+- text: <code>-1</code>
+- text: <code>0</code>
+- text: <code>длина строки минус один</code>
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+local_check: false

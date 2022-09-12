@@ -1,0 +1,18 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: |-
+    # объявление функции
+    def get_days(month):
+        pass
+
+    # считываем данные
+    num = int(input())
+
+    # вызываем функцию
+    print(get_days(num))
+  learner_created: false
+status: Solved
+record: -1
