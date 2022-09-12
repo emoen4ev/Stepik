@@ -6,6 +6,8 @@ digits = string.digits
 punctuation_characters = string.punctuation
 ambiguous_characters = 'il1Lo0O'
 
+min_pass_long = 4
+
 print('\n' + 17 * ' ' + 17 * '+')
 print('Smart Password Generator v.1.0 ... powered by Emo ...')
 print(17 * ' ' + 17 * '+' + 2 * '\n')
@@ -18,3 +20,5 @@ includes_punctuations = input(
     "Аnd about the punctuation characters, what do you think, should I include them ...?  'y' or 'n'" + '\n')
 includes_ambiguous = input(
     "And now be careful - should I insert ambiguous characters, like 'il1Lo0O' ...?  'y' or 'n'" + '\n')
+pass_long = int(input('And lastly - how many characters you want the password to be long?' + '\n' +
+                      f"Considering your choices so far - it can't be less than {min_pass_long} ..." + '\n'))
