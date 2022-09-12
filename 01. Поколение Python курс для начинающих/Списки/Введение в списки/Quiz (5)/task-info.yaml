@@ -2,9 +2,9 @@ type: choice
 is_multiple_choice: false
 options:
 - text: <code>['Michael', 'John', 'Freddie']</code>
-- text: <code>["Michael", "John", "Freddie"]</code>
-- text: <code>[Michael, John, Freddie]</code>
 - text: <code>'Michael', 'John', 'Freddie'</code>
+- text: <code>[Michael, John, Freddie]</code>
+- text: <code>["Michael", "John", "Freddie"]</code>
 files:
 - name: task.py
   visible: true

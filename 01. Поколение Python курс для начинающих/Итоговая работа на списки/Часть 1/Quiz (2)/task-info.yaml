@@ -1,9 +1,9 @@
 type: choice
 is_multiple_choice: false
 options:
+- text: <code>[10, 10, 10, 10, 10]</code>
 - text: <code>[10] * 5</code>
 - text: <code>[10] [10] [10] [10] [10]</code>
-- text: <code>[10, 10, 10, 10, 10]</code>
 - text: <code>[5, 5, 5, 5, 5, 5, 5, 5, 5, 5]</code>
 files:
 - name: task.py
