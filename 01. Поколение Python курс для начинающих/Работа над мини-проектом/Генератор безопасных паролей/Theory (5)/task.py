@@ -1,24 +1,108 @@
 import random, string
 
+
+def logo():
+    part_1 = '\n' + 18 * ' ' + 17 * '+' + '\n'
+    part_2 = 'Smart Password Generator v.1.0 ... powered by Emo ...'
+    return part_1 + part_2 + part_1 + '\n'
+
+
+def confirm_is_digit(data):
+    while True:
+        if data.isdigit():
+            return int(data)
+        else:
+            data = input('Please, enter a number ... !' + '\n')
+            continue
+
+
+def confirm_y_or_n(data):
+    while True:
+        if data == 'y':
+            return True
+        if data == 'n':
+            return False
+        else:
+            data = input("Please, enter 'y' or 'n'...!" + '\n').lower().strip()
+            continue
+
+
+def run():
+    possible_chars = ''
+
+    while True:
+        number_passwords = input('How many passwords do you want to generate for you ... ?' + '\n').strip()
+        number_passwords = confirm_is_digit(number_passwords)
+        if number_passwords == 0:
+            print('Ok, ... bye ...')
+            break
+
+        allow_lowercase = input("Should I use lowercase letters in the password?  'y' or 'n' ... ?" + '\n'). \
+            lower().strip()
+        allow_lowercase = confirm_y_or_n(allow_lowercase)
+        if allow_lowercase:
+            possible_chars += lowercase_letters
+
+        print(possible_chars)
+        print(list(possible_chars))
+
+        allow_uppercase = input("And uppercase letters ... ?  'y' or 'n' ... ?" + '\n').lower().strip()
+        allow_uppercase = confirm_y_or_n(allow_uppercase)
+        if allow_uppercase:
+            possible_chars += uppercase_letters
+
+        print(possible_chars)
+        print(list(possible_chars))
+
+        allow_digits = input("Do you want digits ... ?  'y' or 'n' ... ?" + '\n').lower().strip()
+        allow_digits = confirm_y_or_n(allow_digits)
+        if allow_digits:
+            possible_chars += digits
+
+        print(possible_chars)
+        print(list(possible_chars))
+
+        allow_punctuations = input(
+            "Аnd about the punctuation characters, what do you think, should I include them ...?  'y' or 'n'" + '\n'). \
+            lower().strip()
+        allow_punctuations = confirm_y_or_n(allow_punctuations)
+        if allow_punctuations:
+            possible_chars += punctuation_characters
+
+        print(possible_chars)
+        print(list(possible_chars))
+
+        allow_ambiguous = input(
+            "And now be careful - should I insert ambiguous characters, like 'il1Lo0O' ...?  'y' or 'n'" + '\n'). \
+            lower().strip()
+        allow_ambiguous = confirm_y_or_n(allow_ambiguous)
+
+        print(possible_chars)
+        print(list(possible_chars))
+
+        if not allow_ambiguous:
+            [possible_chars.replace(char, '') for char in possible_chars if char in ambiguous_characters]
+
+        print(possible_chars)
+        print(list(possible_chars))
+
+        pass_long = input('And lastly - how many characters you want the password to be long?' + '\n')
+        pass_long = confirm_is_digit(pass_long)
+        if pass_long == 0:
+            print('Ok, ... bye ...')
+            break
+
+        print(possible_chars)
+        possible_chars = list(possible_chars)
+        print(possible_chars)
+
+
 lowercase_letters = string.ascii_lowercase
 uppercase_letters = string.ascii_uppercase
 digits = string.digits
 punctuation_characters = string.punctuation
 ambiguous_characters = 'il1Lo0O'
 
-min_pass_long = 4
+print(logo())
 
-print('\n' + 17 * ' ' + 17 * '+')
-print('Smart Password Generator v.1.0 ... powered by Emo ...')
-print(17 * ' ' + 17 * '+' + 2 * '\n')
-
-number_passwords = int(input('How many passwords do you want to generate for you ... ?' + '\n'))
-includes_lowercase = input("Should I use lowercase letters in the password?  'y' or 'n' ... ?" + '\n')
-includes_uppercase = input("And uppercase letters ... ?  'y' or 'n' ... ?" + '\n')
-includes_digits = input("Do you want digits ... ?  'y' or 'n' ... ?" + '\n')
-includes_punctuations = input(
-    "Аnd about the punctuation characters, what do you think, should I include them ...?  'y' or 'n'" + '\n')
-includes_ambiguous = input(
-    "And now be careful - should I insert ambiguous characters, like 'il1Lo0O' ...?  'y' or 'n'" + '\n')
-pass_long = int(input('And lastly - how many characters you want the password to be long?' + '\n' +
-                      f"Considering your choices so far - it can't be less than {min_pass_long} ..." + '\n'))
+run()
