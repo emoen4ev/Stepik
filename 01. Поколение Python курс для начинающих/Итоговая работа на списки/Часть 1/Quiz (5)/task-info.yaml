@@ -1,9 +1,9 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: <code>[11, 22, 33]</code>
 - text: <code>[10, 20, 30, 1, 2, 3]</code>
 - text: <code>[1, 2, 3] + [10, 20, 30]</code>
+- text: <code>[11, 22, 33]</code>
 - text: <code>[1, 2, 3, 10, 20, 30]</code>
 files:
 - name: task.py

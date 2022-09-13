@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: false
 options:
+- text: заголовок
+- text: параметр
 - text: аргумент
 - text: пакет
-- text: параметр
-- text: заголовок
 files:
 - name: task.py
   visible: true
