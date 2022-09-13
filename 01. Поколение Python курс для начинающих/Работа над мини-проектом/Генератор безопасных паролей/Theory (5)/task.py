@@ -43,24 +43,15 @@ def run():
         if allow_lowercase:
             possible_chars += lowercase_letters
 
-        print(possible_chars)
-        print(list(possible_chars))
-
         allow_uppercase = input("And uppercase letters ... ?  'y' or 'n' ... ?" + '\n').lower().strip()
         allow_uppercase = confirm_y_or_n(allow_uppercase)
         if allow_uppercase:
             possible_chars += uppercase_letters
 
-        print(possible_chars)
-        print(list(possible_chars))
-
         allow_digits = input("Do you want digits ... ?  'y' or 'n' ... ?" + '\n').lower().strip()
         allow_digits = confirm_y_or_n(allow_digits)
         if allow_digits:
             possible_chars += digits
-
-        print(possible_chars)
-        print(list(possible_chars))
 
         allow_punctuations = input(
             "Аnd about the punctuation characters, what do you think, should I include them ...?  'y' or 'n'" + '\n'). \
@@ -69,32 +60,21 @@ def run():
         if allow_punctuations:
             possible_chars += punctuation_characters
 
-        print(possible_chars)
-        print(list(possible_chars))
-
         allow_ambiguous = input(
-            "And now be careful - should I insert ambiguous characters, like 'il1Lo0O' ...?  'y' or 'n'" + '\n'). \
+            "And now be careful - should I use ambiguous characters, like 'il1Lo0O' ...?  'y' or 'n'" + '\n'). \
             lower().strip()
         allow_ambiguous = confirm_y_or_n(allow_ambiguous)
 
-        print(possible_chars)
-        print(list(possible_chars))
-
-        if not allow_ambiguous:
-            [possible_chars.replace(char, '') for char in possible_chars if char in ambiguous_characters]
-
-        print(possible_chars)
-        print(list(possible_chars))
+        if allow_ambiguous:
+            possible_chars = list(possible_chars)
+        else:
+            possible_chars = [char for char in possible_chars if char not in ambiguous_characters]
 
         pass_long = input('And lastly - how many characters you want the password to be long?' + '\n')
         pass_long = confirm_is_digit(pass_long)
         if pass_long == 0:
             print('Ok, ... bye ...')
             break
-
-        print(possible_chars)
-        possible_chars = list(possible_chars)
-        print(possible_chars)
 
 
 lowercase_letters = string.ascii_lowercase
