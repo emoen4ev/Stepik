@@ -27,6 +27,10 @@ def confirm_y_or_n(data):
             continue
 
 
+def generate_password(length: int, chars: list):
+    pass
+
+
 def run():
     possible_chars = ''
 
