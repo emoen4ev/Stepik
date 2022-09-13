@@ -1,0 +1,124 @@
+<h1>Тема урока: строковые методы</h1>
+
+<ol>
+	<li>Метод <code>split()</code></li>
+	<li>Метод <code>join()</code></li>
+</ol>
+
+<p><strong>Аннотация.</strong> Строковые методы <code>split()</code> и <code>join()</code>.</p>
+
+<p>В предыдущем модуле мы детально изучили основные строковые методы, однако обошли стороной два важных: <code>split()</code> и <code>join()</code>, имеющих отношение к спискам. Они как бы противоположны по смыслу: метод <code>split()</code> разбивает строку по произвольному разделителю на список слов, а метод <code>join()</code> собирает строку из списка слов через заданный разделитель.</p>
+
+<h2 style="text-align: center;">Метод split()</h2>
+
+<p>Метод <code>split()</code> разбивает строку на слова, используя в качестве разделителя последовательность пробельных символов.</p>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">s = 'Python is the most powerful language'
+words = s.split()
+print(words)</code></pre>
+
+<p>выведет: </p>
+
+<pre><code class="language-no-highlight">['Python', 'is', 'the', 'most', 'powerful', 'language']</code></pre>
+
+<p><img alt="" src="https://ucarecdn.com/c9f3ad54-fa80-4bf5-a5d9-b7aaf8f1310b/"></p>
+
+<p>Таким образом, вызов метода <code>split()</code> разбивает строку на слова и возвращает список, содержащий все слова.</p>
+
+<p>Рассмотрим следующий программный код:</p>
+
+<pre><code class="language-python">numbers = input().split()</code></pre>
+
+<p>Если при запуске этой программы ввести строку <code>1 2 3 4 5</code>, то список <code>numbers</code> будет следующим  <code>['1', '2', '3', '4', '5']</code>. Обратите внимание, что список будет состоять из строк, а не из чисел. Если требуется получить именно список чисел, то затем нужно элементы списка по одному преобразовать в числа:</p>
+
+<pre><code class="language-python">numbers = input().split()
+for i in range(len(numbers)):
+    numbers[i] = int(numbers[i])</code></pre>
+
+<h3 style="text-align: center;">Необязательный параметр</h3>
+
+<p>У метода <code>split()</code> есть необязательный параметр, который определяет, какой набор символов будет использоваться в качестве разделителя между элементами списка. Например, вызов метода <code>split('.')</code> вернет список, полученный разделением исходной строки по символу <code>'.'</code>.</p>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">ip = '192.168.1.24'
+numbers = ip.split('.')    # указываем явно разделитель
+print(numbers)</code></pre>
+
+<p>выведет список:</p>
+
+<pre><code class="language-no-highlight">['192', '168', '1', '24']</code></pre>
+
+<h2 style="text-align: center;"><img alt="" height="108" src="https://ucarecdn.com/5e4e3af1-23ed-44cd-a893-93e5cd52b9d8/" width="736"></h2>
+
+<h2 style="text-align: center;">Метод join()</h2>
+
+<p>Метод <code>join()</code> собирает строку из элементов списка, используя в качестве разделителя строку, к которой применяется метод.</p>
+
+<p> Следующий программный код:</p>
+
+<pre><code class="language-python">words = ['Python', 'is', 'the', 'most', 'powerful', 'language']
+s = ' '.join(words)
+print(s)</code></pre>
+
+<p>выведет: </p>
+
+<pre><code class="language-no-highlight">Python is the most powerful language</code></pre>
+
+<p><img alt="" src="https://ucarecdn.com/b32212f5-7b54-4d77-96d4-7f754c6f967e/"></p>
+
+<p>Обратите внимание, все слова разделены одним пробелом, поскольку метод <code>join()</code> вызывался на строке состоящей из одного символа пробела <code>' '</code>.</p>
+
+<p>Рассмотрим еще пару примеров:</p>
+
+<pre><code class="language-python">words = ['Мы', 'учим', 'язык', 'Python']
+print('*'.join(words))
+print('-'.join(words))
+print('?'.join(words))
+print('!'.join(words))
+print('*****'.join(words))
+print('abc'.join(words))
+print('123'.join(words))</code></pre>
+
+<p>Результатом выполнения такого кода будет:</p>
+
+<pre><code class="language-no-highlight">Мы*учим*язык*Python
+Мы-учим-язык-Python
+Мы?учим?язык?Python
+Мы!учим!язык!Python
+Мы*****учим*****язык*****Python
+МыabcучимabcязыкabcPython
+Мы123учим123язык123Python</code></pre>
+
+<p><img alt="" height="46" src="https://ucarecdn.com/8642d322-d523-4c55-acc0-ed4d5a557a0b/" style="float: left;" width="41"><span style="color: #a03881;"><strong>Запомни:</strong></span> Строковый метод <code>split()</code> служит для преобразования строки в список, а метод <code>join()</code> — для преобразования списка в строку.</p>
+
+<h2 style="text-align: center;">Примечания</h2>
+
+<p><strong>Примечание 1.</strong> Существует большая разница между результатами вызова методов <code>s.split()</code> и <code>s.split('<strong> </strong>')</code>. Разница в поведении проявляется когда строка содержит несколько пробелов между словами.</p>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">s = 'Python    is   the  most  powerful  language'
+words1 = s.split()
+words2 = s.split(' ')
+print(words1)
+print(words2)</code></pre>
+
+<p> выведет списки:</p>
+
+<pre><code class="language-no-highlight">['Python', 'is', 'the', 'most', 'powerful', 'language']
+['Python', '', '', '', 'is', '', '', 'the', '', 'most', '', 'powerful', '', 'language']</code></pre>
+
+<p><strong>Примечание 2.</strong> Методы <code>split()</code> и <code>join()</code> являются строковыми методами. Следующий код приводит к ошибке:</p>
+
+<pre><code class="language-python">print([1, 2].split())
+print([1, 2].join([3, 4, 5]))
+</code></pre>
+
+<p><strong>Примечание 3.</strong> Строковый метод <code>join()</code> работает только со списком строк. Следующий код приводит к ошибке:</p>
+
+<pre><code class="language-python">numbers = [1, 2, 3, 4]  # список чисел
+s = '*'.join(numbers)
+print(s)</code></pre>

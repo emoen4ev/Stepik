@@ -1,0 +1,96 @@
+<h2 style="text-align: center;">BEEGEEK</h2>
+
+<p><strong>BEEGEEK</strong> наконец открыл свой банк в котором используются специальные банкоматы с необычным паролем.</p>
+
+<p>Действительный пароль BEEGEEK банка имеет вид <code>a:b:c</code>, где a, b и c – натуральные числа. Поскольку основатель <strong>BEEGEEK</strong> фанатеет от математики, то он решил:</p>
+
+<ul>
+	<li>число <code>a</code> – должно быть палиндромом;</li>
+	<li>число <code>b</code> – должно быть простым;</li>
+	<li>число <code>c</code> – должно быть четным.</li>
+</ul>
+
+<p>Напишите функцию <code>is_valid_password(password)</code>, которая принимает в качестве аргумента строковое значение пароля <code>password</code> и возвращает значение <code>True</code> если пароль является действительным паролем BEEGEEK банка и <code>False</code> в противном случае.</p>
+
+<p><strong> Примечание.</strong> Следующий программный код:</p>
+
+<pre><code class="language-python">print(is_valid_password('1221:101:22'))
+print(is_valid_password('565:30:50'))
+print(is_valid_password('112:7:9'))
+print(is_valid_password('1221:101:22:22'))
+
+</code></pre>
+
+<p>должен выводить:</p>
+
+<pre><code class="language-no-highlight">True
+False
+False
+False</code></pre>
+
+<p style="text-align: center;"><img alt="" height="171" src="https://ucarecdn.com/156ba819-04e4-4040-a843-4e41ba4efa6f/" width="185"></p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">15551:7:290</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">155561:7:290</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">15551:72:290</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">15551:7:291</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">155351:70:290</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">1551151:700:2901</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">11111:71:90000</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">24422442:181:890000</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">1221:101:22:22</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">1221:101:22:221221:101:22:22</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">15551:7:290</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">True</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

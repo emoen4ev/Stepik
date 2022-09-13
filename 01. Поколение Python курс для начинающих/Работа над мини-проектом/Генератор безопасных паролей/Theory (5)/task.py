@@ -28,11 +28,16 @@ def confirm_y_or_n(data):
 
 
 def generate_password(length: int, chars: list):
-    pass
+    random.shuffle(chars)
+    current_password = ''
+    for i in range(length):
+        current_password += random.choice(chars)
+    return current_password
 
 
 def run():
     possible_chars = ''
+    user_passwords = []
 
     while True:
         number_passwords = input('How many passwords do you want to generate for you ... ?' + '\n').strip()
@@ -79,6 +84,13 @@ def run():
         if pass_long == 0:
             print('Ok, ... bye ...')
             break
+
+        for _ in range(number_passwords):
+            user_passwords = []
+            user_passwords = user_passwords.extend(generate_password(pass_long, possible_chars))
+
+        print(user_passwords)
+        break
 
 
 lowercase_letters = string.ascii_lowercase

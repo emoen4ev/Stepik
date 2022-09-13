@@ -1,0 +1,8 @@
+type: code
+files:
+- name: task.py
+  visible: true
+  text: numbers = [8, 9, 10, 11]
+  learner_created: false
+status: Solved
+record: -1

@@ -1,0 +1,18 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: |-
+    # объявление функции
+    def is_password_good(password):
+        pass
+
+    # считываем данные
+    txt = input()
+
+    # вызываем функцию
+    print(is_password_good(txt))
+  learner_created: false
+status: Solved
+record: -1
