@@ -1,4 +1,5 @@
 import random, string
+from time import sleep
 
 
 def logo():
@@ -34,7 +35,6 @@ def generate_password(length: int, chars: list):
 
 def run():
     possible_chars = ''
-    user_passwords = []
 
     while True:
         number_passwords = input('How many passwords do you want to generate for you ... ?' + '\n').strip()
@@ -82,11 +82,15 @@ def run():
             print('Ok, ... bye ...')
             break
 
-        print('\n' + 'Your passwords:')
+        print('\n' + 'Your passwords:' + '\n')
 
         for i in range(1, number_passwords + 1):
-            current_password = generate_password(pass_long, possible_chars)
-            print(f"{i}. {''.join(current_password)}")
+            current_password = f"{i}: {''.join(generate_password(pass_long, possible_chars))}"
+            for char in current_password:
+                print(char, end='', flush=True)
+                sleep(0.2)
+            print()
+        print('\n' + 'Thanks for your time, ... bye, bye, ...' + '\n')
 
         break
 
