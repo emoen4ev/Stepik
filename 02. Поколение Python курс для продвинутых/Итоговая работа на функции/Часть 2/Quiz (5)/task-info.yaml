@@ -1,0 +1,20 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: "<code>['a', 'b']</code>"
+- text: "<code>['ab']</code>"
+- text: <code>''</code>
+- text: <code>'ab'</code>
+- text: "<code>['a', '1', 'b', '2']</code>"
+- text: "<code>['a', '', 'b', '']</code>"
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

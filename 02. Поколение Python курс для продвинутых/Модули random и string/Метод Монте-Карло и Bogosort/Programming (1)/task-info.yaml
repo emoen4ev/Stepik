@@ -1,0 +1,12 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: |-
+    import random
+
+    n = 10**6       # количество испытаний
+  learner_created: false
+status: Unchecked
+record: -1

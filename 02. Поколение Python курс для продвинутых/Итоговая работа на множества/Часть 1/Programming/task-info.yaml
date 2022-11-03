@@ -1,0 +1,12 @@
+type: code
+files:
+- name: task.py
+  visible: true
+  text: |-
+    set1 = {...}
+    set2 = {'a', 't', 'f'}
+
+    print(set1 - set2)
+  learner_created: false
+status: Unchecked
+record: -1

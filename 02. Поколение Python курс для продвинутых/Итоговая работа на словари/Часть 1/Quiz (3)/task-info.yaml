@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: "<code>data[2]['foo'][30]</code>"
+- text: "<code>data[3]['bar']['z']</code>"
+- text: "<code>data[2]['bar']['z']</code>"
+- text: "<code>data[2]['bar'][30]</code>"
+- text: "<code>data[2]['bar']['baz']['z']</code>"
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

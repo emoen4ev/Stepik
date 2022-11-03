@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: алгоритм Зиккурат
+- text: вихрь Мерсенна
+- text: алгоритм Блюма — Микали
+- text: конгруэнтный алгоритм
+- text: алгоритм Макларена — Марсальи
+- text: алгоритм Вичманна-Хилла
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+local_check: false

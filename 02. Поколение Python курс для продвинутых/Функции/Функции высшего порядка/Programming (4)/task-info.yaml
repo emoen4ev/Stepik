@@ -1,0 +1,11 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: |-
+    def func_apply():
+        pass
+  learner_created: false
+status: Unchecked
+record: -1

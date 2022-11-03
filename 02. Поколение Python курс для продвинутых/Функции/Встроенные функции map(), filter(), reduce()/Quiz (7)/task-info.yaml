@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: "<code>[75, 75, 75, 75]</code>"
+- text: "<code>[66, 68, 59, 60, 74, 65, 75]</code>"
+- text: "<code>[90, 76, 88, 81, 75]</code>"
+- text: "<code>[66, 68, 59, 60, 74, 65]</code>"
+- text: "<code>[90, 76, 88, 81]</code>"
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

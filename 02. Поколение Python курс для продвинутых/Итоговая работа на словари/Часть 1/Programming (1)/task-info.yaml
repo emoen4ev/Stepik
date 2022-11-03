@@ -1,0 +1,13 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: "emails = {'nosu.edu': ['timyr', 'joseph', 'svetlana.gaeva', 'larisa.mamuk'],\
+    \ \n          'gmail.com': ['ruslan.chaika', 'rustam.mini', 'stepik-best'], \n\
+    \          'msu.edu': ['apple.fruit', 'beegeek', 'beegeek.school'], \n       \
+    \   'yandex.ru': ['surface', 'google'],\n          'hse.edu': ['tomas-henders',\
+    \ 'cream.soda', 'zivert'],\n          'mail.ru': ['angel.down', 'joanne', 'the.fame.moster']}"
+  learner_created: false
+status: Unchecked
+record: -1

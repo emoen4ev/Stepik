@@ -1,0 +1,12 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: |-
+    words = ['hello', 'bye', 'yes', 'no', 'python', 'apple', 'maybe', 'stepik', 'beegeek']
+
+    result = {}
+  learner_created: false
+status: Unchecked
+record: -1

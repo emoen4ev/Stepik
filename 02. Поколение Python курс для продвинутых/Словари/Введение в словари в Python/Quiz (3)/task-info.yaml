@@ -1,0 +1,21 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: <code>my_dict = set()</code>
+- text: "<code>my_dict  = {}</code>"
+- text: <code>my_dict  = empty()</code>
+- text: "<code>my_dict  = dict{}</code>"
+- text: <code>my_dict  = ()</code>
+- text: <code>my_dict  = dict()</code>
+- text: "<code>my_dict  = []</code>"
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

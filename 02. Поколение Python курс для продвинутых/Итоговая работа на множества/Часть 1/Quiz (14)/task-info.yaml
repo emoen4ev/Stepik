@@ -1,0 +1,23 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: элементы множества должны быть неизменяемыми
+- text: множества не поддерживают срезы
+- text: множества не поддерживают операцию умножения на число
+- text: множества не поддерживают индексацию
+- text: множества не упорядочены
+- text: множества изменяемы
+- text: для создания непустых множеств используются фигурные скобки
+- text: множества не поддерживают операцию конкатенации
+- text: все элементы в множествах различны
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

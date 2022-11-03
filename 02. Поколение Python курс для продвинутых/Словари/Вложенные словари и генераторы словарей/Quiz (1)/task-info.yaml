@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: "<code>students[1]['age']</code>"
+- text: "<code>students[0][1]</code>"
+- text: "<code>students['Тимур']['age']</code>"
+- text: "<code>students[0]['age']</code>"
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

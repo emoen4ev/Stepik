@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: "<code>['a', 'is', 'of', 'this', 'test', 'sorting']</code>"
+- text: "<code>['this', 'test', 'sorting', 'of', 'is', 'a']</code>"
+- text: "<code>['a', 'is', 'of', 'sorting', 'test', 'this']</code>"
+- text: "<code>['sorting', 'this', 'test', 'is', 'of', 'a']</code>"
+- text: "<code>['a', 'of', 'is', 'test', 'this', 'sorted']</code>"
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

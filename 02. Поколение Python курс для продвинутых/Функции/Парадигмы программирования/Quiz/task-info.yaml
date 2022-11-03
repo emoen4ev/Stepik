@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: процесс осуществления неординарного разбора элементов языка 
+- text: "инструмент грамматического описания фактов, событий, явлений и процессов\_"
+- text: "совокупность идей и понятий, определяющих стиль написания компьютерных пр\
+    ограмм"
+- text: "совокупность фактов, влияющих на относительную контекстность любого языка\
+    \ программирования\_"
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+local_check: false

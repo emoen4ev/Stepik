@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: функциональном программировании
+- text: логическом программировании
+- text: императивном программировании
+- text: структурном программировании
+- text: объектно-ориентированном программировании
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

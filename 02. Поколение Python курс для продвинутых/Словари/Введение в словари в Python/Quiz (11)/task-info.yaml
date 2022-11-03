@@ -1,0 +1,23 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: кортеж может быть ключом словаря
+- text: кортеж может быть значением словаря
+- text: ключи в словаре должны относиться к неизменяемому типу данных
+- text: множество (тип <code>set</code>) может быть ключом словаря
+- text: словарь может быть ключом словаря
+- text: "код <code>my_dict = {}</code> создает пустой словарь"
+- text: ' словарь может быть значением словаря'
+- text: список может быть значением словаря
+- text: список может быть ключом словаря
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

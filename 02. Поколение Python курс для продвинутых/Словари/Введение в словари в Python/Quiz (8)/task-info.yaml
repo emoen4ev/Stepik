@@ -1,0 +1,20 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: a
+- text: -1
+- text: Missed information
+- text: c
+- text: b
+- text: ошибка во время выполнения кода
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

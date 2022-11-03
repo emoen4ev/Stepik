@@ -1,0 +1,17 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: "<code>del student['class']</code>"
+- text: <code>student.pop('class')</code>
+- text: <code>student.popitem()</code>
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

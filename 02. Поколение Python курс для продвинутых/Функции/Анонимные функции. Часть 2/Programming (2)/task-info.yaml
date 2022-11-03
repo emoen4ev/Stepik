@@ -1,0 +1,9 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: is_non_negative_num = ...
+  learner_created: false
+status: Unchecked
+record: -1
