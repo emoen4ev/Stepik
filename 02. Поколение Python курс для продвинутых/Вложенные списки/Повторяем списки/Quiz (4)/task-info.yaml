@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: "<code>30<br>[20, 30, 40]</code>"
+- text: "<code>IndexError: list index out of range</code>"
+- text: "<code>40<br>[20, 30, 40, 50]</code>"
+- text: "<code>40<br>[40, 30, 20]</code>"
+- text: "<code>40<br>[20, 30, 40]</code>"
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

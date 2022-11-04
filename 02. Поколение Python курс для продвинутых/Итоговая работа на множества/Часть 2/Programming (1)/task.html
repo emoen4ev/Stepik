@@ -1,0 +1,44 @@
+<h2 style="text-align: center;">Восход</h2>
+
+<p>На спутнике «Восход» установлен прибор для измерения солнечной активности. Каждую минуту он передаёт в обсерваторию по каналу связи положительное целое число — количество энергии солнечного излучения. Для правильного анализа результатов нет необходимости держать повторяющиеся данные. Напишите программу, которая выводит максимальное количество показаний спутника, при удалении которых результат будет правильно проанализирован.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подаётся одна строка, содержащая числа – показания спутника «Восход». Числа указываются через пробел и не содержат ведущих нулей.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести максимальное количество показаний, после удаления которых анализ результатов будет произведен верно.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">10 20 30 10 40</td>
+			<td style="text-align: center;">1</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">1 2 3 4 5 6 7 8 9 1 2 3</td>
+			<td style="text-align: center;">3</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">100 100 100 100 100 100 100</td>
+			<td style="text-align: center;">6</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">6311 9423 142 142 8654 909 1 6311 142 909 404 502 828 404 9423</td>
+			<td style="text-align: center;">6</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">10 20 30 10 40</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1 2 3 4 5 6 7 8 9 1 2 3</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">3</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">100 100 100 100 100 100 100</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">6</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

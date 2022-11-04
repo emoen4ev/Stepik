@@ -1,0 +1,124 @@
+<h2 style="text-align: center;">Набор сообщений</h2>
+
+<p>На мобильных кнопочных телефонах текстовые сообщения можно отправлять с помощью цифровой клавиатуры. Поскольку с каждой клавишей связано несколько букв, для большинства букв требуется несколько нажатий клавиш. При однократном нажатии цифры генерируется первый символ, указанный для этой клавиши. Нажатие цифры $2, 3, 4$ или $5$ раз генерирует второй, третий, четвертый или пятый символ клавиши.</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td><code>.,?!:</code></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td><code>ABC</code></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td><code>DEF</code></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td><code>GHI</code></td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td><code>JKL</code></td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td><code>MNO</code></td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td><code>PQRS</code></td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td><code>TUV</code></td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td><code>WXYZ</code></td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td><code>space (пробел)</code></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>Напишите программу, которая отображает нажатия клавиш, необходимые для введенного сообщения.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подается одна строка – текстовое сообщение.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести нажатия клавиш, необходимых для введенного сообщения.</p>
+
+<p><strong>Примечание 1.</strong> Ваша программа должна обрабатывать как прописные, так и строчные буквы.</p>
+
+<p><strong>Примечание 2.</strong> Ваша программа должна игнорировать любые символы, не указанные в приведенной выше таблице.</p>
+
+<p><strong>Примечание 3.</strong> Nokia 3310, чтобы вспомнить как это было 😄</p>
+
+<p style="text-align: center;"><img alt="" src="https://ucarecdn.com/c3aec5d1-54de-457a-8895-7ae647b8836d/"></p>
+
+<details><summary>Подсказка</summary>
+
+<p>Создайте словарь, в котором каждая буква или символ сопоставляется с нажатиями клавиш, необходимыми для их создания. </p>
+</details>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">Hello, World!</td>
+			<td style="text-align: center;">4433555555666110966677755531111</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">He said: "I can solve this problem".</td>
+			<td style="text-align: center;">44330777724443111110444022226607777666555888330844444777707777666225553361</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">Bee   Geek!!!</td>
+			<td style="text-align: center;">2233330004333355111111111111</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">When will the new course be released??</td>
+			<td style="text-align: center;">944336609444555555084433066339022266688777777733022330777335553327777333111111</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">,,,...!  xyz</td>
+			<td style="text-align: center;">111111111111100999999999</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;"> </td>
+			<td style="text-align: center;">0</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">ABCde</td>
+			<td style="text-align: center;">222222333</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">Starbound</td>
+			<td style="text-align: center;">7777827772266688663</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">Hello, World!</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">4433555555666110966677755531111</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">He said: &quot;I can solve this problem&quot;.</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">44330777724443111110444022226607777666555888330844444777707777666225553361</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">Bee   Geek!!!</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">2233330004333355111111111111</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

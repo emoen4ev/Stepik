@@ -1,0 +1,134 @@
+<h2 style="text-align: center;">Максимум в таблице</h2>
+
+<p>На вход программе подаются два натуральных числа $n$ и $m$ — количество строк и столбцов в матрице, затем $n$ строк по $m$ целых чисел в каждой, отделенных символом пробела.</p>
+
+<p>Напишите программу, которая находит индексы (строку и столбец) первого вхождения максимального элемента.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе на разных строках подаются два числа $n$ и $m$ — количество строк и столбцов в матрице, затем сами элементы матрицы построчно через пробел.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести два числа: номер строки и номер столбца, в которых стоит наибольший элемент таблицы. Если таких элементов несколько, то выводится тот, у которого меньше номер строки, а если номера строк равны то тот, у которого меньше номер столбца.</p>
+
+<p><strong>Примечание.</strong> Считайте, что нумерация строк и столбцов начинается с нуля.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">3<br>
+			4<br>
+			0 3 2 4<br>
+			2 3 5 5<br>
+			5 1 2 3</td>
+			<td style="text-align: center;">1 2</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">3<br>
+			3<br>
+			5 3 4<br>
+			2 3 0<br>
+			4 1 5</td>
+			<td style="text-align: center;">0 0</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">2<br>
+			8<br>
+			4 3 4 4 1 2 2 3<br>
+			2 3 0 3 3 4 4 5</td>
+			<td style="text-align: center;">1 7</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">6<br>
+			8<br>
+			-4 -3 -4 -4 -1 -8 -2 -3<br>
+			-2 -3 -9 -7 -3 -4 -4 -5<br>
+			-4 -3 -4 -4 -1 -2 -2 -3<br>
+			-2 -3 -9 -3 -3 -1 -4 -5<br>
+			-5 -3 -4 -4 -1 -2 -2 -3<br>
+			-2 -3 -7 -8 -3 -4 -4 -5</td>
+			<td style="text-align: center;">0 4</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">2<br>
+			2<br>
+			0 0<br>
+			0 1</td>
+			<td style="text-align: center;">1 1</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">4<br>
+			5<br>
+			0 3 2 4 2<br>
+			2 3 5 5 1<br>
+			5 1 2 3 3<br>
+			0 3 2 4 7</td>
+			<td style="text-align: center;">3 4</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">6<br>
+			8<br>
+			4 3 4 4 1 8 2 3<br>
+			2 3 0 7 3 4 4 5<br>
+			4 3 4 4 1 2 2 3<br>
+			2 3 9 3 3 10 4 5<br>
+			5 3 4 4 1 2 2 3<br>
+			2 3 0 8 3 4 4 5</td>
+			<td style="text-align: center;">3 5</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">9<br>
+			3<br>
+			5 3 98<br>
+			98 3 0<br>
+			4 7 5<br>
+			5 3 4<br>
+			4 3 6<br>
+			4 1 5<br>
+			5 3 4<br>
+			2 3 20<br>
+			41 1 5</td>
+			<td style="text-align: center;">0 2</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">6<br>
+			8<br>
+			-40 -31 -42 -43 -94 -85 -26 -37<br>
+			-20 -31 -92 -73 -34 -45 -46 -57<br>
+			-40 -31 -42 -43 -84 -25 -26 -37<br>
+			-20 -31 -92 -33 -34 -15 -46 -57<br>
+			-50 -31 -42 -43 -14 -25 -26 -37<br>
+			-20 -31 -72 -83 -34 -45 -46 -14</td>
+			<td style="text-align: center;">4 4</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">5<br>
+			5<br>
+			0 3 2 4 2<br>
+			2 3 5 5 1<br>
+			5 1 2 3 3<br>
+			0 3 2 4 4<br>
+			2 3 5 5 5</td>
+			<td style="text-align: center;">1 2</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">3<br>4<br>0 3 2 4<br>2 3 5 5<br>5 1 2 3</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1 2</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">3<br>3<br>5 3 4<br>2 3 0<br>4 1 5</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">0 0</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">2<br>8<br>4 3 4 4 1 2 2 3<br>2 3 0 3 3 4 4 5</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1 7</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">6<br>8<br>-4 -3 -4 -4 -1 -8 -2 -3<br>-2 -3 -9 -7 -3 -4 -4 -5<br>-4 -3 -4 -4 -1 -2 -2 -3<br>-2 -3 -9 -3 -3 -1 -4 -5<br>-5 -3 -4 -4 -1 -2 -2 -3<br>-2 -3 -7 -8 -3 -4 -4 -5</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">0 4</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

@@ -1,0 +1,138 @@
+<h2 style="text-align: center;">Встречалось ли число раньше?</h2>
+
+<p>На вход программе подается строка текста, содержащая числа. Для каждого числа выведите слово <code>YES</code> (в отдельной строке), если это число ранее встречалось в последовательности или <code>NO</code>, если не встречалось.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подается строка текста, содержащая числа, разделенные символом пробела.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести текст в соответствии с условием задачи.</p>
+
+<p><strong>Примечание.</strong> Ведущие нули в числах должны игнорироваться.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">1 1 2 2 5 5 5 5 6 7 8</td>
+			<td style="text-align: center;">NO<br>
+			YES<br>
+			NO<br>
+			YES<br>
+			NO<br>
+			YES<br>
+			YES<br>
+			YES<br>
+			NO<br>
+			NO<br>
+			NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">10 5 48 6 38 1</td>
+			<td style="text-align: center;">NO<br>
+			NO<br>
+			NO<br>
+			NO<br>
+			NO<br>
+			NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">1 1 1 1 1 1 1 1 1</td>
+			<td style="text-align: center;">NO<br>
+			YES<br>
+			YES<br>
+			YES<br>
+			YES<br>
+			YES<br>
+			YES<br>
+			YES<br>
+			YES</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">1 2 3 002 03 4 5 05</td>
+			<td style="text-align: center;">NO<br>
+			NO<br>
+			NO<br>
+			YES<br>
+			YES<br>
+			NO<br>
+			NO<br>
+			YES</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">7 32 78 5 8 32 5</td>
+			<td style="text-align: center;">NO<br>
+			NO<br>
+			NO<br>
+			NO<br>
+			NO<br>
+			YES<br>
+			YES</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">1 1 1 1 1 1 2 2 2 2 1 1 1 1</td>
+			<td style="text-align: center;">NO<br>
+			YES<br>
+			YES<br>
+			YES<br>
+			YES<br>
+			YES<br>
+			NO<br>
+			YES<br>
+			YES<br>
+			YES<br>
+			YES<br>
+			YES<br>
+			YES<br>
+			YES</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">1 2 3 2 3 4</td>
+			<td style="text-align: center;">NO<br>
+			NO<br>
+			NO<br>
+			YES<br>
+			YES<br>
+			NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">5 32 8 5 78 32 7</td>
+			<td style="text-align: center;">NO<br>
+			NO<br>
+			NO<br>
+			YES<br>
+			NO<br>
+			YES<br>
+			NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">1 01 001 00001 2 02 2 3</td>
+			<td style="text-align: center;">NO<br>
+			YES<br>
+			YES<br>
+			YES<br>
+			NO<br>
+			YES<br>
+			YES<br>
+			NO</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1 1 2 2 5 5 5 5 6 7 8</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">NO<br>YES<br>NO<br>YES<br>NO<br>YES<br>YES<br>YES<br>NO<br>NO<br>NO</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">10 5 48 6 38 1</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">NO<br>NO<br>NO<br>NO<br>NO<br>NO</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1 1 1 1 1 1 1 1 1</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">NO<br>YES<br>YES<br>YES<br>YES<br>YES<br>YES<br>YES<br>YES</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1 2 3 002 03 4 5 05</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">NO<br>NO<br>NO<br>YES<br>YES<br>NO<br>NO<br>YES</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

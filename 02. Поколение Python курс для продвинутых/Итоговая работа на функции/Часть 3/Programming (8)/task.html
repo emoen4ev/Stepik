@@ -1,0 +1,43 @@
+<h2 style="text-align: center;">В одну строку</h2>
+
+<p>Дана строка из разделенных пробелами слов в разных регистрах. Напишите программу, которая отсортирует слова независимо от регистра, а затем выведет их. Отсортированные слова должны выводиться на печать в исходном регистре, в каком переданы программе на вход.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подается строка из разделенных пробелами слов в разных регистрах.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести строку разделенных пробелом отсортированных слов в прежних регистрах.</p>
+
+<p><strong>Примечание 1.</strong> Решите задачу в одну строку кода 😎.</p>
+
+<p><strong>Примечание 2.</strong> Встроенная функция <code>sorted()</code> сортирует строки в лексикографическом порядке, но учитывает регистр буквы. Любая буква в верхнем регистре считается идущей раньше, чем буква в нижнем регистре.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">cate Frog cat FROGs bee CATERS mouse cATwalk dolphin mOus Cats CatAlo</td>
+			<td style="text-align: center;">bee cat CatAlo cate CATERS Cats cATwalk dolphin Frog FROGs mOus mouse</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">DogLIKE dogmata Doges DogEY DogtRot dOgvane DOG Dogwood DOGGo doGma doGgish</td>
+			<td style="text-align: center;">DOG Doges DogEY doGgish DOGGo DogLIKE doGma dogmata DogtRot dOgvane Dogwood</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">cats dog CAT DOGGY monkey</td>
+			<td style="text-align: center;">CAT cats dog DOGGY monkey</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">cate Frog cat FROGs bee CATERS mouse cATwalk dolphin mOus Cats CatAlo</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">bee cat CatAlo cate CATERS Cats cATwalk dolphin Frog FROGs mOus mouse</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

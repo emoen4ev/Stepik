@@ -1,0 +1,79 @@
+<h2 style="text-align: center;">Исправление дубликатов 🌶️</h2>
+
+<p>На вход программе подается строка, содержащая строки-идентификаторы. Напишите программу, которая исправляет их так, чтобы в результирующей строке не было дубликатов. Для этого необходимо прибавлять к повторяющимся идентификаторам постфикс <code>_n</code>, где <code>n</code> – количество раз, сколько такой идентификатор уже встречался.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подается строка текста, содержащая строки-идентификаторы, разделенные символом пробела.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести исправленную строку, не содержащую дубликатов сохранив при этом исходный порядок.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">a b c a a d c</td>
+			<td style="text-align: center;">a b c a_1 a_2 d c_1</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">a b c</td>
+			<td style="text-align: center;">a b c</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">i am i r o n m a n</td>
+			<td style="text-align: center;">i am i_1 r o n m a n_1</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">a a a a a</td>
+			<td style="text-align: center;">a a_1 a_2 a_3 a_4</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">ab ba a ab</td>
+			<td style="text-align: center;">ab ba a ab_1</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">let1 ch num num1 x num let1</td>
+			<td style="text-align: center;">let1 ch num num1 x num_1 let1_1</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">u u</td>
+			<td style="text-align: center;">u u_1</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">q w e r t y</td>
+			<td style="text-align: center;">q w e r t y</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">total</td>
+			<td style="text-align: center;">total</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">a a a a a a a aa a a a a a aa a a! b b2 b4 b3 a4 a9 a1 a a!</td>
+			<td style="text-align: center;">a a_1 a_2 a_3 a_4 a_5 a_6 aa a_7 a_8 a_9 a_10 a_11 aa_1 a_12 a! b b2 b4 b3 a4 a9 a1 a_13 a!_1 </td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">11</td>
+			<td style="text-align: center;">name age x x2 j k l name x y k j e a x name number</td>
+			<td style="text-align: center;">name age x x2 j k l name_1 x_1 y k_1 j_1 e a x_2 name_2 number</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">a b c a a d c</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">a b c a_1 a_2 d c_1</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">a b c</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">a b c</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">i am i r o n m a n</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">i am i_1 r o n m a n_1</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">a a a a a</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">a a_1 a_2 a_3 a_4</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

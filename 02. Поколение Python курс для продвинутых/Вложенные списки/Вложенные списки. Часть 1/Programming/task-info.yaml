@@ -1,0 +1,12 @@
+type: code
+files:
+- name: task.py
+  visible: true
+  text: |-
+    list1 = [10, 20, [300, 400, [5000, 6000], 500], 30, 40]
+
+
+    print(list1)
+  learner_created: false
+status: Unchecked
+record: -1

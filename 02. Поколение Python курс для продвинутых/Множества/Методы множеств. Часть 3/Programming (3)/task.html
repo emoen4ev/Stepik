@@ -1,0 +1,61 @@
+<h2 style="text-align: center;"><strong>Урок математики</strong></h2>
+
+<p>Даны по $10$-балльной шкале оценки по математике трех учеников. Напишите программу, которая выводит множество оценок, имеющихся у учеников, которые встречаются не более, чем у двух из указанных учеников.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подаются оценки трех учеников, разделенные символом пробела (оценки каждого ученика на отдельной строке).</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести множество оценок <strong>в порядке возрастания</strong> на одной строке, разделенных пробелами, в соответствии с условием задачи.</p>
+
+<p><strong>Примечание.</strong> Оценка ученика находится в диапазоне от $0$ до $10$ включительно.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">1 5 4 2 5 6 6 2 3 3 5 2<br>
+			2 3 5 10 2 10 2 6 7 10 10 6<br>
+			1 4 6 9 8 7 0 9 0 9 8 10</td>
+			<td style="text-align: center;">0 1 2 3 4 5 7 8 9 10</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">2 9 3 4 6 9<br>
+			2 3 4 5 2 10<br>
+			2 3 4 5 3 10</td>
+			<td style="text-align: center;">5 6 9 10</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">3 4 5 6 2 10 3 9 8 8<br>
+			5 7 8 9 2 7 4 6 8 2<br>
+			2 6 7 1 3 6 5 9 2 6</td>
+			<td style="text-align: center;">1 3 4 7 8 10</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">1 2 3<br>
+			3 2 1<br>
+			4 5 6</td>
+			<td style="text-align: center;">1 2 3 4 5 6</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">4 2 5 10 6 2<br>
+			10 4 7 6 3 10<br>
+			1 2 1 5 9 5</td>
+			<td style="text-align: center;">1 2 3 4 5 6 7 9 10</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1 5 4 2 5 6 6 2 3 3 5 2<br>2 3 5 10 2 10 2 6 7 10 10 6<br>1 4 6 9 8 7 0 9 0 9 8 10</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">0 1 2 3 4 5 7 8 9 10</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">2 9 3 4 6 9<br>2 3 4 5 2 10<br>2 3 4 5 3 10</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">5 6 9 10</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">3 4 5 6 2 10 3 9 8 8<br>5 7 8 9 2 7 4 6 8 2<br>2 6 7 1 3 6 5 9 2 6</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1 3 4 7 8 10</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

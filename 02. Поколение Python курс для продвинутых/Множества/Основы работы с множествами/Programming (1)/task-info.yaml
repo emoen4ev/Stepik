@@ -1,0 +1,10 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: "numbers = {20, 6, 8, 18, 18, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 12, 8, 8,\
+    \ 10, 4, 2, 2, 2, 16, 20}\naverage = \n\nprint(average)"
+  learner_created: false
+status: Unchecked
+record: -1

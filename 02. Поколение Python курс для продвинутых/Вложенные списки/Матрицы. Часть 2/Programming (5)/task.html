@@ -1,0 +1,116 @@
+<h2 style="text-align: center;"><strong>Зеркальное отображение</strong></h2>
+
+<p>Дана квадратная матрица чисел. Напишите программу, которая зеркально отображает её элементы относительно горизонтальной оси симметрии.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подаётся натуральное число $n$ — количество строк и столбцов в матрице, затем элементы матрицы построчно через пробел.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести матрицу в которой зеркально отображены элементы относительно горизонтальной оси симметрии.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">4<br>
+			1 2 3 4<br>
+			5 6 7 8<br>
+			8 6 4 2<br>
+			3 4 5 6</td>
+			<td style="text-align: center;">3 4 5 6<br>
+			8 6 4 2<br>
+			5 6 7 8<br>
+			1 2 3 4</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">3<br>
+			1 2 3<br>
+			4 5 6<br>
+			7 8 9</td>
+			<td style="text-align: center;">7 8 9<br>
+			4 5 6<br>
+			1 2 3</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">2<br>
+			1 1<br>
+			1 1</td>
+			<td style="text-align: center;">1 1<br>
+			1 1</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">6<br>
+			1 2 3 4 1 2<br>
+			5 6 7 8 5 6<br>
+			8 6 4 2 8 6<br>
+			3 4 5 6 3 4<br>
+			8 6 4 2 8 6<br>
+			3 4 5 6 3 4</td>
+			<td style="text-align: center;">3 4 5 6 3 4<br>
+			8 6 4 2 8 6<br>
+			3 4 5 6 3 4<br>
+			8 6 4 2 8 6<br>
+			5 6 7 8 5 6<br>
+			1 2 3 4 1 2</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">5<br>
+			1 2 3 4 1<br>
+			5 6 7 8 5<br>
+			8 6 4 2 8<br>
+			3 4 5 6 3<br>
+			8 6 4 2 8</td>
+			<td style="text-align: center;">8 6 4 2 8<br>
+			3 4 5 6 3<br>
+			8 6 4 2 8<br>
+			5 6 7 8 5<br>
+			1 2 3 4 1</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">3<br>
+			14 5 76<br>
+			5 14 65<br>
+			4 5 6</td>
+			<td style="text-align: center;">4 5 6<br>
+			5 14 65<br>
+			14 5 76</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">2<br>
+			61 88<br>
+			5 6</td>
+			<td style="text-align: center;">5 6<br>
+			61 88</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">5<br>
+			88 4 5 7 14<br>
+			8 6 4 2 8<br>
+			88 23 7 23 9<br>
+			4 5 7 14 4<br>
+			15 77 5 3 12</td>
+			<td style="text-align: center;">15 77 5 3 12<br>
+			4 5 7 14 4<br>
+			88 23 7 23 9<br>
+			8 6 4 2 8<br>
+			88 4 5 7 14</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">4<br>1 2 3 4<br>5 6 7 8<br>8 6 4 2<br>3 4 5 6</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">3 4 5 6<br>8 6 4 2<br>5 6 7 8<br>1 2 3 4</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">3<br>1 2 3<br>4 5 6<br>7 8 9</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">7 8 9<br>4 5 6<br>1 2 3</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">2<br>1 1<br>1 1</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1 1<br>1 1</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

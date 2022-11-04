@@ -1,0 +1,86 @@
+<h2 style="text-align: center;">Треугольник Паскаля 1 🌶️</h2>
+
+<p>Треугольник Паскаля — бесконечная таблица биномиальных коэффициентов, имеющая треугольную форму. В этом треугольнике на вершине и по бокам стоят единицы. Каждое число равно сумме двух расположенных над ним чисел.</p>
+
+<pre><code class="language-no-highlight">0:      1
+1:     1 1
+2:    1 2 1
+3:   1 3 3 1
+4:  1 4 6 4 1
+      .....</code></pre>
+
+<p>На вход программе подается число $n$. Напишите программу, которая возвращает указанную строку треугольника Паскаля в виде списка (нумерация строк начинается с нуля).</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подается число $n \, (n \ge 0)$.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести указанную строку треугольника Паскаля в виде списка.</p>
+
+<p><strong>Примечание 1.</strong> Решение удобно оформить в виде функции <code>pascal()</code>, которая принимает номер строки и возвращает соответствующую строку треугольника Паскаля.</p>
+
+<p><strong>Примечание 2.</strong> Графическая иллюстрация формирования треугольника Паскаля.</p>
+
+<p style="text-align: center;"><img alt="" height="307" src="https://ucarecdn.com/7fe4a84f-4a46-496e-8c59-bf9fb487e86d/" width="707"></p>
+
+<p><strong>Примечание 3.</strong> Подробнее прочитать о треугольнике Паскаля можно <a href="https://ru.wikipedia.org/wiki/%D0%A2%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%9F%D0%B0%D1%81%D0%BA%D0%B0%D0%BB%D1%8F" rel="noopener noreferrer nofollow">тут</a>. </p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">0</td>
+			<td style="text-align: center;">[1]</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">[1, 1]</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">[1, 2, 1]</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">[1, 3, 3, 1]</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">[1, 4, 6, 4, 1]</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">[1, 7, 21, 35, 35, 21, 7, 1]</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">15</td>
+			<td style="text-align: center;">[1, 15, 105, 455, 1365, 3003, 5005, 6435, 6435, 5005, 3003, 1365, 455, 105, 15, 1]</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">[1, 5, 10, 10, 5, 1]</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">30</td>
+			<td style="text-align: center;">[1, 30, 435, 4060, 27405, 142506, 593775, 2035800, 5852925, 14307150, 30045015, 54627300, 86493225, 119759850, 145422675, 155117520, 145422675, 119759850, 86493225, 54627300, 30045015, 14307150, 5852925, 2035800, 593775, 142506, 27405, 4060, 435, 30, 1]</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">0</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">[1]</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">[1, 1]</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">2</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">[1, 2, 1]</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">3</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">[1, 3, 3, 1]</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

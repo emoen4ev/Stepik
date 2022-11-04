@@ -1,0 +1,92 @@
+<h2 style="text-align: center;">Предикат делимости</h2>
+
+<p>Напишите функцию <code>func(num1, num2)</code>, принимающую в качестве аргументов два натуральных числа <code>num1</code> и <code>num2</code> и возвращающую значение <code>True</code> если число <code>num1</code> делится без остатка на число <code>num2</code> и <code>False</code> в противном случае.</p>
+
+<p>Результатом вывода программы должно быть "делится" (если функция <code>func()</code> вернула <code>True</code>) и "не делится" (если функция <code>func()</code> вернула <code>False</code>).</p>
+
+<p><strong>Примечание.</strong> Следующий программный код:</p>
+
+<pre><code class="language-python">print(func(10, 2))
+print(func(5, 7))
+print(func(15, 15))</code></pre>
+
+<p>должен выводить:</p>
+
+<pre><code class="language-no-highlight">True
+False
+True</code></pre>
+
+<p>а вся программа должна выводить:</p>
+
+<pre><code class="language-no-highlight">делится
+не делится
+делится</code></pre>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">10<br>
+			2</td>
+			<td style="text-align: center;">делится</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">5<br>
+			7</td>
+			<td style="text-align: center;">не делится</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">15<br>
+			15</td>
+			<td style="text-align: center;">делится</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">100000<br>
+			10</td>
+			<td style="text-align: center;">делится</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">10<br>
+			1000</td>
+			<td style="text-align: center;">не делится</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">12345678<br>
+			12345678</td>
+			<td style="text-align: center;">делится</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">121<br>
+			11</td>
+			<td style="text-align: center;">делится</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">1024<br>
+			128</td>
+			<td style="text-align: center;">делится</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">10<br>
+			3</td>
+			<td style="text-align: center;">не делится</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">10<br>2</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">делится</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">5<br>7</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">не делится</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

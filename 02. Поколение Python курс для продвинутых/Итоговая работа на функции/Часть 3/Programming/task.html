@@ -1,0 +1,22 @@
+<p>Напишите функцию <code>concat()</code>, принимающую переменное количество аргументов и объединяющую их в одну строку через разделитель (<code>sep</code>). Если разделитель не задан, им служит пробел.</p>
+
+<p><strong>Примечание 1.</strong> Обратите внимание, что функция <code>concat()</code> должна принимать не список, а именно переменное количество аргументов.</p>
+
+<p><strong>Примечание 2.</strong> Приведенный ниже код, при условии, что функция <code>concat()</code> написана правильно</p>
+
+<pre><code class="language-python">print(concat('hello', 'python', 'and', 'stepik'))
+print(concat('hello', 'python', 'and', 'stepik', sep='*'))
+print(concat('hello', 'python', sep='()()()'))
+print(concat('hello', sep='()'))
+print(concat(1, 2, 3, 4, 5, 6, 7, 8, 9, sep='$$'))</code></pre>
+
+<p>должен выводить:</p>
+
+<pre><code class="language-no-highlight">hello python and stepik
+hello*python*and*stepik
+hello()()()python
+hello
+1$$2$$3$$4$$5$$6$$7$$8$$9</code></pre>
+
+<p><strong>Примечание 3.</strong> Вызывать функцию <code>concat()</code> не нужно, требуется только реализовать.</p>
+<details><summary>Для отладки кода 🟡</summary><iframe allowfullscreen="" height="600" src="https://trinket.io/embed/python3/4858fe25a0" width="100%"></iframe></details><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

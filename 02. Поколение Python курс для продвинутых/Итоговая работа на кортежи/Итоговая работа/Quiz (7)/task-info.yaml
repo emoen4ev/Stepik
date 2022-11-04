@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: кортеж нельзя изменять после создания
+- text: кортеж – это упорядоченный набор элементов
+- text: кортеж – это неупорядоченный набор элементов
+- text: после создания кортеж можно изменять
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

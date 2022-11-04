@@ -1,0 +1,147 @@
+<h1>Тема урока: тип данных NoneType</h1>
+
+<ol>
+	<li>Тип данных <code>NoneType</code></li>
+	<li>Литерал <code>None</code></li>
+	<li>Сравнение <code>None</code> с другими типами данных</li>
+</ol>
+
+<p><strong>Аннотация.</strong> Урок посвящен типу данных <code>NoneType</code>.</p>
+
+<h2 style="text-align: center;">Пустое значение</h2>
+
+<p>Во многих языках программирования (Java, C++, C#, JavaScript и т.д.) существует ключевое слово <code>null</code>, которое можно присвоить переменным. Концепция ключевого слова <code>null</code> заключается в том, что оно дает переменной нейтральное или "нулевое" поведение.</p>
+
+<p>В языке Python, слово <code>null</code> заменено на <code>None</code>, поскольку слово <code>null</code> звучит не очень дружелюбно, а <code>None</code> относится именно к требуемой функциональности – это ничего, и не имеет поведения.</p>
+
+<h2 style="text-align: center;">Литерал None</h2>
+
+<p>Литерал <code>None</code> в Python позволяет представить <code>null</code> переменную, то есть переменную, которая не содержит какого-либо значения. По сути <code>None</code> – это специальная константа, означающая пустоту. Если более точно, то <code>None</code> – это объект специального типа данных <code>NoneType</code>.</p>
+
+<p style="text-align: center;"><img alt="" height="336" src="https://ucarecdn.com/fdbb05f1-3eb6-4d92-acbf-07c6f8acc8f1/" width="739"></p>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">var = None
+print(type(var))</code></pre>
+
+<p>выведет:</p>
+
+<pre><code class="language-1c">&lt;class 'NoneType'&gt;</code></pre>
+
+<p>Мы можем присвоить значение <code>None</code> любой переменной, однако мы не можем самостоятельно создать другой<code>NoneType</code> объект.</p>
+
+<p><img alt="" height="73" src="https://ucarecdn.com/48bf029b-3aea-4d1a-ab38-1096b0616b3a/" style="float: left;" width="73">Все переменные, которым присвоено значение <code>None</code> ссылаются на один и тот же объект типа <code>NoneType</code>. Создание собственных экземпляров типа <code>NoneType</code> недопустимо. Объекты, существующие в единственном экземпляре, называются <a href="https://ru.wikipedia.org/wiki/%D0%9E%D0%B4%D0%B8%D0%BD%D0%BE%D1%87%D0%BA%D0%B0_(%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD_%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" rel="noopener noreferrer nofollow">синглтонами</a>.</p>
+
+<h2 style="text-align: center;">Проверка на None</h2>
+
+<p>Для того, чтобы проверить значение переменной на <code>None</code>, мы используем либо оператор <code>is</code>, либо оператор проверки на равенство <code>==</code>.</p>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">var = None
+if var is None:   # используем оператор is
+  print('None')
+else:
+  print('Not None')</code></pre>
+
+<p>выведет:</p>
+
+<pre><code class="language-no-highlight">None</code></pre>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">var = None
+if var == None:   # используем оператор ==
+  print('None')
+else:
+  print('Not None')</code></pre>
+
+<p>выведет:</p>
+
+<pre><code class="language-no-highlight">None</code></pre>
+
+<p><img alt="" height="77" src="https://ucarecdn.com/4496e3b8-b1b3-4643-be44-63c651104c8d/" style="float: left;" width="77">Для сравнения переменной с <code>None</code> всегда используйте оператор <code>is</code>. Для встроенных типов поведение <code>is</code> и <code>==</code> абсолютно одинаково, однако с пользовательскими типами могут возникнуть проблемы, так как в Python есть возможность переопределения операторов сравнения в пользовательских типах.</p>
+
+<h2 style="text-align: center;">Сравнение None с другими типами данных</h2>
+
+<p>Сравнение <code>None</code> с любым объектом, отличным от <code>None</code> дает значение <code>False</code>.</p>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">print(None == None)</code></pre>
+
+<p>выведет:</p>
+
+<pre><code class="language-no-highlight">True</code></pre>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">print(None == 17)
+print(None == 3.14)
+print(None == True)
+print(None == [1, 2, 3])
+print(None == 'Beegeek')</code></pre>
+
+<p>выведет:</p>
+
+<pre><code class="language-no-highlight">False
+False
+False
+False
+False</code></pre>
+
+<p>Важно понимать, что следующий программный код:</p>
+
+<pre><code class="language-python">print(None == 0)
+print(None == False)
+print(None == '')</code></pre>
+
+<p>выведет:</p>
+
+<pre><code class="language-no-highlight">False
+False
+False</code></pre>
+
+<p><img alt="" height="49" src="https://ucarecdn.com/436ac75d-fc7d-4953-8832-1f8428b34f7d/" width="49">   Значение <code>None</code> <strong>не отождествляется</strong> с значениями <code>0, False, ''</code>.</p>
+
+<p>Сравнивать <code>None</code> с другими типами данных можно только на равенство.</p>
+
+<p>Следующий программный код:</p>
+
+<pre><code class="language-python">print(None &gt; 0)
+print(None &lt;= False)</code></pre>
+
+<p>приводит к ошибке:</p>
+
+<pre><code class="language-no-highlight">TypeError: '&gt;' not supported between instances of 'NoneType' and 'int' ('bool')</code></pre>
+
+<h2 style="text-align: center;">Примечания</h2>
+
+<p><strong>Примечание 1.</strong> Обратите внимание, что функции, не возвращающие значений, на самом деле в Python возвращают значение <code>None</code>.</p>
+
+<pre><code class="language-python">def print_message() :
+    print('Я - Тимур,')
+    print('король матана. ')</code></pre>
+
+<p>Мы можем вызвать функцию <code>print_message()</code> так: </p>
+
+<pre><code class="language-python">print_message()</code></pre>
+
+<p> или так:</p>
+
+<pre><code class="language-python">res = print_message()</code></pre>
+
+<p>В переменной <code>res</code> хранится значение <code>None</code>.</p>
+
+<p><strong>Примечание 2.</strong> Концепция <code>null</code> значений появилась при создании языка <code>ALGOL W</code> великим Чарльзом Хоаром, который позднее назвал собственную идею ошибкой на миллиард долларов. Подробнее можно почитать <a href="http://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare" rel="noopener noreferrer nofollow">тут</a>.</p>
+
+<div style="text-align: center;">
+<figure class="image" style=""><img alt="На конференции в EPFL 20 июня 2011 г." src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Sir_Tony_Hoare_IMG_5125.jpg/274px-Sir_Tony_Hoare_IMG_5125.jpg">
+<figcaption>Чарльз Энтони Ричард Хоар</figcaption>
+</figure>
+</div>
+
+<p>Чарльз Хоар автор одного из самых быстрых алгоритмов сортировки, основанной на сравнениях: <a href="https://ru.wikipedia.org/wiki/%D0%91%D1%8B%D1%81%D1%82%D1%80%D0%B0%D1%8F_%D1%81%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0" rel="noopener noreferrer nofollow">быстрая сортировка</a> (QuickSort).</p>
+
+<h2 style="text-align: right;"><strong>Made with 💛 by BEEGEEK</strong></h2>

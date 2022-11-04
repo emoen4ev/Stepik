@@ -1,0 +1,21 @@
+<p>Что будет выведено на экран в результате работы следующей программы?</p>
+
+<pre><code class="language-python">poets = [
+    ('Тургенев', 14),
+    ('Есенин', 13),
+    ('Маяковский', 28),
+    ('Фет', 15),
+    ('Лермонтов', 20)]
+
+for i in range(len(poets)):
+    for j in range(i+1, len(poets)):
+        if poets[i] &gt; poets[j]:
+            poets[i], poets[j] = poets[j], poets[i]
+
+print(poets[0])
+print(poets[-1])</code></pre>
+
+<details><summary>Подсказка</summary>
+
+<p>Кортежи сравниваются поэлементно.</p>
+</details>

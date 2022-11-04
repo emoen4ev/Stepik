@@ -1,0 +1,456 @@
+<h1>Тема урока: методы множеств</h1>
+
+<ol>
+	<li>Методы <code>union(), intersection(), difference(), symmetric_difference()</code></li>
+	<li>Методы <code>update(), intersection_update(), difference_update(), symmetric_difference_update()</code></li>
+	<li>Операторы <code>&amp;, |, -, ^</code></li>
+</ol>
+
+<p><strong>Аннотация.</strong> Урок посвящен методам множеств, которые реализуют основные операции над множествами.</p>
+
+<h2 style="text-align: center;">Операции над множествами</h2>
+
+<p>Основные операции над множествами:</p>
+
+<ul>
+	<li>объединение множеств;</li>
+	<li>пересечение множеств;</li>
+	<li>разность множеств;</li>
+	<li>симметрическая разность множеств.</li>
+</ul>
+
+<p>Для каждой операции есть метод и оператор.</p>
+
+<h3 style="text-align: center;">Объединение множеств: метод union()</h3>
+
+<p><strong>Объединение множеств </strong>это множество, состоящее из элементов, принадлежащих хотя бы одному из объединяемых множеств. Для этой операции существует метод <code>union()</code>.</p>
+
+<p style="text-align: center;"><img alt="" height="292" src="https://ucarecdn.com/f6d28b9d-3d55-4ca9-9e50-d46044048ae5/" width="351">​</p>
+
+<p>Приведенный ниже код:</p>
+
+<pre><code class="language-python">myset1 = {1, 2, 3, 4, 5}
+myset2 = {3, 4, 6, 7, 8}
+
+myset3 = myset1.union(myset2)
+print(myset3)</code></pre>
+
+<p>выводит (порядок элементов может отличаться):</p>
+
+<pre><code class="language-no-highlight">{1, 2, 3, 4, 5, 6, 7, 8}</code></pre>
+
+<p><img alt="" height="49" src="https://ucarecdn.com/b9feac5f-3761-45c2-9ede-8755587c9e30/" style="float: left;" width="49">​Обратите внимание, метод <code>union()</code> <strong>возвращает новое множество</strong> в которое входят все элементы множеств <code>myset1</code> и <code>myset2</code>. Для изменения текущего множества используется метод <code>update()</code>.</p>
+
+<p>Для объединения двух множеств можно также использовать оператор <code>|</code>.</p>
+
+<p>Результат выполнения приведенного ниже кода:</p>
+
+<pre><code class="language-python">myset1 = {1, 2, 3, 4, 5}
+myset2 = {3, 4, 6, 7, 8}
+
+myset3 = myset1 | myset2
+print(myset3)</code></pre>
+
+<p>аналогичен предыдущему.</p>
+
+<h3 style="text-align: center;">Пересечение множеств: метод intersection()</h3>
+
+<p><strong>Пересечение</strong> множеств это множество, состоящее из элементов, принадлежащих одновременно каждому из пересекающихся множеств. Для этой операции существует метод <code>intersection()</code>.</p>
+
+<p style="text-align: center;"><img alt="" height="287" src="https://ucarecdn.com/0a6efc05-4880-4d62-9b7a-10485fea226a/" width="345">​</p>
+
+<p>Приведенный ниже код:</p>
+
+<pre><code class="language-python">myset1 = {1, 2, 3, 4, 5}
+myset2 = {3, 4, 6, 7, 8}
+
+myset3 = myset1.intersection(myset2)
+print(myset3)</code></pre>
+
+<p>выводит (порядок элементов может отличаться):</p>
+
+<pre><code class="language-no-highlight">{3, 4}</code></pre>
+
+<p><img alt="" height="49" src="https://ucarecdn.com/c708933e-97d9-4379-8c82-fd1c13554a80/" style="float: left;" width="49">​Обратите внимание, метод <code>intersection()</code> возвращает новое множество в которое входят общие элементы множеств <code>myset1</code> и <code>myset2</code>. Для изменения текущего множества используется метод <code>intersection_update()</code>.</p>
+
+<p>Для пересечения двух множеств можно также использовать оператор <code>&amp;</code>.</p>
+
+<p>Результат выполнения приведенного ниже кода:</p>
+
+<pre><code class="language-python">myset1 = {1, 2, 3, 4, 5}
+myset2 = {3, 4, 6, 7, 8}
+
+myset3 = myset1 &amp; myset2
+print(myset3)</code></pre>
+
+<p>аналогичен предыдущему.</p>
+
+<h3 style="text-align: center;">Разность множеств: метод difference()</h3>
+
+<p><strong>Разность</strong> множеств это множество, в которое входят все элементы первого множества, не входящие во второе множество. Для этой операции существует метод <code>difference()</code>.</p>
+
+<p style="text-align: center;"><img alt="" height="297" src="https://ucarecdn.com/79d459e1-7f36-4bb7-89f9-1ff791cab19b/" width="358">​</p>
+
+<p>Приведенный ниже код:</p>
+
+<pre><code class="language-python">myset1 = {1, 2, 3, 4, 5}
+myset2 = {3, 4, 6, 7, 8}
+
+myset3 = myset1.difference(myset2)
+print(myset3)</code></pre>
+
+<p>выводит (порядок элементов может отличаться):</p>
+
+<pre><code class="language-no-highlight">{1, 2, 5}</code></pre>
+
+<p>Для разности двух множеств можно также использовать оператор <code>-</code>.</p>
+
+<p>Результат выполнения приведенного ниже кода:</p>
+
+<pre><code class="language-python">myset1 = {1, 2, 3, 4, 5}
+myset2 = {3, 4, 6, 7, 8}
+
+myset3 = myset1 - myset2
+print(myset3)</code></pre>
+
+<p>аналогичен предыдущему.</p>
+
+<p>Обратите внимание: для операции разности множеств важен порядок, в котором указаны множества. Если поменять местами <code>myset1</code> и <code>myset2</code>, нас ожидает совсем другой результат: элементы входящие в множество <code>myset2</code> и которых нет в множестве <code>myset1</code>. </p>
+
+<p>Приведенный ниже код:</p>
+
+<pre><code class="language-python">myset1 = {1, 2, 3, 4, 5}
+myset2 = {3, 4, 6, 7, 8}
+
+myset3 = myset2.difference(myset1)
+print(myset3)</code></pre>
+
+<p>выводит (порядок элементов может отличаться):</p>
+
+<pre><code class="language-no-highlight">{8, 6, 7}</code></pre>
+
+<h3 style="text-align: center;">Симметрическая разность: метод symmetric_difference()</h3>
+
+<p><strong>Симметрическая разность</strong> множеств это множество, включающее все элементы исходных множеств, не принадлежащие одновременно обоим исходным множествам. Для этой операции существует метод <code>symmetric_difference()</code>.</p>
+
+<p style="text-align: center;"><img alt="" height="295" src="https://ucarecdn.com/fe138377-bf00-4607-8500-9b2262c15744/" width="355">​</p>
+
+<p>Приведенный ниже код:</p>
+
+<pre><code class="language-python">myset1 = {1, 2, 3, 4, 5}
+myset2 = {3, 4, 6, 7, 8}
+
+myset3 = myset1.symmetric_difference(myset2)
+print(myset3)</code></pre>
+
+<p>выводит (порядок элементов может отличаться):</p>
+
+<pre><code class="language-no-highlight">{1, 2, 5, 6, 7, 8}</code></pre>
+
+<p>Для симметрической разности двух множеств можно также использовать оператор <code>^</code>.</p>
+
+<p>Результат выполнения приведенного ниже кода:</p>
+
+<pre><code class="language-python">myset1 = {1, 2, 3, 4, 5}
+myset2 = {3, 4, 6, 7, 8}
+
+myset3 = myset1 ^ myset2
+print(myset3)</code></pre>
+
+<p>аналогичен предыдущему.</p>
+
+<p><img alt="" height="49" src="https://ucarecdn.com/d8ca2d33-0d4a-45df-88a3-580d71d8ed20/" style="float: left;" width="49">​Обратите внимание: для операции симметрической разности порядок множеств не важен, на то она и симметрическая: <code>myset1 ^ myset2 == myset2 ^ myset1</code>.</p>
+
+<h2 style="text-align: center;">Методы множеств, изменяющие текущие множества</h2>
+
+<p>Методы <code>union(), intersection(), difference(), symmetric_difference()</code> не изменяют исходные множества, а возвращают новые. Часто на практике нужно изменять исходные множества. Для таких целей используются парные методы <code>update(), intersection_update(), difference_update(), symmetric_difference_update()</code>.</p>
+
+<h3 style="text-align: center;">Метод update()</h3>
+
+<p>Метод <code>update()</code> изменяет исходное множество <strong>по объединению</strong>.</p>
+
+<p>Приведенный ниже код:</p>
+
+<pre><code class="language-python">myset1 = {1, 2, 3, 4, 5}
+myset2 = {3, 4, 6, 7, 8}
+
+myset1.update(myset2)      # изменяем множество myset1
+print(myset1)</code></pre>
+
+<p>выводит (порядок элементов может отличаться):</p>
+
+<pre><code class="language-no-highlight">{1, 2, 3, 4, 5, 6, 7, 8}</code></pre>
+
+<p>Аналогичный результат получается, если использовать оператор <code>|=</code>:</p>
+
+<pre><code class="language-python">myset1 = {1, 2, 3, 4, 5}
+myset2 = {3, 4, 6, 7, 8}
+
+myset1 |= myset2
+print(myset1)</code></pre>
+
+<h3 style="text-align: center;">Метод intersection_update()</h3>
+
+<p>Метод <code>intersection_update()</code> изменяет исходное множество <strong>по пересечению</strong>.</p>
+
+<p>Приведенный ниже код:</p>
+
+<pre><code class="language-python">myset1 = {1, 2, 3, 4, 5}
+myset2 = {3, 4, 6, 7, 8}
+
+myset1.intersection_update(myset2)      # изменяем множество myset1
+print(myset1)</code></pre>
+
+<p>выводит (порядок элементов может отличаться):</p>
+
+<pre><code class="language-no-highlight">{3, 4}</code></pre>
+
+<p>Аналогичный результат получается, если использовать оператор <code>&amp;=</code>:</p>
+
+<pre><code class="language-python">myset1 = {1, 2, 3, 4, 5}
+myset2 = {3, 4, 6, 7, 8}
+
+myset1 &amp;= myset2
+print(myset1)</code></pre>
+
+<h3 style="text-align: center;">Метод difference_update()</h3>
+
+<p>Метод <code>difference_update()</code> изменяет исходное множество <strong>по разности</strong>.</p>
+
+<p>Приведенный ниже код:</p>
+
+<pre><code class="language-python">myset1 = {1, 2, 3, 4, 5}
+myset2 = {3, 4, 6, 7, 8}
+
+myset1.difference_update(myset2)      # изменяем множество myset1
+print(myset1)</code></pre>
+
+<p>выводит (порядок элементов может отличаться):</p>
+
+<pre><code class="language-no-highlight">{1, 2, 5}</code></pre>
+
+<p>Аналогичный результат получается, если использовать оператор <code>-=</code>:</p>
+
+<pre><code class="language-python">myset1 = {1, 2, 3, 4, 5}
+myset2 = {3, 4, 6, 7, 8}
+
+myset1 -= myset2
+print(myset1)</code></pre>
+
+<h3 style="text-align: center;">Метод symmetric_difference_update()</h3>
+
+<p>Метод <code>symmetric_difference_update()</code> изменяет исходное множество <strong>по симметрической разности</strong>.</p>
+
+<p>Приведенный ниже код:</p>
+
+<pre><code class="language-python">myset1 = {1, 2, 3, 4, 5}
+myset2 = {3, 4, 6, 7, 8}
+
+myset1.symmetric_difference_update(myset2)      # изменяем множество myset1
+print(myset1)</code></pre>
+
+<p>выводит (порядок элементов может отличаться):</p>
+
+<pre><code class="language-no-highlight">{1, 2, 5, 6, 7, 8}</code></pre>
+
+<p>Аналогичный результат получается, если использовать оператор <code>^=</code>:</p>
+
+<pre><code class="language-python">myset1 = {1, 2, 3, 4, 5}
+myset2 = {3, 4, 6, 7, 8}
+
+myset1 ^= myset2
+print(myset1)</code></pre>
+
+<h2 style="text-align: center;">Примечания</h2>
+
+<p><strong>Примечание 1.</strong> Все основные операции над множествами выполнятся двумя способами: при помощи метода или соответствующего ему оператора. Различие в том, что метод может принимать в качестве аргумента не только множество (тип данных <code>set</code>), но и любой итерируемый объект (список, строку, кортеж).</p>
+
+<p>Приведенный ниже код:</p>
+
+<pre><code class="language-python">mylist = [2021, 2020, 2019, 2018, 2017, 2016]
+mytuple = (2021, 2020, 2016)
+mystr = 'abcd'
+
+myset = {2009, 2010, 2016}
+
+print(myset.union(mystr))              # объединяем со строкой
+print(myset.intersection(mylist))      # пересекаем со списком
+print(myset.difference(mytuple))       # находим разность с кортежем</code></pre>
+
+<p>выводит (порядок элементов может отличаться):</p>
+
+<pre><code class="language-no-highlight">{2016, 'c', 'b', 'a', 'd', 2009, 2010}
+{2016}
+{2009, 2010}</code></pre>
+
+<p>Приведенный ниже код:</p>
+
+<pre><code class="language-python">mylist = [2021, 2020, 2019, 2018, 2017, 2016]
+mytuple = (2021, 2020, 2016)
+mystr = 'abcd'
+
+myset = {2009, 2010, 2016}
+
+print(myset | mystr)
+print(myset &amp; mylist)
+print(myset - mytuple)</code></pre>
+
+<p>приводит к возникновению ошибок:</p>
+
+<pre><code class="language-no-highlight">TypeError: unsupported operand type(s) for |: 'set' and 'str'
+TypeError: unsupported operand type(s) for &amp;: 'set' and 'list'
+TypeError: unsupported operand type(s) for -: 'set' and 'tuple'</code></pre>
+
+<p><strong>Примечание 2.</strong> Некоторые методы (<code>union(), intersection(), difference()</code>) и операторы (<code>|, &amp;, -, ^</code>) позволяют совершать операции над несколькими множествами сразу.</p>
+
+<p>Приведенный ниже код:</p>
+
+<pre><code class="language-python">myset1 = {1, 2, 3, 4, 5, 6}
+myset2 = {2, 3, 4, 5}
+myset3 = {5, 6, 7, 8}
+
+union1 = myset1.union(myset2, myset3)
+union2 = myset1 | myset2 | myset3
+
+difference1 = myset1.difference(myset2, myset3)
+difference2 = myset1 - myset2 - myset3            # порядок выполнения слева-направо
+
+print(union1 == union2)
+print(difference1 == difference2)</code></pre>
+
+<p>выводит:</p>
+
+<pre><code class="language-no-highlight">True
+True</code></pre>
+
+<p><strong>Примечание 3.</strong> Оператор <code>^</code> симметрической разности позволяет использовать несколько множеств, а метод <code>symmetric_difference()</code> – нет.</p>
+
+<p>Приведенный ниже код:</p>
+
+<pre><code class="language-python">myset1 = {1, 2, 3, 4, 5, 6}
+myset2 = {2, 3, 4, 7}
+myset3 = {6, 20, 30}
+
+symdifference = myset1 ^ myset2 ^ myset3  # порядок выполнения слева-направо
+
+print(symdifference)</code></pre>
+
+<p>выводит (порядок элементов может отличаться):</p>
+
+<pre><code class="language-no-highlight">{1, 5, 7, 20, 30}</code></pre>
+
+<p> Приведенный ниже код:</p>
+
+<pre><code class="language-python">myset1 = {1, 2, 3, 4, 5, 6}
+myset2 = {2, 3, 4, 7}
+myset3 = {6, 20, 30}
+
+symdifference = myset1.symmetric_difference(myset2, myset3)
+
+print(symdifference)</code></pre>
+
+<p>приводит к ошибке:</p>
+
+<pre><code class="language-no-highlight">TypeError: symmetric_difference() takes exactly one argument (2 given)</code></pre>
+
+<p><strong>Примечание 4. </strong>Таблица соответствия методов и операторов над множествами.</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td style="text-align: center;">
+			<pre>
+<code class="language-python">A | B
+A.union(B)</code></pre>
+			</td>
+			<td>Возвращает множество, являющееся объединением множеств <code>A</code> и <code>B</code></td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+			<pre>
+<code class="language-python">A |= B
+A.update(B)</code></pre>
+			</td>
+			<td>Добавляет в множество <code>A</code> все элементы из множества <code>B</code></td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+			<pre>
+<code class="language-python">A &amp; B
+A.intersection(B)</code></pre>
+			</td>
+			<td>Возвращает множество, являющееся пересечением множеств <code>A</code> и <code>B</code></td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+			<pre>
+<code class="language-python">A &amp;= B
+A.intersection_update(B)</code></pre>
+			</td>
+			<td>Оставляет в множестве <code>A</code> только те элементы, которые есть в множестве <code>B</code></td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+			<pre>
+<code class="language-python">A - B
+A.difference(B)</code></pre>
+			</td>
+			<td>Возвращает разность множеств <code>A</code> и <code>B</code></td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+			<pre>
+<code class="language-python">A -= B
+A.difference_update(B)</code></pre>
+			</td>
+			<td>Удаляет из множества <code>A</code> все элементы, входящие в <code>B</code></td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+			<pre>
+<code class="language-python">A ^ B
+A.symmetric_difference(B)</code></pre>
+			</td>
+			<td>Возвращает симметрическую разность множеств <code>A</code> и <code>B</code></td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+			<pre>
+<code class="language-python">A ^= B
+A.symmetric_difference_update(B)</code></pre>
+			</td>
+			<td>Записывает в <code>A</code> симметрическую разность множеств <code>A</code> и <code>B</code></td>
+		</tr>
+	</tbody>
+</table>
+
+<p><strong>Примечание 5.</strong> Приоритет операторов в порядке убывания (верхние операторы имеют более высокий приоритет, чем нижние) имеет вид:</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td style="text-align: center;"><strong>Оператор</strong></td>
+			<td style="text-align: center;"><strong>Описание</strong></td>
+		</tr>
+		<tr>
+			<td style="text-align: center;"><code>-</code></td>
+			<td style="text-align: center;">разность</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;"><code>&amp;</code></td>
+			<td style="text-align: center;">пересечение</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;"><code>^</code></td>
+			<td style="text-align: center;">симметрическая разность</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;"><code>|</code></td>
+			<td style="text-align: center;">объединение</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><a href="https://docs.python.org/3/reference/expressions.html#operator-precedence" rel="noopener noreferrer nofollow">Тут</a> можно посмотреть про операторы и их приоритеты в Python.</p>
+
+<h2 style="text-align: right;"><strong>Made with 💛 by BEEGEEK</strong></h2>

@@ -1,0 +1,178 @@
+<h2 style="text-align: center;">На easy</h2>
+
+<p>На вход программе подаются два целых числа $a$ и $b$. Напишите программу, которая выводит:</p>
+
+<ul>
+	<li>сумму чисел $a$ и $b$;</li>
+	<li>разность чисел $a$ и $b$;</li>
+	<li>произведение чисел $a$ и $b$;</li>
+	<li>частное чисел $a$ и $b$;</li>
+	<li>целую часть от деления числа $a$ на $b$;</li>
+	<li>остаток от деления числа $a$ на $b$;</li>
+	<li>корень квадратный из суммы их $10$-х степеней: $\sqrt{a^{10} + b^{10}}$.</li>
+</ul>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подаются два целых числа $a$ и $b \, (b \neq 0)$, каждое на отдельной строке.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести результаты математических операций в соответствии с условием задачи.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">3
+8</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">11
+-5
+24
+0.375
+0
+3
+32768.90100384814</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">123
+2</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">125
+121
+246
+61.5
+61
+1
+28153056843.0</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">454
+322</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">776
+132
+146188
+1.4099378881987579
+1
+132
+19595820067580.043</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">0
+245</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">245
+-245
+0
+0.0
+0
+0
+882735153125.0</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">1
+1000</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">1001
+-999
+1000
+0.001
+0
+1
+1000000000000000.0</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">10
+2</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">12
+8
+20
+5.0
+5
+0
+100000.00511999987</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">34
+400</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">434
+-366
+13600
+0.085
+0
+34
+10240000000100.8</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">87
+432</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">519
+-345
+37584
+0.2013888888888889
+0
+87
+15045920331982.766</code></pre>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">3<br>8</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">11<br>-5<br>24<br>0.375<br>0<br>3<br>32768.90100384814</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">123<br>2</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">125<br>121<br>246<br>61.5<br>61<br>1<br>28153056843.0</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">454<br>322</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">776<br>132<br>146188<br>1.4099378881987579<br>1<br>132<br>19595820067580.043</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

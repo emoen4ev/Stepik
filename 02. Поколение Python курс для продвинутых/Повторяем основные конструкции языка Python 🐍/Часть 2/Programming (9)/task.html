@@ -1,0 +1,99 @@
+<h2 style="text-align: center;">Кремниевая долина 🌶️🌶️</h2>
+
+<p>Искусственный интеллект Антон, созданный Гилфойлом, взломал сеть умных холодильников. Теперь он использует их в качестве серверов "Пегого дудочника". Помогите владельцу фирмы отыскать все зараженные холодильники.</p>
+
+<p>Для каждого холодильника существует строка с данными, состоящая из строчных букв и цифр, и если в ней присутствует слово "anton" (необязательно рядом стоящие буквы, главное наличие последовательности букв), то холодильник заражен и нужно вывести номер холодильника, нумерация начинается с единицы</p>
+
+<p><strong>Формат входных данных</strong><br>
+В первой строке подаётся число $n$ – количество холодильников. В последующих $n$ строках вводятся строки, содержащие латинские строчные буквы и цифры, в каждой строке от $5$ до $100$ символов.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести номера зараженных холодильников через пробел. Если таких холодильников нет, ничего выводить не нужно.</p>
+
+<h2 style="text-align: right;"><strong>Made with 💛 by Anri Tabuev</strong></h2>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td>6<br>
+			222anton456<br>
+			a1n1t1o1n1<br>
+			0000a0000n00t00000o000000n<br>
+			gylfole<br>
+			richard<br>
+			ant0n</td>
+			<td style="text-align: center;">1 2 3</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td>9<br>
+			osfjwoiergwoignaewpjofwoeijfnwfonewfoignewtowenffnoeiwowjfninoiwfen<br>
+			anton<br>
+			aoooooooooontooooo<br>
+			elelelelelelelelelel<br>
+			ntoneeee<br>
+			tonee<br>
+			253235235a5323352n25235352t253523523235oo235523523523n<br>
+			antoooooooooooooooooooooooooooooooooooooooooooooooooooon<br>
+			unton</td>
+			<td style="text-align: center;">1 2 7 8</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td>1<br>
+			anton</td>
+			<td style="text-align: center;">1</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td>1<br>
+			unton</td>
+			<td style="text-align: center;"> </td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td>4<br>
+			alone<br>
+			antone<br>
+			aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaannnnnnnnnnnnnnnnnnnnnnnnnnntttttttttttttttttttttoooooooooonnnn<br>
+			anooooon</td>
+			<td style="text-align: center;">2 3</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td>3<br>
+			antonanton<br>
+			atonn<br>
+			ergnorgenoigeroiegrroinoirgonioinrgeanton</td>
+			<td style="text-align: center;">1 3</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td>2<br>
+			gftcfajkunytftttit7yjoogo87tfo898ynoctu<br>
+			n8yt68r5dyotnakvbug6o86</td>
+			<td style="text-align: center;">1</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td>5<br>
+			kiytfofpy87to689p8oyujcut07iyv<br>
+			hjuri7e9rl7t87dui67i9trourszui56lr57o67i<br>
+			hfyr7irkdysi76ur6p7roo7t7ipp5doytyty<br>
+			jdridrxid57<br>
+			mgfxud65dxe66i7r4d6i7t65f486ws5eutrc</td>
+			<td style="text-align: center;"> </td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">6<br>222anton456<br>a1n1t1o1n1<br>0000a0000n00t00000o000000n<br>gylfole<br>richard<br>ant0n</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1 2 3</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">9<br>osfjwoiergwoignaewpjofwoeijfnwfonewfoignewtowenffnoeiwowjfninoiwfen<br>anton<br>aoooooooooontooooo<br>elelelelelelelelelel<br>ntoneeee<br>tonee<br>253235235a5323352n25235352t253523523235oo235523523523n<br>antoooooooooooooooooooooooooooooooooooooooooooooooooooon<br>unton</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1 2 7 8</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1<br>anton</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

@@ -1,0 +1,21 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: Младше 15
+- text: 15-20 лет
+- text: 21-25 лет
+- text: 26-35 лет
+- text: 36-45 лет
+- text: 46-55 лет
+- text: старше 55 лет
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz
+local_check: false

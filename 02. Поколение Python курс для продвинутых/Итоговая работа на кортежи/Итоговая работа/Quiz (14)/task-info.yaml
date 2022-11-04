@@ -1,0 +1,23 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: "<code>[2, 3, 4, 5, 6, 7]</code>"
+- text: "<code>[1, 2, 3, 4, 5, 6]</code>"
+- text: <code>0</code>
+- text: <code>1</code>
+- text: "<code>[]</code>"
+- text: "<code>[2, 3, 4, 5, 6]</code>"
+- text: "<code>[0, 1, 2, 3, 4, 5, 6]</code>"
+- text: None
+- text: "<code>(2, 3, 4, 5, 6, 7)</code>"
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

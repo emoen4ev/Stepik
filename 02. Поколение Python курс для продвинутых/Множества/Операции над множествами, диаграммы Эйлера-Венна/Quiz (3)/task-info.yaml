@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: "$\\{b, c, d\\}$"
+- text: "$\\{b, c, d, i, o, u\\}$"
+- text: "$\\{a, e\\}$"
+- text: "$\\{i, o, u\\}$"
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

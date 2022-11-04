@@ -1,0 +1,107 @@
+<h2 style="text-align: center;">Scrabble game</h2>
+
+<p>В игре Scrabble каждая буква приносит определенное количество баллов. Общая стоимость слова – сумма баллов его букв. Чем реже буква встречается, тем больше она ценится:</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>Баллы</th>
+			<th>Буква</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>$1$</td>
+			<td>$A$, $E$, $I$, $L$, $N$, $O$, $R$, $S$, $T$, $U$</td>
+		</tr>
+		<tr>
+			<td>$2$</td>
+			<td>$D$, $G$</td>
+		</tr>
+		<tr>
+			<td>$3$</td>
+			<td>$B$, $C$, $M$, $P$</td>
+		</tr>
+		<tr>
+			<td>$4$</td>
+			<td>$F$, $H$, $V$, $W$, $Y$</td>
+		</tr>
+		<tr>
+			<td>$5$</td>
+			<td>$K$</td>
+		</tr>
+		<tr>
+			<td>$8$</td>
+			<td>$J$, $X$</td>
+		</tr>
+		<tr>
+			<td>$10$</td>
+			<td>$Q$, $Z$</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>Напишите программу подсчета итоговой стоимости введенного слова.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подается одно слово в верхнем регистре на английском языке.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести суммарную стоимость букв введеного слова.</p>
+
+<p><strong>Примечание.</strong> Подробнее про игру можно почитать <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BA%D1%80%D1%8D%D0%B1%D0%B1%D0%BB" rel="noopener noreferrer nofollow">тут</a>.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">DANSER</td>
+			<td style="text-align: center;">7</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">FRESHENER</td>
+			<td style="text-align: center;">15</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">ZIP</td>
+			<td style="text-align: center;">14</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">TOILET</td>
+			<td style="text-align: center;">6</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">FILTER</td>
+			<td style="text-align: center;">9</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">EXISTENTIALISM</td>
+			<td style="text-align: center;">23</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">PHALANX</td>
+			<td style="text-align: center;">19</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">THERMOPYLAE</td>
+			<td style="text-align: center;">21</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">DANSER</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">7</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">FRESHENER</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">15</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">ZIP</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">14</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

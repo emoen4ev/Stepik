@@ -1,0 +1,179 @@
+<h2 style="text-align: center;">Опасный вирус 😈</h2>
+
+<p>В файловую систему компьютера, на котором развернута наша ❤️ платформа Stepik, проник опасный вирус и сломал контроль прав доступа к файлам. Говорят, вирус написал один из студентов курса Python для начинающих.</p>
+
+<p>Для каждого файла известно, с какими действиями можно к нему обращаться:</p>
+
+<ul>
+	<li>запись <code>W</code> (write, доступ на запись в файл);</li>
+	<li>чтение <code>R</code> (read, доступ на чтение из файла);</li>
+	<li>запуск <code>X</code> (execute, запуск на исполнение файла).</li>
+</ul>
+
+<p>Напишите программу для восстановления контроля прав доступа к файлам. Ваша программа для каждого запроса должна будет возвращать <code>OK</code> если выполняется допустимая операция, и <code>Access denied</code>, если операция недопустима.</p>
+
+<p><strong>Формат входных данных</strong><br>
+Программа получает на вход количество файлов $n$, содержащихся в файловой системе компьютера. Далее идет $n$ строк, на каждой имя файла и допустимые с ним операции, разделенные символом пробела. В следующей строке записано число $m$ — количество запросов к файлам, и затем $m$ строк с запросами вида <code>операция файл</code>. Одному и тому же файлу может быть адресовано любое количество запросов.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести для каждого из $m$ запросов в отдельной строке <code>Access denied</code> или <code>OK</code>.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">5<br>
+			my_pycode.exe W X<br>
+			log_n X W R<br>
+			ave R<br>
+			lucky_m W R<br>
+			dnsss.py W<br>
+			6<br>
+			execute ave<br>
+			read dnsss.py<br>
+			write log_n<br>
+			execute log_n<br>
+			read ave<br>
+			write my_pycode.exe</td>
+			<td style="text-align: center;">Access denied<br>
+			Access denied<br>
+			OK<br>
+			OK<br>
+			OK<br>
+			OK</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">2<br>
+			marvel_movies X<br>
+			dc_com X R<br>
+			2<br>
+			execute dc_com<br>
+			write dc_com</td>
+			<td style="text-align: center;">OK<br>
+			Access denied</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">3<br>
+			my_playList W X R<br>
+			fotos.eed X R<br>
+			consol._r W<br>
+			4<br>
+			read my_playList<br>
+			read fotos.eed<br>
+			read consol._r<br>
+			execute my_playList</td>
+			<td style="text-align: center;">OK<br>
+			OK<br>
+			Access denied<br>
+			OK</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">4<br>
+			my_pc.u W<br>
+			work R W<br>
+			school X W R<br>
+			BeeGeek X<br>
+			3<br>
+			execute BeeGeek<br>
+			read work<br>
+			write my_pc.u</td>
+			<td style="text-align: center;">OK<br>
+			OK<br>
+			OK</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">1<br>
+			npc.com R X<br>
+			1<br>
+			write npc.com</td>
+			<td style="text-align: center;">Access denied</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">2<br>
+			txt.txt W R<br>
+			docs.doc X R<br>
+			2<br>
+			write docs.doc<br>
+			execute txt.txt</td>
+			<td style="text-align: center;">Access denied<br>
+			Access denied</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">3<br>
+			work R W<br>
+			school X W R<br>
+			doctors.doc X R<br>
+			1<br>
+			write school</td>
+			<td style="text-align: center;">OK</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">14<br>
+			my_pycode.exe W X<br>
+			log_n X W R<br>
+			ave R<br>
+			lucky_m W R<br>
+			dnsss.py W<br>
+			marvel_movies X<br>
+			dc_com X R<br>
+			my_playList W X R<br>
+			fotos.eed X R<br>
+			consol._r W<br>
+			my_pc.u W<br>
+			work R W<br>
+			school X W R<br>
+			BeeGeek X<br>
+			7<br>
+			write my_pc.u<br>
+			execute fotos.eed<br>
+			write my_pycode.exe<br>
+			read dc_com<br>
+			read consol._r<br>
+			write log_n<br>
+			read fotos.eed</td>
+			<td style="text-align: center;">OK<br>
+			OK<br>
+			OK<br>
+			OK<br>
+			Access denied<br>
+			OK<br>
+			OK</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">4<br>
+			helloworld.exe R X<br>
+			pinglog W R<br>
+			nya R<br>
+			goodluck X W R<br>
+			5<br>
+			read nya<br>
+			write helloworld.exe<br>
+			execute nya<br>
+			read pinglog<br>
+			write pinglog</td>
+			<td style="text-align: center;">OK<br>
+			Access denied<br>
+			Access denied<br>
+			OK<br>
+			OK</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">5<br>my_pycode.exe W X<br>log_n X W R<br>ave R<br>lucky_m W R<br>dnsss.py W<br>6<br>execute ave<br>read dnsss.py<br>write log_n<br>execute log_n<br>read ave<br>write my_pycode.exe</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">Access denied<br>Access denied<br>OK<br>OK<br>OK<br>OK</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">2<br>marvel_movies X<br>dc_com X R<br>2<br>execute dc_com<br>write dc_com</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">OK<br>Access denied</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

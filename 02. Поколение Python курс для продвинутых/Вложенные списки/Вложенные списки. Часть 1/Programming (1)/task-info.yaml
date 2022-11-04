@@ -1,0 +1,13 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: |-
+    list1 = ['a', 'b', ['c', ['d', 'e', ['f', 'g'], 'k'], 'l'], 'm', 'n']
+    sub_list = ['h', 'i', 'j']
+
+    print(list1)
+  learner_created: false
+status: Unchecked
+record: -1

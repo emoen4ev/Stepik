@@ -1,0 +1,20 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: из социальных сетей
+- text: из рассылки Stepik
+- text: "из поисковых систем (Google, Yandex, Bing)"
+- text: посоветовали в учебном заведении
+- text: посоветовали друзья/коллеги
+- text: другое
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz
+local_check: false

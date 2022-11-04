@@ -1,0 +1,124 @@
+<h2 style="text-align: center;">Задача Иосифа Флавия 🌶️🌶️</h2>
+
+<p>$n$ человек, пронумерованных числами от $1$ до $n$, стоят в кругу. Они начинают считаться, каждый $k$-й по счету человек выбывает из круга, после чего счет продолжается со следующего за ним человека. Напишите программу, определяющую номер человека, который останется в кругу последним.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подаются два числа $n$ и $k$, записанные на отдельных строках.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести одно число – номер человека, который останется в кругу последним.</p>
+
+<p><strong>Примечание 1.</strong> Подробнее ознакомиться с классической задачей Иосифа Флавия можно <a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%98%D0%BE%D1%81%D0%B8%D1%84%D0%B0_%D0%A4%D0%BB%D0%B0%D0%B2%D0%B8%D1%8F" rel="noopener noreferrer nofollow">тут</a>.</p>
+
+<p><strong>Примечание 2.</strong> Визуализацию работы алгоритма можно посмотреть <a href="https://www.geogebra.org/m/ExvvrBbR" rel="noopener noreferrer nofollow">тут</a>.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">2
+1</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">2</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">5
+2</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">3</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">7
+5</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">6</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">50
+25</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">5</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">77
+28</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">50</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">100
+99</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">88</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">256
+2</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">1</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">498
+68</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">193</code></pre>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">2<br>1</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">2</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">5<br>2</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">3</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">7<br>5</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">6</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

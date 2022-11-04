@@ -1,0 +1,13 @@
+<p>Файл <code>words.txt</code> содержит строки:</p>
+
+<pre><code class="language-no-highlight">conflict connection advice
+remember consciousness consensus</code></pre>
+
+<p>Что выведет приведенный ниже код?</p>
+
+<pre><code class="language-python">with open('words.txt', encoding='utf-8') as file:
+    line1 = file.readline().split()
+    file.seek(0)
+    line2 = file.readline().split()
+
+    print(max(line2, key=len))</code></pre>

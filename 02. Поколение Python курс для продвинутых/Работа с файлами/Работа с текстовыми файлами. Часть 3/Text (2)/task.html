@@ -1,0 +1,11 @@
+<p>Текстовый файл <code>artists.txt</code> содержит следующие строки:</p>
+
+<pre><code class="language-no-highlight">John Lennon
+Bob Dylan
+Stevie Wonder</code></pre>
+
+<p>Каким будет содержимое этого файла после выполнения программы?</p>
+
+<pre><code class="language-python">with open('artists.txt', 'r+') as file:
+    file.write('Mick Jagger\n')
+    file.write('Ace Canon\n')</code></pre>

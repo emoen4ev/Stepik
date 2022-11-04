@@ -1,0 +1,92 @@
+<h2 style="text-align: center;">Таблица умножения</h2>
+
+<p>На вход программе подаются два натуральных числа $n$ и $m$ — количество строк и столбцов в матрице. Создайте матрицу <code>mult</code> размером $n \times m$ и заполните её таблицей умножения по формуле <code>mult[i][j] = i * j</code>.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе на разных строках подаются два числа $n$ и $m$ — количество строк и столбцов в матрице.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести таблицу умножения отводя на вывод каждого числа ровно $3$ символа (для этого используйте строковый метод <code>ljust()</code>).</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">4<br>
+			6</td>
+			<td style="text-align: center;">0  0  0  0  0  0<br>
+			0  1  2  3  4  5<br>
+			0  2  4  6  8  10<br>
+			0  3  6  9  12 15</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">3<br>
+			5</td>
+			<td style="text-align: center;">0  0  0  0  0<br>
+			0  1  2  3  4<br>
+			0  2  4  6  8</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">6<br>
+			6</td>
+			<td style="text-align: center;">0  0  0  0  0  0<br>
+			0  1  2  3  4  5<br>
+			0  2  4  6  8  10<br>
+			0  3  6  9  12 15<br>
+			0  4  8  12 16 20<br>
+			0  5  10 15 20 25</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">8<br>
+			3</td>
+			<td style="text-align: center;">0  0  0<br>
+			0  1  2<br>
+			0  2  4<br>
+			0  3  6<br>
+			0  4  8<br>
+			0  5  10<br>
+			0  6  12<br>
+			0  7  14</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">3<br>
+			8</td>
+			<td style="text-align: center;">0  0  0  0  0  0  0  0<br>
+			0  1  2  3  4  5  6  7<br>
+			0  2  4  6  8  10 12 14</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">1<br>
+			1</td>
+			<td style="text-align: center;">0</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">1<br>
+			2</td>
+			<td style="text-align: center;">0  0</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">2<br>
+			2</td>
+			<td style="text-align: center;">0  0<br>
+			0  1</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">4<br>6</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">0  0  0  0  0  0<br>0  1  2  3  4  5<br>0  2  4  6  8  10<br>0  3  6  9  12 15</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">3<br>5</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">0  0  0  0  0<br>0  1  2  3  4<br>0  2  4  6  8</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">6<br>6</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">0  0  0  0  0  0<br>0  1  2  3  4  5<br>0  2  4  6  8  10<br>0  3  6  9  12 15<br>0  4  8  12 16 20<br>0  5  10 15 20 25</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

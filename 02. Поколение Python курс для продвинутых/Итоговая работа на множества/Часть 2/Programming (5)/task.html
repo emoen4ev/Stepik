@@ -1,0 +1,76 @@
+<h2 style="text-align: center;">Онлайн-школа BEEGEEK 1</h2>
+
+<p>При приёме новых сотрудников в онлайн-школу BEEGEEK её руководитель тестирует не только профессиональные качества кандидата, но и его память.</p>
+
+<p>Кандидату показывают ненадолго несколько различных чисел, а затем кандидат должен их назвать. Причем неважно, в каком порядке он их вспоминает, и повторяется он или нет, главное он должен назвать все числа, не добавляя лишних.</p>
+
+<p>Напишите программу, определяющую, успешно ли прошел кандидат тестирование памяти.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подаются две строки с числами: в первой строке показанные кандидату, а во второй ответы кандидата.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести <code>YES</code>, если кандидат прошел испытание и его можно брать на работу и <code>NO</code> в противном случае.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">8<br>
+			9</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">1 2 3 4 8 5<br>
+			1 2 8 2 3 4 5 2</td>
+			<td style="text-align: center;">YES</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">14 64 34 34 34 34 87 100<br>
+			100 14 64 34 100</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">5<br>
+			5</td>
+			<td style="text-align: center;">YES</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">4 5 6 7 8 1<br>
+			1 1 8 7 7 7 6 5 4 4 4 4 4 4</td>
+			<td style="text-align: center;">YES</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">9 11 12 23<br>
+			23 12 11 11 23 12 9 23</td>
+			<td style="text-align: center;">YES</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">8 7<br>
+			6 7 7 8</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">-2 47 -50 92 -9 234 -594 5<br>
+			5 -596 234 92 -9 -50 5 47 -2 -594</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">8<br>9</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">NO</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1 2 3 4 8 5<br>1 2 8 2 3 4 5 2</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">YES</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">14 64 34 34 34 34 87 100<br>100 14 64 34 100</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">NO</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

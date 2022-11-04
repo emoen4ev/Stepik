@@ -1,0 +1,152 @@
+<h2 style="text-align: center;"><strong>Индекс массы тела</strong></h2>
+
+<p>Напишите программу для вычисления и оценки индекса массы тела (ИМТ) человека. ИМТ показывает весит человек больше или меньше нормы для своего роста. ИМТ человека рассчитывают по формуле:</p>
+
+<p style="text-align: center;">$ИМТ = \dfrac{масса \, (кг)}{рост(м) \times рост(м)}$,</p>
+
+<p>где масса измеряется в килограммах, а рост — в метрах.</p>
+
+<p>Масса человека считается оптимальной, если его ИМТ находится между $18.5$ и $25$. Если ИМТ меньше $18.5$, то считается, что человек весит ниже нормы. Если значение ИМТ больше $25$, то считается, что человек весит больше нормы.</p>
+
+<p>Программа должна вывести "Оптимальная масса", если ИМТ находится между $18.5$ и $25$ (включительно). "Недостаточная масса", если ИМТ меньше $18.5$ и "Избыточная масса", если значение ИМТ больше $25$.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подается два числа: масса и рост человека, каждое на отдельной строке. Все входные числа являются вещественными, используйте для них тип данных <code>float</code>.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести текст в соответствии с условием задачи.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">65
+1.75</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Оптимальная масса</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">80
+2.23</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Недостаточная масса</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">80
+1.6</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Избыточная масса</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">120
+2.20</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Оптимальная масса</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">65
+1.66</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Оптимальная масса</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">40
+1.75</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Недостаточная масса</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">40
+1.66</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Недостаточная масса</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">21
+1.67</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Недостаточная масса</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">25
+1</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Оптимальная масса</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">10</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">18.5
+1</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Оптимальная масса</code></pre>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">65<br>1.75</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">Оптимальная масса</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">80<br>2.23</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">Недостаточная масса</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">80<br>1.6</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">Избыточная масса</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

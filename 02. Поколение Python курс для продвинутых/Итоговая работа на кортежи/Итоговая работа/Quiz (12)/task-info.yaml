@@ -1,0 +1,22 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: <code>append()</code>
+- text: <code>reverse()</code>
+- text: <code>remove()</code>
+- text: <code>insert()</code>
+- text: <code>count()</code>
+- text: <code>index()</code>
+- text: <code>sort()</code>
+- text: <code>pop()</code>
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

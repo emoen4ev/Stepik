@@ -1,0 +1,98 @@
+<h2 style="text-align: center;">Операции над дробями</h2>
+
+<p>Даны две дроби в формате <code>a/b</code>. Напишите программу, которая вычисляет и выводит их сумму, разность, произведение и частное.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подаются две ненулевые дроби, каждая на отдельной строке.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести сумму, разность, произведение и частное двух дробей.</p>
+
+<p><strong>Примечание.</strong> Обратите внимание на третий тест: исходные дроби сокращать не нужно, а результат нужно.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">2/3<br>
+			3/7</td>
+			<td style="text-align: center;">2/3 + 3/7 = 23/21<br>
+			2/3 - 3/7 = 5/21<br>
+			2/3 * 3/7 = 2/7<br>
+			2/3 / 3/7 = 14/9</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">3/4<br>
+			1/4</td>
+			<td style="text-align: center;">3/4 + 1/4 = 1<br>
+			3/4 - 1/4 = 1/2<br>
+			3/4 * 1/4 = 3/16<br>
+			3/4 / 1/4 = 3</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">5/10<br>
+			10/5</td>
+			<td style="text-align: center;">5/10 + 10/5 = 5/2<br>
+			5/10 - 10/5 = -3/2<br>
+			5/10 * 10/5 = 1<br>
+			5/10 / 10/5 = 1/4</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">101/4<br>
+			1/4</td>
+			<td style="text-align: center;">101/4 + 1/4 = 51/2<br>
+			101/4 - 1/4 = 25<br>
+			101/4 * 1/4 = 101/16<br>
+			101/4 / 1/4 = 101</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">101/4<br>
+			101/4</td>
+			<td style="text-align: center;">101/4 + 101/4 = 101/2<br>
+			101/4 - 101/4 = 0<br>
+			101/4 * 101/4 = 10201/16<br>
+			101/4 / 101/4 = 1</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">37/4<br>
+			13/6</td>
+			<td style="text-align: center;">37/4 + 13/6 = 137/12<br>
+			37/4 - 13/6 = 85/12<br>
+			37/4 * 13/6 = 481/24<br>
+			37/4 / 13/6 = 111/26</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">17/3<br>
+			7/15</td>
+			<td style="text-align: center;">17/3 + 7/15 = 92/15<br>
+			17/3 - 7/15 = 26/5<br>
+			17/3 * 7/15 = 119/45<br>
+			17/3 / 7/15 = 85/7</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">1/7<br>
+			1/9</td>
+			<td style="text-align: center;">1/7 + 1/9 = 16/63<br>
+			1/7 - 1/9 = 2/63<br>
+			1/7 * 1/9 = 1/63<br>
+			1/7 / 1/9 = 9/7</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">2/3<br>3/7</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">2/3 + 3/7 = 23/21<br>2/3 - 3/7 = 5/21<br>2/3 * 3/7 = 2/7<br>2/3 / 3/7 = 14/9</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">3/4<br>1/4</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">3/4 + 1/4 = 1<br>3/4 - 1/4 = 1/2<br>3/4 * 1/4 = 3/16<br>3/4 / 1/4 = 3</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">5/10<br>10/5</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">5/10 + 10/5 = 5/2<br>5/10 - 10/5 = -3/2<br>5/10 * 10/5 = 1<br>5/10 / 10/5 = 1/4</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

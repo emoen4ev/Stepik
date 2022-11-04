@@ -1,0 +1,29 @@
+<h2 style="text-align: center;">CSV-файл</h2>
+
+<p>Вам доступен CSV-файл <code>data.csv</code>, содержащий информацию в <code>csv</code> формате. Напишите функцию <code>read_csv</code> для чтения данных из этого файла. Она должна возвращать список словарей, интерпретируя первую строку как имена ключей, а каждую последующую строку как значения этих ключей.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе ничего не подается.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна содержать реализованную функцию <code>read_csv</code>.</p>
+
+<p><strong>Примечание 1.</strong> Вызывать функцию <code>read_csv</code> не нужно.</p>
+
+<p><strong>Примечание 2.</strong> Функция <code>read_csv</code> <strong>не должна</strong> принимать аргументов. </p>
+
+<p><strong>Примечание 2.</strong> Подробнее прочитать про CSV-файлы можно <a href="https://ru.wikipedia.org/wiki/CSV" rel="noopener noreferrer nofollow">тут</a>.</p>
+
+<p><strong>Примечание 3.</strong> Считайте, что все ключи и значения по этим ключам в результирующем словаре имеют строковый тип (<code>str</code>).</p>
+
+<p><strong>Примечание 4.</strong> Указанный файл можно скачать по <a href="https://stepik.org/media/attachments/lesson/530408/data.csv" rel="noopener noreferrer nofollow">ссылке</a>.</p>
+
+<p><strong>Примечание 5.</strong> Если бы файл <code>data.csv</code> содержал информацию</p>
+
+<pre><code class="language-no-highlight">name,address,age
+George,4312 Abbey Road,22
+John,54 Love Ave,21</code></pre>
+
+<p>то вызов функции <code>read_csv()</code> вернул бы список:</p>
+
+<pre><code class="language-python">[{'name': 'George', 'address': '4312 Abbey Road', 'age': '22'}, {'name': 'John', 'address': '54 Love Ave', 'age': '21'}]</code></pre><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

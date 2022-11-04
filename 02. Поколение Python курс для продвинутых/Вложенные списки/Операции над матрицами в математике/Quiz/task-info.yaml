@@ -1,0 +1,21 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: количество столбцов в первой матрице совпадает с количеством строк во второй
+    матрице
+- text: количество строк в первой матрице совпадает с количеством столбцов во второй
+    матрице
+- text: количество столбцов в первой матрице совпадает с количеством столбцов во второй
+    матрице
+- text: количество строк в первой матрице совпадает с количеством строк во второй
+    матрице
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+local_check: false

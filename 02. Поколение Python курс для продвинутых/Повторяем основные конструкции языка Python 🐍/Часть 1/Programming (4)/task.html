@@ -1,0 +1,261 @@
+<h2 style="text-align: center;"><strong>Зодиак</strong></h2>
+
+<p>Китайский гороскоп назначает животным годы в $12$-летнем цикле. Один $12$-летний цикл показан в таблице ниже. Таким образом, $2012$ год будет очередным годом дракона.</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1" style="height: 75px; width: 250px;">
+	<thead>
+		<tr>
+			<th>Год</th>
+			<th>Животное</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">$2000$</td>
+			<td style="text-align: center;">Дракон</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">$2001$</td>
+			<td style="text-align: center;">Змея</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">$2002$</td>
+			<td style="text-align: center;">Лошадь</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">$2003$</td>
+			<td style="text-align: center;">Овца</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">$2004$</td>
+			<td style="text-align: center;">Обезьяна</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">$2005$</td>
+			<td style="text-align: center;">Петух</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">$2006$</td>
+			<td style="text-align: center;">Собака</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">$2007$</td>
+			<td style="text-align: center;">Свинья</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">$2008$</td>
+			<td style="text-align: center;">Крыса</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">$2009$</td>
+			<td style="text-align: center;">Бык</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">$2010$</td>
+			<td style="text-align: center;">Тигр</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">$2011$</td>
+			<td style="text-align: center;">Заяц</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>Напишите программу, которая считывает год и отображает название связанного с ним животного. Ваша программа должна корректно работать с любым годом, не только теми, что перечислены в таблице.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подается одно целое число – год.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести текст – название животного.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>    Номер теста    </th>
+			<th>    Входные данные    </th>
+			<th>    Выходные данные    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">2020</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Крыса</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">1945</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Петух</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">2000</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Дракон</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">2077</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Петух</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">13000</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Крыса</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">1003</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Заяц</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">2166</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Тигр</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">1</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Петух</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">1337</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Бык</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">228</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Обезьяна</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td>11</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">2001</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Змея</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">2002</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Лошадь</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td>13</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">2003</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Овца</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td>14</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">2006</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Собака</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td>15</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">2007</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Свинья</code></pre>
+			</td>
+		</tr>
+		<tr>
+			<td>16</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">2011</code></pre>
+			</td>
+			<td>
+			<pre>
+<code class="language-no-highlight">Заяц</code></pre>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">2020</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">Крыса</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1945</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">Петух</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">2000</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">Дракон</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

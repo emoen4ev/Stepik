@@ -1,0 +1,72 @@
+<h2 style="text-align: center;"><strong>Числа первой строки</strong></h2>
+
+<p>На вход программе подаются две строки текста, содержащие числа. Напишите программу, которая выводит все числа в порядке возрастания, которые есть в первой строке, но отсутствуют во второй.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подаются две строки текста, содержащие числа, отделенные символом пробела.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести множество чисел, встречающихся только в первой строке.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">1 2 3 4<br>
+			5 6 7 8</td>
+			<td style="text-align: center;">1 2 3 4</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">1 2 3 4 5<br>
+			1 2 3 4 6</td>
+			<td style="text-align: center;">5</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">7 5 6 3 8 4 33<br>
+			7 5 6 4 3 8 56 34</td>
+			<td style="text-align: center;">33</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">1 34 56 78 90 123 444 55452 23456<br>
+			341 434 56 1 34</td>
+			<td style="text-align: center;">78 90 123 444 23456 55452</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">956 7476 4837 3434 545 34 134 123 123<br>
+			956 7476 4837 3434 545 34 545 65 7666</td>
+			<td style="text-align: center;">123 134</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">4 5 6 7 8 9 0<br>
+			4</td>
+			<td style="text-align: center;">0 5 6 7 8 9</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">1 2 6 7 8 9<br>
+			4 6 7 6 2 1</td>
+			<td style="text-align: center;">8 9</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">18 4 572 309 7 10 45<br>
+			19 3 45 4632 18</td>
+			<td style="text-align: center;">4 7 10 309 572</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1 2 3 4<br>5 6 7 8</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1 2 3 4</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1 2 3 4 5<br>1 2 3 4 6</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">5</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

@@ -1,0 +1,18 @@
+<p>Что выведет приведенный ниже код?</p>
+
+<pre><code class="language-python">def predicate(word):
+    return word == word[::-1]
+
+
+words = ['abba', 'qwerty', 'python', 'a', 'deed', 'nun', 'level', 'language', 'deified', 'bbbbb', 'mother', 'sister', 'surface', '1234321']
+filtered = filter(predicate, words)
+print(len(filtered))</code></pre>
+
+<p>Функция <code>filter()</code>:</p>
+
+<pre><code class="language-python">def filter(function, items):
+    result = []
+    for item in items:
+        if function(item):
+            result.append(item)
+    return result</code></pre>

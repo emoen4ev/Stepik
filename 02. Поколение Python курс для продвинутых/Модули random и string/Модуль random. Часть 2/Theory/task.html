@@ -1,0 +1,112 @@
+<h1>Тема урока: модуль random</h1>
+
+<ol>
+	<li>Метод <code>shuffle()</code></li>
+	<li>Метод <code>choice()</code></li>
+	<li>Метод <code>sample()</code></li>
+	<li>Модуль <code>string</code></li>
+</ol>
+
+<p><strong>Аннотация.</strong> Урок посвящен модулю <code>random</code>, в частности, методам работы с последовательностями.</p>
+
+<h2 style="text-align: center;">Метод shuffle()</h2>
+
+<p>Метод <code>shuffle()</code> принимает список в качестве обязательного аргумента и перемешивает его случайным образом.</p>
+
+<p>Следующий код перемешивает список <code>numbers</code> случайным образом, а затем выводит его содержимое:</p>
+
+<pre><code class="language-python">import random
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+random.shuffle(numbers)
+print(numbers)</code></pre>
+
+<p>Результатом работы такого кода может быть:</p>
+
+<pre><code class="language-no-highlight">[4, 7, 8, 1, 2, 3, 6, 5]</code></pre>
+
+<h2 style="text-align: center;">Метод choice()</h2>
+
+<p>Метод <code>choice()</code> принимает список (строку, кортеж) в качестве обязательного аргумента и возвращает <strong>один</strong> случайный элемент.</p>
+
+<p>Следующий код выводит по одному случайному элементу из строки <code>'BEEGEEK'</code>, списка <code>[1, 2, 3, 4]</code> и кортежа  <code>('a', 'b', 'c', 'd')</code>:</p>
+
+<pre><code class="language-python">import random
+
+print(random.choice('BEEGEEK'))
+print(random.choice([1, 2, 3, 4]))
+print(random.choice(('a', 'b', 'c', 'd')))</code></pre>
+
+<p>Результатом работы такого кода может быть:</p>
+
+<pre><code class="language-no-highlight">E
+3
+c</code></pre>
+
+<h2 style="text-align: center;">Метод sample()</h2>
+
+<p>Метод <code>sample()</code> принимает два обязательных аргумента: первый – список (строка, кортеж, множество), второй – количество случайных элементов. Возвращает <strong>список</strong> из указанного количества уникальных (имеющих разные индексы) случайных элементов.</p>
+
+<p>Результатом работы кода:</p>
+
+<pre><code class="language-python">import random
+ 
+numbers = [2, 5, 8, 9, 12]
+
+print(random.sample(numbers, 1))
+print(random.sample(numbers, 2))
+print(random.sample(numbers, 3))
+print(random.sample(numbers, 5))</code></pre>
+
+<p>может быть:</p>
+
+<pre><code class="language-no-highlight">[9]
+[12, 5]
+[9, 2, 8]
+[12, 8, 9, 5, 2]</code></pre>
+
+<p>Количество случайных элементов не должно превышать длину исходного списка (строки). Следующий код:</p>
+
+<pre><code class="language-python">import random
+ 
+numbers = [2, 5, 8, 9, 12]
+
+print(random.sample(numbers, 6))</code></pre>
+
+<p>приведет к ошибке:</p>
+
+<pre><code>ValueError: Sample larger than population or is negative</code></pre>
+
+<h2 style="text-align: center;">Модуль string</h2>
+
+<p>Встроенный модуль <code>string</code> раньше использовался для расширения стандартных возможностей (функционала) строкового типа данных <code>str</code>. На текущий момент все функции из модуля <code>string</code> переехали в методы строкового типа данных <code>str</code>, однако в модуле <code>string</code> остались удобные константные строки, которые можно использовать при решении задач.</p>
+
+<p>Приведенный ниже код:</p>
+
+<pre><code class="language-python">import string
+
+print(string.ascii_letters)
+print(string.ascii_uppercase)
+print(string.ascii_lowercase)
+print(string.digits)
+print(string.hexdigits)
+print(string.octdigits)
+print(string.punctuation)
+print(string.printable)</code></pre>
+
+<p>выводит:</p>
+
+<pre><code class="language-no-highlight">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+0123456789
+0123456789abcdefABCDEF
+01234567
+!"#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^_`{|}~
+0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^_`{|}~ \t\n\r\x0b\x0c</code></pre>
+
+<h2 style="text-align: center;">Примечания</h2>
+
+<p><strong>Примечание 1.</strong> Помимо рассмотренных в уроке методов, модуль <code>random</code> содержит много дополнительных методов. Подробнее о модуле <code>random</code> можно почитать в <a href="https://docs.python.org/3/library/random.html#" rel="noopener noreferrer nofollow">документации</a>.</p>
+
+<h2 style="text-align: right;"><strong>Made with 💛 by BEEGEEK</strong></h2>

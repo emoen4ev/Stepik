@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: "<code>400<br>(200, 300, 400, 500)</code>"
+- text: "<code>400<br>(400, 300, 200)</code>"
+- text: "<code>300<br>(200, 300, 400)</code>"
+- text: "<code>400<br>(200, 300, 400)</code>"
+- text: ошибка во время выполнения кода
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false
