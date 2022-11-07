@@ -2,10 +2,10 @@ type: choice
 is_multiple_choice: false
 options:
 - text: именованными
-- text: обычными
-- text: необязательными
 - text: позиционными
+- text: необязательными
 - text: особенными
+- text: обычными
 files:
 - name: task.py
   visible: true

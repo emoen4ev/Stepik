@@ -3,9 +3,9 @@ is_multiple_choice: false
 options:
 - text: "<code>[1, 'a', True, '0', 7]</code>"
 - text: "<code>[0, False, '0', '']</code>"
-- text: "<code>[1, 'a', 0, False, True, '0', 7]</code>"
-- text: "<code>[0, False, '']</code>"
 - text: "<code>[1, 'a', True, 7]</code>"
+- text: "<code>[0, False, '']</code>"
+- text: "<code>[1, 'a', 0, False, True, '0', 7]</code>"
 files:
 - name: task.py
   visible: true

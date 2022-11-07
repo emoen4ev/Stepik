@@ -1,0 +1,88 @@
+<h2 style="text-align: center;">Каждый n-ый элемент</h2>
+
+<p>На вход программе подается строка текста, содержащая символы и число $n$. Из данной строки формируется список. Напишите программу, которая разделяет список на вложенные подсписки так, что $n$ последовательных элементов принадлежат разным подспискам.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подается строка текста, содержащая символы, отделенные символом пробела и число $n$ на отдельной строке.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести указанный вложенный список.</p>
+
+<p><strong>Примечание.</strong> Графическая иллюстрация для $1$ теста:</p>
+
+<p><img alt="" height="803" name="9.png" src="https://ucarecdn.com/63705c1f-3e12-4a8e-a3ae-815aecbb9233/" width="2029">​</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">a b c d e f g h i j k l m n<br>
+			3</td>
+			<td style="text-align: center;">[['a', 'd', 'g', 'j', 'm'], ['b', 'e', 'h', 'k', 'n'], ['c', 'f', 'i', 'l']] </td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">a b c d e f g h i j k l m n<br>
+			2</td>
+			<td style="text-align: center;">[['a', 'c', 'e', 'g', 'i', 'k', 'm'], ['b', 'd', 'f', 'h', 'j', 'l', 'n']]</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">a b c d e f g h i j k l m n<br>
+			1</td>
+			<td style="text-align: center;">[['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n']]</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">a b c d e f g h i j k l m n<br>
+			4</td>
+			<td style="text-align: center;">[['a', 'e', 'i', 'm'], ['b', 'f', 'j', 'n'], ['c', 'g', 'k'], ['d', 'h', 'l']]</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">a b c d e f g h i j k l m n<br>
+			5</td>
+			<td style="text-align: center;">[['a', 'f', 'k'], ['b', 'g', 'l'], ['c', 'h', 'm'], ['d', 'i', 'n'], ['e', 'j']]</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">a b c d e f g h i j k l m n<br>
+			6</td>
+			<td style="text-align: center;">[['a', 'g', 'm'], ['b', 'h', 'n'], ['c', 'i'], ['d', 'j'], ['e', 'k'], ['f', 'l']]</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">a b c d e f g h i j k l m n<br>
+			7</td>
+			<td style="text-align: center;">[['a', 'h'], ['b', 'i'], ['c', 'j'], ['d', 'k'], ['e', 'l'], ['f', 'm'], ['g', 'n']]</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">a b c d e f g h i j k l m n<br>
+			8</td>
+			<td style="text-align: center;">[['a', 'i'], ['b', 'j'], ['c', 'k'], ['d', 'l'], ['e', 'm'], ['f', 'n'], ['g'], ['h']]</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">a b c d e f g h i j k l m n<br>
+			10</td>
+			<td style="text-align: center;">[['a', 'k'], ['b', 'l'], ['c', 'm'], ['d', 'n'], ['e'], ['f'], ['g'], ['h'], ['i'], ['j']]</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">a b c d e f g h i j k l m n<br>
+			14</td>
+			<td style="text-align: center;">[['a'], ['b'], ['c'], ['d'], ['e'], ['f'], ['g'], ['h'], ['i'], ['j'], ['k'], ['l'], ['m'], ['n']]</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">a b c d e f g h i j k l m n<br>3</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">[[&#39;a&#39;, &#39;d&#39;, &#39;g&#39;, &#39;j&#39;, &#39;m&#39;], [&#39;b&#39;, &#39;e&#39;, &#39;h&#39;, &#39;k&#39;, &#39;n&#39;], [&#39;c&#39;, &#39;f&#39;, &#39;i&#39;, &#39;l&#39;]] </code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">a b c d e f g h i j k l m n<br>2</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">[[&#39;a&#39;, &#39;c&#39;, &#39;e&#39;, &#39;g&#39;, &#39;i&#39;, &#39;k&#39;, &#39;m&#39;], [&#39;b&#39;, &#39;d&#39;, &#39;f&#39;, &#39;h&#39;, &#39;j&#39;, &#39;l&#39;, &#39;n&#39;]]</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">a b c d e f g h i j k l m n<br>1</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">[[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;, &#39;f&#39;, &#39;g&#39;, &#39;h&#39;, &#39;i&#39;, &#39;j&#39;, &#39;k&#39;, &#39;l&#39;, &#39;m&#39;, &#39;n&#39;]]</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

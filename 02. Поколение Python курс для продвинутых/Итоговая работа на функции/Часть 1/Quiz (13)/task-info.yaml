@@ -2,9 +2,9 @@ type: choice
 is_multiple_choice: false
 options:
 - text: <code>65</code>
+- text: <code>33</code>
 - text: <code>64</code>
 - text: <code>1000001</code>
-- text: <code>33</code>
 - text: <code>10000012</code>
 files:
 - name: task.py

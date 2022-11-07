@@ -1,11 +1,11 @@
 type: choice
 is_multiple_choice: true
 options:
-- text: Black
-- text: Orange
-- text: Yellow
 - text: Pink
 - text: Blue
+- text: Orange
+- text: Yellow
+- text: Black
 files:
 - name: task.py
   visible: true

@@ -2,12 +2,12 @@ type: choice
 is_multiple_choice: true
 options:
 - text: изменяемые переменные
-- text: лямбда-выражения
-- text: функции высшего порядка
 - text: циклы
 - text: неизменяемые переменные
+- text: функции высшего порядка
 - text: чистые функции
 - text: рекурсия
+- text: лямбда-выражения
 files:
 - name: task.py
   visible: true

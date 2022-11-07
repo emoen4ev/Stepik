@@ -1,0 +1,107 @@
+<h2 style="text-align: center;">Frozenset</h2>
+
+<p>Замороженное множество (<code>frozenset</code>) также является встроенной коллекцией в Python. Обладая характеристиками обычного множества, замороженное множество не может быть изменено после создания.</p>
+
+<p><img alt="" height="48" src="https://ucarecdn.com/a182c21b-8ed9-4571-9eb2-401afddcfaed/" style="float: left;" width="48">Кортеж (тип <code>tuple</code>) – неизменяемая версия списка (тип <code>list</code>), а замороженное множество (тип <code>frozenset</code>) – неизменяемая версия обычного множества (тип <code>set</code>).</p>
+
+<p>Для создания замороженного множества используется встроенная функция <code>frozenset()</code>, которая принимает в качестве аргумента другую коллекцию.</p>
+
+<p>Приведенный ниже код:</p>
+
+<pre><code class="language-python">myset1 = frozenset({1, 2, 3})                         # на основе множества
+myset2 = frozenset([1, 1, 2, 3, 4, 4, 4, 5, 6, 6])    # на основе списка
+myset3 = frozenset('aabcccddee')                      # на основе строки
+
+print(myset1)
+print(myset2)
+print(myset3)</code></pre>
+
+<p>выводит:</p>
+
+<pre><code class="language-no-highlight">frozenset({1, 2, 3})
+frozenset({1, 2, 3, 4, 5, 6})
+frozenset({'e', 'd', 'c', 'b', 'a'})</code></pre>
+
+<h3 style="text-align: center;">Операции над замороженными множествами</h3>
+
+<p>Над замороженными множествами можно производить все операции, которые можно производить над обычными множествами:</p>
+
+<ul>
+	<li>объединение множеств: метод <code>union()</code> или оператор <code>|</code>;</li>
+	<li>пересечение множеств: метод <code>intersection()</code> или оператор <code>&amp;</code>;</li>
+	<li>разность множеств: метод <code>difference()</code> или оператор <code>-</code>;</li>
+	<li>симметрическая разность множеств: метод <code>symmetric_difference()</code> или оператор <code>^</code>.</li>
+</ul>
+
+<p>Приведенный ниже код:</p>
+
+<pre><code class="language-python">myset1 = frozenset('hello')
+myset2 = frozenset('world')
+
+print(myset1 | myset2)
+print(myset1 &amp; myset2)
+print(myset1 ^ myset2)</code></pre>
+
+<p>выводит:</p>
+
+<pre><code class="language-no-highlight">frozenset({'l', 'w', 'e', 'h', 'r', 'd', 'o'})
+frozenset({'l', 'o'})
+frozenset({'d', 'h', 'w', 'e', 'r'})</code></pre>
+
+<p><img alt="" height="49" src="https://ucarecdn.com/d97c6d7e-67c5-4cd4-9283-086893c8523c/" width="49">   Результатом операций над замороженными множествами будут тоже замороженные множества.</p>
+
+<h2 style="text-align: center;">Примечания</h2>
+
+<p><strong>Примечание 1.</strong> Будучи изменяемыми, обычные множества не могут быть элементами других множеств. Замороженные множества являются неизменяемыми, а значит могут быть элементами других множеств.</p>
+
+<p>Приведенный ниже код:</p>
+
+<pre><code class="language-python">sentence = 'The cat in the hat had two sidekicks, thing one and thing two.'
+
+words = sentence.lower().replace('.', '').replace(',', '').split()
+
+vowels = ['a', 'e', 'i', 'o', 'u']
+
+consonants = {frozenset({letter for letter in word if letter not in vowels}) for word in words}
+
+print(*consonants, sep='\n')</code></pre>
+
+<p>выводит (порядок элементов может отличаться):</p>
+
+<pre><code class="language-no-highlight">frozenset({'d', 'h'})
+frozenset({'h', 't'})
+frozenset({'n', 'h', 'g', 't'})
+frozenset({'n'})
+frozenset({'c', 't'})
+frozenset({'n', 'd'})
+frozenset({'w', 't'})
+frozenset({'s', 'c', 'k', 'd'})</code></pre>
+
+<p><strong>Примечание 2.</strong> Методы изменяющие множество отсутствуют у замороженных множеств:</p>
+
+<ul>
+	<li><code>add()</code></li>
+	<li><code>remove()</code></li>
+	<li><code>discard()</code></li>
+	<li><code>pop()</code></li>
+	<li><code>clear()</code></li>
+	<li><code>update()</code></li>
+	<li><code>intersection_update()</code></li>
+	<li><code>difference_update()</code></li>
+	<li><code>symmetric_difference_update()</code></li>
+</ul>
+
+<p><strong>Примечание 3.</strong> Мы можем сравнивать простые (тип <code>set</code>) и замороженные множества (тип <code>frozenset</code>).</p>
+
+<p>Приведенный ниже код:</p>
+
+<pre><code class="language-python">myset1 = set('qwerty')
+myset2 = frozenset('qwerty')
+
+print(myset1 == myset2)</code></pre>
+
+<p>выведет:</p>
+
+<pre><code class="language-no-highlight">True</code></pre>
+
+<h2 style="text-align: right;"><strong>Made with 💛 by BEEGEEK</strong> </h2>

@@ -1,0 +1,21 @@
+<p>Что будет выведено на экран в результате работы следующей программы?</p>
+
+<pre><code class="language-python">poets = [
+    ('Есенин', 13),
+    ('Тургенев', 14),
+    ('Маяковский', 28),
+    ('Лермонтов', 20),
+    ('Фет', 15)]
+
+for i in range(len(poets)):
+    for j in range(i+1, len(poets)):
+        if poets[i][1] &gt; poets[j][1]:
+            poets[i], poets[j] = poets[j], poets[i]
+
+print(poets[0])
+print(poets[-1])</code></pre>
+
+<details><summary>Подсказка</summary>
+
+<p>Вспоминаем <a href="https://stepik.org/lesson/310445/step/2?unit=292748" rel="noopener noreferrer nofollow">сортировку пузырьком</a> 😃</p>
+</details>

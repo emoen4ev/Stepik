@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: "<code>['Do', 'Re', 'Mi', 'Fa', 'Sol', 'La', 'Si']</code>"
+- text: "<code>['Fa']</code>"
+- text: "<code>('Fa', 'Sol', 'La', 'Si')</code>"
+- text: "<code>['Fa', 'Sol', 'La', 'Si']</code>"
+- text: ошибка во время выполнения кода
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

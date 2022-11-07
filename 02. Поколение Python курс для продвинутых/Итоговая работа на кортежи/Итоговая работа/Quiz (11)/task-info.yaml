@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: "<code>(100, 200, 400, 500)</code>"
-- text: "<code>(100, 200)</code>"
-- text: "<code>(100, 300, 400, 500)</code>"
 - text: ошибка во время выполнения кода
+- text: "<code>(100, 200)</code>"
+- text: "<code>(100, 200, 400, 500)</code>"
+- text: "<code>(100, 300, 400, 500)</code>"
 files:
 - name: task.py
   visible: true

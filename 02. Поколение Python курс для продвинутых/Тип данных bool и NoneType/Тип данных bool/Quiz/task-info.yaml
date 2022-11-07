@@ -2,9 +2,9 @@ type: choice
 is_multiple_choice: false
 options:
 - text: <code>x &gt; 0 or x &lt; 5</code>
+- text: <code>x &gt; 0 or &lt; 5</code>
 - text: <code>x &gt; 0 and x &lt; 5</code>
 - text: <code>x &gt; 0 and &lt; 5</code>
-- text: <code>x &gt; 0 or &lt; 5</code>
 files:
 - name: task.py
   visible: true

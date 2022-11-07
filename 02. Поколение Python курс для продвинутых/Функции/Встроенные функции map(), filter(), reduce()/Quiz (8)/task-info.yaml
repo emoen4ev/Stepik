@@ -1,8 +1,8 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: <code>a e i o u</code>
 - text: <code>b d j o</code>
+- text: <code>a e i o u</code>
 - text: <code>a b d e i j o</code>
 - text: <code>a e i o</code>
 files:

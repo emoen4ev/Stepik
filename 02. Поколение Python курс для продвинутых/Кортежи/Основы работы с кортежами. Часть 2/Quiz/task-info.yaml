@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: "<code>('Лермонтов', 20)<br>('Фет', 15)</code>"
+- text: "<code>('Фет', 15)<br>('Есенин', 13)</code>"
+- text: "<code>('Есенин', 13)<br>('Маяковский', 28)</code>"
+- text: "<code>('Маяковский', 28)<br>('Есенин', 13)</code>"
+- text: "<code>('Есенин', 13)<br>('Тургенев', 14)</code>"
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+local_check: false

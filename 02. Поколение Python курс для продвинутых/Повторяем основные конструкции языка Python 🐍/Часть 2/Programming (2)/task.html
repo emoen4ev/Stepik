@@ -1,0 +1,64 @@
+<h2 style="text-align: center;">Назад, вперёд и наоборот</h2>
+
+<p>На вход программе подается строка текста из натуральных чисел. Из элементов строки формируется список чисел. Напишите программу, которая меняет местами соседние элементы списка (<code>a[0]</code> c <code>a[1]</code>, <code>a[2]</code> c <code>a[3]</code> и т.д.). Если в списке нечетное количество элементов, то последний остается на своем месте.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подается строка текста, содержащая натуральные числа, разделенные пробелами.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести измененный список, разделяя его элементы одним пробелом.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">1 2 3 4 5</td>
+			<td style="text-align: center;">2 1 4 3 5</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">2 3 2 4</td>
+			<td style="text-align: center;">3 2 4 2</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">1</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">1 2 3</td>
+			<td style="text-align: center;">2 1 3</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">1 1 1</td>
+			<td style="text-align: center;">1 1 1</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">216 39 87 0 0 1 0</td>
+			<td style="text-align: center;">39 216 0 87 1 0 0</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">4 7 92 95 999 9 7 1 9 94 3 2</td>
+			<td style="text-align: center;">7 4 95 92 9 999 1 7 94 9 2 3</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">76 6 6 5 85 85 685 65 89803 3022</td>
+			<td style="text-align: center;">6 76 5 6 85 85 65 685 3022 89803</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1 2 3 4 5</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">2 1 4 3 5</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">2 3 2 4</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">3 2 4 2</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

@@ -1,15 +1,15 @@
 type: choice
 is_multiple_choice: true
 options:
-- text: ъ
-- text: эээ
-- text: ююю
-- text: ю
-- text: ⎵
-- text: э
 - text: я
 - text: ъъъ
+- text: ю
+- text: ююю
+- text: э
 - text: яяя
+- text: ъ
+- text: ⎵
+- text: эээ
 files:
 - name: task.py
   visible: true

@@ -1,0 +1,74 @@
+<h2 style="text-align: center;">Хороший пароль</h2>
+
+<p>Хороший пароль по условиям этой задачи состоит как минимум из $7$ символов, содержит хотя бы одну цифру, заглавную и строчную букву. Напишите программу со встроенной функцией <code>any()</code> для определения хорош ли введенный пароль.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подаётся одна строка текста.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести <code>YES</code>, если строка – хороший пароль, и <code>NO</code> в противном случае.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">abcABC9</td>
+			<td style="text-align: center;">YES</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">abAB34</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">DFSDFSDFSDsdfjsdfnsm</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">ASDSFDSF3423423</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">djfjsdkf234234</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">jdfsdkfhsdkSDFSDFSDF789</td>
+			<td style="text-align: center;">YES</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">123POP123pop</td>
+			<td style="text-align: center;">YES</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">ASDFGbn</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">1234567</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">12345678</td>
+			<td style="text-align: center;">NO</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">abcABC9</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">YES</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">abAB34</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">NO</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">DFSDFSDFSDsdfjsdfnsm</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">NO</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

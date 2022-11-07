@@ -1,8 +1,8 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: <code>beegeek</code>
 - text: <code>python</code>
+- text: <code>beegeek</code>
 - text: <code>stepik</code>
 - text: <code>iq-option</code>
 files:

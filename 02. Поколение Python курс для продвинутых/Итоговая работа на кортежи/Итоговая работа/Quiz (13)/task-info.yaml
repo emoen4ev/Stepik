@@ -2,9 +2,9 @@ type: choice
 is_multiple_choice: false
 options:
 - text: <code>'loves'</code>
-- text: <code>'Stepik'</code>
-- text: "Произойдет ошибка ValueError: not enough values to unpack"
 - text: "Произойдет ошибка ValueError: too many values to unpack"
+- text: "Произойдет ошибка ValueError: not enough values to unpack"
+- text: <code>'Stepik'</code>
 - text: <code>'Beegeek'</code>
 files:
 - name: task.py

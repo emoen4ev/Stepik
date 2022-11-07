@@ -1,0 +1,10 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: "countries = ('Russia', 'Argentina', 'Spain', 'Slovakia', 'Canada', 'Slovenia',\
+    \ 'Italy', 'Spain', 'Ukraine', 'Chile', 'Spain', 'Cameroon')\nnumber = \nprint(number)"
+  learner_created: false
+status: Unchecked
+record: -1

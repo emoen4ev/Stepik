@@ -1,13 +1,13 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: "<code>['', 1, 7, 'beegeek', False]</code>"
-- text: "<code>[1, 7, 'beegeek']</code>"
 - text: "<code>['', 1, 7, 'beegeek', False, 0]</code>"
-- text: "<code>[None, False]</code>"
-- text: "<code>[1, 7, 'beegeek', 0]</code>"
-- text: "<code>[None]</code>"
 - text: "<code>[1, 7, 'beegeek', False, 0]</code>"
+- text: "<code>[None, False]</code>"
+- text: "<code>['', 1, 7, 'beegeek', False]</code>"
+- text: "<code>[None]</code>"
+- text: "<code>[1, 7, 'beegeek']</code>"
+- text: "<code>[1, 7, 'beegeek', 0]</code>"
 files:
 - name: task.py
   visible: true

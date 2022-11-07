@@ -1,0 +1,3 @@
+abscissas = []
+ordinates = []
+applicates = []

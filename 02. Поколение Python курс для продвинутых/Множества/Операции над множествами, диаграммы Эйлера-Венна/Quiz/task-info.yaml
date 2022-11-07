@@ -1,10 +1,5 @@
 type: choice
 is_multiple_choice: false
-options:
-- text: "$\\{1, 2, 3, 5, 7, 9\\}$"
-- text: "$\\{2, 3, 5, 7\\}$"
-- text: "$\\{2, 3, 5, 7, 9\\}$"
-- text: "$\\{3, 5, 7\\}$"
 files:
 - name: task.py
   visible: true

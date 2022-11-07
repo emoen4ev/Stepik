@@ -3,9 +3,9 @@ is_multiple_choice: false
 options:
 - text: "<code>['a', 'is', 'of', 'this', 'test', 'sorting']</code>"
 - text: "<code>['this', 'test', 'sorting', 'of', 'is', 'a']</code>"
-- text: "<code>['a', 'is', 'of', 'sorting', 'test', 'this']</code>"
 - text: "<code>['sorting', 'this', 'test', 'is', 'of', 'a']</code>"
 - text: "<code>['a', 'of', 'is', 'test', 'this', 'sorted']</code>"
+- text: "<code>['a', 'is', 'of', 'sorting', 'test', 'this']</code>"
 files:
 - name: task.py
   visible: true

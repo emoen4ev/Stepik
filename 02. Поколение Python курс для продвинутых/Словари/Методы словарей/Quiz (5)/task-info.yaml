@@ -2,14 +2,14 @@ type: choice
 is_multiple_choice: false
 options:
 - text: среда
-- text: 3
-- text: пятница
-- text: 1
-- text: вторник
-- text: произойдет ошибка
-- text: Не найдено
-- text: 2
 - text: понедельник
+- text: Не найдено
+- text: произойдет ошибка
+- text: вторник
+- text: 2
+- text: пятница
+- text: 3
+- text: 1
 files:
 - name: task.py
   visible: true

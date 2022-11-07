@@ -1,9 +1,9 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: <code>filter()</code>
 - text: <code>reduce()</code>
 - text: <code>map()</code>
+- text: <code>filter()</code>
 files:
 - name: task.py
   visible: true

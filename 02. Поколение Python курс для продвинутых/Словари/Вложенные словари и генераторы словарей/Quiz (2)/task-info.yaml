@@ -1,9 +1,9 @@
 type: choice
 is_multiple_choice: false
 options:
+- text: "<code>marks['class'][0]['marks']['history']</code>"
 - text: "<code>marks['class']['Rosaly']['marks']['history']</code>"
 - text: "<code>marks['class']['student']['marks'][1]</code>"
-- text: "<code>marks['class'][0]['marks']['history']</code>"
 - text: "<code>marks['class']['student']['marks']['history']</code>"
 files:
 - name: task.py

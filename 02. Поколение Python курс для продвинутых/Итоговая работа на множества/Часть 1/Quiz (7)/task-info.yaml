@@ -1,11 +1,11 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: 5
-- text: 6
-- text: 2
 - text: 4
+- text: 6
 - text: 7
+- text: 5
+- text: 2
 files:
 - name: task.py
   visible: true

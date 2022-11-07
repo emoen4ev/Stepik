@@ -1,0 +1,85 @@
+<h2 style="text-align: center;">Внутри шара</h2>
+
+<p>На вход программе подаются три строки текста с вещественными числами, значениями абсцисс ($x$), ординат ($y$) и аппликат ($z$) точек трехмерного пространства. Напишите программу для проверки расположения всех точек с введенными координатами внутри либо на поверхности шара с центром в начале координат и радиусом $R = 2$.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подаются три строки текста с вещественными числами, разделенными символом пробела – абсциссы, ординаты и аппликаты точек в трехмерной системе координат.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести <code>True</code> если все точки с введенными координатами находятся внутри или на границе шара и <code>False</code>, если вне.</p>
+
+<p><strong>Примечание 1.</strong> Гарантируется, что количество чисел во всех трех строках одинаковое.</p>
+
+<p><strong>Примечание 2.</strong> Уравнение поверхности шара (сферы) имеет вид $x^2+y^2+z^2 = R^2$.</p>
+
+<p><strong>Примечание 3. </strong>Для решения задачи используйте встроенные функции <code>all()</code> и <code>zip()</code>.</p>
+
+<p><strong>Примечание 4.</strong> Используйте следующие названия abscissas, ordinates, applicates для соответствующих списков.</p>
+
+<p><strong>Примечание 5.</strong> Указанный шар имеет вид:</p>
+
+<p style="text-align: center;"><img alt="" height="528" src="https://ucarecdn.com/0dc69d2e-4814-41f0-a1b1-6388c7140aad/" width="663"></p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">0.0 1.0 2.0<br>
+			0.0 0.0 1.1<br>
+			0.0 1.0 1.5</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">0.0 0.0<br>
+			1.5 0.0<br>
+			1.1 1.1</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">0.637 -0.411 -0.247 1.658 0.061<br>
+			-0.78 -1.374 0.762 0.306 -0.614<br>
+			-1.317 -0.444 -0.572 -0.341 0.295</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">-1.284 0.076 1.609 1.1022 -1.814<br>
+			0.3325 0.407 1.6579 -0.009 -1.16<br>
+			-1.951 0.78 0.954 -1.61 1.571</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">0 0 0<br>
+			0 0 0<br>
+			0 1.1 2</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">2 0 0<br>
+			0 2 0<br>
+			0 0 2</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">2 0 0<br>
+			0 2 1<br>
+			0 0 2</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">0.0 1.0 2.0<br>0.0 0.0 1.1<br>0.0 1.0 1.5</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">False</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">0.0 0.0<br>1.5 0.0<br>1.1 1.1</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">True</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">0.637 -0.411 -0.247 1.658 0.061<br>-0.78 -1.374 0.762 0.306 -0.614<br>-1.317 -0.444 -0.572 -0.341 0.295</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">True</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

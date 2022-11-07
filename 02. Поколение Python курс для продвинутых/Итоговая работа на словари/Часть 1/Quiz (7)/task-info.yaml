@@ -1,9 +1,9 @@
 type: choice
 is_multiple_choice: true
 options:
-- text: "<code>student['marks']</code>"
-- text: <code>student.get(2)</code>
 - text: "<code>student[2]</code>"
+- text: <code>student.get(2)</code>
+- text: "<code>student['marks']</code>"
 - text: <code>student.get('marks')</code>
 files:
 - name: task.py

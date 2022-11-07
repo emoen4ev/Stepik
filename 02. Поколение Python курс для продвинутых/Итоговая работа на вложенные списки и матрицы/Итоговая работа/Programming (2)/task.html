@@ -1,0 +1,108 @@
+<h2 style="text-align: center;">Транспонирование матрицы</h2>
+
+<p>Напишите программу, которая транспонирует квадратную матрицу.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подаётся натуральное число $n$ — количество строк и столбцов в матрице, затем элементы матрицы.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести транспонированную матрицу.</p>
+
+<p><strong>Примечание 1.</strong> Транспонированная матрица — матрица, полученная из исходной матрицы заменой строк на столбцы.</p>
+
+<p><strong>Примечание 2.</strong> Задачу можно решить без использования вспомогательного списка. </p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">3<br>
+			1 2 3<br>
+			4 5 6<br>
+			7 8 9</td>
+			<td style="text-align: center;">1 4 7<br>
+			2 5 8<br>
+			3 6 9</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">4<br>
+			1 2 3 1<br>
+			4 5 6 4<br>
+			7 8 9 7<br>
+			1 2 3 8</td>
+			<td style="text-align: center;">1 4 7 1<br>
+			2 5 8 2<br>
+			3 6 9 3<br>
+			1 4 7 8</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">2<br>
+			5 6<br>
+			8 4</td>
+			<td style="text-align: center;">5 8<br>
+			6 4</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">5<br>
+			1 2 3 4 5<br>
+			2 3 4 5 6<br>
+			3 4 5 6 7<br>
+			4 5 6 7 8<br>
+			5 6 7 8 9</td>
+			<td style="text-align: center;">1  2  3  4  5<br>
+			2  3  4  5  6<br>
+			3  4  5  6  7<br>
+			4  5  6  7  8<br>
+			5  6  7  8  9</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">3<br>
+			6 7 98<br>
+			11 5 43<br>
+			4 5 6</td>
+			<td style="text-align: center;">6  11 4<br>
+			7  5  5<br>
+			98 43 6</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">4<br>
+			1 2 3 4<br>
+			2 3 4 5<br>
+			3 4 5 6<br>
+			4 5 6 7</td>
+			<td style="text-align: center;">1  2  3  4<br>
+			2  3  4  5<br>
+			3  4  5  6<br>
+			4  5  6  7</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">2<br>
+			99 99<br>
+			0 0</td>
+			<td style="text-align: center;">99 0<br>
+			99 0</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">1<br>
+			1</td>
+			<td style="text-align: center;">1</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">3<br>1 2 3<br>4 5 6<br>7 8 9</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1 4 7<br>2 5 8<br>3 6 9</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">4<br>1 2 3 1<br>4 5 6 4<br>7 8 9 7<br>1 2 3 8</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1 4 7 1<br>2 5 8 2<br>3 6 9 3<br>1 4 7 8</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">2<br>5 6<br>8 4</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">5 8<br>6 4</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: "$\\{b, c, d, i, o, u\\}$"
+- text: "$\\{b, c, d\\}$"
 - text: "$\\{i, o, u\\}$"
 - text: "$\\{a, e\\}$"
-- text: "$\\{b, c, d\\}$"
+- text: "$\\{b, c, d, i, o, u\\}$"
 files:
 - name: task.py
   visible: true

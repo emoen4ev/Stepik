@@ -1,13 +1,13 @@
 type: choice
 is_multiple_choice: true
 options:
-- text: б
+- text: в
+- text: 8
 - text: абв
 - text: 10
 - text: 9
-- text: в
 - text: а
-- text: 8
+- text: б
 files:
 - name: task.py
   visible: true

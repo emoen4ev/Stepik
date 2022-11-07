@@ -1,0 +1,44 @@
+<h2 style="text-align: center;">Интересные числа</h2>
+
+<p>На вход программе подаются два натуральных числа $a$ и $b$. Напишите программу с использованием встроенной функции <code>all()</code> для обнаружения всех целых чисел в диапазоне $[a; \, b]$, которые делятся на каждую содержащуюся в них цифру без остатка.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подаются два натуральных числа $a$ и $b$ на отдельных строках.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести все числа из диапазона $[a; \, b]$, удовлетворяющие условию задачи, на одной строке, разделяя их символом пробела.</p>
+
+<p><strong>Примечание.</strong> Числа, содержащие нули, неинтересны, их выводить не нужно.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">1<br>
+			25</td>
+			<td style="text-align: center;">1 2 3 4 5 6 7 8 9 11 12 15 22 24</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">20<br>
+			30</td>
+			<td style="text-align: center;">22 24</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">50<br>
+			150</td>
+			<td style="text-align: center;">55 66 77 88 99 111 112 115 122 124 126 128 132 135 144</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1<br>25</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1 2 3 4 5 6 7 8 9 11 12 15 22 24</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">20<br>30</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">22 24</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">50<br>150</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">55 66 77 88 99 111 112 115 122 124 126 128 132 135 144</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

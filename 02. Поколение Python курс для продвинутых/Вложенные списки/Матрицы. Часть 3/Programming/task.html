@@ -1,0 +1,90 @@
+<h2 style="text-align: center;">Шахматная доска</h2>
+
+<p>На вход программе подаются два натуральных числа $n$ и $m$. Напишите программу для создания матрицы размером $n \times m$, заполнив её символами <code>.</code> и <code>*</code> в шахматном порядке. В левом верхнем углу должна стоять точка. Выведите полученную матрицу на экран, разделяя элементы пробелами.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе на одной строке подаются два натуральных числа $n$ и $m$ — количество строк и столбцов в матрице.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести матрицу, описанную в условии задачи.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">3 4</td>
+			<td style="text-align: center;">. * . *<br>
+			* . * .<br>
+			. * . *</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">2 2</td>
+			<td style="text-align: center;">. *<br>
+			* .</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">1 8</td>
+			<td style="text-align: center;">. * . * . * . *</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">6 6</td>
+			<td style="text-align: center;">. * . * . *<br>
+			* . * . * .<br>
+			. * . * . *<br>
+			* . * . * .<br>
+			. * . * . *<br>
+			* . * . * .</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">1 1</td>
+			<td style="text-align: center;">.</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">6 1</td>
+			<td style="text-align: center;">.<br>
+			*<br>
+			.<br>
+			*<br>
+			.<br>
+			*</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">8 8</td>
+			<td style="text-align: center;">. * . * . * . *<br>
+			* . * . * . * .<br>
+			. * . * . * . *<br>
+			* . * . * . * .<br>
+			. * . * . * . *<br>
+			* . * . * . * .<br>
+			. * . * . * . *<br>
+			* . * . * . * .</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">1 2</td>
+			<td style="text-align: center;">. *</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">2 1</td>
+			<td style="text-align: center;">.<br>
+			*</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">3 4</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">. * . *<br>* . * .<br>. * . *</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">2 2</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">. *<br>* .</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1 8</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">. * . * . * . *</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

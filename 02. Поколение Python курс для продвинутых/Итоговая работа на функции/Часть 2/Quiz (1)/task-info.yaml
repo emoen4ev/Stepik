@@ -1,12 +1,12 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: <code>0</code>
-- text: <code>15.0</code>
+- text: <code>(x + 3) * 5 / 2</code>
 - text: <code>3.0</code>
 - text: произойдет ошибка
+- text: <code>15.0</code>
+- text: <code>0</code>
 - text: <code>30.0</code>
-- text: <code>(x + 3) * 5 / 2</code>
 files:
 - name: task.py
   visible: true

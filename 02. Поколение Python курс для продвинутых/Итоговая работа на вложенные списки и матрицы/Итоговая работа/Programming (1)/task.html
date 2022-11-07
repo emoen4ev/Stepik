@@ -1,0 +1,107 @@
+<h2 style="text-align: center;">Максимальный в области 2</h2>
+
+<p>Напишите программу, которая выводит максимальный элемент в заштрихованной области квадратной матрицы.</p>
+
+<p style="text-align: center;"><img alt="" height="280" src="https://ucarecdn.com/a47324ef-cb97-41e8-a2de-db8c35c9203e/" width="306"></p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подаётся натуральное число $n$ — количество строк и столбцов в матрице, затем элементы матрицы.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести одно число — максимальный элемент в заштрихованной области квадратной матрицы.</p>
+
+<p><strong>Примечание.</strong> Элементы побочной диагонали также учитываются.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">3<br>
+			1 4 5<br>
+			6 7 8<br>
+			1 1 6</td>
+			<td style="text-align: center;">8</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">4<br>
+			0 1 4 6<br>
+			0 0 2 5<br>
+			0 0 0 7<br>
+			0 0 0 0</td>
+			<td style="text-align: center;">7</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">2<br>
+			6 0<br>
+			7 9</td>
+			<td style="text-align: center;">9</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">1<br>
+			9</td>
+			<td style="text-align: center;">9</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">5<br>
+			1 4 5 1 4<br>
+			6 7 8 6 7<br>
+			1 1 6 1 1<br>
+			1 4 5 6 7<br>
+			6 7 8 1 1</td>
+			<td style="text-align: center;">8</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">3<br>
+			6 7 1<br>
+			1 1 6<br>
+			6 7 1</td>
+			<td style="text-align: center;">7</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">6<br>
+			1 4 5 1 4 7<br>
+			6 9 8 6 7 4<br>
+			1 1 6 1 1 1<br>
+			1 4 5 8 7 5<br>
+			6 7 8 1 1 0<br>
+			6 9 8 6 7 7</td>
+			<td style="text-align: center;">9</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">4<br>
+			0 4 6 1<br>
+			6 7 8 6<br>
+			1 3 0 1<br>
+			0 4 5 6</td>
+			<td style="text-align: center;">8</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">6<br>
+			1 9 5 1 4 7<br>
+			6 9 8 6 7 4<br>
+			1 1 6 1 1 1<br>
+			1 4 5 8 7 5<br>
+			6 7 8 1 1 0<br>
+			6 1 8 6 7 7</td>
+			<td style="text-align: center;">8</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">3<br>1 4 5<br>6 7 8<br>1 1 6</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">8</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">4<br>0 1 4 6<br>0 0 2 5<br>0 0 0 7<br>0 0 0 0</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">7</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">2<br>6 0<br>7 9</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">9</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

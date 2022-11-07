@@ -1,14 +1,14 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: <code>5 125</code>
-- text: "<code>x**2, x**3</code>"
-- text: <code>25 125</code>
-- text: <code>5 25</code>
+- text: <code>125 125</code>
 - text: <code>5 5</code>
 - text: <code>125 5</code>
+- text: <code>5 125</code>
+- text: "<code>x**2, x**3</code>"
+- text: <code>5 25</code>
 - text: "<code>funcs[0](5), funcs[1](5)</code>"
-- text: <code>125 125</code>
+- text: <code>25 125</code>
 files:
 - name: task.py
   visible: true

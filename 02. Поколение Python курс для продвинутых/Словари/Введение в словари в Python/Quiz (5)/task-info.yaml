@@ -1,13 +1,13 @@
 type: choice
 is_multiple_choice: false
 options:
+- text: ббб
+- text: ааа
+- text: 2
 - text: 1
 - text: ввв
-- text: ббб
-- text: 3
-- text: ааа
 - text: ошибка во время выполнения кода
-- text: 2
+- text: 3
 files:
 - name: task.py
   visible: true

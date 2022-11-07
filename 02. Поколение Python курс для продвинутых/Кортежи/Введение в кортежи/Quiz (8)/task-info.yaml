@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: 12
+- text: 21
+- text: 9
+- text: произойдет ошибка во время выполнения программы
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false
