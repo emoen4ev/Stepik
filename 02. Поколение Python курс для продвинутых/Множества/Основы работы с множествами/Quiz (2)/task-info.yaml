@@ -2,9 +2,9 @@ type: choice
 is_multiple_choice: false
 options:
 - text: Black
+- text: Orange
 - text: ошибка во время выполнения кода
 - text: Yellow
-- text: Orange
 files:
 - name: task.py
   visible: true

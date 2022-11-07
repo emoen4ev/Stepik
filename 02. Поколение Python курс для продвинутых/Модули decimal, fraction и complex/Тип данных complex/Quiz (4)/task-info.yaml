@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: $-7$
 - text: $9 - 16i$
-- text: $25$
 - text: $9 + 16i$
+- text: $-7$
+- text: $25$
 files:
 - name: task.py
   visible: true

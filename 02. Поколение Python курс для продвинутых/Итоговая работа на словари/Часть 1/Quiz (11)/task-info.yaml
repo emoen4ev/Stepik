@@ -2,9 +2,9 @@ type: choice
 is_multiple_choice: false
 options:
 - text: <code>recipients.values()</code>
-- text: <code>recipients.items()</code>
 - text: <code>recipients</code>
 - text: <code>recipients.keys()</code>
+- text: <code>recipients.items()</code>
 files:
 - name: task.py
   visible: true

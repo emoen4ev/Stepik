@@ -2,10 +2,10 @@ type: choice
 is_multiple_choice: true
 options:
 - text: "<code>recipients.update(['Scripps', 131, 'Math', 3456])</code>"
-- text: "<code>recipients.update('Scripps', 131, 'Math', 3456)</code>"
-- text: "<code>recipients.update({'Scripps', 131, 'Math', 3456})</code>"
 - text: "<code>recipients.update({'Scripps': 131, 'Math': 3456})</code>"
 - text: "<code>recipients.update([('Scripps', 131), ('Math', 3456)])</code>"
+- text: "<code>recipients.update({'Scripps', 131, 'Math', 3456})</code>"
+- text: "<code>recipients.update('Scripps', 131, 'Math', 3456)</code>"
 files:
 - name: task.py
   visible: true

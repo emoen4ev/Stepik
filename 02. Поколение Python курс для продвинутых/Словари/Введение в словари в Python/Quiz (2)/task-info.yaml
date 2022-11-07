@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: true
 options:
-- text: '''beegeek'' – ключ'
-- text: 2018 – значение
 - text: '''beegeek'' – значение'
+- text: '''beegeek'' – ключ'
 - text: 2018 – ключ
+- text: 2018 – значение
 files:
 - name: task.py
   visible: true

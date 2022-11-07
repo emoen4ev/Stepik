@@ -1,11 +1,11 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: <code>15</code>
-- text: произойдет ошибка
-- text: <code>+12345</code>
 - text: <code>+15</code>
 - text: <code>12345</code>
+- text: <code>15</code>
+- text: <code>+12345</code>
+- text: произойдет ошибка
 files:
 - name: task.py
   visible: true

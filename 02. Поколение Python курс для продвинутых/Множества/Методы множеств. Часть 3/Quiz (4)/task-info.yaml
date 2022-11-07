@@ -1,9 +1,9 @@
 type: choice
 is_multiple_choice: false
 options:
+- text: <code>False</code>
 - text: ошибка во время выполнения
 - text: <code>True</code>
-- text: <code>False</code>
 files:
 - name: task.py
   visible: true

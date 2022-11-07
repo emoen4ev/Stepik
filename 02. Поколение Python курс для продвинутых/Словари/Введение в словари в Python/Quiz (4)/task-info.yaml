@@ -3,10 +3,10 @@ is_multiple_choice: false
 options:
 - text: "<code>{'Canada': 'Ottawa' 'United States': 'Washington, D.C.' 'Mexico': 'Mexico\
     \ City'}</code>"
-- text: "<code>['Canada': 'Ottawa', 'United States': 'Washington, D.C.', 'Mexico':\
-    \ 'Mexico City']</code>"
 - text: "<code>{'Ottawa': 'Canada', 'Washington, D.C.': 'United States', 'Mexico City':\
     \ 'Mexico'}</code>"
+- text: "<code>['Canada': 'Ottawa', 'United States': 'Washington, D.C.', 'Mexico':\
+    \ 'Mexico City']</code>"
 - text: "<code>('Canada': 'Ottawa', 'United States': 'Washington, D.C.', 'Mexico':\
     \ 'Mexico City')</code>"
 - text: "<code>{'Canada': 'Ottawa', 'United States': 'Washington, D.C.', 'Mexico':\

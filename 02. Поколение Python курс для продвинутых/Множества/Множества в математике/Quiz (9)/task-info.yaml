@@ -1,9 +1,9 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: "$\\dfrac{22}{7}$"
 - text: $\pi$
 - text: "$\\dfrac{355}{113}$"
+- text: "$\\dfrac{22}{7}$"
 - text: $3.14$
 files:
 - name: task.py

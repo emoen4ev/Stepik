@@ -1,11 +1,11 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: <code>def func(kwargs**):</code>
-- text: <code>def func(args*):</code>
-- text: <code>def func(*args):</code>
 - text: <code>def func(args):</code>
+- text: <code>def func(*args):</code>
 - text: <code>def func(**kwargs):</code>
+- text: <code>def func(args*):</code>
+- text: <code>def func(kwargs**):</code>
 files:
 - name: task.py
   visible: true

@@ -1,11 +1,11 @@
 type: choice
 is_multiple_choice: true
 options:
-- text: <code>myset.clear('Orange')</code>
-- text: <code>myset.pop('Orange')</code>
-- text: <code>myset.remove('Orange')</code>
 - text: <code>myset.discard('Orange')</code>
 - text: "<code>del myset ['Orange']</code>"
+- text: <code>myset.clear('Orange')</code>
+- text: <code>myset.remove('Orange')</code>
+- text: <code>myset.pop('Orange')</code>
 files:
 - name: task.py
   visible: true

@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: "<code>{'Blue', 'Orange', 'Yellow', 'Orange', 'Black'}</code>"
-- text: "<code>{'Yellow', 'Black'}</code>"
 - text: "<code>{'Blue', 'Orange', 'Yellow', 'Black'}</code>"
+- text: "<code>{'Blue', 'Orange', 'Yellow', 'Orange', 'Black'}</code>"
 - text: "<code>{'Yellow', 'Orange', 'Black'}</code>"
+- text: "<code>{'Yellow', 'Black'}</code>"
 files:
 - name: task.py
   visible: true

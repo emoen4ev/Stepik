@@ -1,13 +1,13 @@
 type: choice
 is_multiple_choice: false
 options:
+- text: <code>x**2</code>
+- text: <code>x</code>
 - text: <code>4</code>
-- text: произойдет ошибка
+- text: <code>2</code>
 - text: <code>2.0</code>
 - text: <code>0</code>
-- text: <code>2</code>
-- text: <code>x</code>
-- text: <code>x**2</code>
+- text: произойдет ошибка
 files:
 - name: task.py
   visible: true

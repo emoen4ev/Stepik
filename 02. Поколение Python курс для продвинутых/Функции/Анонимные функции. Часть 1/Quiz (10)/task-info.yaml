@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: false
 options:
+- text: "<code>[{'x': 1}]</code>"
 - text: "<code>[{'x': 1}, {'y': 2}, {'x': 3}]</code>"
 - text: "<code>[{'x': 1}, {'x': 3, 'y': 4}]</code>"
 - text: "<code>[{'x': 1}, {'y': 2}, {'x': 3, 'y': 4}]</code>"
-- text: "<code>[{'x': 1}]</code>"
 - text: "<code>[{'x': 1}, {'x': 3}]</code>"
 files:
 - name: task.py

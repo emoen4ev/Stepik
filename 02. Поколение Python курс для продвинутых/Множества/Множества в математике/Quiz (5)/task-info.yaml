@@ -2,10 +2,10 @@ type: choice
 is_multiple_choice: false
 options:
 - text: рациональные
+- text: целые
+- text: комплексные
 - text: натуральные
 - text: простые
-- text: комплексные
-- text: целые
 files:
 - name: task.py
   visible: true

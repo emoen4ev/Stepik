@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: $10$
-- text: $5$
-- text: $\dfrac12$
 - text: $-3$
+- text: $5$
+- text: $10$
+- text: $\dfrac12$
 files:
 - name: task.py
   visible: true

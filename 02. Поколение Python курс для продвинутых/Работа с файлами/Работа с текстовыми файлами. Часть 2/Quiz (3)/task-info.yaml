@@ -2,9 +2,9 @@ type: choice
 is_multiple_choice: false
 options:
 - text: использования менеджера контекста <code>with</code>
-- text: без разницы
 - text: использования блока <code>try/finally</code>
 - text: вызова метода <code>close()</code>
+- text: без разницы
 files:
 - name: task.py
   visible: true

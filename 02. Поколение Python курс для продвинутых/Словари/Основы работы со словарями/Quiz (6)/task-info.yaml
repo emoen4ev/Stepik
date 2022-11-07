@@ -1,11 +1,11 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: <code>keys_values()</code>
+- text: <code>keys()</code>
 - text: <code>get()</code>
+- text: <code>keys_values()</code>
 - text: <code>items()</code>
 - text: <code>values()</code>
-- text: <code>keys()</code>
 files:
 - name: task.py
   visible: true
