@@ -1,1 +1,3 @@
-# put your python code here
+number = int(input())
+
+print(f'{number:,}')

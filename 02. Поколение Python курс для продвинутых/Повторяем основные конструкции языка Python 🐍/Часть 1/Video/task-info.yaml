@@ -25,6 +25,6 @@ sources:
   type: video/mp4
   label: 240p
 currentTime: 0
-status: Unchecked
+status: Solved
 record: -1
 post_submission_on_open: true
