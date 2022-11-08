@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: "<code>('Emma', 25)</code>"
-- text: <code>Emma 25</code>
-- text: <code>name age</code>
-- text: произойдет ошибка
+- text: $B$
+- text: $D$
+- text: $C$
+- text: $A$
 files:
 - name: task.py
   visible: true

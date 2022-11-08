@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: Emma 20
-- text: name age
-- text: Emma 25
-- text: Emma age
+- text: <code>myset.append(item)</code>
+- text: <code>myset.add(item)</code>
+- text: <code>myset.update(item)</code>
+- text: <code>myset.insert(item)</code>
 files:
 - name: task.py
   visible: true
@@ -14,5 +14,4 @@ files:
   learner_created: false
 status: Unchecked
 record: -1
-custom_name: Quiz
 local_check: false

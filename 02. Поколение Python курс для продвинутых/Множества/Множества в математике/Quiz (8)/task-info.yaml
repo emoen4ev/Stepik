@@ -1,15 +1,10 @@
 type: choice
-is_multiple_choice: true
+is_multiple_choice: false
 options:
-- text: я
-- text: ъъъ
-- text: ю
-- text: ююю
-- text: э
-- text: яяя
-- text: ъ
-- text: ⎵
-- text: эээ
+- text: $-5$
+- text: "$\\dfrac{3}{4}$"
+- text: $\sqrt2$
+- text: "$-\\dfrac{1}{9}$"
 files:
 - name: task.py
   visible: true
