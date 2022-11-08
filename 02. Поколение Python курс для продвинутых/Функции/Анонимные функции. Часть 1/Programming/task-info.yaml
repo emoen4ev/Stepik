@@ -1,0 +1,14 @@
+type: code
+files:
+- name: task.py
+  visible: true
+  text: "from functools import reduce \n\nfloats = [4.35, 6.09, 3.25, 9.77, 2.16,\
+    \ 8.88, 4.59, 34.23, 12.12, 4.67, 2.45, 9.32]\nwords = ['racecar', 'akinremi',\
+    \ 'deed', 'temidayo', 'omoseun', 'civic', 'TATTARRATTAT', 'malayalam', 'nun']\n\
+    numbers = [4, 6, 9, 23, 5]\n\n# Исправьте этот код\nmap_result = list(map(lambda\
+    \ num: num, floats))\nfilter_result = list(filter(lambda name: name, words))\n\
+    reduce_result = reduce(lambda num1, num2: num1 + num2, numbers, 0)\n\nprint(map_result)\n\
+    print(filter_result)\nprint(reduce_result)"
+  learner_created: false
+status: Unchecked
+record: -1

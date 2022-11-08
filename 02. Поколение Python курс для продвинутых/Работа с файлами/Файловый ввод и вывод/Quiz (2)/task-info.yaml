@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: файлом с последовательным доступом
+- text: текстовым файлом
+- text: двоичным файлом
+- text: файлом ввода
+- text: файлом вывода
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

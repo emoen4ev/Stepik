@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: true
 options:
-- text: простота использования
-- text: неизменяемость
 - text: безопасность
 - text: скорость (производительность)
+- text: простота использования
+- text: неизменяемость
 files:
 - name: task.py
   visible: true

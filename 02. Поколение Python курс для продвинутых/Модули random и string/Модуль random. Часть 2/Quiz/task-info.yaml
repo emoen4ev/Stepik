@@ -1,0 +1,20 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: 3
+- text: 6
+- text: 5
+- text: 4
+- text: 7
+- text: 1
+- text: 2
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+local_check: false

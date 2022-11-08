@@ -1,5 +1,12 @@
 type: choice
 is_multiple_choice: false
+options:
+- text: 520
+- text: "False"
+- text: 153
+- text: произойдет ошибка (KeyError) во время выполнения программы
+- text: 409
+- text: None
 files:
 - name: task.py
   visible: true

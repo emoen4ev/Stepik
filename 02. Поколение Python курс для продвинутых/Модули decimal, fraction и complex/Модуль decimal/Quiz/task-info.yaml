@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: скорость
+- text: настраиваемость
+- text: подходит для финансов и бизнеса
+- text: подходит для высокоточных вычислений
+- text: "подходит для симуляций, визуализаций и игр"
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+local_check: false

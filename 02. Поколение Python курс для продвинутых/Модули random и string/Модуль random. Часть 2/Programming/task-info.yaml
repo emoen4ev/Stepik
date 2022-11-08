@@ -1,0 +1,10 @@
+type: code
+files:
+- name: task.py
+  visible: true
+  text: |-
+    def generate_ip():
+        pass
+  learner_created: false
+status: Unchecked
+record: -1

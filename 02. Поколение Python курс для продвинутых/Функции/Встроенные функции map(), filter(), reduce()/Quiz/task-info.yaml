@@ -1,11 +1,11 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: кортеж
-- text: строку
-- text: множество
 - text: словарь
+- text: множество
+- text: строку
 - text: итератор
+- text: кортеж
 - text: список
 files:
 - name: task.py

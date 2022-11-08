@@ -1,0 +1,185 @@
+<h2 style="text-align: center;">Юный математик 🌶️</h2>
+
+<p>Дима учится в седьмом классе и сейчас они проходят обыкновенные дроби с натуральными числителем и знаменателем. Вчера на уроке математики Дима узнал, что дробь называется <a href="https://ru.wikipedia.org/wiki/%D0%94%D1%80%D0%BE%D0%B1%D1%8C_(%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0)#:~:text=%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9%20%D0%BD%D0%B0%D0%B7%D1%8B%D0%B2%D0%B0%D0%B5%D1%82%D1%81%D1%8F%20%D0%B4%D1%80%D0%BE%D0%B1%D1%8C%2C%20%D1%83%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B9,%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8E%20%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5%D0%B5%20%D0%B8%D0%BB%D0%B8%20%D1%80%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5%20%D0%B5%D0%B4%D0%B8%D0%BD%D0%B8%D1%86%D0%B5." rel="noopener noreferrer nofollow">правильной</a>, если ее числитель меньше знаменателя, и <a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%B5%D1%81%D0%BE%D0%BA%D1%80%D0%B0%D1%82%D0%B8%D0%BC%D0%B0%D1%8F_%D0%B4%D1%80%D0%BE%D0%B1%D1%8C" rel="noopener noreferrer nofollow">несократимой</a>, если нет равной ей дроби с меньшими натуральными числителем и знаменателем.</p>
+
+<p>Дима очень любит математику, поэтому дома он долго экспериментировал, придумывая и решая разные задачки с правильными несократимыми дробями. Одну из этих задач Дима предлагает решить вам с помощью компьютера.</p>
+
+<p>На вход программе подается натуральное число $n$. Напишите программу, которая находит наибольшую правильную несократимую дробь с суммой числителя и знаменателя равной $n$.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подается натуральное число $n$.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести ответ на задачу.</p>
+
+<p><strong>Примечание.</strong> Возможно вам потребуется функция <code>gcd()</code>, которая позволяет находить наибольший общий делитель (НОД) двух чисел. Функция реализована в модуле <code>math</code>.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">3/7</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">23</td>
+			<td style="text-align: center;">11/12</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">1/2</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">1/3</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">2/3</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">1/5</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">3/4</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">3/5</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">4/5</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">1000</td>
+			<td style="text-align: center;">499/501</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">11</td>
+			<td style="text-align: center;">961</td>
+			<td style="text-align: center;">480/481</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">12</td>
+			<td style="text-align: center;">900</td>
+			<td style="text-align: center;">449/451</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">13</td>
+			<td style="text-align: center;">714</td>
+			<td style="text-align: center;">355/359</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">14</td>
+			<td style="text-align: center;">543</td>
+			<td style="text-align: center;">271/272</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">15</td>
+			<td style="text-align: center;">181</td>
+			<td style="text-align: center;">90/91</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">16</td>
+			<td style="text-align: center;">924</td>
+			<td style="text-align: center;">461/463</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">17</td>
+			<td style="text-align: center;">887</td>
+			<td style="text-align: center;">443/444</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">18</td>
+			<td style="text-align: center;">395</td>
+			<td style="text-align: center;">197/198</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">19</td>
+			<td style="text-align: center;">19</td>
+			<td style="text-align: center;">9/10</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">20</td>
+			<td style="text-align: center;">457</td>
+			<td style="text-align: center;">228/229</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">21</td>
+			<td style="text-align: center;">487</td>
+			<td style="text-align: center;">243/244</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">22</td>
+			<td style="text-align: center;">800</td>
+			<td style="text-align: center;">399/401</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">23</td>
+			<td style="text-align: center;">903</td>
+			<td style="text-align: center;">451/452</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">24</td>
+			<td style="text-align: center;">980</td>
+			<td style="text-align: center;">489/491</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">25</td>
+			<td style="text-align: center;">691</td>
+			<td style="text-align: center;">345/346</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">26</td>
+			<td style="text-align: center;">801</td>
+			<td style="text-align: center;">400/401</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">27</td>
+			<td style="text-align: center;">876</td>
+			<td style="text-align: center;">437/439</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">28</td>
+			<td style="text-align: center;">224</td>
+			<td style="text-align: center;">111/113</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">29</td>
+			<td style="text-align: center;">976</td>
+			<td style="text-align: center;">487/489</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">30</td>
+			<td style="text-align: center;">997</td>
+			<td style="text-align: center;">498/499</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">31</td>
+			<td style="text-align: center;">570</td>
+			<td style="text-align: center;">283/287</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">10</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">3/7</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">23</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">11/12</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">3</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1/2</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

@@ -1,0 +1,63 @@
+<h2 style="text-align: center;">Противоположный цвет</h2>
+
+<p>В цветовой схеме RGB цвета задаются с помощью трех компонентов:</p>
+
+<ul>
+	<li>R — интенсивность красной составляющей цвета;</li>
+	<li>G — интенсивность зеленой составляющей цвета;</li>
+	<li>B — интенсивность синей составляющей цвета.</li>
+</ul>
+
+<p>Противоположные цвета задаются как RGB и (255-R)(255-G)(255-B). Считается, что такие цвета хорошо гармонируют друг с другом.</p>
+
+<p>Напишите программу, которая по трем компонентам заданного цвета, находит компоненты противоположного цвета. </p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подается строка, содержащая три целых неотрицательных числа, компоненты R, G и B начального цвета,  разделенные символом пробела.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести три компонента R, G и B противоположного цвета, разделенные символом пробела.</p>
+
+<p><strong>Примечание.</strong> Попробуйте решить задачу в одну строку с помощью встроенной функции <code>map()</code>.</p>
+
+<p style="text-align: center;"><img alt="" height="315" src="https://ucarecdn.com/86855968-7292-4038-8df1-99cdd785723f/" width="315"></p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">244 11 120</td>
+			<td style="text-align: center;">11 244 135</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">0 0 0</td>
+			<td style="text-align: center;">255 255 255</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">255 255 255</td>
+			<td style="text-align: center;">0 0 0</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">100 100 100</td>
+			<td style="text-align: center;">155 155 155</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">12 56 78</td>
+			<td style="text-align: center;">243 199 177</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">244 11 120</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">11 244 135</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">0 0 0</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">255 255 255</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">255 255 255</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">0 0 0</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

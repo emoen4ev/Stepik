@@ -1,5 +1,10 @@
 type: choice
 is_multiple_choice: false
+options:
+- text: "<code>{'first': 1, 'second': 2, 'third': 3}</code>"
+- text: "<code>{1: 'first', 2: 'second', 3: 'third'}</code>"
+- text: "<code>[('first', 100), ('second', 200), ('third', 300)]</code>"
+- text: ошибка во время выполнения кода
 files:
 - name: task.py
   visible: true

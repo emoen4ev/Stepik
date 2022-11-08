@@ -1,0 +1,110 @@
+<h2 style="text-align: center;">Уникальные символы 1</h2>
+
+<p>Напишите программу для вывода количества уникальных символов каждого считанного слова без учета регистра.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе в первой строке подается число $n$ – общее количество слов. Далее идут $n$ строк с словами.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести на отдельной строке количество уникальных символов для каждого слова.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">3<br>
+			Тимур<br>
+			Beegeek<br>
+			АнанАс</td>
+			<td style="text-align: center;">5<br>
+			4<br>
+			3</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">5<br>
+			абОнемЕнТы<br>
+			дозировка<br>
+			военкОмат<br>
+			ДрУжиНник<br>
+			ОпПозицИя</td>
+			<td style="text-align: center;">8<br>
+			8<br>
+			8<br>
+			7<br>
+			6</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">2<br>
+			прЕвыСокОмнОгОраСсмотРИтельствУюЩиЙ<br>
+			вОдоГрязетоРфопарАфинОлечЕние</td>
+			<td style="text-align: center;">20<br>
+			16</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">1<br>
+			ОдноГоДОк</td>
+			<td style="text-align: center;">5</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">7<br>
+			пОговОрка<br>
+			тРаНсферТ<br>
+			След<br>
+			эконОмика<br>
+			ЭнЕргетиК<br>
+			соСед<br>
+			ФОтофиниШ</td>
+			<td style="text-align: center;">7<br>
+			7<br>
+			4<br>
+			7<br>
+			8<br>
+			4<br>
+			6</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">2<br>
+			лицЕмеРИЕ<br>
+			мАссАжиСт</td>
+			<td style="text-align: center;">6<br>
+			6</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">3<br>
+			рЕвыСокОм<br>
+			тоРфопарАфин<br>
+			прЕ</td>
+			<td style="text-align: center;">8<br>
+			8<br>
+			3</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">4<br>
+			тРаНсферТ<br>
+			След<br>
+			эконОмика<br>
+			ЭнЕргетиК</td>
+			<td style="text-align: center;">7<br>
+			4<br>
+			7<br>
+			8</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">3<br>Тимур<br>Beegeek<br>АнанАс</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">5<br>4<br>3</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">5<br>абОнемЕнТы<br>дозировка<br>военкОмат<br>ДрУжиНник<br>ОпПозицИя</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">8<br>8<br>8<br>7<br>6</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">2<br>прЕвыСокОмнОгОраСсмотРИтельствУюЩиЙ<br>вОдоГрязетоРфопарАфинОлечЕние</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">20<br>16</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

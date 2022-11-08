@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: "периметр фигуры, в которую вписана заданная\_фигура"
+- text: периметр заданной плоской фигуры
+- text: "площадь прямоугольника или квадрата, содержащего заданную фигуру"
+- text: площадь фигуры Лиссажу 
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

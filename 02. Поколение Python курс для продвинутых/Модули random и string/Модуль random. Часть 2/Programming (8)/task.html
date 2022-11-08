@@ -1,0 +1,132 @@
+<h2 style="text-align: center;">Генератор паролей 2 🌶️</h2>
+
+<p>Напишите программу, которая с помощью модуля <code>random</code> генерирует $n$ паролей длиной $m$ символов, состоящих из строчных и прописных английских букв и цифр, кроме тех, которые легко перепутать между собой:</p>
+
+<ul>
+	<li>«l» (L маленькое);</li>
+	<li>«I» (i большое);</li>
+	<li>«1» (цифра);</li>
+	<li>«o» и «O» (большая и маленькая буквы);</li>
+	<li>«0» (цифра).</li>
+</ul>
+
+<p><span style="color: #a03881;"><strong>Дополнительное условие:</strong></span> в каждом пароле <strong>обязательно</strong> должна присутствовать хотя бы одна цифра и как минимум по одной букве в верхнем и нижнем регистре.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подаются два числа $n$ и $m$, каждое на отдельной строке.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести $n$ паролей длиной $m$ символов в соответствии с условием задачи, каждый на отдельной строке.</p>
+
+<p><strong>Примечание 1.</strong> Считать, что числа $n$ и $m$ всегда таковы, что требуемые пароли сгенерировать возможно.</p>
+
+<p><strong>Примечание 2.</strong> Решение задачи удобно оформить в виде двух вспомогательных функций:</p>
+
+<ul>
+	<li>функция <code>generate_password(length)</code> – возвращает случайный пароль длиной <code>length</code> символов;</li>
+	<li>функция <code>generate_passwords(count, length)</code> – возвращает список, состоящий из <code>count</code> случайных паролей длиной <code>length</code> символов.</li>
+</ul>
+
+<p><strong>Примечание 3.</strong> Приведенные ниже тесты – это лишь образцы возможного ответа. Возможны и другие способы генерации паролей.</p>
+
+<details><summary>Для отладки кода 🟡</summary><iframe allowfullscreen="" height="600" src="https://trinket.io/embed/python3/4858fe25a0" width="100%"></iframe></details>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">9<br>
+			7</td>
+			<td style="text-align: center;">iHnPg7q<br>
+			Njj9m3N<br>
+			tQ9v5ut<br>
+			6qPZ3tV<br>
+			6gVScya<br>
+			kU8ncAY<br>
+			5CKX9Da<br>
+			UTQRve4<br>
+			FyRe8NN</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">15<br>
+			3</td>
+			<td style="text-align: center;">7qB<br>
+			4Wp<br>
+			r2V<br>
+			Zq3<br>
+			Y5q<br>
+			iL3<br>
+			M9v<br>
+			7Hy<br>
+			8tW<br>
+			5Jz<br>
+			a4K<br>
+			3Kt<br>
+			cN6<br>
+			7Tk<br>
+			Pg5</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">20<br>
+			4</td>
+			<td style="text-align: center;">4buF<br>
+			Ci32<br>
+			4zXK<br>
+			p3By<br>
+			pQs9<br>
+			aP8n<br>
+			7tGb<br>
+			QV2e<br>
+			98Eu<br>
+			8BbG<br>
+			R9sr<br>
+			c8Uv<br>
+			tt4H<br>
+			66Cq<br>
+			J8mW<br>
+			kCm8<br>
+			k8PH<br>
+			7EWp<br>
+			DH4q<br>
+			E5wF</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">13<br>
+			16</td>
+			<td style="text-align: center;">7Gc6Zxka6XBPnDMK<br>
+			TuAtmqD8CceUfgnX<br>
+			8MUShWYGs3QyqYjT<br>
+			3wST9HkUQNn9KhuA<br>
+			2Drppa9M8zuL43FS<br>
+			eDn57A2mwjHMzhVK<br>
+			UqBRQxY74usN9EbG<br>
+			CXq5QNDb3A4K2Li7<br>
+			Xv6g2NC7UWpZezSr<br>
+			QteE5yScnEbZ6RHi<br>
+			GB6yVTihsMp8nWj2<br>
+			DdvNBxwyfN5hQW9P<br>
+			xaehGHwz3A7aE9WV</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">3<br>
+			15</td>
+			<td style="text-align: center;">H4Pv2syrxd4KA7M<br>
+			E9RTYxdS6Keaz4d<br>
+			x3DgJSickma9Kw8</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">9<br>7</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">iHnPg7q<br>Njj9m3N<br>tQ9v5ut<br>6qPZ3tV<br>6gVScya<br>kU8ncAY<br>5CKX9Da<br>UTQRve4<br>FyRe8NN</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">15<br>3</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">7qB<br>4Wp<br>r2V<br>Zq3<br>Y5q<br>iL3<br>M9v<br>7Hy<br>8tW<br>5Jz<br>a4K<br>3Kt<br>cN6<br>7Tk<br>Pg5</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">20<br>4</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">4buF<br>Ci32<br>4zXK<br>p3By<br>pQs9<br>aP8n<br>7tGb<br>QV2e<br>98Eu<br>8BbG<br>R9sr<br>c8Uv<br>tt4H<br>66Cq<br>J8mW<br>kCm8<br>k8PH<br>7EWp<br>DH4q<br>E5wF</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

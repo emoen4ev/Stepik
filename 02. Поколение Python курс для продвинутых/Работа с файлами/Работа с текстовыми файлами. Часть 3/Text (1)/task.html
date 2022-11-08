@@ -1,0 +1,13 @@
+<p>Текстовый файл <code>names.txt</code> содержит следующие строки:</p>
+
+<pre><code class="language-no-highlight">Timur
+Roman
+Ruslan
+Oleg</code></pre>
+
+<p>Каким будет содержимое этого файла после выполнения программы?</p>
+
+<pre><code class="language-python">with open('names.txt', 'a') as file:
+    file.write('\n')
+    file.write('Michael\n')
+    file.write('Alexander')</code></pre>

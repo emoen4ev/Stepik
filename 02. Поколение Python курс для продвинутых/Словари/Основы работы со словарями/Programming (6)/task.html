@@ -1,0 +1,182 @@
+<h2 style="text-align: center;">Код Морзе</h2>
+
+<p>Код Морзе для представления цифр и букв использует тире и точки.</p>
+
+<p>Напишите программу для кодирования текстового сообщения в соответствии с кодом Морзе.</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th>Символ</th>
+			<th>Код</th>
+			<th>Символ</th>
+			<th>Код</th>
+			<th>Символ</th>
+			<th>Код</th>
+			<th>Символ</th>
+			<th>Код</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>A</td>
+			<td><code>.-</code></td>
+			<td>J</td>
+			<td><code>.---</code></td>
+			<td>S</td>
+			<td><code>...</code></td>
+			<td>1</td>
+			<td><code>.----</code></td>
+		</tr>
+		<tr>
+			<td>B</td>
+			<td><code>-...</code></td>
+			<td>K</td>
+			<td><code>-.-</code></td>
+			<td>T</td>
+			<td><code>-</code></td>
+			<td>2</td>
+			<td><code>..---</code></td>
+		</tr>
+		<tr>
+			<td>C</td>
+			<td><code>-.-.</code></td>
+			<td>L</td>
+			<td><code>.-..</code></td>
+			<td>U</td>
+			<td><code>..-</code></td>
+			<td>3</td>
+			<td><code>...--</code></td>
+		</tr>
+		<tr>
+			<td>D</td>
+			<td><code>-..</code></td>
+			<td>M</td>
+			<td><code>--</code></td>
+			<td>V</td>
+			<td><code>...-</code></td>
+			<td>4</td>
+			<td><code>....-</code></td>
+		</tr>
+		<tr>
+			<td>E</td>
+			<td><code>.</code></td>
+			<td>N</td>
+			<td><code>-.</code></td>
+			<td>W</td>
+			<td><code>.--</code></td>
+			<td>5</td>
+			<td><code>.....</code></td>
+		</tr>
+		<tr>
+			<td>F</td>
+			<td><code>..-.</code></td>
+			<td>O</td>
+			<td><code>---</code></td>
+			<td>X</td>
+			<td><code>-..-</code></td>
+			<td>6</td>
+			<td><code>-....</code></td>
+		</tr>
+		<tr>
+			<td>G</td>
+			<td><code>--.</code></td>
+			<td>P</td>
+			<td><code>.--.</code></td>
+			<td>Y</td>
+			<td><code>-.--</code></td>
+			<td>7</td>
+			<td><code>--...</code></td>
+		</tr>
+		<tr>
+			<td>H</td>
+			<td><code>....</code></td>
+			<td>Q</td>
+			<td><code>--.-</code></td>
+			<td>Z</td>
+			<td><code>--..</code></td>
+			<td>8</td>
+			<td><code>---..</code></td>
+		</tr>
+		<tr>
+			<td>I</td>
+			<td><code>..</code></td>
+			<td>R</td>
+			<td><code>.-.</code></td>
+			<td>0</td>
+			<td><code>-----</code></td>
+			<td>9</td>
+			<td><code>----.</code></td>
+		</tr>
+	</tbody>
+</table>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подается одна строка – текстовое сообщение.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести закодированное с помощью кода Морзе сообщение, оставляя пробел между каждым закодированным символом (последовательностью тире и точек).</p>
+
+<p><strong>Примечание 1.</strong> Ваша программа должна игнорировать любые символы, не перечисленные в таблице.</p>
+
+<p><strong>Примечание 2.</strong> Код Морзе был разработан в XIX веке и все еще используется, спустя более $160$ лет после создания.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">Interstellar</td>
+			<td style="text-align: center;">.. -. - . .-. ... - . .-.. .-.. .- .-.</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">SOS</td>
+			<td style="text-align: center;">... --- ...</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">Agent 007</td>
+			<td style="text-align: center;">.- --. . -. - ----- ----- --...</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">Hello, World!</td>
+			<td style="text-align: center;">.... . .-.. .-.. --- .-- --- .-. .-.. -..</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">zero000</td>
+			<td style="text-align: center;">--.. . .-. --- ----- ----- -----</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">89+54=143</td>
+			<td style="text-align: center;">---.. ----. ..... ....- .---- ....- ...--</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">how are you?</td>
+			<td style="text-align: center;">.... --- .-- .- .-. . -.-- --- ..-</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">Python3.8</td>
+			<td style="text-align: center;">.--. -.-- - .... --- -. ...-- ---..</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">X-rays</td>
+			<td style="text-align: center;">-..- .-. .- -.-- ...</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">Interstellar</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">.. -. - . .-. ... - . .-.. .-.. .- .-.</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">SOS</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">... --- ...</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">Agent 007</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">.- --. . -. - ----- ----- --...</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

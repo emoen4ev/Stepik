@@ -1,0 +1,226 @@
+<h2 style="text-align: center;">Упорядоченные дроби</h2>
+
+<p>На вход программе подается натуральное число $n$. Напишите программу, которая выводит в порядке возрастания все несократимые дроби, заключённые между $0$ и $1$, знаменатель которых не превосходит $n$.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подается натуральное число $n, \, n &gt; 1$.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести ответ на задачу.</p>
+
+<p><strong>Примечание.</strong> Возможно вам потребуется функция <code>gcd()</code>, которая позволяет находить наибольший общий делитель (НОД) двух чисел. Функция реализована в модуле <code>math</code>.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">1/5<br>
+			1/4<br>
+			1/3<br>
+			2/5<br>
+			1/2<br>
+			3/5<br>
+			2/3<br>
+			3/4<br>
+			4/5</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">1/4<br>
+			1/3<br>
+			1/2<br>
+			2/3<br>
+			3/4</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">1/3<br>
+			1/2<br>
+			2/3</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">1/2</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">1/10<br>
+			1/9<br>
+			1/8<br>
+			1/7<br>
+			1/6<br>
+			1/5<br>
+			2/9<br>
+			1/4<br>
+			2/7<br>
+			3/10<br>
+			1/3<br>
+			3/8<br>
+			2/5<br>
+			3/7<br>
+			4/9<br>
+			1/2<br>
+			5/9<br>
+			4/7<br>
+			3/5<br>
+			5/8<br>
+			2/3<br>
+			7/10<br>
+			5/7<br>
+			3/4<br>
+			7/9<br>
+			4/5<br>
+			5/6<br>
+			6/7<br>
+			7/8<br>
+			8/9<br>
+			9/10</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">20</td>
+			<td style="text-align: center;">1/20<br>
+			1/19<br>
+			1/18<br>
+			1/17<br>
+			1/16<br>
+			1/15<br>
+			1/14<br>
+			1/13<br>
+			1/12<br>
+			1/11<br>
+			1/10<br>
+			2/19<br>
+			1/9<br>
+			2/17<br>
+			1/8<br>
+			2/15<br>
+			1/7<br>
+			3/20<br>
+			2/13<br>
+			3/19<br>
+			1/6<br>
+			3/17<br>
+			2/11<br>
+			3/16<br>
+			1/5<br>
+			4/19<br>
+			3/14<br>
+			2/9<br>
+			3/13<br>
+			4/17<br>
+			1/4<br>
+			5/19<br>
+			4/15<br>
+			3/11<br>
+			5/18<br>
+			2/7<br>
+			5/17<br>
+			3/10<br>
+			4/13<br>
+			5/16<br>
+			6/19<br>
+			1/3<br>
+			7/20<br>
+			6/17<br>
+			5/14<br>
+			4/11<br>
+			7/19<br>
+			3/8<br>
+			5/13<br>
+			7/18<br>
+			2/5<br>
+			7/17<br>
+			5/12<br>
+			8/19<br>
+			3/7<br>
+			7/16<br>
+			4/9<br>
+			9/20<br>
+			5/11<br>
+			6/13<br>
+			7/15<br>
+			8/17<br>
+			9/19<br>
+			1/2<br>
+			10/19<br>
+			9/17<br>
+			8/15<br>
+			7/13<br>
+			6/11<br>
+			11/20<br>
+			5/9<br>
+			9/16<br>
+			4/7<br>
+			11/19<br>
+			7/12<br>
+			10/17<br>
+			3/5<br>
+			11/18<br>
+			8/13<br>
+			5/8<br>
+			12/19<br>
+			7/11<br>
+			9/14<br>
+			11/17<br>
+			13/20<br>
+			2/3<br>
+			13/19<br>
+			11/16<br>
+			9/13<br>
+			7/10<br>
+			12/17<br>
+			5/7<br>
+			13/18<br>
+			8/11<br>
+			11/15<br>
+			14/19<br>
+			3/4<br>
+			13/17<br>
+			10/13<br>
+			7/9<br>
+			11/14<br>
+			15/19<br>
+			4/5<br>
+			13/16<br>
+			9/11<br>
+			14/17<br>
+			5/6<br>
+			16/19<br>
+			11/13<br>
+			17/20<br>
+			6/7<br>
+			13/15<br>
+			7/8<br>
+			15/17<br>
+			8/9<br>
+			17/19<br>
+			9/10<br>
+			10/11<br>
+			11/12<br>
+			12/13<br>
+			13/14<br>
+			14/15<br>
+			15/16<br>
+			16/17<br>
+			17/18<br>
+			18/19<br>
+			19/20</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">5</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1/5<br>1/4<br>1/3<br>2/5<br>1/2<br>3/5<br>2/3<br>3/4<br>4/5</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">4</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1/4<br>1/3<br>1/2<br>2/3<br>3/4</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">3</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1/3<br>1/2<br>2/3</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

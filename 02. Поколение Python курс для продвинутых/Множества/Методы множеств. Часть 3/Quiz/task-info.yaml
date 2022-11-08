@@ -1,8 +1,8 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: <code>True</code>
 - text: <code>False</code>
+- text: <code>True</code>
 files:
 - name: task.py
   visible: true
