@@ -1,15 +1,20 @@
-tr = [input(), input()]
-print(tr)
+timur_ruslan = [input(), input()]
 
 sequence = ['ножницы', 'бумага', 'камень', 'ящерица', 'Спок']
 
-if tr[0] == tr[1]:
-    winner = 'ничья'
-elif abs(sequence.index(tr[0]) - sequence.index(tr[1])) == 1:
-    pass
-elif abs(sequence.index(tr[0]) - sequence.index(tr[1])) == sequence.index(tr[-1]):
-    pass
-elif abs(sequence.index(tr[0]) - sequence.index(tr[1])) == 2:
-    pass
+ind_diff = abs(sequence.index(timur_ruslan[0]) - sequence.index(timur_ruslan[1]))
 
-print(sequence.index(tr[0]))
+winner = 'Руслан'
+
+if timur_ruslan[0] == timur_ruslan[1]:
+    winner = 'ничья'
+
+elif ind_diff % 2 == 1:
+    if sequence.index(timur_ruslan[0]) < sequence.index(timur_ruslan[1]):
+        winner = 'Тимур'
+
+elif ind_diff % 2 == 0:
+    if sequence.index(timur_ruslan[0]) > sequence.index(timur_ruslan[1]):
+        winner = 'Тимур'
+
+print(winner)
