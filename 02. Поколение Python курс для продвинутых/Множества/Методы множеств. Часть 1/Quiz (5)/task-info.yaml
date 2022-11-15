@@ -1,5 +1,12 @@
 type: choice
 is_multiple_choice: false
+options:
+- text: p 0
+- text: p 6
+- text: ошибка во время выполнения
+- text: python 0
+- text: python 1
+- text: p 5
 files:
 - name: task.py
   visible: true

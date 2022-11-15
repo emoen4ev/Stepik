@@ -1,0 +1,10 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: "fruits = {'apple', 'banana', 'cherry', 'avocado', 'pineapple', 'apricot',\
+    \ 'banana', 'avocado', 'grapefruit'}"
+  learner_created: false
+status: Unchecked
+record: -1

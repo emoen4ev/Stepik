@@ -1,9 +1,9 @@
 type: choice
 is_multiple_choice: true
 options:
-- text: безопасность
 - text: скорость (производительность)
 - text: простота использования
+- text: безопасность
 - text: неизменяемость
 files:
 - name: task.py

@@ -1,9 +1,9 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: "<code>(1, [2, 3], 4)</code>"
-- text: произойдет ошибка во время выполнения программы
 - text: "<code>(1, [17, 3], 4)</code>"
+- text: произойдет ошибка во время выполнения программы
+- text: "<code>(1, [2, 3], 4)</code>"
 files:
 - name: task.py
   visible: true

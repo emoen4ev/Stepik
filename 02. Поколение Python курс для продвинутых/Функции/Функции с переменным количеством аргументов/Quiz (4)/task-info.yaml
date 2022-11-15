@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: "<code>func(*args, **kwargs, fargs)</code>"
-- text: "<code>func(**kwargs, *args, fargs)</code>"
 - text: "<code>func(fargs, *args, **kwargs)</code>"
 - text: порядок не имеет значения
+- text: "<code>func(*args, **kwargs, fargs)</code>"
+- text: "<code>func(**kwargs, *args, fargs)</code>"
 files:
 - name: task.py
   visible: true

@@ -1,5 +1,10 @@
 type: choice
 is_multiple_choice: false
+options:
+- text: "<code>{'Yellow', 'Orange', 'Black', ['Blue', 'Green', 'Red', 'Orange']}</code>"
+- text: ошибка во время выполнения
+- text: "<code>{'Yellow', 'Orange', 'Black', ['Blue', 'Green', 'Red']}</code>"
+- text: "<code>{'Yellow', 'Orange', 'Red', 'Black', 'Green', 'Blue'}</code>"
 files:
 - name: task.py
   visible: true

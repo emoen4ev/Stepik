@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: false
 options:
+- text: <code>list3 = list1.extend(list2)</code>
 - text: "<code>list3.extend(list1, list2)</code>"
 - text: <code>list3 = list1 + list2</code>
 - text: "<code>list3 = extend(list1, list2)</code>"
-- text: <code>list3 = list1.extend(list2)</code>
 files:
 - name: task.py
   visible: true

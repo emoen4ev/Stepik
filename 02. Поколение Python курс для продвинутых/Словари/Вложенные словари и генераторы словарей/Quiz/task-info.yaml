@@ -1,9 +1,9 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: "<code>{ключ: значение for переменная in последовательность}</code>"
-- text: "<code>{переменная for переменная in выражение}</code>"
 - text: "<code>{переменная for ключ: значение in последовательность}</code>"
+- text: "<code>{переменная for переменная in выражение}</code>"
+- text: "<code>{ключ: значение for переменная in последовательность}</code>"
 - text: "<code>{ключ: значение for последовательность in переменная}</code>"
 files:
 - name: task.py

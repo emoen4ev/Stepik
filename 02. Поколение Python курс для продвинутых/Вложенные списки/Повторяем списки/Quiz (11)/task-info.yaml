@@ -1,5 +1,11 @@
 type: choice
 is_multiple_choice: false
+options:
+- text:  <code>-Hello-Python-</code>
+- text:  <code>-HelloPython</code>
+- text: <code>Hello-Python-</code>
+- text:  <code>HelloPython-</code>
+- text:  <code>Hello-Python</code>
 files:
 - name: task.py
   visible: true

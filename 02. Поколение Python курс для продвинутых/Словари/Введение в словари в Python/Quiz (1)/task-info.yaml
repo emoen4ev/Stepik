@@ -1,11 +1,11 @@
 type: choice
 is_multiple_choice: true
 options:
-- text: строка
-- text: элемент
-- text: значение
 - text: индекс
+- text: элемент
 - text: ключ
+- text: строка
+- text: значение
 files:
 - name: task.py
   visible: true

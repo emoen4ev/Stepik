@@ -1,0 +1,18 @@
+<p>Напишите программу, которая рисует изображение сердца по образцу.</p>
+
+<p style="text-align: center;"><img alt="" height="285" src="https://ucarecdn.com/45c5be34-84b7-41cd-9444-f16d326a0b60/" width="315"></p>
+
+<p>Такая фигура задана параметрически в виде:</p>
+
+<p><span class="math-tex">\[\begin{cases} x = 128\sin^3t \\ y = 8(13\cos t-5\cos 2t-2\cos 3t-\cos 4t-5) \end{cases}\]</span></p>
+
+<pre><code class="language-no-highlight">x = 128*sin(t)**3
+y = 8*(13*cos(t)-5*cos(2*t)-2*cos(3*t)-cos(4*t) - 5)</code></pre>
+
+<p>где $t \in [0; \, 2\pi]$ – параметр.</p>
+
+<p><strong>Примечание 1.</strong> Изменяйте значение параметра $t$ с маленьким шагом, равным $0.01$.</p>
+
+<p><strong>Примечание 2.</strong> Для перемещения черепашки в заданную точку используйте команду <code>goto(x, y)</code>.</p>
+
+<p><iframe allowfullscreen="" height="600" src="https://trinket.io/embed/python/04cedff6e6" width="100%"></iframe></p>

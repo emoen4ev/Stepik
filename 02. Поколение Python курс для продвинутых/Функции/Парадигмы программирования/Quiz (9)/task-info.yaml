@@ -1,9 +1,9 @@
 type: choice
 is_multiple_choice: false
 options:
+- text:  с помощью циклов
 - text: с помощью рекурсии
 - text: с помощью оператора перехода <code>goto</code> 😂
-- text:  с помощью циклов
 files:
 - name: task.py
   visible: true

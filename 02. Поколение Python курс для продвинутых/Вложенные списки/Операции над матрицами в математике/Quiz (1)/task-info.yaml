@@ -1,5 +1,11 @@
 type: choice
 is_multiple_choice: false
+options:
+- text: "$C_{n \\times k}$"
+- text: "$C_{m \\times n}$"
+- text: "$C_{m \\times k}$"
+- text: "$C_{k \\times k}$"
+- text: "$C_{m \\times m}$"
 files:
 - name: task.py
   visible: true
