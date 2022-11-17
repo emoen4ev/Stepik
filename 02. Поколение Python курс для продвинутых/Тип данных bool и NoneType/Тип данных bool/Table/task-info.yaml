@@ -6,6 +6,8 @@ files:
     #  This is a table task. You can use this editor as a playground
 
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  time: "Thu, 17 Nov 2022 12:35:28 UTC"
 record: -1
 post_submission_on_open: false
