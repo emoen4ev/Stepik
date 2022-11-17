@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: false
 options:
+- text: "<code>[]</code>"
 - text: "<code>[30, 40]</code>"
 - text: "<code>[10, 20]</code>"
 - text: <code>list index out of range.</code>
-- text: "<code>[]</code>"
 files:
 - name: task.py
   visible: true
@@ -12,7 +12,12 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Thu, 17 Nov 2022 17:38:16 UTC"
 record: -1
+selected_options:
+- 0
 custom_name: Quiz
 local_check: false

@@ -1,2 +1,3 @@
-#  You can experiment here, it won’t be checked
-
+zeros = [0] * 10
+print(zeros)
+print(len(zeros))
