@@ -9,5 +9,8 @@ files:
 
     print(maximum)
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Fri, 18 Nov 2022 09:11:07 UTC"
 record: -1

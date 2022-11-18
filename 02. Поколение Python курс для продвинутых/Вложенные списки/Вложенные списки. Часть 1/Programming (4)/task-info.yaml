@@ -8,5 +8,8 @@ files:
     total = 0
     counter = 0
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Fri, 18 Nov 2022 09:23:08 UTC"
 record: -1

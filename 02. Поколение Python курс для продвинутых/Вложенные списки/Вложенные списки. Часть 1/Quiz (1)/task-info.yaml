@@ -1,11 +1,11 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: 13
-- text: "<code>IndexError: list index out of range</code>"
-- text: 27
-- text: 5
 - text: 15
+- text: 5
+- text: "<code>IndexError: list index out of range</code>"
+- text: 13
+- text: 27
 files:
 - name: task.py
   visible: true
@@ -13,7 +13,12 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Fri, 18 Nov 2022 08:44:22 UTC"
 record: -1
+selected_options:
+- 2
 custom_name: Quiz
 local_check: false
