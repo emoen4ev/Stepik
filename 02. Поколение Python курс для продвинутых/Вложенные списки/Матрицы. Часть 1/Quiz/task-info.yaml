@@ -3,8 +3,8 @@ is_multiple_choice: false
 options:
 - text: $2 \times 2$
 - text: $3 \times 3$
-- text: $2 \times 3$
 - text: $3 \times 2$
+- text: $2 \times 3$
 files:
 - name: task.py
   visible: true
@@ -12,6 +12,11 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Fri, 18 Nov 2022 16:47:06 UTC"
 record: -1
+selected_options:
+- 3
 local_check: false
