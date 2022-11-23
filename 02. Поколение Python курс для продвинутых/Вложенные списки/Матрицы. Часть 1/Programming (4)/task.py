@@ -5,6 +5,7 @@ max_numbers = []
 
 for _ in range(rows_cols):
     current_row = [int(x) for x in input().split()]
+
     matrix.append(current_row)
 
 for i in range(rows_cols):
