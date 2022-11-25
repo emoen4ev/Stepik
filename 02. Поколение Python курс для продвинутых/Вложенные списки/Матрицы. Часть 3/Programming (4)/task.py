@@ -10,7 +10,7 @@ def get_value(row, col):
     return 0
 
 
-matrix = [[get_value(j, i) for j in range(rows_cols)] for i in range(rows_cols)]
+matrix = [[get_value(i, j) for j in range(rows_cols)] for i in range(rows_cols)]
 
 for line in matrix:
     line = ''.join(str(_).ljust(3) for _ in line)
