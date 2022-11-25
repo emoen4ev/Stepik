@@ -2,7 +2,9 @@ rows_cols = int(input())
 
 
 def get_value(row, col):
-    if row == col or row == rows_cols - col - 1:
+    k = rows_cols - col - 1
+
+    if row in (col, k):
         return 1
 
     return 0
