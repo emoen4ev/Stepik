@@ -11,8 +11,7 @@ def get_value(row, col):
     return matrix_1[row][col] + matrix_2[row][col]
 
 
-result = [[get_value(i, j) for j in range(cols)] for i in range(rows)]
+matrix_of_sums = [[get_value(i, j) for j in range(cols)] for i in range(rows)]
 
-for line in result:
-    line = ' '.join(str(_) for _ in line)
-    print(line)
+for line in matrix_of_sums:
+    print(*line)
