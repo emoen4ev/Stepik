@@ -1,3 +1,3 @@
 countries = ('Russia', 'Argentina', 'Spain', 'Slovakia', 'Canada', 'Slovenia', 'Italy')
-index = 
+index = countries.index('Slovenia')
 print(index)
