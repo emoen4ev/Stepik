@@ -1,2 +1,2 @@
-#  You can experiment here, it won’t be checked
-
+names = ('Michael', 'John', 'Freddie')
+print(names)

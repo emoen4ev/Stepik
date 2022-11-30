@@ -1,9 +1,9 @@
 type: choice
 is_multiple_choice: true
 options:
+- text: безопасность
 - text: скорость (производительность)
 - text: простота использования
-- text: безопасность
 - text: неизменяемость
 files:
 - name: task.py
@@ -12,7 +12,14 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Wed, 30 Nov 2022 15:52:50 UTC"
 record: -1
+selected_options:
+- 0
+- 1
+- 3
 custom_name: Quiz
 local_check: false
