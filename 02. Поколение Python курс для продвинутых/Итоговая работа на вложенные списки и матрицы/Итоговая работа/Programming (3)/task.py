@@ -8,9 +8,9 @@ for i in range(n):
 
         if i == n // 2 or j == n // 2:
             matrix[i][j] = '*'
-        if i == j:
+        elif i == j:
             matrix[i][j] = '*'
-        if j == k:
+        elif j == k:
             matrix[i][j] = '*'
 
 for line in matrix:

@@ -1,23 +1,20 @@
 board_size = 8
 
-col_Q, row_Q = input()
+col_q, row_q = input()
 
 board = [['.'] * board_size for _ in range(board_size)]
 
-col_Q = ord(col_Q) - 97
-row_Q = board_size - int(row_Q)
-
-board[row_Q][col_Q] = 'Q'
+row_q = board_size - int(row_q)
+col_q = ord(col_q) - 97
 
 for current_row in range(board_size):
     for current_col in range(board_size):
-        if 0 <= current_row <= board_size and 0 <= current_col <= board_size and board[current_row][current_col] != 'Q':
-            if current_row == row_Q:
-                board[current_row][current_col] = '*'
-            if current_col == col_Q:
-                board[current_row][current_col] = '*'
-            if abs(current_row - row_Q) == abs(current_col - col_Q):
-                board[current_row][current_col] = '*'
+        if current_row == row_q or current_col == col_q:
+            board[current_row][current_col] = '*'
+        elif abs(current_row - row_q) == abs(current_col - col_q):
+            board[current_row][current_col] = '*'
+
+board[row_q][col_q] = 'Q'
 
 for line in board:
     print(*line)
