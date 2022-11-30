@@ -1,3 +1,3 @@
 countries = ('Russia', 'Argentina', 'Spain', 'Slovakia', 'Canada', 'Slovenia', 'Italy')
-last =
+last = countries[-1]
 print(last)

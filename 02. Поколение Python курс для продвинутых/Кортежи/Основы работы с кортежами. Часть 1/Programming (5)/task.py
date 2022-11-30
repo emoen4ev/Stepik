@@ -1,3 +1,3 @@
 countries = ('Romania', 'Poland', 'Estonia', 'Bulgaria', 'Slovakia', 'Slovenia', 'Hungary')
-number = 
+number = len(countries)
 print(number)

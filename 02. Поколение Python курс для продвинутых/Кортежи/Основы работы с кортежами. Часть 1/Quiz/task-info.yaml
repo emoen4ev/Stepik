@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: 7
-- text: 4
 - text: 6
 - text: 5
+- text: 4
+- text: 7
 files:
 - name: task.py
   visible: true
@@ -12,6 +12,11 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Wed, 30 Nov 2022 16:01:09 UTC"
 record: -1
+selected_options:
+- 1
 local_check: false
