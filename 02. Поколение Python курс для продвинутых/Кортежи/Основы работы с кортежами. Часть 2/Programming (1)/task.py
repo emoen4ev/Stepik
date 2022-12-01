@@ -1,3 +1,5 @@
 data = 'Python для продвинутых!'
 
-print()
+data_tup = tuple(data)
+
+print(data_tup)
