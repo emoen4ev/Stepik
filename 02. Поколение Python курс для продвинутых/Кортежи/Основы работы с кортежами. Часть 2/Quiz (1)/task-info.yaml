@@ -1,12 +1,12 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: "<code>('Маяковский', 28)<br>('Есенин', 13)</code>"
-- text: "<code>('Маяковский', 28)<br>('Фет', 15)</code>"
-- text: "<code>('Лермонтов', 20)<br>('Фет', 15)</code>"
-- text: "<code>('Фет', 15)<br>('Есенин', 13)</code>"
 - text: "<code>('Есенин', 13)<br>('Тургенев', 14)</code>"
+- text: "<code>('Маяковский', 28)<br>('Фет', 15)</code>"
+- text: "<code>('Маяковский', 28)<br>('Есенин', 13)</code>"
+- text: "<code>('Лермонтов', 20)<br>('Фет', 15)</code>"
 - text: "<code>('Есенин', 13)<br>('Фет', 15)</code>"
+- text: "<code>('Фет', 15)<br>('Есенин', 13)</code>"
 files:
 - name: task.py
   visible: true
@@ -14,7 +14,12 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Thu, 01 Dec 2022 11:43:10 UTC"
 record: -1
+selected_options:
+- 4
 custom_name: Quiz
 local_check: false
