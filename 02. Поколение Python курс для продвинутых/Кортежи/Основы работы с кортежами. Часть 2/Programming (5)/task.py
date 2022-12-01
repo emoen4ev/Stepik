@@ -3,8 +3,8 @@ n = int(input())
 listing = ()
 
 for _ in range(n):
-    cur = tuple(input().split())
-    listing += cur,
+    current_user = tuple(input().split())
+    listing += current_user,
 
 for el in listing:
     print(*el, end='\n')
