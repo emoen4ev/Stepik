@@ -1,2 +1,2 @@
-#  You can experiment here, it won’t be checked
-
+tpl = (100)
+print(tpl * 2)
