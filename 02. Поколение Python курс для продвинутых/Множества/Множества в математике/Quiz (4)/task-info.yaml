@@ -3,10 +3,10 @@ is_multiple_choice: false
 options:
 - text: $64$
 - text: $15$
-- text: $16$
-- text: $32$
 - text: $31$
+- text: $16$
 - text: $33$
+- text: $32$
 files:
 - name: task.py
   visible: true
@@ -14,7 +14,12 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Sat, 03 Dec 2022 20:34:46 UTC"
 record: -1
+selected_options:
+- 2
 custom_name: Quiz
 local_check: false
