@@ -1,2 +1,7 @@
-#  You can experiment here, it won’t be checked
+myset = {'python', True, 2, False}
 
+print(myset)
+print(len(myset))
+
+item = myset.pop()
+print(item, len(myset))

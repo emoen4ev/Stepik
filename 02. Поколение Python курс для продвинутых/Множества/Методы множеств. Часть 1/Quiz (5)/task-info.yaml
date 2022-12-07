@@ -1,12 +1,12 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: p 0
-- text: p 6
-- text: ошибка во время выполнения
-- text: python 0
 - text: python 1
+- text: p 0
 - text: p 5
+- text: python 0
+- text: ошибка во время выполнения
+- text: p 6
 files:
 - name: task.py
   visible: true
@@ -14,7 +14,12 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Wed, 07 Dec 2022 16:40:44 UTC"
 record: -1
+selected_options:
+- 3
 custom_name: Quiz
 local_check: false
