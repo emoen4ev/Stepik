@@ -1,2 +1,4 @@
-#  You can experiment here, it won’t be checked
+myset = set([10, 9, 8])
+myset.update(['абв'])
 
+print(myset)
