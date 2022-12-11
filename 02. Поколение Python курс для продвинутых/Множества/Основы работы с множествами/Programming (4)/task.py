@@ -1,1 +1,3 @@
-# put your python code here
+text = set(input())
+
+print(len(text))
