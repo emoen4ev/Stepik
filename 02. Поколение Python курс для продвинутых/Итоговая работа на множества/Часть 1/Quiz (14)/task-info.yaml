@@ -1,15 +1,15 @@
 type: choice
 is_multiple_choice: true
 options:
-- text: элементы множества должны быть неизменяемыми
-- text: множества не поддерживают срезы
 - text: множества не поддерживают операцию умножения на число
-- text: множества не поддерживают индексацию
-- text: множества не упорядочены
+- text: множества не поддерживают срезы
 - text: множества изменяемы
-- text: для создания непустых множеств используются фигурные скобки
-- text: множества не поддерживают операцию конкатенации
 - text: все элементы в множествах различны
+- text: элементы множества должны быть неизменяемыми
+- text: множества не поддерживают индексацию
+- text: множества не поддерживают операцию конкатенации
+- text: для создания непустых множеств используются фигурные скобки
+- text: множества не упорядочены
 files:
 - name: task.py
   visible: true
@@ -17,7 +17,20 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Sun, 11 Dec 2022 18:19:45 UTC"
 record: -1
+selected_options:
+- 0
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
 custom_name: Quiz
 local_check: false

@@ -8,5 +8,8 @@ files:
 
     print(set1 - set2)
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Sun, 11 Dec 2022 18:15:27 UTC"
 record: -1
