@@ -8,5 +8,8 @@ files:
     \ 'apple.jpeg', 'png.png', 'input.tXt', 'split.pop', 'solution.Py', 'stepik.org',\
     \ 'kotlin.ko', 'github.git']"
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Sun, 11 Dec 2022 17:20:16 UTC"
 record: -1
