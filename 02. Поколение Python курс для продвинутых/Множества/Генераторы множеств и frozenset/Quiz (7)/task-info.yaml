@@ -1,14 +1,14 @@
 type: choice
 is_multiple_choice: true
 options:
-- text: <code>e</code>
 - text: <code>s</code>
-- text: <code>i</code>
-- text: <code>t</code>
+- text: <code>e</code>
 - text: <code>b</code>
+- text: <code>t</code>
 - text: <code>k</code>
-- text: <code>p</code>
 - text: <code>g</code>
+- text: <code>i</code>
+- text: <code>p</code>
 files:
 - name: task.py
   visible: true
@@ -16,7 +16,13 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Sun, 11 Dec 2022 17:59:54 UTC"
 record: -1
+selected_options:
+- 1
+- 4
 custom_name: Quiz
 local_check: false

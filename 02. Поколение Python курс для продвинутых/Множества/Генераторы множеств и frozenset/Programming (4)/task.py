@@ -2,8 +2,6 @@ files = ['python.png', 'qwerty.py', 'stepik.png', 'beegeek.org', 'windows.pnp', 
          'board.pNg', 'keyBoard.jpg', 'Python.PNg', 'apple.jpeg', 'png.png', 'input.tXt', 'split.pop', 'solution.Py',
          'stepik.org', 'kotlin.ko', 'github.git']
 
-my_set = {group.lower() for group in files}
+my_set = {group.lower() for group in files if group.lower().split('.')[1] == 'png'}
 
-result = {group for group in my_set if group.split('.')[1] == 'png'}
-
-print(*sorted(result))
+print(*sorted(my_set))
