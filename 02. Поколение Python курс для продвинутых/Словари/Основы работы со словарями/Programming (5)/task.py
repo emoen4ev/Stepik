@@ -13,9 +13,8 @@ key_map = {
     '0': ' ',
 }
 
-for symbol in text:
+for symbol in text.upper():
     for key, value in key_map.items():
-        symbol = symbol.upper()
         if symbol in value:
             rp = value.index(symbol) + 1
             print(key * rp, end='')

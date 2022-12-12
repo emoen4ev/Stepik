@@ -7,5 +7,8 @@ files:
     letters = [c for c in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789']
     morse = ['.-', '-...', '-.-.', '-..', '.', '..-.', '--.', '....', '..', '.---', '-.-', '.-..', '--', '-.', '---', '.--.', '--.-', '.-.', '...', '-', '..-', '...-', '.--', '-..-', '-.--', '--..', '-----', '.----', '..---', '...--', '....-', '.....', '-....', '--...', '---..', '----.']
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Mon, 12 Dec 2022 17:17:16 UTC"
 record: -1
