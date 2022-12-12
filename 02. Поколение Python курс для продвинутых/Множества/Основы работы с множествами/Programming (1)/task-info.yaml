@@ -7,7 +7,4 @@ files:
     \ 10, 4, 2, 2, 2, 16, 20}\naverage = \n\nprint(average)"
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Wed, 07 Dec 2022 11:16:02 UTC"
 record: -1

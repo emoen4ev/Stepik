@@ -7,7 +7,4 @@ files:
     \ 'banana', 'avocado', 'grapefruit'}"
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Wed, 07 Dec 2022 12:58:42 UTC"
 record: -1

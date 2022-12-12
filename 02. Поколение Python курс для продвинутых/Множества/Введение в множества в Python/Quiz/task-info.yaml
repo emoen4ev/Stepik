@@ -11,10 +11,5 @@ files:
 
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Tue, 06 Dec 2022 13:32:06 UTC"
 record: -1
-selected_options:
-- 1
 local_check: false

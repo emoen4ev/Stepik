@@ -5,7 +5,7 @@ files:
   visible: true
   placeholders:
   - offset: 0
-    length: 1
+    length: 23
     placeholder_text: type your solution here
     initial_state:
       length: 23
@@ -16,7 +16,4 @@ files:
   text: type your solution here
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Tue, 06 Dec 2022 13:44:51 UTC"
 record: -1

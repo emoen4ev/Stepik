@@ -1,12 +1,12 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: ошибка во время выполнения
-- text: python 0
-- text: p 0
 - text: python 1
-- text: p 6
+- text: python 0
 - text: p 5
+- text: p 6
+- text: p 0
+- text: ошибка во время выполнения
 files:
 - name: task.py
   visible: true
@@ -15,11 +15,6 @@ files:
 
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Wed, 07 Dec 2022 16:45:20 UTC"
 record: -1
-selected_options:
-- 5
 custom_name: Quiz
 local_check: false
