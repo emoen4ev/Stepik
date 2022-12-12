@@ -5,5 +5,8 @@ files:
   visible: true
   text: '# put your python code here'
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Mon, 12 Dec 2022 16:52:01 UTC"
 record: -1
