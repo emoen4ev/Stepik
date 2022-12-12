@@ -11,4 +11,9 @@ my_dict = {
     99.0: {9, 0, 1}
 }
 
-print(min(my_dict) + max(my_dict))
+min_value = min(my_dict)
+max_value = max(my_dict)
+
+result = min_value + max_value
+
+print(result)
