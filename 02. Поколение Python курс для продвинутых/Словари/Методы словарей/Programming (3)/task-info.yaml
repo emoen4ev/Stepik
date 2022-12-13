@@ -13,5 +13,8 @@ files:
     orange melon pomegranate barley plum banana quince barley lime grapefruit pomegranate
     barley'
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Tue, 13 Dec 2022 16:30:50 UTC"
 record: -1

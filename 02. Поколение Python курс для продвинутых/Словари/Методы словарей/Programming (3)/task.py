@@ -13,11 +13,6 @@ for word in s:
     if word not in result:
         result[word] = s.count(word)
 
-new = sorted(result, key=lambda x: (max(x[1]), x[0]))
+result = sorted(result.items(), key=lambda x: (-x[1], x[0]))
 
-print(max(sorted(result, key=lambda x: (x[1], x[0]))))
-
-
-print(result)
-
-print(new)
+print(result[0][0])
