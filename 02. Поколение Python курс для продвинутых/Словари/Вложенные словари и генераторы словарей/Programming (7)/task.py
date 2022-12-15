@@ -2,4 +2,6 @@ letters = {0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'E', 5: 'F', 6: 'G', 7: 'H', 8: 'I
 
 remove_keys = [1, 5, 7, 12, 17, 19, 21, 24]
 
-result = {}
+result = {k: v for k, v in letters.items() if k not in remove_keys}
+
+# print(result)
