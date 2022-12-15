@@ -25,15 +25,3 @@ for i in range(len(chars_data_sorted)):
 
 for el in word:
     print(result[el], end='')
-
-# ----------------------------------------------------------------
-
-# dct, word = {}, {}
-# s = input()
-# for c in s:
-#     word[c] = word.get(c, 0) + 1
-# for _ in range(int(input())):
-#     a, b = input().split(': ')
-#     dct[int(b)] = a
-# for c in s:
-#     print(dct[word[c]], end='')
