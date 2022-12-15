@@ -10,5 +10,8 @@ files:
     \ 'Gary Oldman', 'Tom Hardy'] \nstudent_grades = [86, 98, 89, 92, 45, 67, 89,\
     \ 90, 100, 98, 10, 96, 93]\n\nresult = []"
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Thu, 15 Dec 2022 17:22:16 UTC"
 record: -1
