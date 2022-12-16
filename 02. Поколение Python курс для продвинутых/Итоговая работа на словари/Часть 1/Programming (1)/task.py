@@ -10,8 +10,9 @@ emails = {
 result = []
 
 for k, v in emails.items():
-    current_list = [el + '@' + k for el in sorted(v)]
-    result.extend(current_list)
+    # current_list = [el + '@' + k for el in v]
+    # result.extend(current_list)
+    result.extend([el + '@' + k for el in v])
 
 result.sort()
 
