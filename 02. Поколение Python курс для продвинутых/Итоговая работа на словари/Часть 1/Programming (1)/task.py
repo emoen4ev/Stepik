@@ -6,3 +6,14 @@ emails = {
     'hse.edu': ['tomas-henders', 'cream.soda', 'zivert'],
     'mail.ru': ['angel.down', 'joanne', 'the.fame.moster'],
 }
+
+result = []
+
+for k, v in emails.items():
+    current_list = [el + '@' + k for el in sorted(v)]
+    result.extend(current_list)
+
+result.sort()
+
+for item in result:
+    print(item)
