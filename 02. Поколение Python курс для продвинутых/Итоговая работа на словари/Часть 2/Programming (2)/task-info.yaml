@@ -6,4 +6,7 @@ files:
   text: '# put your python code here'
   learner_created: false
 status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Fri, 16 Dec 2022 15:35:54 UTC"
 record: -1

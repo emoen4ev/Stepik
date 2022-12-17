@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: true
 options:
-- text: <code>set</code>
-- text: <code>tuple</code>
 - text: <code>list</code>
+- text: <code>set</code>
 - text: <code>frozenset</code>
+- text: <code>tuple</code>
 files:
 - name: task.py
   visible: true
@@ -13,5 +13,11 @@ files:
 
   learner_created: false
 status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Fri, 16 Dec 2022 08:30:29 UTC"
 record: -1
+selected_options:
+- 0
+- 1
 local_check: false

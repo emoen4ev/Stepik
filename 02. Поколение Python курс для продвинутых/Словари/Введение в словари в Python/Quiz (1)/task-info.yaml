@@ -14,6 +14,12 @@ files:
 
   learner_created: false
 status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Mon, 12 Dec 2022 11:17:48 UTC"
 record: -1
+selected_options:
+- 2
+- 4
 custom_name: Quiz
 local_check: false

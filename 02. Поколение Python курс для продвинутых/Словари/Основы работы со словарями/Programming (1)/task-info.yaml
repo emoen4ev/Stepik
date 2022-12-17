@@ -22,4 +22,7 @@ files:
              {'name': 'Tim', 'phone': '242-449-3141', 'email': 'timm.ggg@yandex.ru'}]
   learner_created: false
 status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Mon, 12 Dec 2022 14:31:08 UTC"
 record: -1

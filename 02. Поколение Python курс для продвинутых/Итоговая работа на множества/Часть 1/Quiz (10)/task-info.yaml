@@ -3,8 +3,8 @@ is_multiple_choice: false
 options:
 - text: "<code>{'Yellow', 'Orange', 'Black', ['Blue', 'Green', 'Red', 'Orange']}</code>"
 - text: ошибка во время выполнения
-- text: "<code>{'Yellow', 'Orange', 'Red', 'Black', 'Green', 'Blue'}</code>"
 - text: "<code>{'Yellow', 'Orange', 'Black', ['Blue', 'Green', 'Red']}</code>"
+- text: "<code>{'Yellow', 'Orange', 'Red', 'Black', 'Green', 'Blue'}</code>"
 files:
 - name: task.py
   visible: true
@@ -13,11 +13,6 @@ files:
 
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Sun, 11 Dec 2022 18:12:09 UTC"
 record: -1
-selected_options:
-- 2
 custom_name: Quiz
 local_check: false
