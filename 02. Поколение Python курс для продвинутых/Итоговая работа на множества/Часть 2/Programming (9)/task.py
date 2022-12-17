@@ -1,8 +1,11 @@
 m, n = int(input()), int(input())
 
-set_m = {input() for _ in range(m)}
-set_n = {input() for _ in range(n)}
+list_1 = [input() for _ in range(m + n)]
 
-result = len(set_m.symmetric_difference(set_n))
+set_1 = set(list_1)
+
+x = len(list_1) - len(set_1)
+
+result = len(set_1) - x
 
 print(result if result else 'NO')
