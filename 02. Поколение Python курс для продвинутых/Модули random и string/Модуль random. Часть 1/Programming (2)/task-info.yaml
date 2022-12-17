@@ -8,5 +8,8 @@ files:
 
     length = int(input())    # длина пароля
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Sat, 17 Dec 2022 18:51:21 UTC"
 record: -1
