@@ -7,7 +7,4 @@ files:
     \ 'Italy')\nindex = \nprint(index)"
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Wed, 30 Nov 2022 16:20:13 UTC"
 record: -1

@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: <code>x &gt; 0 or x &lt; 5</code>
-- text: <code>x &gt; 0 or &lt; 5</code>
 - text: <code>x &gt; 0 and x &lt; 5</code>
+- text: <code>x &gt; 0 or &lt; 5</code>
 - text: <code>x &gt; 0 and &lt; 5</code>
+- text: <code>x &gt; 0 or x &lt; 5</code>
 files:
 - name: task.py
   visible: true
@@ -13,10 +13,5 @@ files:
 
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Thu, 17 Nov 2022 12:37:55 UTC"
 record: -1
-selected_options:
-- 2
 local_check: false

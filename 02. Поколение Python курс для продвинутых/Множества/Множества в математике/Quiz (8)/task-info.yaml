@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: $-5$
-- text: "$\\dfrac{3}{4}$"
-- text: $\sqrt2$
 - text: "$-\\dfrac{1}{9}$"
+- text: $-5$
+- text: $\sqrt2$
+- text: "$\\dfrac{3}{4}$"
 files:
 - name: task.py
   visible: true
@@ -13,11 +13,6 @@ files:
 
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Sat, 03 Dec 2022 21:48:15 UTC"
 record: -1
-selected_options:
-- 2
 custom_name: Quiz
 local_check: false

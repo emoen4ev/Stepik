@@ -2,11 +2,11 @@ type: choice
 is_multiple_choice: false
 options:
 - text: ошибка во время выполнения кода
-- text: "<code>(100, 100)</code>"
 - text: "<code>(200, 200)</code>"
+- text: "<code>(100, 100)</code>"
 - text: <code>100</code>
-- text: <code>200</code>
 - text: <code>(200)</code>
+- text: <code>200</code>
 files:
 - name: task.py
   visible: true
@@ -15,11 +15,6 @@ files:
 
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Fri, 02 Dec 2022 17:18:14 UTC"
 record: -1
-selected_options:
-- 4
 custom_name: Quiz
 local_check: false

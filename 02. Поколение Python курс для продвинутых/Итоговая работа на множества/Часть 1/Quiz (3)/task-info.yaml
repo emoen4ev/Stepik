@@ -1,8 +1,8 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: нет
 - text: да
+- text: нет
 files:
 - name: task.py
   visible: true

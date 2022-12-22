@@ -4,10 +4,10 @@ files:
   visible: true
   placeholders:
   - offset: 0
-    length: 2
+    length: 23
     placeholder_text: type your solution here
     initial_state:
-      length: 2
+      length: 23
       offset: 0
     initialized_from_dependency: false
     selected: false
@@ -15,7 +15,4 @@ files:
   text: type your solution here
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Thu, 17 Nov 2022 12:39:11 UTC"
 record: -1

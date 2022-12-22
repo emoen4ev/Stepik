@@ -1,14 +1,14 @@
 type: choice
 is_multiple_choice: true
 options:
-- text: <code>e</code>
 - text: <code>s</code>
-- text: <code>i</code>
-- text: <code>t</code>
+- text: <code>e</code>
 - text: <code>b</code>
+- text: <code>t</code>
 - text: <code>k</code>
-- text: <code>p</code>
 - text: <code>g</code>
+- text: <code>i</code>
+- text: <code>p</code>
 files:
 - name: task.py
   visible: true

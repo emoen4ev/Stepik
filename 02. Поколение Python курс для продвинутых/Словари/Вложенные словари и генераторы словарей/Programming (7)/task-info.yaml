@@ -11,7 +11,4 @@ files:
     result = {}
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Thu, 15 Dec 2022 16:30:26 UTC"
 record: -1

@@ -1,8 +1,8 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: нет
 - text: да
+- text: нет
 files:
 - name: task.py
   visible: true
@@ -11,10 +11,5 @@ files:
 
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Fri, 02 Dec 2022 17:17:40 UTC"
 record: -1
-selected_options:
-- 1
 local_check: false

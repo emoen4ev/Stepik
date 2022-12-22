@@ -7,7 +7,4 @@ files:
     \ ('', ''), ()]\nnon_empty_tuples = \n\nprint(non_empty_tuples)"
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Wed, 30 Nov 2022 16:36:05 UTC"
 record: -1

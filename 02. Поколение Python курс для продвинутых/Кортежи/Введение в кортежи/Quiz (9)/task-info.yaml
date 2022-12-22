@@ -2,8 +2,8 @@ type: choice
 is_multiple_choice: false
 options:
 - text: "<code>(1, [17, 3], 4)</code>"
-- text: произойдет ошибка во время выполнения программы
 - text: "<code>(1, [2, 3], 4)</code>"
+- text: произойдет ошибка во время выполнения программы
 files:
 - name: task.py
   visible: true
@@ -12,11 +12,6 @@ files:
 
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Wed, 30 Nov 2022 15:57:07 UTC"
 record: -1
-selected_options:
-- 0
 custom_name: Quiz
 local_check: false

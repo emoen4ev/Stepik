@@ -1,16 +1,16 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: "<code>{'Canada': 'Ottawa' 'United States': 'Washington, D.C.' 'Mexico': 'Mexico\
-    \ City'}</code>"
 - text: "<code>{'Ottawa': 'Canada', 'Washington, D.C.': 'United States', 'Mexico City':\
     \ 'Mexico'}</code>"
-- text: "<code>['Canada': 'Ottawa', 'United States': 'Washington, D.C.', 'Mexico':\
-    \ 'Mexico City']</code>"
 - text: "<code>('Canada': 'Ottawa', 'United States': 'Washington, D.C.', 'Mexico':\
     \ 'Mexico City')</code>"
 - text: "<code>{'Canada': 'Ottawa', 'United States': 'Washington, D.C.', 'Mexico':\
     \ 'Mexico City'}</code>"
+- text: "<code>['Canada': 'Ottawa', 'United States': 'Washington, D.C.', 'Mexico':\
+    \ 'Mexico City']</code>"
+- text: "<code>{'Canada': 'Ottawa' 'United States': 'Washington, D.C.' 'Mexico': 'Mexico\
+    \ City'}</code>"
 files:
 - name: task.py
   visible: true
@@ -19,11 +19,6 @@ files:
 
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Mon, 12 Dec 2022 11:19:56 UTC"
 record: -1
-selected_options:
-- 4
 custom_name: Quiz
 local_check: false

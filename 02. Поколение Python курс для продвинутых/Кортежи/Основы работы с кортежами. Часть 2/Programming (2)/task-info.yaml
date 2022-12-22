@@ -10,7 +10,4 @@ files:
     print(poet_data)
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Thu, 01 Dec 2022 14:08:52 UTC"
 record: -1
