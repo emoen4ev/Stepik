@@ -2,12 +2,20 @@ import random
 
 n = int(input())
 
-users = [input() for _ in range(n)]
+initial_set = [input() for _ in range(n)]
 
-users_copy = users
+work_set_1, work_set_2 = initial_set.copy(), initial_set.copy()
+random.shuffle(work_set_2)
+counter = len(work_set_1)
 
-vv = []
+while counter:
+    for i in range(len(work_set_1)):
+        if work_set_1[i] != work_set_2[i]:
+            counter -= 1
+        else:
+            random.shuffle(work_set_2)
+            counter = len(work_set_1)
+            break
 
-for user in users:
-    ll = users_copy.pop(users.index(user))
-    print(f'{user} - {random.choice(users_copy)}')
+for i in range(len(work_set_1)):
+    print(f'{work_set_1[i]} - {work_set_2[i]}')
