@@ -6,24 +6,4 @@ files:
   text: '# put your python code here'
   learner_created: false
 status: Failed
-feedback:
-  message: |
-    Failed test #1 of 4. Необходимо указать тайного друга для всех учеников.
-
-    This is a sample test from the problem statement!
-
-    Test input:
-    3
-    Светлана Зуева
-    Аркадий Белых
-    Борис Боков
-    Correct output:
-    Светлана Зуева - Борис Боков
-    Аркадий Белых - Светлана Зуева
-    Борис Боков - Аркадий Белых
-
-    Your code output:
-    Светлана Зуева - Борис Боков
-    Борис Боков - Аркадий Белых
-  time: "Fri, 23 Dec 2022 13:19:28 UTC"
 record: -1
