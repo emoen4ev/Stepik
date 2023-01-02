@@ -13,7 +13,4 @@ files:
     n, m = int(input()), int(input())
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Tue, 27 Dec 2022 01:26:30 UTC"
 record: -1

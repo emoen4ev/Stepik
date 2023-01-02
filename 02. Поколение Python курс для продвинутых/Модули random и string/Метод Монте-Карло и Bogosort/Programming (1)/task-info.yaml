@@ -9,7 +9,4 @@ files:
     n = 10**6       # количество испытаний
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Tue, 27 Dec 2022 11:42:38 UTC"
 record: -1
