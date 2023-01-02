@@ -7,5 +7,8 @@ files:
     from decimal import *
     num = Decimal(input())
   learner_created: false
-status: Failed
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Mon, 02 Jan 2023 16:06:23 UTC"
 record: -1
