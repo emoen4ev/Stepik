@@ -5,22 +5,8 @@ files:
   visible: true
   text: '# put your python code here'
   learner_created: false
-status: Failed
+status: Solved
 feedback:
-  message: |
-    Failed test #1 of 31. Wrong answer
-
-    This is a sample test from the problem statement!
-
-    Test input:
-    10
-    Correct output:
-    3/7
-
-    Your code output:
-    2/3 3/7 1/4 1/9
-    ['2/3', '3/7', '1/4', '1/9']
-    2/3
-    3/7
-  time: "Wed, 04 Jan 2023 14:27:01 UTC"
+  message: <html>Correct solution</html>
+  time: "Thu, 05 Jan 2023 07:49:10 UTC"
 record: -1

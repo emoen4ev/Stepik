@@ -1,20 +1,16 @@
 from fractions import Fraction as Fr
-from decimal import Decimal
 
 
 n = int(input())
 
-sequence = list()
+sequence = set()
 
-for num in range(1, n // 2):
+for num in range(1, n // 2 + 1):
     cur_num = Fr(num, n - num)
-    sequence.append(cur_num)
 
-sequence.sort(reverse=True)
+    if cur_num.numerator + cur_num.denominator == n:
+        sequence.add(cur_num)
+
 largest = max(sequence)
-sequence_2 = [str(x) for x in sequence]
-largest_2 = max(sequence_2)
-print(*sequence)
-print(sequence_2)
+
 print(largest)
-print(largest_2)
