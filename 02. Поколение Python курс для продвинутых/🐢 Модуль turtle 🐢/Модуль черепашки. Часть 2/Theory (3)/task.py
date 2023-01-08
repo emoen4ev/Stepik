@@ -9,11 +9,13 @@ angle = 360 / number_rays
 ray_length = 150
 
 t.shape('triangle')
+t.shapesize(1, 2)
 
 dot_color = 'red'
 dot_size = 30
 
 for _ in range(number_rays):
+    t.pendown()
     t.forward(ray_length)
     r, g, b = randint(0, 255), randint(0, 255), randint(0, 255)
     t.color(r, g, b)
@@ -22,7 +24,6 @@ for _ in range(number_rays):
     t.penup()
     t.backward(ray_length)
     t.left(angle)
-    t.pendown()
 
 t.shape('classic')
 t.color(dot_color)
