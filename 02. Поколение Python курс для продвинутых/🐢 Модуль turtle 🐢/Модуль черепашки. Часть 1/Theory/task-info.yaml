@@ -6,11 +6,6 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-- name: space.jpg
-  visible: true
-  learner_created: true
 status: Solved
-feedback:
-  time: "Fri, 06 Jan 2023 11:22:35 UTC"
 record: -1
 post_submission_on_open: true
