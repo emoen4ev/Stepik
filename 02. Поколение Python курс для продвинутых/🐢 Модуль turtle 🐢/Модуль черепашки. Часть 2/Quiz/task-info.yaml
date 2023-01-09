@@ -10,6 +10,11 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Mon, 09 Jan 2023 08:02:59 UTC"
 record: -1
+selected_options:
+- 1
 local_check: false
