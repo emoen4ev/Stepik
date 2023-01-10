@@ -27,7 +27,7 @@ def get_color():
     return r_g_b
 
 
-t.speed(2)
+t.speed(0)
 
 t.Screen().setup(700, 700)
 t.Screen().colormode(255)
@@ -61,7 +61,6 @@ t.setheading(90)
 t.goto(0, 0)
 t.color(get_color())
 t.stamp()
-t.color(get_color())
-t.dot()
+t.dot(10, get_color())
 
 t.exitonclick()
