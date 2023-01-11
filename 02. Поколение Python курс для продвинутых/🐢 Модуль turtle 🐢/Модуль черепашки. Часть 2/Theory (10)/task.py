@@ -1,39 +1,34 @@
 import turtle as t
 
 
-def draw_element(x_coord, y_coord):
-    t.goto(x_coord, y_coord)
-    t.dot(10, 'blue')
+def draw_forward(coord_x):
+    t.goto(coord_x, coord_y)
+    t.dot(6, 'blue')
 
 
+def draw_backward(coord_x):
+    t.penup()
+    t.goto(coord_x, coord_y)
+    t.dot(6, 'blue')
+    t.pendown()
+    t.goto(0, 0)
 
 
-number_points = 10
-step = 30
+t.speed(4)
+t.hideturtle()
+t.pencolor('green')
+t.dot(6, 'red')
+
 coord_y = -150
+number_points = 17
+step = 39
+
 dots_line_length = (number_points - 1) * step
 start_line = -int(dots_line_length / 2)
-end_line = int(dots_line_length / 2)
-x_y_coordinates = {i: coord_y for i in range(start_line, end_line, step)}
-t.dot(15, 'red')
-t.pencolor('green')
+end_line = int(dots_line_length / 2) + step
+x_coordinates = tuple(coord_x for coord_x in range(start_line, end_line, step))
 
-for x, y in x_y_coordinates.items():
-    draw_element(x, y)
-
+for i in range(len(x_coordinates)):
+    draw_forward(x_coordinates[i]) if i % 2 == 0 else draw_backward(x_coordinates[i])
 
 t.exitonclick()
-
-# import turtle as T
-# coord = {i: -100 for i in range(-100, 120, 20)}
-# print(coord)
-# T.dot(10, 'red')
-# T.pencolor('green')
-# for i in coord.items():
-#   T.goto(i)
-#   T.dot(10, 'blue')
-#   T.penup()
-#   T.goto(0,0)
-#   T.pendown()
-#
-# T.exitonclick()
