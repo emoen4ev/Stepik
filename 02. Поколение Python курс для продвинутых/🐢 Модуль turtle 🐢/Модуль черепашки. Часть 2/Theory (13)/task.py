@@ -71,16 +71,16 @@ def validate_snowflake_data(cur_x, cur_y, cur_s):
 
 
 t.speed(0)
-screen_width = 1000
-screen_height = 1000
+screen_width = 500
+screen_height = 500
 t.Screen().setup(screen_width, screen_height)
 t.Screen().colormode(255)
 t.Screen().bgcolor('AliceBlue')
 t.pensize(2)
 t.hideturtle()
 
-min_number_snowflakes = 10
-max_number_snowflakes = 30
+min_number_snowflakes = 8
+max_number_snowflakes = 20
 snowflakes_min_size = 15
 snowflakes_max_size = 80
 snowflakes_step_size = 5
@@ -89,7 +89,7 @@ snowflake_number_rays = 8
 min_distance_from_screen_borders = 10
 
 number_snowflakes = randint(min_number_snowflakes, max_number_snowflakes)
-# print(f'number_snowflakes: {number_snowflakes}')
+print(f'number_snowflakes: {number_snowflakes}')
 
 rays_angle = 360 / snowflake_number_rays
 
