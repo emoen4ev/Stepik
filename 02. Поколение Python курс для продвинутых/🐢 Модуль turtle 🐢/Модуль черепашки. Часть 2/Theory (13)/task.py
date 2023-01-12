@@ -2,12 +2,12 @@ import turtle as t
 from random import randint, randrange
 
 
-def draw_ray(x, y, s):
+def draw_ray(x, y, s, parts):
     t.penup()
     t.goto(x, y)
-    s_part = s / (snowflake_ray_parts + 1)
+    s_part = s / (parts + 1)
     t.pendown()
-    for _ in range(snowflake_ray_parts):
+    for _ in range(parts):
         t.forward(s_part)
         for i in range(2):
             angle = 45 if i % 2 == 0 else -90
@@ -21,9 +21,12 @@ def draw_ray(x, y, s):
 
 def draw_snowflake(i):
     t.pencolor(*get_snowflake_color())
+    snowflake_number_rays = randint(min_number_rays, max_number_rays)
+    rays_angle = 360 / snowflake_number_rays
+    snowflake_ray_parts = randint(min_ray_parts, max_ray_parts)
     x, y, s = get_snowflakes_data(i)
     for _ in range(snowflake_number_rays):
-        draw_ray(x, y, s)
+        draw_ray(x, y, s, snowflake_ray_parts)
         t.left(rays_angle)
 
 
@@ -57,8 +60,8 @@ def validate_snowflake_data(cur_x, cur_y, cur_s):
     while True:
         is_data_correct = True
         for v in snowflakes_data.values():
-            if (abs(max(v[0], cur_x) - min(v[0], cur_x)) <= (v[2] + cur_s)) and (
-                    abs(max(v[1], cur_y) - min(v[1], cur_y)) <= (v[2] + cur_s)):
+            if (abs(max(v[0], cur_x) - min(v[0], cur_x)) <= (v[2] + cur_s + min_distance_between_snowflakes)) and \
+                    (abs(max(v[1], cur_y) - min(v[1], cur_y)) <= (v[2] + cur_s + min_distance_between_snowflakes)):
                 is_data_correct = False
                 break
         if not is_data_correct:
@@ -71,27 +74,28 @@ def validate_snowflake_data(cur_x, cur_y, cur_s):
 
 
 t.speed(0)
-screen_width = 500
-screen_height = 500
+screen_width = 1000
+screen_height = 600
 t.Screen().setup(screen_width, screen_height)
 t.Screen().colormode(255)
 t.Screen().bgcolor('AliceBlue')
 t.pensize(2)
 t.hideturtle()
 
-min_number_snowflakes = 8
-max_number_snowflakes = 20
+min_number_snowflakes = 10
+max_number_snowflakes = 30
 snowflakes_min_size = 15
 snowflakes_max_size = 80
 snowflakes_step_size = 5
-snowflake_ray_parts = 3
-snowflake_number_rays = 8
-min_distance_from_screen_borders = 10
+min_number_rays = 5
+max_number_rays = 12
+min_ray_parts = 2
+max_ray_parts = 5
+min_distance_from_screen_borders = 15
+min_distance_between_snowflakes = 20
 
 number_snowflakes = randint(min_number_snowflakes, max_number_snowflakes)
 print(f'number_snowflakes: {number_snowflakes}')
-
-rays_angle = 360 / snowflake_number_rays
 
 snowflakes_data = dict()
 
