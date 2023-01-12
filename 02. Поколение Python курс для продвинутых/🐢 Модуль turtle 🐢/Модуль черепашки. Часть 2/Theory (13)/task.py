@@ -102,4 +102,6 @@ snowflakes_data = dict()
 for i in range(1, number_snowflakes + 1):
     draw_snowflake(i)
 
+print(snowflakes_data)
+
 t.exitonclick()
