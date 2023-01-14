@@ -15,12 +15,6 @@ files:
 
   learner_created: false
 status: Solved
-feedback:
-  message: "<html>Произойдет ошибка: TypeError: fancy() missing 1 required positional\
-    \ argument: 'length'.</html>"
-  time: "Fri, 13 Jan 2023 17:55:56 UTC"
 record: -1
-selected_options:
-- 3
 custom_name: Quiz
 local_check: false
