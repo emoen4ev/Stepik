@@ -7,5 +7,8 @@ files:
     def info_kwargs():
         pass
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Mon, 16 Jan 2023 12:56:02 UTC"
 record: -1
