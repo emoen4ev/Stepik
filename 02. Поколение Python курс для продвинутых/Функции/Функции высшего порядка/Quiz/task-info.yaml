@@ -1,11 +1,11 @@
 type: choice
 is_multiple_choice: true
 options:
-- text: "функция, которая принимает другие функции в качестве аргументов"
-- text: "функция, которая возвращает в качестве результата работы другую функцию"
 - text: "функция, у которой существуют производные выше первого порядка"
 - text: "функция, которая использует другие определенные выше функции, в том числе\
     \ и библиотечные"
+- text: "функция, которая возвращает в качестве результата работы другую функцию"
+- text: "функция, которая принимает другие функции в качестве аргументов"
 files:
 - name: task.py
   visible: true
@@ -13,6 +13,12 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Wed, 18 Jan 2023 17:09:59 UTC"
 record: -1
+selected_options:
+- 2
+- 3
 local_check: false
