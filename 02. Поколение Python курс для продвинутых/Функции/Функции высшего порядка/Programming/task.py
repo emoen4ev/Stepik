@@ -1,11 +1,11 @@
-def map(function, items):
+def my_map(function, items: list) -> list:
     result = []
     for item in items:
         result.append(function(item))
     return result
 
 
-def get_rounded(num):
+def get_rounded(num: float) -> float:
     return round(num, 2)
 
 
@@ -24,7 +24,7 @@ numbers = [
     1.41546,
 ]
 
-numbers = map(get_rounded, numbers)
+numbers = my_map(get_rounded, numbers)
 
 for number in numbers:
     print(number)
