@@ -1,5 +1,5 @@
 def get_sum_digits(element):
-    digits = list(map(int, element))
+    digits = map(int, element)
     return sum(digits)
 
 
