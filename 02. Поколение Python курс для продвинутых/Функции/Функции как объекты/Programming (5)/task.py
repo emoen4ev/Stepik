@@ -1,1 +1,7 @@
-# put your python code here
+
+
+
+
+
+
+sequence = list(map(int, input().split()))
