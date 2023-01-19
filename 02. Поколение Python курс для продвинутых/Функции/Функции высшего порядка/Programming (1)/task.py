@@ -14,7 +14,7 @@ def my_filter(function, items: list) -> list:
 
 
 def check_conditions(number: int) -> bool:
-    return len(str(number)) == 3 and number % 5 == 2
+    return len(str(abs(number))) == 3 and abs(number) % 5 == 2
 
 
 def get_cube(number: int) -> int:
