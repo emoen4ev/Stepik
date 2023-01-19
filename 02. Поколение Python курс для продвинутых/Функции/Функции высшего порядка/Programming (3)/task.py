@@ -1,16 +1,24 @@
-def my_map(function, items):
+def my_map(function, items: list) -> list:
     result = []
     for item in items:
         result.append(function(item))
     return result
 
 
-def my_filter(function, items):
+def my_filter(function, items: list) -> list:
     result = []
     for item in items:
         if function(item):
             result.append(item)
     return result
+
+
+def check_conditions(number: int) -> bool:
+    return len(str(abs(number))) == 2 and number % 7 == 0
+
+
+def get_squares(number: int) -> int:
+    return number ** 2
 
 
 numbers = [
@@ -26,3 +34,7 @@ numbers = [
     263, 219, 57, 18, 236, 291, 234, 10, 250, 0, 64, 172, 216, 30, 15,
     229, 205, 123, -105,
 ]
+
+my_result = sum(my_map(get_squares, my_filter(check_conditions, numbers)))
+
+print(my_result)
