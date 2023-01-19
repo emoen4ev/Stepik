@@ -1,9 +1,13 @@
 def func_apply(func, sequence: list) -> list:
-    result = []
-    for element in sequence:
-        result.append(func(element))
+    return [func(x) for x in sequence]
 
-    return result
+    # result = []
+    # for element in sequence:
+    #     result.append(func(element))
+    #
+    # return result
+
+
 
 
 # def add3(x):
