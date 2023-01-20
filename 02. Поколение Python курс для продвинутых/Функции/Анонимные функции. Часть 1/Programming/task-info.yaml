@@ -10,5 +10,8 @@ files:
     reduce_result = reduce(lambda num1, num2: num1 + num2, numbers, 0)\n\nprint(map_result)\n\
     print(filter_result)\nprint(reduce_result)"
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Fri, 20 Jan 2023 14:51:46 UTC"
 record: -1
