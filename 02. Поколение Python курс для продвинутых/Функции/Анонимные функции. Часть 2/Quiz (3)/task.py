@@ -1,2 +1,2 @@
-#  You can experiment here, it won’t be checked
-
+full_name = lambda first, last: f'Full name: {first.title()} {last.title()}'
+print(full_name('ben', 'affleck'))
