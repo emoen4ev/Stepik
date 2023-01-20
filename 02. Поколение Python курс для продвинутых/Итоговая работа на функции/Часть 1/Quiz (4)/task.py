@@ -1,2 +1,4 @@
-#  You can experiment here, it won’t be checked
+def func(name, age=20):
+    print(name, age)
 
+func('Emma')

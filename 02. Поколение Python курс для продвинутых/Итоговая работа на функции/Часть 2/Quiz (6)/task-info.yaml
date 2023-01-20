@@ -1,13 +1,13 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: <code>'A1B2'</code>
 - text: "<code>['a1b2']</code>"
-- text: "<code>['A', '1', 'B', '2']</code>"
-- text: "<code>['a', '1', 'b', '2']</code>"
 - text: <code>'a1b2'</code>
-- text: "<code>['A1B2']</code>"
+- text: "<code>['A', '1', 'B', '2']</code>"
+- text: <code>'A1B2'</code>
 - text: "<code>['a', '1', '', 'b', '2']</code>"
+- text: "<code>['A1B2']</code>"
+- text: "<code>['a', '1', 'b', '2']</code>"
 files:
 - name: task.py
   visible: true
@@ -15,7 +15,12 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Fri, 20 Jan 2023 11:23:57 UTC"
 record: -1
+selected_options:
+- 6
 custom_name: Quiz
 local_check: false

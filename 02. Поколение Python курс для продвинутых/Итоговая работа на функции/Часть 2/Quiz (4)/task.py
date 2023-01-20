@@ -1,2 +1,3 @@
-#  You can experiment here, it won’t be checked
-
+data = [['p', 'y', 't', 'h', 'o', 'n'], ['s', 't', 'e', 'p', 'i', 'k']]
+result = list(map(lambda x: '.'.join(x), data))
+print(result)

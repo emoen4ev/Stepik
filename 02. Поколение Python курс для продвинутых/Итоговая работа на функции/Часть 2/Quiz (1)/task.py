@@ -1,2 +1,1 @@
-#  You can experiment here, it won’t be checked
-
+print((lambda x: (x + 3) * 5 / 2)(3))

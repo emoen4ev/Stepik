@@ -1,2 +1,5 @@
-#  You can experiment here, it won’t be checked
+def display(**kwargs):
+    for i in kwargs:
+        print(i, end=', ')
 
+display(emp='Kelly', salary=9000)
