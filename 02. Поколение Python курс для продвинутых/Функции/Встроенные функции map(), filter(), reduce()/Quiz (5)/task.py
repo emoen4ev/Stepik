@@ -1,2 +1,3 @@
-#  You can experiment here, it won’t be checked
-
+iterable = [1, 2, 3]
+result = list(map(len, iterable))
+print(result)

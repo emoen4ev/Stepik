@@ -1,2 +1,4 @@
-#  You can experiment here, it won’t be checked
+from operator import add
 
+result = list(map(add, 'abc', '1234'))
+print(result)
