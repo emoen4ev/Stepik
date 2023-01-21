@@ -8,4 +8,7 @@ files:
         pass
   learner_created: false
 status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Sun, 15 Jan 2023 19:41:01 UTC"
 record: -1

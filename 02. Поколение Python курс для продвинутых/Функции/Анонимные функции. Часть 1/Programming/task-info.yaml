@@ -11,7 +11,4 @@ files:
     print(filter_result)\nprint(reduce_result)"
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Fri, 20 Jan 2023 14:54:15 UTC"
 record: -1

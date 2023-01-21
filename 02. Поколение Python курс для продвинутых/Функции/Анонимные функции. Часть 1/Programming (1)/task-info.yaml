@@ -28,7 +28,4 @@ files:
             ['Paris', 9904000, 'primary']]
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Fri, 20 Jan 2023 15:18:25 UTC"
 record: -1

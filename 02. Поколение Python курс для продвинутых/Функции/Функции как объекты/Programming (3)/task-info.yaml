@@ -8,7 +8,4 @@ files:
     \ 100), ('Матвей', 17, 168, 68), ('Петя', 15, 190, 90)]"
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Tue, 17 Jan 2023 15:17:42 UTC"
 record: -1
