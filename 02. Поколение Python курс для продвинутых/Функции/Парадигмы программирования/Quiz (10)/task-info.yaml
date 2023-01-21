@@ -1,9 +1,9 @@
 type: choice
 is_multiple_choice: false
 options:
+- text: логика предикатов 1-го порядка 
 - text: лямбда исчисление 
 - text: машина Тьюринга 
-- text: логика предикатов 1-го порядка 
 - text: логика высших порядков 
 files:
 - name: task.py
@@ -13,11 +13,6 @@ files:
 
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Mon, 16 Jan 2023 13:49:39 UTC"
 record: -1
-selected_options:
-- 0
 custom_name: Quiz
 local_check: false

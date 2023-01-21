@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: false
 options:
+- text: произойдет ошибка
 - text: "<code>Full name: BEN AFFLECK</code>"
 - text: "<code>Full name: Ben Affleck</code>"
 - text: "<code>Full name: ben affleck</code>"
-- text: произойдет ошибка
 files:
 - name: task.py
   visible: true
@@ -13,11 +13,6 @@ files:
 
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Fri, 20 Jan 2023 16:38:21 UTC"
 record: -1
-selected_options:
-- 1
 custom_name: Quiz
 local_check: false

@@ -4,8 +4,8 @@ options:
 - text: "<code>[{'x': 1}, {'y': 2}, {'x': 3}]</code>"
 - text: "<code>[{'x': 1}, {'y': 2}, {'x': 3, 'y': 4}]</code>"
 - text: "<code>[{'x': 1}, {'x': 3, 'y': 4}]</code>"
-- text: "<code>[{'x': 1}, {'x': 3}]</code>"
 - text: "<code>[{'x': 1}]</code>"
+- text: "<code>[{'x': 1}, {'x': 3}]</code>"
 files:
 - name: task.py
   visible: true
@@ -14,11 +14,6 @@ files:
 
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Fri, 20 Jan 2023 14:34:34 UTC"
 record: -1
-selected_options:
-- 2
 custom_name: Quiz
 local_check: false

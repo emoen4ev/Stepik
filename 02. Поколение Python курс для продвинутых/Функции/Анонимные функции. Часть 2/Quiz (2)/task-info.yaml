@@ -13,13 +13,6 @@ files:
 
   learner_created: false
 status: Solved
-feedback:
-  message: "<html>Анонимная функция принимает аргумент x, хотя и\_не\_использует е\
-    го. Не забывайте, что функция filter()\_всегда передает в\_критерий элемент, к\
-    оторый проверяет.</html>"
-  time: "Fri, 20 Jan 2023 16:36:15 UTC"
 record: -1
-selected_options:
-- 2
 custom_name: Quiz
 local_check: false
