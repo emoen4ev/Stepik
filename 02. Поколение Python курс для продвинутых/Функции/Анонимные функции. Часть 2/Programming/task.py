@@ -1,4 +1,4 @@
-func = lambda x: True if not x % 19 or not x % 13 else False
+func = lambda x: x % 19 == 0 or x % 13 == 0
 
 # print(func(19))
 # print(func(13))
