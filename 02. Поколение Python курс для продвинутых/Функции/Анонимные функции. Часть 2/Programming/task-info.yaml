@@ -4,5 +4,8 @@ files:
   visible: true
   text: func = ...
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Sun, 22 Jan 2023 08:57:36 UTC"
 record: -1
