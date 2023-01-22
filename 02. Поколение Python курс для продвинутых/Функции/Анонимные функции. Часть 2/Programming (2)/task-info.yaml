@@ -5,5 +5,8 @@ files:
   visible: true
   text: is_non_negative_num = ...
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Sun, 22 Jan 2023 15:56:41 UTC"
 record: -1
