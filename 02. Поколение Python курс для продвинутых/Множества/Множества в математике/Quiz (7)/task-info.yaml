@@ -3,8 +3,8 @@ is_multiple_choice: false
 options:
 - text: $-3$
 - text: $5$
-- text: $10$
 - text: $\dfrac12$
+- text: $10$
 files:
 - name: task.py
   visible: true
@@ -12,7 +12,7 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Solved
+status: Unchecked
 record: -1
 custom_name: Quiz
 local_check: false

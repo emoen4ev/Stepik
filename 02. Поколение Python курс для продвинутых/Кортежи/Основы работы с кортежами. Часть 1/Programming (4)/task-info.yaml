@@ -7,5 +7,5 @@ files:
     countries = ('Russia', 'Argentina', 'Slovakia', 'Canada', 'Slovenia', 'Italy', 'Spain', 'Ukraine', 'Chile', 'Cameroon')
     print()
   learner_created: false
-status: Solved
+status: Unchecked
 record: -1

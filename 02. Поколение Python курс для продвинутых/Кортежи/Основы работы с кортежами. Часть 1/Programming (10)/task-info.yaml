@@ -5,5 +5,5 @@ files:
   visible: true
   text: "city_name = input()\ncity_year = int(input())\ncity = \nprint(city)"
   learner_created: false
-status: Solved
+status: Unchecked
 record: -1

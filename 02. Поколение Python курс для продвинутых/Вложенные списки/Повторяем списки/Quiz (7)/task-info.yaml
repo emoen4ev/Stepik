@@ -2,10 +2,10 @@ type: choice
 is_multiple_choice: false
 options:
 - text: "<code>[15, 5]</code>"
-- text: "<code>[15, 10, 5]</code>"
-- text: "<code>[25, 10]</code>"
 - text: "<code>[10, 5]</code>"
+- text: "<code>[25, 10]</code>"
 - text: "<code>[25, 15, 10, 5]</code>"
+- text: "<code>[15, 10, 5]</code>"
 files:
 - name: task.py
   visible: true
@@ -13,7 +13,7 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Solved
+status: Unchecked
 record: -1
 custom_name: Quiz
 local_check: false

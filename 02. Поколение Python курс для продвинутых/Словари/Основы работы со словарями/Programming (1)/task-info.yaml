@@ -21,5 +21,5 @@ files:
              {'name': 'Fedor', 'phone': '+7445-341-0545', 'email': ''},
              {'name': 'Tim', 'phone': '242-449-3141', 'email': 'timm.ggg@yandex.ru'}]
   learner_created: false
-status: Solved
+status: Unchecked
 record: -1

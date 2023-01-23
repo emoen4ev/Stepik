@@ -7,5 +7,5 @@ files:
 
     n = 10**6       # количество испытаний
   learner_created: false
-status: Solved
+status: Unchecked
 record: -1

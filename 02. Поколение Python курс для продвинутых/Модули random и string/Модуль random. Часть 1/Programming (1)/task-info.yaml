@@ -8,5 +8,5 @@ files:
 
     n = int(input())    # количество попыток
   learner_created: false
-status: Solved
+status: Unchecked
 record: -1

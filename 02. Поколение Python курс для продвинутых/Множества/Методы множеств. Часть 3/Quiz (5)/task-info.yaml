@@ -1,9 +1,9 @@
 type: choice
 is_multiple_choice: false
 options:
+- text: ошибка во время выполнения
 - text: <code>False</code>
 - text: <code>True</code>
-- text: ошибка во время выполнения
 files:
 - name: task.py
   visible: true
@@ -11,7 +11,7 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Solved
+status: Unchecked
 record: -1
 custom_name: Quiz
 local_check: false

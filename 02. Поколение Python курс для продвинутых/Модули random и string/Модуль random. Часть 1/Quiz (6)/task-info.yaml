@@ -1,12 +1,12 @@
 type: choice
 is_multiple_choice: true
 options:
-- text: 80
-- text: 81
-- text: 0
-- text: 9
 - text: 1
 - text: 52
+- text: 0
+- text: 80
+- text: 9
+- text: 81
 - text: 90
 files:
 - name: task.py
@@ -15,7 +15,7 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Solved
+status: Unchecked
 record: -1
 custom_name: Quiz
 local_check: false

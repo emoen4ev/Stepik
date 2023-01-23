@@ -12,8 +12,8 @@ files:
       offset: 0
     initialized_from_dependency: false
     selected: false
-    status: Solved
+    status: Unchecked
   text: type your solution here
   learner_created: false
-status: Solved
+status: Unchecked
 record: -1

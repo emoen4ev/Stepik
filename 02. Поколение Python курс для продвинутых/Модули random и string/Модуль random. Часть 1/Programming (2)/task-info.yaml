@@ -8,5 +8,5 @@ files:
 
     length = int(input())    # длина пароля
   learner_created: false
-status: Solved
+status: Unchecked
 record: -1

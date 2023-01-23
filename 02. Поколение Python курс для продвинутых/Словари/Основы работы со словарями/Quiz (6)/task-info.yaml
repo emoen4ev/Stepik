@@ -2,10 +2,10 @@ type: choice
 is_multiple_choice: false
 options:
 - text: <code>keys()</code>
-- text: <code>get()</code>
 - text: <code>keys_values()</code>
-- text: <code>items()</code>
 - text: <code>values()</code>
+- text: <code>get()</code>
+- text: <code>items()</code>
 files:
 - name: task.py
   visible: true
@@ -13,7 +13,7 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Solved
+status: Unchecked
 record: -1
 custom_name: Quiz
 local_check: false

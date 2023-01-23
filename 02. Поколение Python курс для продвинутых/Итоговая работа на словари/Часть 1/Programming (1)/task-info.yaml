@@ -9,5 +9,5 @@ files:
     \   'yandex.ru': ['surface', 'google'],\n          'hse.edu': ['tomas-henders',\
     \ 'cream.soda', 'zivert'],\n          'mail.ru': ['angel.down', 'joanne', 'the.fame.moster']}"
   learner_created: false
-status: Solved
+status: Unchecked
 record: -1

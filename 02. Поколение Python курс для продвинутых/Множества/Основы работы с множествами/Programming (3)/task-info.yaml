@@ -6,5 +6,5 @@ files:
   text: "fruits = {'apple', 'banana', 'cherry', 'avocado', 'pineapple', 'apricot',\
     \ 'banana', 'avocado', 'grapefruit'}"
   learner_created: false
-status: Solved
+status: Unchecked
 record: -1

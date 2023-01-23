@@ -1,10 +1,5 @@
 type: choice
 is_multiple_choice: false
-options:
-- text: <code>recipients.values()</code>
-- text: <code>recipients</code>
-- text: <code>recipients.keys()</code>
-- text: <code>recipients.items()</code>
 files:
 - name: task.py
   visible: true
@@ -12,7 +7,7 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Solved
+status: Unchecked
 record: -1
 custom_name: Quiz
 local_check: false
