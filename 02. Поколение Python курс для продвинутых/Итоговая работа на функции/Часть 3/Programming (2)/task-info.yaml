@@ -1,0 +1,12 @@
+type: code
+custom_name: Programming
+files:
+- name: task.py
+  visible: true
+  text: |-
+    words = 'the world is mine take a look what you have started'.split()
+
+    print(*...)
+  learner_created: false
+status: Unchecked
+record: -1

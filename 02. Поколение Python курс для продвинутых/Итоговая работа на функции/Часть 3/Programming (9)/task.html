@@ -1,0 +1,169 @@
+<h2 style="text-align: center;">Гематрия слова</h2>
+
+<p>Гематрией слова называется сумма числовых значений входящих в него букв.</p>
+
+<p>Для вычисления гематрии слова в этой задаче:</p>
+
+<ol>
+	<li>переведём слово в верхний регистр;</li>
+	<li>числовое значение буквы вычислим как <code>код(буквы) - код(буквы A)</code>.</li>
+</ol>
+
+<p>На вход программе подается натуральное число $n$, а затем $n$ строк английских слов в разных регистрах.</p>
+
+<p>Напишите программу, которая выводит слова в начальном регистре (каждое на отдельной строке) в порядке возрастания их гематрии. Если гематрия слов совпадает, они выводятся в алфавитном (лексикографическом) порядке.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подается натуральное число $n$, а затем $n$ строк английских слов в разных регистрах.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна отсортировать слова в соответствии с условием задачи.</p>
+
+<p><strong>Примечание 1.</strong> Для получения кода символа воспользуйтесь встроенной функцией <code>ord()</code>.</p>
+
+<p><strong>Примечание 2.</strong> Слова во входных данных могут повторяться.</p>
+
+<p><strong>Примечание 3.</strong> Пусть требуется вычислить гематрию слова <code>BaSis</code>. Переводим его в верхний регистр <code>BASIS</code>. Для каждого символа в слове находим его код с помощью встроенной функции <code>ord()</code>:</p>
+
+<pre><code class="language-no-highlight">ord('B') = 66
+ord('A') = 65
+ord('S') = 83
+ord('I') = 73
+ord('S') = 83</code></pre>
+
+<p>В соответствии с условием задачи вычисляем числовое значение буквы как <code>код(буквы) - код(буквы A)</code>. Вычитаем из кода каждой буквы значение <code>ord('A') = 65</code>:</p>
+
+<pre><code class="language-no-highlight">ord('B') - ord('A') = 66 - 65 = 1
+ord('A') - ord('A') = 65 - 65 = 0
+ord('S') - ord('A') = 83 - 65 = 18
+ord('I') - ord('A') = 73 - 65 = 8
+ord('S') - ord('A') = 83 - 65 = 18</code></pre>
+
+<p>Гематрия слова <code>BaSis</code> равна $1+0+18+8+18 = 45$. </p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">4<br>
+			basis<br>
+			after<br>
+			chief<br>
+			agenda</td>
+			<td style="text-align: center;">agenda<br>
+			chief<br>
+			after<br>
+			basis</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">4<br>
+			Basis<br>
+			afTEr<br>
+			CHief<br>
+			agenda</td>
+			<td style="text-align: center;">CHief<br>
+			agenda<br>
+			Basis<br>
+			afTEr</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">10<br>
+			AGreement<br>
+			bAr<br>
+			baRely<br>
+			Barrelbarrier<br>
+			base<br>
+			baseball<br>
+			basIC<br>
+			basically<br>
+			basis<br>
+			basket</td>
+			<td style="text-align: center;">bAr<br>
+			base<br>
+			basIC<br>
+			basis<br>
+			baseball<br>
+			basket<br>
+			baRely<br>
+			basically<br>
+			AGreement<br>
+			Barrelbarrier</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">3<br>
+			bBb<br>
+			aaaaaa<br>
+			word</td>
+			<td style="text-align: center;">aaaaaa<br>
+			bBb<br>
+			word</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">9<br>
+			afford<br>
+			motheR<br>
+			Father<br>
+			BrotHEr<br>
+			again<br>
+			against<br>
+			age<br>
+			agency<br>
+			agenda</td>
+			<td style="text-align: center;">age<br>
+			agenda<br>
+			again<br>
+			afford<br>
+			agency<br>
+			Father<br>
+			against<br>
+			motheR<br>
+			BrotHEr</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">14<br>
+			basis<br>
+			agree<br>
+			baseBAll<br>
+			chemicAL<br>
+			agenda<br>
+			bAr<br>
+			aFTer<br>
+			chicken<br>
+			Chef<br>
+			chemical<br>
+			chief<br>
+			CHIcken<br>
+			child<br>
+			baseball</td>
+			<td style="text-align: center;">Chef<br>
+			bAr<br>
+			agenda<br>
+			chief<br>
+			agree<br>
+			child<br>
+			aFTer<br>
+			basis<br>
+			CHIcken<br>
+			baseBAll<br>
+			baseball<br>
+			chemicAL<br>
+			chemical<br>
+			chicken</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">4<br>basis<br>after<br>chief<br>agenda</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">agenda<br>chief<br>after<br>basis</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">4<br>Basis<br>afTEr<br>CHief<br>agenda</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">CHief<br>agenda<br>Basis<br>afTEr</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

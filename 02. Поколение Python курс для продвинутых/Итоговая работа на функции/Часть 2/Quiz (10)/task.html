@@ -1,0 +1,11 @@
+<p>Что выведет указанный ниже код?</p>
+
+<pre><code class="language-python">from functools import reduce
+import operator
+
+def flatten(data):
+    return reduce(operator.concat, data, [])
+
+result = flatten([[1, 2], [3, 4], [], [5]])
+
+print(result)</code></pre>

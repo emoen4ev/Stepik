@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: "('Robert', 1)"
+- text: "('Roman', 30)"
+- text: "('Ruslan', 21)"
+- text: "('Timur', 28)"
+- text: "('Soltan', 24)"
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz
+local_check: false

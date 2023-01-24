@@ -1,0 +1,7 @@
+<p>Что выведет указанный ниже код?</p>
+
+<pre><code class="language-python">from functools import reduce
+
+words = ['beegeek', 'stepik', 'python', 'iq-option']
+result = reduce(lambda a, b: a if len(a) &gt; len(b) else b, words)
+print(result)</code></pre>

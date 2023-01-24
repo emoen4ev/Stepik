@@ -1,0 +1,20 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: "сначала для каждого элемента\_<code>sequence1</code>, затем для каждого э\
+    лемента\_<code>sequence2</code>"
+- text: для каждого элемента <code>sequence2</code>
+- text: "для первого элемента\_<code>sequence1</code>\_вместе с первым элементом\_\
+    <code>sequence2</code>, затем для вторых элементов и так далее"
+- text: для каждого элемента <code>sequence1</code>
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz
+local_check: false

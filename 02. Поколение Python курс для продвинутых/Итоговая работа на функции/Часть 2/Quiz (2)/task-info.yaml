@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: "<code>f = lambda x: 2 * x ** 2 + 2 * x</code>"
+- text: "<code>f = lambda (x, y): 2 * x ** 2 + 2 * y</code>"
+- text: нет правильного ответа
+- text: "<code>f = lambda x: (2 * x ** 2 + 2) * x</code>"
+- text: "<code>f = lambda x: 2 * x ** 2 + 2</code>"
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz
+local_check: false

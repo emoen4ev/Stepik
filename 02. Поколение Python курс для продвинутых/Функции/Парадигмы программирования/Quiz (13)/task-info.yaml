@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: функциональные программы не содержат побочных эффектов
+- text: "они короче, поэтому меньше шанс ошибиться\_"
+- text: функциональные программы проще отлаживать из-за их естественной модульности
+- text: "программисты на функциональных языках обычно умнее, поэтому делают меньше\
+    \ ошибок \U0001f923"
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz
+local_check: false

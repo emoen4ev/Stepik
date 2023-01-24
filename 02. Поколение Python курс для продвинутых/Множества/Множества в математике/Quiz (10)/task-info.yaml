@@ -1,5 +1,10 @@
 type: choice
-is_multiple_choice: false
+is_multiple_choice: true
+options:
+- text: "$\\sqrt{\\dfrac{x}{y}}$"
+- text: "$\\sqrt{x-y}$"
+- text: "$\\sqrt{x+y}$"
+- text: "$\\sqrt{xy}$"
 files:
 - name: task.py
   visible: true
@@ -7,7 +12,7 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Unchecked
+status: Solved
 record: -1
 custom_name: Quiz
 local_check: false

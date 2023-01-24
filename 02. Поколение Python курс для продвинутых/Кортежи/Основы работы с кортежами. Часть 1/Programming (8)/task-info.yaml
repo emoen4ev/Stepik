@@ -6,5 +6,5 @@ files:
   text: "countries = ('Russia', 'Argentina', 'Spain', 'Slovakia', 'Canada', 'Slovenia',\
     \ 'Italy', 'Spain', 'Ukraine', 'Chile', 'Spain', 'Cameroon')\nnumber = \nprint(number)"
   learner_created: false
-status: Unchecked
+status: Solved
 record: -1

@@ -1,0 +1,117 @@
+<h2 style="text-align: center;">Заполнение спиралью 😈😈</h2>
+
+<p>На вход программе подаются два натуральных числа $n$ и $m$. Напишите программу, которая создает матрицу размером $n \times m$ заполнив её "спиралью" в соответствии с образцом.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе на одной строке подаются два натуральных числа $n$ и $m$ — количество строк и столбцов в матрице.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести матрицу в соответствии образцом.</p>
+
+<p><strong>Примечание.</strong> Для вывода элементов матрицы как в примерах, отводите ровно $3$ символа на каждый элемент. Для этого используйте строковый метод <code>ljust()</code>. Можно обойтись и без <code>ljust()</code>, система примет и такое решение 😇</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">4 5</td>
+			<td style="text-align: center;">1  2  3  4  5<br>
+			14 15 16 17 6<br>
+			13 20 19 18 7<br>
+			12 11 10 9  8</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">1 6</td>
+			<td style="text-align: center;">1  2  3  4  5  6</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">3 3</td>
+			<td style="text-align: center;">1  2  3<br>
+			8  9  4<br>
+			7  6  5</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">5 4</td>
+			<td style="text-align: center;">1  2  3  4<br>
+			14 15 16 5<br>
+			13 20 17 6<br>
+			12 19 18 7<br>
+			11 10 9  8</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">7 1</td>
+			<td style="text-align: center;">1<br>
+			2<br>
+			3<br>
+			4<br>
+			5<br>
+			6<br>
+			7</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">8 2</td>
+			<td style="text-align: center;">1  2<br>
+			16 3<br>
+			15 4<br>
+			14 5<br>
+			13 6<br>
+			12 7<br>
+			11 8<br>
+			10 9</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">2 10</td>
+			<td style="text-align: center;">1  2  3  4  5  6  7  8  9 10<br>
+			20 19 18 17 16 15 14 13 12 11</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">9 8</td>
+			<td style="text-align: center;">1  2  3  4  5  6  7  8<br>
+			30 31 32 33 34 35 36 9<br>
+			29 52 53 54 55 56 37 10<br>
+			28 51 66 67 68 57 38 11<br>
+			27 50 65 72 69 58 39 12<br>
+			26 49 64 71 70 59 40 13<br>
+			25 48 63 62 61 60 41 14<br>
+			24 47 46 45 44 43 42 15<br>
+			23 22 21 20 19 18 17 16</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">4 4</td>
+			<td style="text-align: center;">1   2   3   4  <br>
+			12  13  14  5  <br>
+			11  16   15  6  <br>
+			10  9   8   7 </td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">8 8</td>
+			<td style="text-align: center;">1   2  3  4  5  6  7 8 <br>
+			28 29 30 31 32 33 34 9 <br>
+			27 48 49 50 51 52 35 10 <br>
+			26 47 60 61 62 53 36 11 <br>
+			25 46 59 64 63 54 37 12 <br>
+			24 45 58 57 56 55 38 13 <br>
+			23 44 43 42 41 40 39 14 <br>
+			22 21 20 19 18 17 16 15 </td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">4 5</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1  2  3  4  5<br>14 15 16 17 6<br>13 20 19 18 7<br>12 11 10 9  8</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1 6</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1  2  3  4  5  6</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">3 3</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1  2  3<br>8  9  4<br>7  6  5</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

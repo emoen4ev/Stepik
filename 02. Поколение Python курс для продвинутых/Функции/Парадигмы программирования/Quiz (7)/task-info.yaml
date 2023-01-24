@@ -1,0 +1,21 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: рекурсия
+- text: функции высшего порядка
+- text: лямбда-выражения
+- text: чистые функции
+- text: циклы
+- text: изменяемые переменные
+- text: неизменяемые переменные
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz
+local_check: false

@@ -1,0 +1,107 @@
+<h2 style="text-align: center;">Корректный IP-адрес</h2>
+
+<p>IP-адрес – уникальный числовой идентификатор устройства в компьютерной сети, работающей по протоколу TCP/IP.</p>
+
+<p>В $4$-й версии IP-адрес представляет собой $32$-битное число. Адрес записывается в виде четырёх десятичных чисел (октетов) со значением от $0$ до $255$ (включительно), разделённых точками, например, $192.168.1.2$.</p>
+
+<p>Напишите программу с использованием встроенной функции <code>all()</code> для проверки корректности IP-адреса: все ли октеты в IP-адресе – числа со значением от $0$ до $255$.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подается строка в формате <code>x.x.x.x</code>, где <code>x</code> – непустой набор символов <code>0-9, a-z</code>.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести <code>True</code> если введенная строка – корректный IP-адрес и <code>False</code> в противном случае.</p>
+
+<p><strong>Примечание.</strong> Ведущие нули следует игнорировать:</p>
+
+<pre><code class="language-no-highlight">0001 = 1
+006 = 6
+0213 = 213
+0000 = 0
+00345 = 345
+...</code></pre>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">10.0.1.1</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">10.1.1.a</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">10.1.1.260</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">10.0023.0123.0000015</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">102.990.100.1</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">1029.99.100.1</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">sdfds.90.100.1</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">34.vfdsv.100.1</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">12.90.dddd.1</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">123.90.100.1dsfsdf</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">11</td>
+			<td style="text-align: center;">0.0.0.0</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">12</td>
+			<td style="text-align: center;">255.255.255.255</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">13</td>
+			<td style="text-align: center;">10.0000.111.1</td>
+			<td style="text-align: center;">True</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">14</td>
+			<td style="text-align: center;">10.0.1000.1</td>
+			<td style="text-align: center;">False</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">10.0.1.1</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">True</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">10.1.1.a</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">False</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">10.1.1.260</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">False</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">10.0023.0123.0000015</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">True</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

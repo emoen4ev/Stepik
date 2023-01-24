@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: "функция, которая не выбрасывает исключений"
+- text: функция с коротким и понятным синтаксисом
+- text: "функция с предсказуемым результатом работы, при вызове с одними и теми же\
+    \ аргументами возвращает одно и то же значение"
+- text: функция с заранее определенным типом возвращаемого значения
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz
+local_check: false

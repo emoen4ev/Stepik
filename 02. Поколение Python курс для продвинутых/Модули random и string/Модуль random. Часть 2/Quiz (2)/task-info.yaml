@@ -1,12 +1,12 @@
 type: choice
 is_multiple_choice: true
 options:
-- text: "<code>[1, 2, 6]</code>"
-- text: "<code>[7, 4, 2]</code>"
-- text: "<code>[6, 1, 4]</code>"
 - text: "<code>[1, 4]</code>"
+- text: "<code>[1, 2, 6]</code>"
 - text: "<code>[3, 2, 6]</code>"
 - text: "<code>[1, 2, 4, 6]</code>"
+- text: "<code>[6, 1, 4]</code>"
+- text: "<code>[7, 4, 2]</code>"
 files:
 - name: task.py
   visible: true
@@ -14,7 +14,7 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Unchecked
+status: Solved
 record: -1
 custom_name: Quiz
 local_check: false

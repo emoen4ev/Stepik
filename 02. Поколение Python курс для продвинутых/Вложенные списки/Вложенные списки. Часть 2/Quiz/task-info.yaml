@@ -1,5 +1,11 @@
 type: choice
 is_multiple_choice: false
+options:
+- text: "<code>[[1, 2, 3], [4, 5], 7]</code>"
+- text: "<code>[[1, 2, 3], [4, 5]]</code>"
+- text: "<code>[[1, 2, 3], [4, 5, 7]]</code>"
+- text: "<code>[[1, 2, 3], [4, 5], [7]]</code>"
+- text: "<code>[[1, 2, 3, 7], [4, 5]]</code>"
 files:
 - name: task.py
   visible: true
@@ -7,6 +13,6 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Unchecked
+status: Solved
 record: -1
 local_check: false

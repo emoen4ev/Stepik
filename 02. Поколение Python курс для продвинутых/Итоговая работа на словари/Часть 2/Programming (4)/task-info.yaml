@@ -7,5 +7,5 @@ files:
     def merge(values):      # values - это список словарей
         pass
   learner_created: false
-status: Unchecked
+status: Solved
 record: -1

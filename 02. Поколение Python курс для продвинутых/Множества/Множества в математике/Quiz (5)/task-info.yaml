@@ -1,11 +1,11 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: рациональные
-- text: целые
-- text: комплексные
-- text: натуральные
 - text: простые
+- text: целые
+- text: рациональные
+- text: натуральные
+- text: комплексные
 files:
 - name: task.py
   visible: true
@@ -13,7 +13,7 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Unchecked
+status: Solved
 record: -1
 custom_name: Quiz
 local_check: false

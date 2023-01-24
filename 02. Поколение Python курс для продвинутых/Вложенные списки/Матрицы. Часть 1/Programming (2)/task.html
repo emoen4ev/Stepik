@@ -1,0 +1,126 @@
+<h2 style="text-align: center;">След матрицы</h2>
+
+<p>Следом квадратной матрицы называется сумма элементов главной диагонали. Напишите программу, которая выводит след заданной квадратной матрицы.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подаётся натуральное число $n$ — количество строк и столбцов в матрице, затем элементы матрицы (целые числа) построчно через пробел.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести одно число — след заданной матрицы.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">3<br>
+			1 2 3<br>
+			4 5 6<br>
+			7 8 9</td>
+			<td style="text-align: center;">15</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">4<br>
+			1 0 0 0<br>
+			0 1 0 0<br>
+			0 0 1 0<br>
+			0 0 0 1</td>
+			<td style="text-align: center;">4</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">2<br>
+			0 99<br>
+			99 0</td>
+			<td style="text-align: center;">0</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">4<br>
+			1 4 9 1<br>
+			4 9 1 1<br>
+			9 1 1 4<br>
+			1 1 4 9</td>
+			<td style="text-align: center;">20</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">2<br>
+			84 5<br>
+			3 46</td>
+			<td style="text-align: center;">130</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">3<br>
+			1 46 6<br>
+			8 0 18<br>
+			64 4 0</td>
+			<td style="text-align: center;">1</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">9<br>
+			1 4 9 1 1 4 9 1 4<br>
+			4 9 1 1 1 4 9 1 1<br>
+			9 1 1 1 4 9 1 1 4<br>
+			1 1 4 9 1 9 1 1 4<br>
+			4 9 1 1 1 9 1 1 4<br>
+			9 1 1 4 1 4 9 1 4<br>
+			1 1 4 1 4 9 1 1 4<br>
+			4 9 1 1 1 4 9 1 1<br>
+			9 1 1 4 1 4 1 1 4</td>
+			<td style="text-align: center;">31</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">8</td>
+			<td style="text-align: center;">15<br>
+			2 2 4 5 2 4 8 0 9 8 5 1 8 1 1<br>
+			0 0 2 3 6 4 0 9 8 7 6 2 0 9 7<br>
+			3 4 2 0 7 1 0 1 6 5 3 9 8 4 1<br>
+			4 3 4 4 0 0 9 8 5 4 3 7 8 9 0<br>
+			1 2 1 1 1 0 0 7 4 3 5 7 8 6 4<br>
+			1 3 4 5 3 2 1 2 1 2 1 4 5 4 3<br>
+			0 0 9 8 7 8 0 6 0 5 9 7 8 6 6<br>
+			5 5 5 5 5 2 2 2 1 4 5 5 5 0 9<br>
+			1 3 4 3 2 1 1 1 6 7 7 9 9 9 9<br>
+			0 0 0 0 9 8 8 8 8 8 4 4 2 2 4<br>
+			4 4 4 4 4 4 4 4 4 4 4 4 4 4 4<br>
+			3 4 3 3 4 4 4 3 3 3 4 3 3 0 9<br>
+			9 9 9 9 9 9 8 8 8 8 8 8 8 5 5<br>
+			3 2 4 5 6 6 8 9 9 0 0 0 9 7 6<br>
+			1 3 4 2 1 1 1 1 1 1 1 1 1 1 1</td>
+			<td style="text-align: center;">50</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">9</td>
+			<td style="text-align: center;">8<br>
+			1234 4221 4 0 924 2 12 452<br>
+			909 2 3 0 9 1 1 1<br>
+			1 9 0 8 2 1 0 0<br>
+			99439849234 1324 89 90 13 1 0 98423<br>
+			0 1112392045248243892 89 2 98 32 113 4<br>
+			2 4 2 1 3 0 9 7<br>
+			2 3 2 3 2 3 23 1<br>
+			9 8787863 642763283 37 9 74 2 500000</td>
+			<td style="text-align: center;">501447</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">2<br>
+			113481374139467642946 343414123134134311343<br>
+			100000000000000000000000000000 92327413641381536934000000001</td>
+			<td style="text-align: center;">92327413754862911073467642947</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">3<br>1 2 3<br>4 5 6<br>7 8 9</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">15</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">4<br>1 0 0 0<br>0 1 0 0<br>0 0 1 0<br>0 0 0 1</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">4</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">2<br>0 99<br>99 0</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">0</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

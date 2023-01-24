@@ -1,0 +1,63 @@
+<h2 style="text-align: center;">Самое редкое слово 🌶️</h2>
+
+<p>На вход программе подается строка текста. Напишите программу, которая выводит слово, которое встречается реже всего, без учета регистра. Если таких слов несколько, выведите то, которое меньше в лексикографическом порядке.</p>
+
+<p><strong>Формат входных данных</strong><br>
+На вход программе подается строка текста.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести слово (в нижнем регистре), встречаемое реже всего.</p>
+
+<p><strong>Примечание 1.</strong> Программа не должна быть чувствительной к регистру, слова <code>apple</code> и <code>Apple</code> должна воспринимать как одинаковые.</p>
+
+<p><strong>Примечание 2.</strong> Слово — последовательность букв. Кроме слов в тексте могут присутствовать пробелы и знаки препинания <code>.,!?:;-</code>, которые нужно игнорировать. Других символов в тексте нет.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">home sweet home</td>
+			<td style="text-align: center;">sweet</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">home sweet home sweet.</td>
+			<td style="text-align: center;">home</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">How are you? how Are?</td>
+			<td style="text-align: center;">you</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">London is the capital of Great Britain. More than six million people live in London. London lies on both banks of the river Thames. It is the largest city in Europe and one of the largest cities in the world. London is not only the capital of the country, it is also a very big port, one of the greatest commercial centres in the world, a university city, and the seat of the government of Great Britain!</td>
+			<td style="text-align: center;">also</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">My dear, here we must run as fast as we can, just to stay in place. And if you wish to go anywhere you must run twice as fast as that.</td>
+			<td style="text-align: center;">and</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6</td>
+			<td style="text-align: center;">I bought two books: a new book and an old book. The new book was more expensive than the old book.</td>
+			<td style="text-align: center;">a</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">7</td>
+			<td style="text-align: center;">наш курс курс самый самый лучший</td>
+			<td style="text-align: center;">лучший</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">home sweet home</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">sweet</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">home sweet home sweet.</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">home</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

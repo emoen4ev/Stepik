@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: использования менеджера контекста <code>with</code>
+- text: использования блока <code>try/finally</code>
+- text: вызова метода <code>close()</code>
+- text: без разницы
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

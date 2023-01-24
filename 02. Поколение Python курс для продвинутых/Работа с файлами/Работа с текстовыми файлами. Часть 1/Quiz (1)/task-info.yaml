@@ -1,0 +1,20 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: "<code>open('dog_breeds.txt', 'wb')</code>"
+- text: "<code>open('dog_breeds.txt', 'rb')</code>"
+- text: <code>open('dog_breeds.txt')</code>
+- text: "<code>open('dog_breeds.txt', 'r')</code>"
+- text: "<code>open('dog_breeds.txt', 'rt')</code>"
+- text: "<code>open('dog_breeds.txt', 'w')</code>"
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

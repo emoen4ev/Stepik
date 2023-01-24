@@ -1,0 +1,70 @@
+<h2 style="text-align: center;">Секретное слово</h2>
+
+<p>Напишите программу для расшифровки секретного слова методом частотного анализа.</p>
+
+<p><strong>Формат входных данных</strong><br>
+В первой строке задано зашифрованное слово. Во второй строке задано одно целое число $n$ – количество букв в словаре. В следующих $n$ строках записано, сколько раз конкретная буква алфавита встречается в этом слове – <code>&lt;буква&gt;: &lt;частота&gt;</code>.</p>
+
+<p><strong>Формат выходных данных</strong><br>
+Программа должна вывести дешифрованное слово.</p>
+
+<p><strong>Примечание.</strong> Гарантируется, что частоты букв не повторяются.</p>
+
+<details><summary>Тестовые данные 🟢</summary>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Номер теста</th>
+			<th style="text-align: center;">Входные данные</th>
+			<th style="text-align: center;">Выходные данные</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">1</td>
+			<td style="text-align: center;">*!*!*?<br>
+			3<br>
+			а: 3<br>
+			н: 2<br>
+			с: 1</td>
+			<td style="text-align: center;">ананас</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">2</td>
+			<td style="text-align: center;">pop<br>
+			2<br>
+			д: 2<br>
+			е: 1</td>
+			<td style="text-align: center;">дед</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3</td>
+			<td style="text-align: center;">zpwzpz<br>
+			3<br>
+			б: 3<br>
+			а: 2<br>
+			о: 1</td>
+			<td style="text-align: center;">баобаб</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">4</td>
+			<td style="text-align: center;">121292<br>
+			3<br>
+			п: 2<br>
+			а: 3<br>
+			х: 1</td>
+			<td style="text-align: center;">папаха</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">5</td>
+			<td style="text-align: center;">poioio<br>
+			3<br>
+			м: 1<br>
+			а: 3<br>
+			к: 2</td>
+			<td style="text-align: center;">макака</td>
+		</tr>
+	</tbody>
+</table>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">*!*!*?<br>3<br>а: 3<br>н: 2<br>с: 1</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">ананас</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">pop<br>2<br>д: 2<br>е: 1</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">дед</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

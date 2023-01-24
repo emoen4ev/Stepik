@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: <code>python<br>beegeek</code>
+- text: <code>stepicon<br>beegeek</code>
+- text: <code>python<br>stepicon</code>
+- text: <code>stepicon<br>python</code>
+- text: <code>beegeek<br>python</code>
+- text: <code>beegeek<br>stepicon</code>
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+local_check: false

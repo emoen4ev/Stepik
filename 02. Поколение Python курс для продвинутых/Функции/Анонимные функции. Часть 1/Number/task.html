@@ -1,0 +1,10 @@
+<p>Что будет напечатано в результате работы программы?</p>
+
+<pre><code class="language-python">from functools import reduce
+
+numbers = range(10)
+obj = map(lambda x: x + 1, numbers)
+obj = filter(lambda x: x % 2 == 1, obj)
+result = reduce(lambda x, y: x + y, obj, 0)
+
+print(result)</code></pre>

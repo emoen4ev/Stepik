@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: 125
+- text: 15
+- text: 53
+- text: '&lt;class ''function''=""&gt;'
+- text: 35
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz
+local_check: false

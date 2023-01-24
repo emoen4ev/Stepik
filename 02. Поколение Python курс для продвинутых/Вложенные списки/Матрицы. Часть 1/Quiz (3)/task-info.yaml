@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: <code>1 4 7<br>  2 5 8<br>  3 6 9 </code>
+- text: <code>1 2 3<br> 4 5 6<br> 7 8 9 </code>
+- text: <code>3 2 1<br> 6 5 4<br> 9 8 7 </code>
+- text: <code>9 8 7  <br>6 5 4<br> 3 2 1</code>
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz
+local_check: false

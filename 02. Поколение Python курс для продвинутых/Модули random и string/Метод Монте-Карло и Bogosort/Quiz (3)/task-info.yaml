@@ -1,5 +1,10 @@
 type: choice
 is_multiple_choice: false
+options:
+- text: "периметр квадрата, в который вписан данный эллипс"
+- text: "площадь треугольника, который вписан в данный эллипс"
+- text: "периметр круга, в который вписан данный эллипс"
+- text: "площадь прямоугольника, в который вписан данный эллипс"
 files:
 - name: task.py
   visible: true
@@ -7,7 +12,7 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Unchecked
+status: Solved
 record: -1
 custom_name: Quiz
 local_check: false

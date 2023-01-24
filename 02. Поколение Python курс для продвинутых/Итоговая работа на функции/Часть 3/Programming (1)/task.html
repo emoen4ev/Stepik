@@ -1,0 +1,13 @@
+<p>Перепишите функцию <code>product_of_odds()</code> в функциональном стиле с использованием встроенных функций <code>filter()</code> и <code>reduce()</code>.</p>
+
+<pre><code class="language-python">def product_of_odds(data):   # data - список целых чисел
+    result = 1
+    for i in data:
+        if i % 2 == 1:
+            result *= i
+    return result</code></pre>
+
+<p><strong>Примечание 1.</strong> Тестирующая система никак не "покарает" вас за неиспользование встроенных функций <code>filter()</code> и <code>reduce()</code>, однако лучше сделать это задание честно 😃.</p>
+
+<p><strong>Примечание 2.</strong> Вызывать функцию <code>product_of_odds()</code> не нужно, требуется только реализовать ее в функциональном стиле.</p>
+<details><summary>Для отладки кода 🟡</summary><iframe allowfullscreen="" height="600" src="https://trinket.io/embed/python3/4858fe25a0" width="100%"></iframe></details><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: "<code>func(a=1, b=2, c=3, 4)</code>"
+- text: "<code>func(1, 2, 3, 4)</code>"
+- text: "<code>func(a=1, 2, 3, 4)</code>"
+- text: "<code>func(1, 2, 3, d=4)</code>"
+- text: "<code>func(a=1, b=2, c=3, d=4)</code>"
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz
+local_check: false
