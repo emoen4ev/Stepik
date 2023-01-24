@@ -11,5 +11,8 @@ files:
     \ 'bicycle', 'beside', 'accept', 'berry', 'bewilder', 'abrupt', 'saturday', 'accessory',\
     \ 'absorb']"
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Tue, 24 Jan 2023 16:12:50 UTC"
 record: -1
