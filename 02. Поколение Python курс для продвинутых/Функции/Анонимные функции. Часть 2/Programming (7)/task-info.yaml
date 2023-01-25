@@ -8,5 +8,8 @@ files:
     на', 'страна', 'мир', 'случай', 'голова', 'ребенок', 'сила', 'конец', 'вид', 'с\
     истема', 'часть', 'город', 'отношение', 'женщина', 'деньги']"
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Wed, 25 Jan 2023 14:36:13 UTC"
 record: -1
