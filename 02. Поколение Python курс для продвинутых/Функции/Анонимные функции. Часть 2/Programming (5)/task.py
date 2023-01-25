@@ -6,6 +6,8 @@ numbers = [
     15, 66, 29, 88, 94, 37, 44, 2, 38, 36, 32, 49, 5, 33, 60, 94, 89, 8, 36, 94, 46, 33,
 ]
 
-odd_large_greater_than_47 = filter(lambda x: x > 47 and x % 1 == 1, numbers)
+filtered_numbers = filter(lambda x: (x < 48 and x % 2 == 1) or x % 2 == 0, numbers)
 
-result = list(map())
+result = map(lambda x: x // 2 if x % 2 == 0 else x, filtered_numbers)
+
+print(*result)
