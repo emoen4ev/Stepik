@@ -9,5 +9,8 @@ files:
     \ (7705281, 'Washington'), (7151502, 'Arizona'), (7029917, 'Massachusetts'), (6910840,\
     \ 'Tennessee')]"
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Wed, 25 Jan 2023 14:23:12 UTC"
 record: -1
