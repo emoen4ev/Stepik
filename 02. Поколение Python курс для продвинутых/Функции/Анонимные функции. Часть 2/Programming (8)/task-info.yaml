@@ -16,5 +16,8 @@ files:
     \ 'friday', 2576799, 2213552, 1599022, 'accept', 'abuse', 'abound', 1352953, 'bid',\
     \ 1805326, 1499197, 2241159, 605320, 2347441]"
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Wed, 25 Jan 2023 15:52:58 UTC"
 record: -1
