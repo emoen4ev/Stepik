@@ -5,5 +5,9 @@ files:
   visible: true
   text: '# put your python code here'
   learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: |
+    Failed test #6 of 6. Wrong answer
+  time: "Wed, 25 Jan 2023 18:04:03 UTC"
 record: -1
