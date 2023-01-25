@@ -12,5 +12,8 @@ files:
     \ 26, 'abound', 12, 95, 'wednesday', 'abundant', 'abrupt', 'aboard', 50, 89, 'tuesday',\
     \ 66, 'bestow', 'absent', 76, 46, 'betray', 47, 'able', 11]"
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Wed, 25 Jan 2023 16:31:05 UTC"
 record: -1
