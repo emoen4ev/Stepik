@@ -6,5 +6,8 @@ files:
     def ignore_command(command):
         pass
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Thu, 26 Jan 2023 15:13:10 UTC"
 record: -1
