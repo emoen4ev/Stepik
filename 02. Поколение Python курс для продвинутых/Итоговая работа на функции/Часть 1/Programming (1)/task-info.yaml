@@ -7,5 +7,8 @@ files:
     def pretty_print(data, side, delimiter):
         pass
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Thu, 26 Jan 2023 12:28:17 UTC"
 record: -1
