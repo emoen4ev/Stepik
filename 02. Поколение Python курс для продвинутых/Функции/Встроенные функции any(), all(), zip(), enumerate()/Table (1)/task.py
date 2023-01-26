@@ -1,2 +1,14 @@
-#  This is a table task. You can use this editor as a playground
-
+print('any([True, False])', any([True, False]))
+print('any([False, False])', any([False, False]))
+print('any([True, True])', any([True, True]))
+print('any([10, 100, 1000])', any([10, 100, 1000]))
+print('any([0, 0, 0, 0])', any([0, 0, 0, 0]))
+print("any(['Python', 'C#'])", any(['Python', 'C#']))
+print("any(['', '', 'language'])", any(['', '', 'language']))
+print('any([(1, 2, 3), []])', any([(1, 2, 3), []]))
+print('any([])', any([]))
+print('any([[], []])', any([[], []]))
+print("any({0: 'Monday', 1: 'Tuesday', 2: 'Wednesday'})", any({0: 'Monday', 1: 'Tuesday', 2: 'Wednesday'}))
+print("any({0: 'Monday'})", any({0: 'Monday'}))
+print("any({'name': 'Timur', 'age': 28})", any({'name': 'Timur', 'age': 28}))
+print("any({'': 'None', 'age': 28})", any({'': 'None', 'age': 28}))
