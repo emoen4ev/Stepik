@@ -7,16 +7,6 @@ mixed_list = [
     'aboard', 50, 89, 'tuesday', 66, 'bestow', 'absent', 76, 46, 'betray', 47, 'able', 11,
 ]
 
-# sorted_list = sorted(mixed_list, key=lambda x: ((type(x) == str, x), (type(x) == int, x)))
-
-sorted_list = sorted(mixed_list, key=lambda x: (isinstance(x, str), x))
+sorted_list = sorted(mixed_list, key=lambda x: ((type(x) == str, x), (type(x) == int, x)))
 
 print(*sorted_list)
-
-# for i in range(len(mixed_list)):
-#     mixed_list[i] = (isinstance(mixed_list[i], str), mixed_list[i])
-#
-# print(mixed_list)
-#
-# for j in sorted(mixed_list):
-#     print(j[1], end=' ')

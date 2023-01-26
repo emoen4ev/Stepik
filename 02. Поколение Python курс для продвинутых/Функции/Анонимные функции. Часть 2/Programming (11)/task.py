@@ -2,9 +2,9 @@ from functools import reduce
 
 
 def evaluate(coefficients, x):
-    n = len(coefficients) - 1
-    data = list(map(lambda y: y * (x ** (n - coefficients.index(y))), coefficients))
-    result = reduce(lambda a, b: a + b, data)
+    working_indices = range(len(coefficients) - 1, -1, -1)
+    processed = map(lambda element_value, work_index: element_value * x ** work_index, coefficients, working_indices)
+    result = reduce(lambda a, b: a + b, processed)
 
     print(result)
 
