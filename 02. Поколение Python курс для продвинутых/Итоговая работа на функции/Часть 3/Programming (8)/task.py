@@ -1,0 +1,1 @@
+print(*sorted(input().split(), key=lambda x: [char for char in x.lower()]))
