@@ -3,9 +3,7 @@ custom_name: Programming
 files:
 - name: task.py
   visible: true
-  text: |-
-    letters = [c for c in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789']
-    morse = ['.-', '-...', '-.-.', '-..', '.', '..-.', '--.', '....', '..', '.---', '-.-', '.-..', '--', '-.', '---', '.--.', '--.-', '.-.', '...', '-', '..-', '...-', '.--', '-..-', '-.--', '--..', '-----', '.----', '..---', '...--', '....-', '.....', '-....', '--...', '---..', '----.']
+  text: '# put your python code here'
   learner_created: false
 status: Solved
 record: -1

@@ -8,7 +8,4 @@ files:
     print(*...)
   learner_created: false
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Fri, 27 Jan 2023 17:19:19 UTC"
 record: -1
