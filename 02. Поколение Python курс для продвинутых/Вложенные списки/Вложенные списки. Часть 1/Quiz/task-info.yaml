@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: 5
-- text: 13
-- text: 27
 - text: "<code>IndexError: list index out of range</code>"
+- text: 5
+- text: 27
+- text: 13
 files:
 - name: task.py
   visible: true

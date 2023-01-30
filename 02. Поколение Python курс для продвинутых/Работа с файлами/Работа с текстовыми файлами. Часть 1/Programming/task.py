@@ -1,9 +1,9 @@
-name = input()
+file_name = input()
 
-file_name = open(name, 'rt', encoding='UTF-8')
+file = open(file_name, 'rt', encoding='UTF-8')
 
-data = file_name.read()
+data = file.read()
 
 print(data)
 
-file_name.close()
+file.close()

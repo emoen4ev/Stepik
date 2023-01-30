@@ -12,12 +12,6 @@ files:
 
   learner_created: false
 status: Solved
-feedback:
-  message: "<html>Но важно все равно закрывать файл, как только он перестает быть\
-    \ нужным \U0001f642</html>"
-  time: "Sun, 29 Jan 2023 18:34:20 UTC"
 record: -1
-selected_options:
-- 2
 custom_name: Quiz
 local_check: false

@@ -11,13 +11,6 @@ files:
 
   learner_created: false
 status: Solved
-feedback:
-  message: |-
-    <html>Записывайся на курс для профессионалов по ссылке https://stepik.org/a/82541
-    Промокод СКИДКА_ДЛЯ_ПРОДВИНУТЫХ дает скидку 25% на курс для профессионалов</html>
-  time: "Sun, 29 Jan 2023 12:29:41 UTC"
 record: -1
-selected_options:
-- 0
 custom_name: Quiz
 local_check: false
