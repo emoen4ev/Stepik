@@ -1,4 +1,4 @@
-def get_items_value(number, price):
+def get_items_value(number: int, price: int) -> int:
     return number * price
 
 
