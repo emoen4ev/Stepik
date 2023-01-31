@@ -1,13 +1,10 @@
 with open('lines.txt', 'rt', encoding='utf-8') as file:
-    data = [line.strip() for line in file.readlines()]
+    data = [line.strip('\n') for line in file.readlines()]
     sorted_by_length = sorted(data, key=lambda line: -len(line))
     greatest_length = len(sorted_by_length[0])
-    result= filter(lambda line: len(line) == greatest_length, sorted_by_length)
+    result = filter(lambda line: len(line) == greatest_length, sorted_by_length)
 
 print(*result, sep='\n')
-
-
-
 
 '''
 future belongs
