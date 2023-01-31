@@ -40,3 +40,10 @@ One promising revelation of Rivlins report is that the US teenagers have a high 
 In the report, 77 percent of teens say they get along with their parents or guardians.
 They have a great deal of admiration for their parents as well.
 '''
+
+'''
+Input file contains:
+1069 letters 
+229 words 
+12 lines 
+'''
