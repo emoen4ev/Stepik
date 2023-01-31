@@ -1,10 +1,10 @@
 with open('lines.txt', 'rt', encoding='utf-8') as file:
-    data = file.readlines()
+    data = [line.strip() for line in file.readlines()]
     sorted_by_length = sorted(data, key=lambda line: -len(line))
     greatest_length = len(sorted_by_length[0])
-    result= list(filter(lambda line: greatest_length, sorted_by_length))
+    result= filter(lambda line: len(line) == greatest_length, sorted_by_length)
 
-print(result)
+print(*result, sep='\n')
 
 
 

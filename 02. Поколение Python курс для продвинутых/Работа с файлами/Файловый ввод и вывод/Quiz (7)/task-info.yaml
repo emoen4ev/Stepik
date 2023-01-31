@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: файл с упорядоченным доступом
-- text: файл с прямым доступом
-- text: файл с двоичным доступом
 - text: файл с последовательным доступом
+- text: файл с прямым доступом
+- text: файл с упорядоченным доступом
+- text: файл с двоичным доступом
 files:
 - name: task.py
   visible: true
