@@ -12,6 +12,9 @@ files:
 - name: file.txt
   visible: true
   learner_created: true
+- name: words.txt
+  visible: true
+  learner_created: true
 status: Solved
 feedback:
   time: "Wed, 01 Feb 2023 17:26:02 UTC"
