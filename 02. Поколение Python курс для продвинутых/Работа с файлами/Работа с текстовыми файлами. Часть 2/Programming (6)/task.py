@@ -1,5 +1,26 @@
+from random import choices
 
 
+def get_data(name):
+    with open(name, 'rt', encoding='utf-8') as file:
+        data = [item.strip() for item in file.readlines()]
+        return choices(data, k=3)
+
+
+file_1, file_2 = 'first_names.txt', 'last_names.txt'
+
+first_names, last_names = get_data(file_1), get_data(file_2)
+
+# with open('first_names.txt', 'rt', encoding='utf-8') as first:
+#     data = [name.strip() for name in first.readlines()]
+#     first_names = choices(data, k=3)
+#
+# with open('last_names.txt', 'rt', encoding='utf-8') as last:
+#     data = [name.strip() for name in last.readlines()]
+#     last_names = choices(data, k=3)
+
+for i in range(len(first_names)):
+    print(f'{first_names[i]} {last_names[i]}')
 
 '''  --- first_names.txt ---
 Aaron
