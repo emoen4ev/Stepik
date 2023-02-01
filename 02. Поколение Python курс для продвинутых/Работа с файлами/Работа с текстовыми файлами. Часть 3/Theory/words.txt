@@ -1,1 +1,2 @@
-delphi+java
+stepik*beegeek*iq-option+
+python

@@ -24,3 +24,7 @@ with open('file.txt', 'w', encoding='utf-8') as output:
 with open('words.txt', 'w') as file:
     file.write('delphi+')
     file.write('java')
+
+with open('words.txt', 'w') as output:
+    print('stepik', 'beegeek', 'iq-option', sep='*', end='+\n', file=output)
+    print('python', file=output)
