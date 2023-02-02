@@ -8,5 +8,8 @@ files:
 - name: answer.txt
   visible: true
   learner_created: true
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Thu, 02 Feb 2023 16:54:58 UTC"
 record: -1
