@@ -5,11 +5,5 @@ files:
   visible: true
   text: '# put your python code here'
   learner_created: false
-- name: new_scores.txt
-  visible: true
-  learner_created: true
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Thu, 02 Feb 2023 10:55:54 UTC"
 record: -1

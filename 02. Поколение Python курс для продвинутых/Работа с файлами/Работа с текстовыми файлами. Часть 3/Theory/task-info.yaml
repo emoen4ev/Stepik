@@ -6,17 +6,6 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-- name: books.txt
-  visible: true
-  learner_created: true
-- name: file.txt
-  visible: true
-  learner_created: true
-- name: words.txt
-  visible: true
-  learner_created: true
 status: Solved
-feedback:
-  time: "Wed, 01 Feb 2023 17:26:02 UTC"
 record: -1
 post_submission_on_open: true
