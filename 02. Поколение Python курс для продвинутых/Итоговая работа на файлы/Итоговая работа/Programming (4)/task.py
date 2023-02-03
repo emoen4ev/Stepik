@@ -1,8 +1,33 @@
+# file_name = input()
+#
+# with open(file_name, 'rt', encoding='utf-8') as input_file:
+#     data = [line.strip('\n') for line in input_file]
+#
+#     result = data[len(data) - 10:] if len(data) > 9 else data
+#
+#     print(*result, sep='\n')
+
+# ------------------------------------------------------
+
 file_name = input()
 
+counter = 0
+
 with open(file_name, 'rt', encoding='utf-8') as input_file:
-    data = [line.strip('\n') for line in input_file]
+    for line in input_file:
+        counter += 1
 
-    result = data[len(data) - 10:] if len(data) > 9 else data
+    input_file.seek(0)
 
-    print(*result, sep='\n')
+    if counter < 11:
+        for line in input_file:
+            print(line.strip())
+    else:
+        number_line_to_skip = counter - 10
+
+        for line in input_file:
+            if number_line_to_skip > 0:
+                number_line_to_skip -= 1
+                continue
+            else:
+                print(line.strip())
