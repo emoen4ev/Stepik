@@ -1,23 +1,16 @@
-colors = []
-goats = []
-with open("goats.txt", "r") as f:
-    lines = f.readlines()
-    # print(lines)
-    for i, line in enumerate(lines):
-        line = line.strip()
-        if line == "COLOURS":
-            colors = [x.strip() for x in lines[i+1:]]
-        elif line == "GOATS":
-            goats = [x.strip() for x in lines[i+1:]]
-    # print(colors)
-    # print(goats)
+with open('goats.txt', 'rt', encoding='utf-8') as input_file:
+    data = [el.strip() for el in input_file.readlines()]
 
-color_count = {}
-for color in colors:
-    color_count[color] = goats.count(color)
-# print(color_count)
+    goats_idx = data.index('GOATS')
 
-with open("answer.txt", "w") as f:
-    for color, count in sorted(color_count.items()):
-        if count > len(goats) * 0.07:
-            f.write(f"{color}\n")
+    colors_data = data[1:goats_idx]
+    second_part = data[goats_idx + 1:]
+
+    goats_data = sorted(filter(lambda x: x in colors_data, second_part))
+
+    number_goats_by_colors = {key: goats_data.count(key) for key in goats_data}
+
+with open('answer.txt', 'wt', encoding='utf-8') as output_file:
+    for color, number in number_goats_by_colors.items():
+        if number > len(goats_data) * 0.07:
+            output_file.write(f'{color}\n')
