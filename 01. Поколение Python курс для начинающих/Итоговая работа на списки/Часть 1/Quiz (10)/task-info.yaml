@@ -1,9 +1,9 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: '<code>Ceмья Джасмин: [''Джим'', ''Джилл'', ''Джон'', ''Джасмин'']</code>'
+- text: "<code>Ceмья Джасмин: ['Джим', 'Джилл', 'Джон', 'Джасмин']</code>"
 - text: <code>Ceмья Джасмин:</code>
-- text: <code>['Джим', 'Джилл', 'Джон', 'Джасмин']</code>
+- text: "<code>['Джим', 'Джилл', 'Джон', 'Джасмин']</code>"
 - text: <code>Не могу найти Джасмин.</code>
 files:
 - name: task.py

@@ -1,7 +1,7 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: <code>names[0] = 'Chromatica'</code>
+- text: "<code>names[0]\_= 'Chromatica'</code>"
 - text: <code>names.append('Chromatica')</code>
 files:
 - name: task.py

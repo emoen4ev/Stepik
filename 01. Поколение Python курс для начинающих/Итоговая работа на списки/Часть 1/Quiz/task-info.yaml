@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: <code>[1, 99, 3, 4, 5]</code>
-- text: <code>[1, 2, 3, 4, 5, 99]</code>
-- text: <code>[99, 2, 3, 4, 5]</code>
-- text: <code>[1, 2, 99, 4, 5]</code>
+- text: "<code>[1, 99, 3, 4, 5]</code>"
+- text: "<code>[1, 2, 3, 4, 5, 99]</code>"
+- text: "<code>[99, 2, 3, 4, 5]</code>"
+- text: "<code>[1, 2, 99, 4, 5]</code>"
 files:
 - name: task.py
   visible: true

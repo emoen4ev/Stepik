@@ -1,11 +1,11 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: <code>[3]</code>
-- text: <code>['r', 'a', 'n', 'g', 'e', '(', '3', ')']</code>
-- text: <code>[0, 1, 2]</code>
-- text: <code>[0, 1, 2, 3]</code>
-- text: <code>[2]</code>
+- text: "<code>[3]</code>"
+- text: "<code>['r', 'a', 'n', 'g', 'e', '(', '3', ')']</code>"
+- text: "<code>[0, 1, 2]</code>"
+- text: "<code>[0, 1, 2, 3]</code>"
+- text: "<code>[2]</code>"
 files:
 - name: task.py
   visible: true

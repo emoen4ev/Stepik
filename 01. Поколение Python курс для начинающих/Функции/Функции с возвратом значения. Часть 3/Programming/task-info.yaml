@@ -15,5 +15,5 @@ files:
     x, y = get_middle_point(x_1, y_1, x_2, y_2)
     print(x, y)
   learner_created: false
-status: Solved
+status: Unchecked
 record: -1

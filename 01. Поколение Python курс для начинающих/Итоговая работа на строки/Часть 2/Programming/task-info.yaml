@@ -6,5 +6,5 @@ files:
     s = 'Python rocks!'
     print()
   learner_created: false
-status: Solved
+status: Unchecked
 record: -1

@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: <code>['red', 'yellow', 'green', 'blue', 'brown', 'magenta']</code>
-- text: <code>['red', 'orange', 'green', 'blue', 'purple', 'brown']</code>
-- text: <code>['red', 'orange', 'green', 'blue', 'purple', 'magenta']</code>
-- text: <code>['red', 'yellow', 'green', 'blue', 'purple', 'magenta']</code>
+- text: "<code>['red', 'yellow', 'green', 'blue', 'brown', 'magenta']</code>"
+- text: "<code>['red', 'orange', 'green', 'blue', 'purple', 'brown']</code>"
+- text: "<code>['red', 'orange', 'green', 'blue', 'purple', 'magenta']</code>"
+- text: "<code>['red', 'yellow', 'green', 'blue', 'purple', 'magenta']</code>"
 files:
 - name: task.py
   visible: true

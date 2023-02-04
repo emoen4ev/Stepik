@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: <code>[7, 1, 4, 2, 8, 6, 5]</code>
-- text: <code>[4, 2, 8, 6, 5, 7, 1]</code>
-- text: <code>[4, 2, 8, 6, 5, 1, 7]</code>
-- text: <code>[1, 7, 4, 2, 8, 6, 5]</code>
+- text: "<code>[7, 1, 4, 2, 8, 6, 5]</code>"
+- text: "<code>[4, 2, 8, 6, 5, 7, 1]</code>"
+- text: "<code>[4, 2, 8, 6, 5, 1, 7]</code>"
+- text: "<code>[1, 7, 4, 2, 8, 6, 5]</code>"
 files:
 - name: task.py
   visible: true

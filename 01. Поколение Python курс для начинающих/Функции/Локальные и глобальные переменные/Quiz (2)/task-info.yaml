@@ -3,7 +3,7 @@ is_multiple_choice: false
 options:
 - text: <code>I love Paris</code>
 - text: <code>ничего не покажет</code>
-- text: '<code>UnboundLocalError: local variable ''s'' referenced before assignment</code>'
+- text: "<code>UnboundLocalError: local variable 's' referenced before assignment</code>"
 files:
 - name: task.py
   visible: true

@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: <code>[переменная for переменная in выражение]</code>
-- text: <code>[выражение for переменная in последовательность]</code>
-- text: <code>[выражение for последовательность in переменная]</code>
-- text: <code>[переменная for выражение in последовательность]</code>
+- text: "<code>[переменная for переменная in выражение]</code>"
+- text: "<code>[выражение for переменная in последовательность]</code>"
+- text: "<code>[выражение for последовательность in переменная]</code>"
+- text: "<code>[переменная for выражение in последовательность]</code>"
 files:
 - name: task.py
   visible: true

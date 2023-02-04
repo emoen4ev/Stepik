@@ -3,10 +3,10 @@ is_multiple_choice: true
 options:
 - text: <code>print('Follow PEP8!')</code>
 - text: <code>print ('Follow PEP8!')</code>
-- text: <code>print('Follow', 'PEP8!')</code>
-- text: <code>print('Follow','PEP8!')</code>
-- text: <code>print('Follow','PEP8', sep = '**')</code>
-- text: <code>print('Follow', 'PEP8', sep='**')</code>
+- text: "<code>print('Follow', 'PEP8!')</code>"
+- text: "<code>print('Follow','PEP8!')</code>"
+- text: "<code>print('Follow','PEP8', sep = '**')</code>"
+- text: "<code>print('Follow', 'PEP8', sep='**')</code>"
 - text: <code>name = input()</code>
 - text: <code>name=input()</code>
 files:

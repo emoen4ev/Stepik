@@ -3,7 +3,7 @@ is_multiple_choice: true
 options:
 - text: Из социальных сетей
 - text: Из рассылки Stepik
-- text: Из поисковых систем (Google, Yandex, Bing)
+- text: "Из поисковых систем (Google, Yandex, Bing)"
 - text: Посоветовали в учебном заведении
 - text: Посоветовали друзья/коллеги
 - text: Другое

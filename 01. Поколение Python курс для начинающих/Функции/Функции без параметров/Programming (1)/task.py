@@ -1,7 +1,6 @@
-def draw_triangle():         # объявление функции
+# объявление функции
+def draw_triangle():
+    pass
 
-    for i in range(1, 11):   # основная программа
-        print('*' * i)
-
-
-draw_triangle()              # вызов функции
+# основная программа
+draw_triangle()  # вызов функции

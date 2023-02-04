@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: true
 options:
-- text: <code>print("10", '100', '1000)</code>
-- text: <code>print("Python", , "is the best")</code>
-- text: <code>print('Python', 'is the best', '!!')</code>
-- text: <code>print("раз", "два, "три")</code>
+- text: "<code>print(\"10\", '100', '1000)</code>"
+- text: "<code>print(\"Python\", , \"is the best\")</code>"
+- text: "<code>print('Python', 'is the best', '!!')</code>"
+- text: "<code>print(\"раз\", \"два, \"три\")</code>"
 files:
 - name: task.py
   visible: true
