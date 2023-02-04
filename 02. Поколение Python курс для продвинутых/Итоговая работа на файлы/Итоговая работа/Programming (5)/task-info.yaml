@@ -6,7 +6,4 @@ files:
   text: "#  write your answer here \n\n"
   learner_created: false
 status: Failed
-feedback:
-  message: "Unknown language: python3. Please reload the page and try again"
-  time: "Fri, 03 Feb 2023 17:39:20 UTC"
 record: -1
