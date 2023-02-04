@@ -1,7 +1,13 @@
-# file_name = input()
-file_name = 'test_file.txt'
+forbidden_words_file = 'forbidden_words.txt'
+# forbidden_words_file = 'forbidden_words_1.txt'
 
-with open('forbidden_words_1.txt', 'rt', encoding='utf-8') as input_file:
+file_name = input()
+# file_name = 'test_file.txt'
+# file_name = 'data.txt'
+# file_name = 'stepik.txt'
+# file_name = 'beegeek.txt'
+
+with open(forbidden_words_file, 'rt', encoding='utf-8') as input_file:
     forbidden_words = [word.strip().split() for word in input_file][0]
 
 with open(file_name, 'rt', encoding='utf-8') as working_file:
