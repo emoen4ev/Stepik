@@ -9,13 +9,11 @@ mapping_table = {
 file_name = 'cyrillic.txt'
 # file_name = 'cyrillic_1.txt'
 
-with open(file_name, 'rt') as input_file, open('transliteration.txt', 'wt', encoding='utf-8') as output_file:
+with open(file_name, 'rt', encoding='utf-8') as input_file, open('transliteration.txt', 'wt', encoding='utf-8') as output_file:
     for line in input_file:
         for ch in line:
             if ch.lower() in mapping_table:
-                new_ch = \
-                (mapping_table[ch.lower()], (mapping_table[ch.lower()][0].upper() + mapping_table[ch.lower()][1:]))[
-                    ch.isupper()]
+                new_ch = (mapping_table[ch.lower()], (mapping_table[ch.lower()][0].upper() + mapping_table[ch.lower()][1:]))[ch.isupper()]
                 line = line.replace(ch, new_ch)
 
         output_file.write(line)
