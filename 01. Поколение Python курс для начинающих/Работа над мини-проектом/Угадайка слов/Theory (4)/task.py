@@ -133,22 +133,20 @@ def get_new_word_completion(current_char, word_to_know, output_word):
 
 
 def play(word):
-    initial_tries = 6
-    remaining_tries = initial_tries
-    attempts = 0
+    possible_errors = 6
+    remaining_errors = possible_errors
+    failed_attempts = 0
     guessed = False
     word_completion = '_' * len(word)
 
     print('Давайте играть в угадайку слов!')
-    print(display_hangman(remaining_tries))
+    print(display_hangman(remaining_errors))
     print(word_completion)
     print(word)
     print()
 
-    while not guessed or remaining_tries > 0:
-        attempts += 1
-        remaining_tries = initial_tries - attempts
-        print(f'Это попытка {attempts}. У вас осталось еще {remaining_tries} попыток.')
+    while not guessed or remaining_errors > 0:
+        print(f'Вы сделали {failed_attempts} ошибки до сих пор. Вы имеете право на еще {remaining_errors} ошибки.')
         input_data = validate_input_data()
         if input_data == word:
             print('Молодец, ты победил ... !')
@@ -156,12 +154,13 @@ def play(word):
             break
         if input_data not in word:
             print('Этой буквы нет в слове ... ')
+            failed_attempts += 1
+            remaining_errors = possible_errors - failed_attempts
+            print(display_hangman(remaining_errors))
         else:
             print('Отлично, эта буква содержится в слове ...')
             word_completion = get_new_word_completion(input_data, word, word_completion)
             print(word_completion)
-
-        print(display_hangman(remaining_tries))
         continue
 
     if guessed:
