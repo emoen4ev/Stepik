@@ -7,8 +7,6 @@ files:
     #  You can experiment here, it won’t be checked
 
   learner_created: false
-status: Solved
-feedback:
-  time: "Sat, 04 Feb 2023 19:03:28 UTC"
+status: Unchecked
 record: -1
 post_submission_on_open: true
