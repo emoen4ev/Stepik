@@ -81,39 +81,95 @@ def display_hangman(tries):
     return stages[tries]
 
 
+def validate_input_data():
+    input_data = ''
+    is_valid_input = False
+    while not is_valid_input:
+        input_data = input('Введите букву или слово: ').upper()
+        if not input_data:
+            print('Вы ничего не ввели ...')
+            continue
+        elif len(input_data) == 1:
+            if not validate_is_letters_only(input_data):
+                print('Это не буква ... Неверный ввод ...')
+                continue
+            if validate_is_already_used(input_data):
+                print('Вы уже использовали эту букву ...')
+                continue
+            guessed_letters.append(input_data)
+        else:
+            if not validate_is_letters_only(input_data):
+                print('Ваш ввод содержит символы, отличные от букв... Неверный ввод...')
+                continue
+            if validate_is_already_used(input_data):
+                print('Вы уже использовали это слово ...')
+                continue
+            guessed_words.append(input_data)
+        is_valid_input = True
+    return input_data
+
+
+def validate_is_letters_only(input_characters):
+    is_all_letters = True
+    for character in input_characters:
+        if not character.isalpha():
+            is_all_letters = False
+            break
+    return is_all_letters
+
+
+def validate_is_already_used(input_characters):
+    is_used = False
+    if input_characters in guessed_letters or input_characters in guessed_words:
+        is_used = True
+    return is_used
+
+
+def get_new_word_completion(current_char, word_to_know, output_word):
+    for i in range(len(word_to_know)):
+        if word_to_know[i] == current_char:
+            output_word = output_word[:i] + current_char + output_word[i + 1:]
+    return output_word
+
+
 def play(word):
-    tries = 6
+    initial_tries = 6
+    remaining_tries = initial_tries
     attempts = 0
     guessed = False
-    guessed_letters = []
-    guessed_words = []
     word_completion = '_' * len(word)
-    is_valid_input = False
 
     print('Давайте играть в угадайку слов!')
-    print(display_hangman(tries))
+    print(display_hangman(remaining_tries))
     print(word_completion)
     print(word)
     print()
 
-    while not guessed or tries > 0:
+    while not guessed or remaining_tries > 0:
         attempts += 1
-        tries -= attempts
-        print(f'Это попытка {attempts}. У вас осталось еще {tries} попыток.')
-        input_data = input('Введите букву или слово: ').upper()
-        while not is_valid_input:
+        remaining_tries = initial_tries - attempts
+        print(f'Это попытка {attempts}. У вас осталось еще {remaining_tries} попыток.')
+        input_data = validate_input_data()
+        if input_data == word:
+            print('Молодец, ты победил ... !')
+            guessed = True
+            break
+        if input_data not in word:
+            print('Этой буквы нет в слове ... ')
+        else:
+            print('Отлично, эта буква содержится в слове ...')
+            word_completion = get_new_word_completion(input_data, word, word_completion)
+            print(word_completion)
 
-        if input_data in guessed_letters or input_data in guessed_words:
+        print(display_hangman(remaining_tries))
+        continue
 
-        if len(input_data) == 1:
-            print('Вы ввели букву.')
-            if input_data in guessed_letters:
-
-        elif len(input_data) > 1:
-            print('Вы ввели слово.')
+    if guessed:
+        pass
 
 
-
+guessed_letters = []
+guessed_words = []
 
 word_list = [
     'год', 'человек', 'время', 'дело', 'жизнь', 'день', 'рука', 'раз', 'работа', 'слово', 'место', 'лицо',
