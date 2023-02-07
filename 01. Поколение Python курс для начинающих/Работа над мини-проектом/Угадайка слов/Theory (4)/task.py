@@ -151,7 +151,7 @@ def play():
     print(display_hangman(remaining_errors))
     print(word)
 
-    while not guessed or remaining_errors > 0:
+    while True:
         input_data = validate_input_data(word_completion, failed_attempts, remaining_errors)
         if input_data == word:
             print(f'Молодец, ты победил ... !\nУгадал слово {word} с {failed_attempts} ошибками.')
@@ -167,21 +167,24 @@ def play():
             print('Вы не угадали, это не то слово ...')
         failed_attempts += 1
         remaining_errors = possible_errors - failed_attempts
+        if remaining_errors < 1:
+            print(display_hangman(remaining_errors))
+            print(f'К сожалению проиграл игру ... !\nСлово, которое нужно было угадать, было: {word}.\n')
+            break
         print(display_hangman(remaining_errors))
         continue
 
-    if guessed:
-        while True:
-            print()
-            answer = input('Хочешь еще одну игру ...?   (да/нет)')
-            if answer[0] in 'дДdDyY':
-                play()
-            elif answer[0] in 'нНnN':
-                print('Было приятно играть вместе ... ! До скорого ... !')
-                quit()
-            else:
-                print('Я не понимаю этот ответ ... ? Я ожидаю <да> или <нет> в качестве ответа...?')
-                continue
+    while True:
+        print()
+        answer = input('Хочешь еще одну игру ...?   (да/нет)\n')
+        if answer[0] in 'дДdDyY':
+            play()
+        elif answer[0] in 'нНnN':
+            print('\nБыло приятно играть вместе ... ! До скорого ... !')
+            quit()
+        else:
+            print('Я не понимаю этот ответ ... ? Я ожидаю <да> или <нет> в качестве ответа...?')
+            continue
 
 
 guessed_letters = []
