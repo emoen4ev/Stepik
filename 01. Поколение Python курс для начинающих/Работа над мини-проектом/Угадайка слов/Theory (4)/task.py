@@ -143,19 +143,17 @@ def play():
     possible_errors = 6
     remaining_errors = possible_errors
     failed_attempts = 0
-    guessed = False
     word_completion = '_' * len(word)
 
     print()
     print('Давайте играть в угадайку слов!')
     print(display_hangman(remaining_errors))
-    print(word)
+    # print(word)
 
     while True:
         input_data = validate_input_data(word_completion, failed_attempts, remaining_errors)
         if input_data == word:
             print(f'Молодец, ты победил ... !\nУгадал слово {word} с {failed_attempts} ошибками.')
-            guessed = True
             break
         elif len(input_data) == 1 and input_data in word:
             print('Отлично, эта буква содержится в слове ...')
