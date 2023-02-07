@@ -15,7 +15,7 @@ def display_hangman(tries):
            |     \\|/ 
            |      | 
            |     / \\
-           - 
+          --- 
         ''',
         # голова, торс, обе руки, одна нога
         ''' 
@@ -25,7 +25,7 @@ def display_hangman(tries):
            |     \\|/ 
            |      | 
            |     /  
-           - 
+          --- 
         ''',
         # голова, торс, обе руки
         ''' 
@@ -35,7 +35,7 @@ def display_hangman(tries):
            |     \\|/ 
            |      | 
            |       
-           - 
+          --- 
         ''',
         # голова, торс и одна рука
         ''' 
@@ -45,7 +45,7 @@ def display_hangman(tries):
            |     \\| 
            |      | 
            |      
-           - 
+          --- 
         ''',
         # голова и торс
         ''' 
@@ -55,7 +55,7 @@ def display_hangman(tries):
            |      | 
            |      | 
            |      
-           - 
+          --- 
         ''',
         # голова
         ''' 
@@ -65,7 +65,7 @@ def display_hangman(tries):
            |     
            |       
            |      
-           - 
+          --- 
         ''',
         # начальное состояние
         ''' 
@@ -75,17 +75,23 @@ def display_hangman(tries):
            |     
            |       
            |      
-           - 
+          --- 
         '''
     ]
     return stages[tries]
 
 
-def validate_input_data():
+def validate_input_data(w_completion, f_attempts, r_errors):
     input_data = ''
     is_valid_input = False
     while not is_valid_input:
+        print()
+        print(f'Вы сделали {f_attempts} ошибки до сих пор. Вы имеете право на еще {r_errors} ошибки.')
+        print()
+        print('Слово, которое нужно угадать: ', w_completion)
+        print()
         input_data = input('Введите букву или слово: ').upper()
+        print()
         if not input_data:
             print('Вы ничего не ввели ...')
             continue
@@ -132,39 +138,50 @@ def get_new_word_completion(current_char, word_to_know, output_word):
     return output_word
 
 
-def play(word):
+def play():
+    word = get_word()
     possible_errors = 6
     remaining_errors = possible_errors
     failed_attempts = 0
     guessed = False
     word_completion = '_' * len(word)
 
+    print()
     print('Давайте играть в угадайку слов!')
     print(display_hangman(remaining_errors))
-    print(word_completion)
     print(word)
-    print()
 
     while not guessed or remaining_errors > 0:
-        print(f'Вы сделали {failed_attempts} ошибки до сих пор. Вы имеете право на еще {remaining_errors} ошибки.')
-        input_data = validate_input_data()
+        input_data = validate_input_data(word_completion, failed_attempts, remaining_errors)
         if input_data == word:
-            print('Молодец, ты победил ... !')
+            print(f'Молодец, ты победил ... !\nУгадал слово {word} с {failed_attempts} ошибками.')
             guessed = True
             break
-        if input_data not in word:
-            print('Этой буквы нет в слове ... ')
-            failed_attempts += 1
-            remaining_errors = possible_errors - failed_attempts
-            print(display_hangman(remaining_errors))
-        else:
+        elif len(input_data) == 1 and input_data in word:
             print('Отлично, эта буква содержится в слове ...')
             word_completion = get_new_word_completion(input_data, word, word_completion)
-            print(word_completion)
+            continue
+        elif len(input_data) == 1 and input_data not in word:
+            print('Этой буквы нет в слове ... ')
+        elif len(input_data) > 1 and input_data != word:
+            print('Вы не угадали, это не то слово ...')
+        failed_attempts += 1
+        remaining_errors = possible_errors - failed_attempts
+        print(display_hangman(remaining_errors))
         continue
 
     if guessed:
-        pass
+        while True:
+            print()
+            answer = input('Хочешь еще одну игру ...?   (да/нет)')
+            if answer[0] in 'дДdDyY':
+                play()
+            elif answer[0] in 'нНnN':
+                print('Было приятно играть вместе ... ! До скорого ... !')
+                quit()
+            else:
+                print('Я не понимаю этот ответ ... ? Я ожидаю <да> или <нет> в качестве ответа...?')
+                continue
 
 
 guessed_letters = []
@@ -277,4 +294,4 @@ word_list = [
     'танк', 'затрата', 'строка', 'единица',
 ]
 
-play(get_word())
+play()
