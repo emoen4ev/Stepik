@@ -18,7 +18,13 @@
 
 
 def print_given(*args, **kwargs):
-    pass
+    print(*[f'{el} {type(el)}' for el in args], sep='\n')
+    print(*[f'{key} {value} {type(value)}' for key, value in sorted(kwargs.items())], sep='\n')
+
+    # for arg in args:
+    #     print(arg, type(arg))
+    # for name, value in sorted(kwargs.items()):
+    #     print(name, value, type(value))
 
 
 # ------- test inputs -----
