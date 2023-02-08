@@ -14,7 +14,7 @@
 """
 
 
-def convert(text: str):
+def convert(text: str) -> str:
     lowercase_counter = sum([x.islower() for x in text])
     uppercase_counter = sum([x.isupper() for x in text])
 
