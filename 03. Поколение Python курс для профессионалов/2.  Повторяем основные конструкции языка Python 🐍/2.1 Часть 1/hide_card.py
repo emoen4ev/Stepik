@@ -10,7 +10,7 @@ card_number — строка, представляющая собой корре
 """
 
 
-def hide_card(card_number):
+def hide_card(card_number: str) -> str:
     card_number = card_number.replace(' ', '')
     card_number = '*' * 12 + card_number[12:]
 
@@ -18,9 +18,8 @@ def hide_card(card_number):
 
 
 # -------- test input ------------
-# card = '905 678123 45612 56'
-#
-# print(hide_card(card))
+card = '905 678123 45612 56'
+print(hide_card(card))
 
 '''  ---------  expected output  ------------
 ************1256
