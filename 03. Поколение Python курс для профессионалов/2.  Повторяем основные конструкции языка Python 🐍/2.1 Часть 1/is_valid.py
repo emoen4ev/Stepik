@@ -20,8 +20,9 @@ string — произвольная строка
 """
 
 
-def is_valid(data):
+def is_valid(data: str) -> bool:
     return data.isdecimal() and len(data) in (4, 5, 6,)
+
     # return len(data) in (4, 5, 6,) and all([el.isdecimal() for el in data])
 
 
