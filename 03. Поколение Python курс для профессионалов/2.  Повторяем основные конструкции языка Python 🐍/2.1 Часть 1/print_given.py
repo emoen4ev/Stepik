@@ -15,9 +15,10 @@
 
 Примечание 3. Если в функцию ничего не передается, функция ничего не должна выводить.
 """
+from typing import Any
 
 
-def print_given(*args, **kwargs):
+def print_given(*args: Any, **kwargs: Any) -> None:
 
     print(*[f'{el} {type(el)}' for el in args], sep='\n')
     print(*[f'{key} {value} {type(value)}' for key, value in sorted(kwargs.items())], sep='\n')
