@@ -16,7 +16,7 @@
 """
 
 
-def choose_plural(amount, declensions):
+def choose_plural(amount: int, declensions: tuple) -> str:
     cases = (2, 0, 1, 1, 1, 2)
     index = (4 < amount % 100 < 20) and 2 or cases[min(amount % 10, 5)]
     return f'{amount} {declensions[index]}'
