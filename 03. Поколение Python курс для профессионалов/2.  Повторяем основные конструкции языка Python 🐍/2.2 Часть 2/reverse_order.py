@@ -24,14 +24,11 @@ n, x, y, a, b = [int(_) for _ in input().split()]
 
 data = [str(x) for x in range(n + 1)]
 
-part_1 = data[0:x]
-part_2 = data[y:x - 1:-1]
-part_3 = data[y + 1:a] if y <= a else data[]
-part_4 = data[b:a - 1:-1]
-part_5 = data[b+1:]
+for _ in range(2):
+    data = data[0:x] + data[y:x - 1:-1] + data[y + 1:]
+    x, y = a, b
 
-reordered_data = part_1 + part_2 + part_3 + part_4 + part_5
-result = ' '.join(reordered_data[1:])
+result = ' '.join(data[1:])
 
 print(result)
 
