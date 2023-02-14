@@ -18,25 +18,31 @@
 """
 
 
-def convert_word(current_word):
-    for ch in current_word:
-        current_word = (ch in vowel_letters and current_word.replace(ch, '0')) or current_word.replace(ch, '1')
-    return current_word
+def get_pattern(current_word: str) -> list:
+    pattern = [i for i, c in enumerate(current_word) if c in vowel_letters]
+    return pattern
 
 
 initial_control_word = input()
 number_words = int(input())
 
+vowel_letters = set('ауоыиэяюёе')
 data = [input() for _ in range(number_words)]
 
-vowel_letters = 'ауоыиэяюёе'
-consonants = 'бвгджзйклмнпрстфхцчшщ'
-control_word = convert_word(initial_control_word)
-k = len(control_word)
+control_word = get_pattern(initial_control_word)
 
 for word in data:
-    if control_word == convert_word(word[:k]):
+    converted_word = get_pattern(word)
+    if control_word == converted_word:
         print(word)
+
+# vowels = ('а', 'у', 'о', 'ы', 'и', 'э', 'я', 'ю', 'ё', 'е')
+# pattern = [i for i, c in enumerate(input()) if c in vowels]
+#
+# for _ in range(int(input())):
+#     word = input()
+#     if [i for i, c in enumerate(word) if c in vowels] == pattern:
+#         print(word)
 
 '''
 ------- test inputs -----
