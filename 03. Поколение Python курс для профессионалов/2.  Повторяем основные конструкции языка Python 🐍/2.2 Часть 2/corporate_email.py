@@ -22,6 +22,26 @@
 Программа должна вывести почтовые ящики (m строк) для новых сотрудников в том порядке, в котором они раздавались.
 """
 
+number_current_users = int(input())
+
+data = {}
+
+for _ in range(number_current_users):
+    number, idx = 0, None
+    user_data = input().split('@')
+    user_name = user_data[0]
+    for i in range(-1, -len(user_data) - 1, -1):
+        if user_name[i].isdecimal():
+            idx = user_name.index(user_name[i])
+            continue
+        break
+    if idx is not None:
+        number = user_name[idx:]
+        user_name = user_name[:idx]
+    data.setdefault(user_name, []).append(int(number))
+
+print(data)
+
 
 
 '''
