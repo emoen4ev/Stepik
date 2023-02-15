@@ -25,6 +25,7 @@
 number_current_users = int(input())
 
 data = {}
+last_part = '@beegeek.bzz'
 
 for _ in range(number_current_users):
     number, idx = 0, None
@@ -39,6 +40,18 @@ for _ in range(number_current_users):
         number = user_name[idx:]
         user_name = user_name[:idx]
     data.setdefault(user_name, []).append(int(number))
+
+print(data)
+
+number_new_users = int(input())
+
+for _ in range(number_new_users):
+    new_name = input()
+    if new_name not in data:
+        data.setdefault(new_name, []).append(0)
+        print(new_name + last_part)
+    else:
+        pass
 
 print(data)
 
