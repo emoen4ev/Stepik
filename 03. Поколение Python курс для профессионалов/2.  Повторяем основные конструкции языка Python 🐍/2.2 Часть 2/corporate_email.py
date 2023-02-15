@@ -51,7 +51,29 @@ for _ in range(number_new_users):
         data.setdefault(new_name, []).append(0)
         print(new_name + last_part)
     else:
-        pass
+        if len(data[new_name]) == 1 and data[new_name][0] == 0:
+            data[new_name].append(1)
+            print(new_name + '1' + last_part)
+        elif len(data[new_name]) == 1:
+            data[new_name].append(0)
+            print(new_name + last_part)
+        else:
+            data[new_name].sort()
+            for i in range(len(data[new_name]) - 1):
+                diff = data[new_name][i + 1] - data[new_name][i]
+                if diff == 1:
+                    continue
+                if diff > 1:
+                    new_number = data[new_name][i] + 1
+                    data[new_name].append(new_number)
+                    print(f'{new_name}{new_number}{last_part}')
+                    break
+                else:
+                    new_number = data[new_name][-1] + 1
+                    data[new_name].append(new_number)
+                    print(f'{new_name}{new_number}{last_part}')
+
+
 
 print(data)
 
