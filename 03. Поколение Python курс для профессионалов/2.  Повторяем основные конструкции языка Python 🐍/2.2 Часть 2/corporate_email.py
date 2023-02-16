@@ -22,14 +22,30 @@
 Программа должна вывести почтовые ящики (m строк) для новых сотрудников в том порядке, в котором они раздавались.
 """
 
+
+def get_new_number(user: str) -> int:
+    if data[user] == 0:
+        return 1
+    elif len(data[user]) == 1:
+        sequence = set(range(data[user] + 1))
+    else:
+        sequence = set(range(max(data[user]) + 1))
+    user_current_numbers = data[user]
+    free_numbers = sorted(sequence.difference(user_current_numbers))
+    if not free_numbers:
+        return max(data[user]) + 1
+    return free_numbers[0]
+
+
 number_current_users = int(input())
+current_users_data = [input() for _ in range(number_current_users)]
 
 data = {}
 last_part = '@beegeek.bzz'
 
-for _ in range(number_current_users):
+for current_user in current_users_data:
     number, idx = 0, None
-    user_data = input().split('@')
+    user_data = current_user.split('@')
     user_name = user_data[0]
     for i in range(-1, -len(user_data) - 1, -1):
         if user_name[i].isdecimal():
@@ -37,47 +53,22 @@ for _ in range(number_current_users):
             continue
         break
     if idx is not None:
-        number = user_name[idx:]
+        number = int(user_name[idx:])
         user_name = user_name[:idx]
-    data.setdefault(user_name, []).append(int(number))
+    data.setdefault(user_name, set()).add(number)
 
+print(current_users_data)
 print(data)
 
 number_new_users = int(input())
+new_users_data = [input() for _ in range(number_new_users)]
 
-for _ in range(number_new_users):
-    new_name = input()
-    if new_name not in data:
-        data.setdefault(new_name, []).append(0)
-        print(new_name + last_part)
-    else:
-        if len(data[new_name]) == 1 and data[new_name][0] == 0:
-            data[new_name].append(1)
-            print(new_name + '1' + last_part)
-        elif len(data[new_name]) == 1:
-            data[new_name].append(0)
-            print(new_name + last_part)
-        else:
-            data[new_name].sort()
-            for i in range(len(data[new_name]) - 1):
-                diff = data[new_name][i + 1] - data[new_name][i]
-                if diff == 1:
-                    continue
-                if diff > 1:
-                    new_number = data[new_name][i] + 1
-                    data[new_name].append(new_number)
-                    print(f'{new_name}{new_number}{last_part}')
-                    break
-                else:
-                    new_number = data[new_name][-1] + 1
-                    data[new_name].append(new_number)
-                    print(f'{new_name}{new_number}{last_part}')
-
-
-
-print(data)
-
-
+for name in new_users_data:
+    number = 0
+    if name in data:
+        number = get_new_number(name)
+    data.setdefault(name, set()).add(number)
+    print(f'{name}{number}{last_part}')
 
 '''
 ------- test inputs -----
