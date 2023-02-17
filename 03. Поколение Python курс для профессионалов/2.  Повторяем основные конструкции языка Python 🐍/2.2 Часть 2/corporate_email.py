@@ -27,7 +27,8 @@ def get_new_number(user: str) -> int:
     if data[user] == 0:
         return 1
     elif len(data[user]) == 1:
-        sequence = set(range(data[user] + 1))
+        y = list(data[user])[0]
+        sequence = set(range(y + 1))
     else:
         sequence = set(range(max(data[user]) + 1))
     user_current_numbers = data[user]
@@ -57,9 +58,6 @@ for current_user in current_users_data:
         user_name = user_name[:idx]
     data.setdefault(user_name, set()).add(number)
 
-print(current_users_data)
-print(data)
-
 number_new_users = int(input())
 new_users_data = [input() for _ in range(number_new_users)]
 
@@ -67,8 +65,10 @@ for name in new_users_data:
     number = 0
     if name in data:
         number = get_new_number(name)
+        print((f'{name}{last_part}', f'{name}{number}{last_part}')[number != 0])
+    else:
+        print(f'{name}{last_part}')
     data.setdefault(name, set()).add(number)
-    print(f'{name}{number}{last_part}')
 
 '''
 ------- test inputs -----
