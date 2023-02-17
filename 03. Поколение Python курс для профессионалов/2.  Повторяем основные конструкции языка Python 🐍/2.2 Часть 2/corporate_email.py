@@ -39,7 +39,7 @@ def get_new_number(user: str) -> int:
 
 
 number_current_users = int(input())
-current_users_data = [input() for _ in range(number_current_users)]
+current_users_data = {input() for _ in range(number_current_users)}
 
 data = {}
 last_part = '@beegeek.bzz'
@@ -59,7 +59,7 @@ for current_user in current_users_data:
     data.setdefault(user_name, set()).add(number)
 
 number_new_users = int(input())
-new_users_data = [input() for _ in range(number_new_users)]
+new_users_data = (input() for _ in range(number_new_users))
 
 for name in new_users_data:
     number = 0
