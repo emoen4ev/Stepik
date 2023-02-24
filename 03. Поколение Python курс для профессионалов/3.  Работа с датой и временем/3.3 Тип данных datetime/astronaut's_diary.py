@@ -60,38 +60,42 @@ and then only when getting a little chilly.
 
 from datetime import datetime
 
-# Открываем файл diary.txt для чтения
-with open('diary.txt', 'rt', encoding='utf-8') as f:
-    # Читаем содержимое файла в список строк lines
-    lines = f.readlines()
+# dates_and_texts = []
+# current_date = None
+# stored_date = None
+# current_text = ""
+#
+# with open('diary.txt', 'rt', encoding='utf-8') as file:
+#     for line in file:
+#         try:
+#             current_date = datetime.strptime(line.strip(), "%d.%m.%Y; %H:%M")
+#             if current_text != "":
+#                 dates_and_texts.append((stored_date, current_text))
+#                 current_text = ""
+#         except ValueError:
+#             current_text += line
+#             stored_date = current_date
+#
+# dates_and_texts.append((current_date, current_text))
+#
+# dates_and_texts = sorted(dates_and_texts, key=lambda x: x[0])
+#
+# for date, text in dates_and_texts:
+#     print(date.strftime("%d.%m.%Y; %H:%M"))
+#     print(text.strip() + '\n')
 
-# Создаем список tuples dates_and_texts, в котором каждый элемент будет представлять собой tuple (date, text),
-# где date - дата и время отчёта в формате datetime, а text - текст отчёта.
-dates_and_texts = []
-current_date = None
-stored_date = None
-current_text = ""
-for line in lines:
-    # Пытаемся парсить дату и время из строки
-    try:
-        current_date = datetime.strptime(line.strip(), "%d.%m.%Y; %H:%M")
-        # Если получилось парсить дату и время, то создаем новый элемент в списке dates_and_texts
-        if current_text != "":
-            dates_and_texts.append((stored_date, current_text))
-            current_text = ""
-    # Если не получилось парсить дату и время, то это продолжение предыдущего отчёта
-    except ValueError:
-        current_text += line
-        stored_date = current_date
 
-# Добавляем последний отчёт в список dates_and_texts
-if current_date is not None and current_text != "":
-    dates_and_texts.append((current_date, current_text))
+dates_and_texts = {}
 
-# Сортируем список dates_and_texts по дате и времени в порядке возрастания
-dates_and_texts = sorted(dates_and_texts, key=lambda x: x[0])
+with open('diary.txt', 'rt', encoding='utf-8') as file:
+    for line in file:
+        try:
+            current_date = datetime.strptime(line.strip(), "%d.%m.%Y; %H:%M")
+            dates_and_texts.setdefault(current_date, [])
+        except ValueError:
+            dates_and_texts[current_date].append(line.strip())
 
-# Выводим на экран все отчёты
-for date, text in dates_and_texts:
-    print(date.strftime("%d.%m.%Y; %H:%M"))
-    print(text.strip() + '\n')
+for date, text in sorted(dates_and_texts.items()):
+    print(date.strftime("%d.%m.%Y; %H:%M"), '\n'.join(text), sep='\n')
+    # print(date.strftime("%d.%m.%Y"))
+    # print(*text, sep='\n')
