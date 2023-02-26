@@ -84,18 +84,42 @@ from datetime import datetime
 #     print(date.strftime("%d.%m.%Y; %H:%M"))
 #     print(text.strip() + '\n')
 
+# ----------------------------------------------------------------
+
+# dates_and_texts = {}
+#
+# with open('diary.txt', 'rt', encoding='utf-8') as file:
+#     for line in file:
+#         line = line.strip()
+#         try:
+#             current_date = datetime.strptime(line, "%d.%m.%Y; %H:%M")
+#             dates_and_texts.setdefault(current_date, (),)
+#         except ValueError:
+#             if line:
+#                 dates_and_texts[current_date] += (line,)
+#
+# l = len(dates_and_texts) - 1
+
+# for idx, (date, text) in enumerate(sorted(dates_and_texts.items())):
+#     print(date.strftime("%d.%m.%Y; %H:%M"), '\n'.join(text), sep='\n')
+#     idx < l and print()
+
+# ----------------------------------------------------------------
 
 dates_and_texts = {}
 
 with open('diary.txt', 'rt', encoding='utf-8') as file:
     for line in file:
+        line = line.strip()
         try:
-            current_date = datetime.strptime(line.strip(), "%d.%m.%Y; %H:%M")
-            dates_and_texts.setdefault(current_date, [])
+            current_date = datetime.strptime(line, "%d.%m.%Y; %H:%M")
+            dates_and_texts.setdefault(current_date, (),)
         except ValueError:
-            dates_and_texts[current_date].append(line.strip())
+            if line:
+                dates_and_texts[current_date] += (line,)
 
-for date, text in sorted(dates_and_texts.items()):
+l = len(dates_and_texts) - 1
+
+for idx, (date, text) in enumerate(sorted(dates_and_texts.items())):
     print(date.strftime("%d.%m.%Y; %H:%M"), '\n'.join(text), sep='\n')
-    # print(date.strftime("%d.%m.%Y"))
-    # print(*text, sep='\n')
+    idx < l and print()
