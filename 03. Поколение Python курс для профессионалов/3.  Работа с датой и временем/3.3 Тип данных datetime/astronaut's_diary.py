@@ -87,19 +87,18 @@ from datetime import datetime
 # ----------------------------------------------------------------
 
 # dates_and_texts = {}
-#
+
 # with open('diary.txt', 'rt', encoding='utf-8') as file:
 #     for line in file:
 #         line = line.strip()
 #         try:
 #             current_date = datetime.strptime(line, "%d.%m.%Y; %H:%M")
-#             dates_and_texts.setdefault(current_date, (),)
+#             dates_and_texts.setdefault(current_date, [])
 #         except ValueError:
-#             if line:
-#                 dates_and_texts[current_date] += (line,)
+#             line.strip() and dates_and_texts[current_date].append(line)
 #
 # l = len(dates_and_texts) - 1
-
+#
 # for idx, (date, text) in enumerate(sorted(dates_and_texts.items())):
 #     print(date.strftime("%d.%m.%Y; %H:%M"), '\n'.join(text), sep='\n')
 #     idx < l and print()
