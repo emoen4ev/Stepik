@@ -26,27 +26,23 @@ from datetime import datetime
 
 def get_dates_sequence(data: list or str) -> set:
     available_dates = set()
-    if isinstance(data, str):
-        data = {data}
+    data = {data} if isinstance(data, str) else data
     for el in data:
-        new = el.split('-')
-        if len(new) == 1:
-            available_dates.add(datetime.strptime(new[0], '%d.%m.%Y').toordinal())
+        el = el.split('-') if '-' in el else [el]
+        if len(el) == 1:
+            available_dates.add(datetime.strptime(el[0], '%d.%m.%Y').toordinal())
         else:
-            start_date = datetime.strptime(new[0], '%d.%m.%Y')
-            end_date = datetime.strptime(new[1], '%d.%m.%Y')
-            sequence = list(range(start_date.toordinal(), end_date.toordinal() + 1))
+            start_date, end_date = datetime.strptime(el[0], '%d.%m.%Y'), datetime.strptime(el[1], '%d.%m.%Y')
+            sequence = set(range(start_date.toordinal(), end_date.toordinal() + 1))
             available_dates = available_dates.union({days for days in sequence})
-
     return available_dates
 
 
-def is_available_date(booked_dates: list, date_for_booking: str):
+def is_available_date(booked_dates: list, date_for_booking: str) -> bool:
     non_available_dates = get_dates_sequence(booked_dates)
     dates_to_book = get_dates_sequence(date_for_booking)
-    if dates_to_book.isdisjoint(non_available_dates):
-        return True
-    return False
+
+    return True if dates_to_book.isdisjoint(non_available_dates) else False
 
 
 dates = ['04.11.2021', '05.11.2021-09.11.2021']
