@@ -10,10 +10,21 @@
 но не код, вызывающий ее.
 """
 
+from datetime import date
 
-def num_of_sundays(year: int) -> int:
-    pass
 
+def num_of_sundays(current_year: int) -> int:
+    result = date(year=current_year, month=12, day=31).strftime('%U')
+
+    return int(result)
+
+
+print(num_of_sundays(2021))
+
+year = 2000
+print(num_of_sundays(year))
+
+print(num_of_sundays(768))
 
 '''
 Sample Input 1:
