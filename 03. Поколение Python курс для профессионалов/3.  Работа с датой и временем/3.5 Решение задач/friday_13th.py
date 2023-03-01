@@ -45,7 +45,7 @@ for x in range((end - start).days):
 for k, v in sorted(result.items()):
     print(len(v))
 
-print(f'{time.time() - start_time} seconds')  # 4.9270055294036865 seconds
+print(f'{time.time() - start_time} seconds')  # 4.9500274658203125 seconds
 
 # ----------------------------------------------------------------
 
@@ -57,7 +57,7 @@ result = [day_13th.count(week_day) for week_day in range(7)]
 
 print(*result, sep='\n')
 
-print(f'{time.time() - start_time} seconds')  # 0.07400202751159668 seconds
+print(f'{time.time() - start_time} seconds')  # 0.07358312606811523 seconds
 # print("--- %s seconds ---" % (time.time() - start_time))
 
 # ----------------------------------------------------------------
@@ -72,4 +72,27 @@ for years in range(1, 10000):
 
 print(*week_days, sep='\n')
 
-print(f'{time.time() - start_time} seconds')  # 0.03999781608581543 seconds
+print(f'{time.time() - start_time} seconds')  # 0.04413890838623047 seconds
+
+# ----------------------------------------------------------------
+
+start_time = time.time()
+
+week_days = [date(year, month, 13).weekday() for month in range(1, 13) for year in range(1, 10000)]
+
+result = [week_days.count(day_number) for day_number in range(7)]
+
+print(*result, sep='\n')
+
+print(f'{time.time() - start_time} seconds')  # 0.03207278251647949 seconds
+
+# ----------------------------------------------------------------
+
+start_time = time.time()
+
+week_days = [date(year, month, 13).weekday() for month in range(1, 13) for year in range(1, 10000)]
+
+for day_number in range(7):
+    print(week_days.count(day_number))
+
+print(f'{time.time() - start_time} seconds')  # 0.03467369079589844 seconds
