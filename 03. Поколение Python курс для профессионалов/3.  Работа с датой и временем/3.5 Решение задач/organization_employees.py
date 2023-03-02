@@ -16,27 +16,47 @@
 Примечание 1. Гарантируется, что у всех сотрудников имена и фамилии различны.
 """
 
+# from datetime import datetime
+#
+# pattern = '%d.%m.%Y'
+# employees_data = {}
+#
+# number_employees = int(input())
+# initial_data = [input().split() for _ in range(number_employees)]
+#
+# for el in initial_data:
+#     names = ' '.join(el[:2])
+#     birth_date = datetime.strptime(el[2], pattern)
+#
+#     employees_data.setdefault(birth_date, []).append(names)
+#
+# earliest_birth_date = min(employees_data)
+# oldest_employees = employees_data[earliest_birth_date]
+#
+# first_part = earliest_birth_date.strftime(pattern)
+# second_part = (len(oldest_employees) > 1 and len(oldest_employees)) or (1 and oldest_employees[0])
+#
+# print(first_part, second_part)
+
+# ------------------------
+
 from datetime import datetime
 
 pattern = '%d.%m.%Y'
-employees_data = {}
+youngest = datetime.max
+name = []
 
 number_employees = int(input())
-initial_data = [input().split() for _ in range(number_employees)]
 
-for el in initial_data:
-    names = ' '.join(el[:2])
-    birth_date = datetime.strptime(el[2], pattern)
+for _ in range(number_employees):
+    *name, birthday = input().split()
+    if birthday < youngest:
+        youngest = birthday
 
-    employees_data.setdefault(birth_date, []).append(names)
+print(youngest, name)
 
-earliest_birth_date = min(employees_data)
-oldest_employees = employees_data[earliest_birth_date]
 
-first_part = earliest_birth_date.strftime(pattern)
-second_part = (len(oldest_employees) > 1 and len(oldest_employees)) or (1 and oldest_employees[0])
 
-print(first_part, second_part)
 
 '''
 Sample Input 1:
