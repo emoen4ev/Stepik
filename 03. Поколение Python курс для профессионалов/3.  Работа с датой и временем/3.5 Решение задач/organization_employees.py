@@ -43,20 +43,25 @@
 from datetime import datetime
 
 pattern = '%d.%m.%Y'
-youngest = datetime.max
-name = []
+oldest = datetime.max
+last_data = [0, 0]
 
 number_employees = int(input())
 
 for _ in range(number_employees):
-    *name, birthday = input().split()
-    if birthday < youngest:
-        youngest = birthday
+    name, birthday = input().rsplit(' ', 1)
+    birthday = datetime.strptime(birthday, pattern)
 
-print(youngest, name)
+    if birthday < oldest:
+        oldest = birthday
+        last_data[0], last_data[1] = oldest, [name]
+    elif birthday == oldest:
+        last_data[1].append(name)
 
+first_part = last_data[0].strftime(pattern)
+second_part = (len(last_data[1]) > 1 and len(last_data[1])) or (1 and str(*last_data[1]))
 
-
+print(first_part, second_part)
 
 '''
 Sample Input 1:
