@@ -30,7 +30,7 @@ FAKE NEWS
 03. Поколение Python курс для профессионалов/2. Повторяем основные конструкции языка Python 🐍/2.1 Часть 1/choose_plural.py
 """
 
-from datetime import datetime, timedelta
+from datetime import datetime
 
 
 def choose_plural(amount: int, declensions: tuple) -> str:
@@ -48,9 +48,7 @@ start_date = datetime.strptime(initial_start_date, pattern)
 initial_current_date = input()
 current_date = datetime.strptime(initial_current_date, pattern)
 
-if start_date <= current_date:
-    print('Курс уже вышел!')
-else:
+if current_date < start_date:
     remaining_time = start_date - current_date
 
     remaining_days = remaining_time.days
@@ -62,8 +60,8 @@ else:
         remaining_hours: ('час', 'часа', 'часов'),
         remaining_minutes: ('минута', 'минуты', 'минут'),
     }
-
-
+else:
+    print('Курс уже вышел!')
 
 '''
 Sample Input 1:
