@@ -27,9 +27,41 @@ FAKE NEWS
 Программа должна подбирать правильную форму для существительных «день» и «минута».
 
 Для этого можете смело взять свою функцию choose_plural() из этой задачи:
-03. Поколение Python курс для профессионалов/
-2. Повторяем основные конструкции языка Python 🐍/2.1 Часть 1/choose_plural.py
+03. Поколение Python курс для профессионалов/2. Повторяем основные конструкции языка Python 🐍/2.1 Часть 1/choose_plural.py
 """
+
+from datetime import datetime, timedelta
+
+
+def choose_plural(amount: int, declensions: tuple) -> str:
+    cases = (2, 0, 1, 1, 1, 2)
+    index = (4 < amount % 100 < 20) and 2 or cases[min(amount % 10, 5)]
+    return f'{amount} {declensions[index]}'
+
+
+pattern = '%d.%m.%Y %H:%M'
+plural_dict = {}
+
+initial_start_date = '08.11.2022 12:00'
+start_date = datetime.strptime(initial_start_date, pattern)
+
+initial_current_date = input()
+current_date = datetime.strptime(initial_current_date, pattern)
+
+if start_date <= current_date:
+    print('Курс уже вышел!')
+else:
+    remaining_time = start_date - current_date
+
+    remaining_days = remaining_time.days
+    remaining_hours = remaining_time.seconds // 3600
+    remaining_minutes = remaining_time.seconds % 3600 // 60
+
+    plural_dict = {
+        remaining_days: ('день', 'дня', 'дней'),
+        remaining_hours: ('час', 'часа', 'часов'),
+        remaining_minutes: ('минута', 'минуты', 'минут'),
+    }
 
 
 
