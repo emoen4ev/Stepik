@@ -36,11 +36,11 @@ from datetime import datetime
 def choose_plural(amount: int, declensions: tuple) -> str:
     cases = (2, 0, 1, 1, 1, 2)
     index = (4 < amount % 100 < 20) and 2 or cases[min(amount % 10, 5)]
+
     return f'{amount} {declensions[index]}'
 
 
 pattern = '%d.%m.%Y %H:%M'
-plural_dict = {}
 
 initial_start_date = '08.11.2022 12:00'
 start_date = datetime.strptime(initial_start_date, pattern)
@@ -56,10 +56,23 @@ if current_date < start_date:
     remaining_minutes = remaining_time.seconds % 3600 // 60
 
     plural_dict = {
-        remaining_days: ('день', 'дня', 'дней'),
-        remaining_hours: ('час', 'часа', 'часов'),
-        remaining_minutes: ('минута', 'минуты', 'минут'),
+        'd': ('день', 'дня', 'дней'),
+        'h': ('час', 'часа', 'часов'),
+        'm': ('минута', 'минуты', 'минут'),
     }
+
+    first_part = 'До выхода курса осталось:'
+    second_part = (remaining_days > 0 and remaining_hours > 0
+                   and f'{choose_plural(remaining_days, plural_dict["d"])} и'
+                       f' {choose_plural(remaining_hours, plural_dict["h"])}') \
+                  or (remaining_days > 0 and f'{choose_plural(remaining_days, plural_dict["d"])}') \
+                  or (remaining_hours > 0 and remaining_minutes > 0
+                      and f'{choose_plural(remaining_hours, plural_dict["h"])} '
+                          f'и {choose_plural(remaining_minutes, plural_dict["m"])}') \
+                  or (remaining_hours > 0 and f'{choose_plural(remaining_hours, plural_dict["h"])}') \
+                  or (1 and f'{choose_plural(remaining_minutes, plural_dict["m"])}')
+
+    print(first_part, second_part)
 else:
     print('Курс уже вышел!')
 
@@ -109,4 +122,12 @@ Sample Input 6:
 
 Sample Output 6:
 Курс уже вышел!
+
+----------------------------------------------------------------
+
+Sample Input 7:
+14.05.2000 18:43
+
+Sample Output 7:
+До выхода курса осталось: 8212 дней и 17 часов
 '''
