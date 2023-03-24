@@ -44,4 +44,12 @@ def get_all_mondays(year: int) -> list:
 
 # ----------------------------------------------------------------
 
+# from calendar import monthcalendar
+# from datetime import date
+#
+# def get_all_mondays(y: int, x=range(1, 13)) -> list:
+#     return [date(y, m, i[0]) for m in x for i in monthcalendar(y, m) if i[0]]
+
+# ----------------------------------------------------------------
+
 # print(get_all_mondays(2021))
