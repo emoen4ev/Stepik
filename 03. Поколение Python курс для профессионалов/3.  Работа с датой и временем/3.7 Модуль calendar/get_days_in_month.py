@@ -17,19 +17,20 @@ get_days_in_month(2021, 'December')
 """
 
 from calendar import monthrange, month_name
-from datetime import datetime
+from datetime import datetime, date
 
 
 def get_days_in_month(year: int, month: str) -> list:
-    result = []
+    # result = []
     month_number = list(month_name).index(month)
     number_days = monthrange(year, month_number)[1]
 
-    for day in range(1, number_days + 1):
-        current_date = datetime(year, month_number, day).date()
-        result.append(current_date)
+    # for day in range(1, number_days + 1):
+    #     current_date = datetime(year, month_number, day).date()
+    #     result.append(current_date)
 
-    return result
+    # return result
+    return [date(year, month_number, day) for day in range(1, number_days + 1)]
 
 # print(get_days_in_month(1982, 'January'))
 # print(get_days_in_month(2005, 'February'))
