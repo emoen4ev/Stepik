@@ -29,7 +29,25 @@
 Причем общее количество не важно, важно лишь количество в последнем ходе.
 """
 
+from sys import stdin
 
+# data = [int(line.strip()) for line in stdin]
+
+data = list(map(int, stdin))
+
+penultimate, last = 'Анри', 'Дима'
+
+if len(data) % 2 != 0:
+    penultimate, last = last, penultimate
+
+result = penultimate
+
+if data[-1] % 2 == 0:
+    result = last
+
+print(result)
+
+# print(('Дима', 'Анри')[(len(data) - 1) % 2 == data[-1] % 2])
 
 '''
 Sample Input 1:
