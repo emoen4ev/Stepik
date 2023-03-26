@@ -31,23 +31,38 @@
 
 from sys import stdin
 
-# data = [int(line.strip()) for line in stdin]
+# # data = [int(line.strip()) for line in stdin]
+#
+# data = list(map(int, stdin))
+#
+# penultimate, last = 'Анри', 'Дима'
+#
+# if len(data) % 2 != 0:
+#     penultimate, last = last, penultimate
+#
+# result = penultimate
+#
+# if data[-1] % 2 == 0:
+#     result = last
+#
+# print(result)
+#
+# # print(('Дима', 'Анри')[(len(data) - 1) % 2 == data[-1] % 2])
 
-data = list(map(int, stdin))
+# ----------------------------------------------------------------
 
-penultimate, last = 'Анри', 'Дима'
+winner_idx = None
+flag = True
 
-if len(data) % 2 != 0:
-    penultimate, last = last, penultimate
+while True:
+    line = stdin.readline()
+    if not line:
+        break
+    current_number_is_even = not int(line) & 1
+    flag = not flag
+    winner_idx = flag if current_number_is_even else not flag
 
-result = penultimate
-
-if data[-1] % 2 == 0:
-    result = last
-
-print(result)
-
-# print(('Дима', 'Анри')[(len(data) - 1) % 2 == data[-1] % 2])
+print(['Анри', 'Дима'][winner_idx])
 
 '''
 Sample Input 1:
