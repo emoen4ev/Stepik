@@ -29,7 +29,7 @@
 Причем общее количество не важно, важно лишь количество в последнем ходе.
 """
 
-from sys import stdin
+# from sys import stdin
 
 # # data = [int(line.strip()) for line in stdin]
 #
@@ -51,18 +51,28 @@ from sys import stdin
 
 # ----------------------------------------------------------------
 
+from sys import stdin
+
 winner_idx = None
 flag = True
 
 while True:
     line = stdin.readline()
+
     if not line:
         break
+    elif line == '\n':
+        continue
+
     current_number_is_even = not int(line) & 1
     flag = not flag
     winner_idx = flag if current_number_is_even else not flag
 
-print(['Анри', 'Дима'][winner_idx])
+if winner_idx is not None:
+    print(['Анри', 'Дима'][winner_idx])
+else:
+    print('No data entered!')
+    quit()
 
 '''
 Sample Input 1:
