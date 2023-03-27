@@ -12,7 +12,15 @@
 Программа должна вывести единственное число — количество строк в введенном коде, которые содержат в себе только комментарии.
 """
 
+from sys import stdin
 
+counter = 0
+
+for line in stdin:
+    if line.lstrip().startswith('#'):
+        counter += 1
+
+print(counter)
 
 '''
 Sample Input:
