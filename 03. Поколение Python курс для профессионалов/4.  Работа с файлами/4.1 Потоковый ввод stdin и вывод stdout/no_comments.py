@@ -16,7 +16,12 @@
 Примечание 1. Порядок вывода строк кода должен совпадать с порядком их ввода.
 """
 
+from sys import stdin, stdout
 
+for line in stdin:
+    if line.lstrip().startswith("#"):
+        continue
+    stdout.write(line)
 
 '''
 Sample Input:
