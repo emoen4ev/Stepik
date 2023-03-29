@@ -23,7 +23,23 @@
 а при совпадении степеней достоверности — в лексикографическом порядке самих новостей.
 """
 
+from sys import stdin
 
+data = {}
+result = ''
+
+for line in stdin:
+    line = line.strip().split(' / ')
+
+    if len(line) == 3:
+        text, category, credibility = line[0], line[1], float(line[2])
+        data.setdefault(category, []).append((text, credibility))
+    else:
+        output_category = line[0]
+        result = sorted(data[output_category], key=lambda x: (x[1], x[0]))
+
+for item in result:
+    print(item[0])
 
 '''
 Sample Input:
