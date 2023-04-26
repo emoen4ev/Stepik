@@ -1,3 +1,3 @@
 # Stepik
 Courses I have studied at Stepik ...
-https://stepik.org/users/442288496
+https://stepik.org/users/442288496?preview=true
